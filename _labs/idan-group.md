@@ -16,3 +16,4 @@ research_topics:
 ---
 
 Our research is concentrated in two main areas: (a) estimation and control of stochastic systems with non-Gaussian noises, and (b) low cost control and estimation systems for remotely piloted vehicles.
+

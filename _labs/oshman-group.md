@@ -17,3 +17,4 @@ research_topics:
 ---
 
 Information Fusion, Optimal Estimation and Control, applications to Aerospace Systems. Particular interests: Guidance, Navigation and Control (GN&C) systems; interdisciplinary aerospace systems: structural estimation and control, health monitoring/Fault Detection and Isolation (FDI) systems; Flow Control.
+

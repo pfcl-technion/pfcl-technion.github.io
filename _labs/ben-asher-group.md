@@ -16,3 +16,4 @@ research_topics:
 ---
 
 My main field of research is Optimal Control Theory essentially from the Calculus of Variations point of view, following the path of my teacher H. J. Kelley.
+
