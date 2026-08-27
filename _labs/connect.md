@@ -1,20 +1,19 @@
 ---
-title: Control and Navigation Systems Laboratory
-short_name: ConNect
+title: Cooperative Networks and Controls Lab
+short_name: ConNeCt
 slug: connect
 kind: research-group
 leader_names:
-  - Tal Shima
-summary: ConNect focuses on guidance, navigation, and control (GNC) of autonomous flight vehicles, cooperative missile defense, differential games, and interceptor guidance algorithms.
-website: https://connect.net.technion.ac.il/
+  - Daniel Zelazo
+summary: The ConNeCt lab focuses on the complimentary problems of analysis and design of networked and multi-agent systems. Our scientific approach is to explore how the mathematical field of graph theory can interface with dynamic systems and control theory in the study of these systems.
+website: https://zelazo.technion.ac.il/
 active: true
-order: 20
+order: 30
 research_topics:
-  - Advanced Guidance Laws
-  - Cooperative Control of Interceptors
-  - Differential Games in Flight Mechanics
-  - Autonomous Flight Vehicle Control
+  - Multi-Agent Systems
+  - Networked Control
+  - Graph Theory & Dynamic Systems
+  - Swarm Coordination
 ---
 
-The Control and Navigation Systems Laboratory (ConNect) develops novel guidance and control architectures for aerospace systems.
-
+The ConNeCt lab focuses on the complimentary problems of analysis and design of networked and multi-agent systems. Our scientific approach is to explore how the mathematical field of graph theory can interface with dynamic systems and control theory in the study of these systems.

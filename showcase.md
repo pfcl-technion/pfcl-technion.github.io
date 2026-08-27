@@ -1,12 +1,17 @@
 ---
 layout: page
-title: Showcase Preview
-subtitle: Full-screen display interface for laboratory monitors
+title: Laboratory Showcase
+lead: An interactive showcase of active research groups, experimental testbeds, and student opportunities across the Philadelphia Flight Control Laboratory.
 permalink: /showcase/
 ---
 
-<div class="notification is-info is-light">
-  <p class="has-text-weight-bold">TV Showcase Deliverable Interface</p>
-  <p>The full-screen TV showcase presentation page is reserved for Deliverable 3. It will consume available projects, local news, and aggregated lab updates with weighted rotation and pause controls.</p>
+<div class="box">
+  <h2 class="title is-4">PFCL Research & Student Project Showcase</h2>
+  <p class="mb-4">
+    The Philadelphia Flight Control Laboratory is home to cutting-edge research in autonomous flight, multi-robot cooperation, differential game guidance, and sensor fusion.
+  </p>
+  <div class="buttons">
+    <a href="{{ '/projects/' | relative_url }}" class="button is-primary has-text-weight-bold">View Open Student Projects</a>
+    <a href="{{ '/labs/' | relative_url }}" class="button is-light has-text-weight-bold">Explore Research Groups</a>
+  </div>
 </div>
-

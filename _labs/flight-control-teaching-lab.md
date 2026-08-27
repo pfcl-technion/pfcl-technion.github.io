@@ -1,19 +1,19 @@
 ---
-title: Flight Control Teaching Laboratory
-short_name: Flight Control Teaching Lab
+title: Flight Control Teaching Laboratories
+short_name: Teaching Labs
 slug: flight-control-teaching-lab
 kind: teaching-lab
 leader_names:
   - Ruslan Arhipov
-summary: The Flight Control Teaching Laboratory supports undergraduate aerospace laboratory experiments in aerodynamics, flight mechanics, PID/state-space attitude control, and drone test benches.
-website: https://aerospace.technion.ac.il/
+summary: The Philadelphia Flight Control Lab serves both the Faculty of Aerospace Engineering and the Faculty of Mechanical Engineering providing lab space for control education and undergraduate experiments.
+website: https://pfcl.technion.ac.il/teaching/
 active: true
-order: 40
+order: 70
 research_topics:
-  - Undergraduate Flight Dynamics Labs
-  - Quadrotor Testbed Control Experiments
-  - Hardware-in-the-Loop Simulation
+  - Dynamic Systems (084737)
+  - Control Theory (084738)
+  - Advanced Control Lab (085705)
+  - Project 7/8 Capstone
 ---
 
-This teaching lab hosts core undergraduate experimental courses in flight dynamics and control.
-
+The Philadelphia Flight Control Lab serves both the Faculty of Aerospace Engineering and the Faculty of Mechanical Engineering providing lab space for control education. Undergraduate students from both departments take compulsory and elective courses related to control systems engineering, with laboratory components held in the PFCL.

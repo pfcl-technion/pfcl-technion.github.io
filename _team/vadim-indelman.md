@@ -1,15 +1,14 @@
 ---
-title: Prof. Vadim Indelman
-slug: vadim-indelman
-role: Associate Professor & PFCL Director
-category: leadership
+title: "Assoc. Prof. Vadim Indelman"
+slug: "vadim-indelman"
+role: "Director of PFCL & PI: ANPL"
+category: "leadership"
 lab_ids:
   - anpl
-  - pfcl
-email: vadim.indelman@technion.ac.il
-website: https://anpl-technion.github.io/
+email: "vadim.indelman@technion.ac.il"
+website: "https://anpl.technion.ac.il/"
+phone: "04-829-3815"
+bio: "Director of the Philadelphia Flight Control Lab. Principal Investigator of the Autonomous Navigation and Perception Lab (ANPL), investigating collaborative autonomous navigation, perception, and SLAM under uncertainty."
 active: true
 order: 10
-bio: Vadim Indelman is an Associate Professor at the Faculty of Aerospace Engineering and Director of the Philadelphia Flight Control Laboratory.
 ---
-

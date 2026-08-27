@@ -4,16 +4,16 @@ short_name: CASY
 slug: casy
 kind: research-group
 leader_names:
-  - Nahum Shimkin
-summary: CASY conducts research into decision-making, game-theoretic control, distributed multi-agent systems, and reinforcement learning for autonomous aerospace agents.
-website: https://aerospace.technion.ac.il/person/nahum-shimkin/
+  - Tal Shima
+summary: Lab spans from the high-level problem of cooperative team mission planning (task assignment), to motion planning (guidance) with regard to optimizing trajectories for the dynamical systems.
+website: https://aerospace.technion.ac.il/person/tal-shima/
 active: true
-order: 30
+order: 20
 research_topics:
-  - Multi-Agent Decision Making
-  - Reinforcement Learning for Control
-  - Game Theory in Autonomous Systems
+  - Cooperative Team Mission Planning
+  - Motion Planning & Guidance
+  - Differential Games
+  - Advanced Guidance Laws
 ---
 
-CASY focuses on mathematical and algorithmic foundations of cooperative autonomous systems.
-
+CASY research spans from the high-level problem of cooperative team mission planning (task assignment), to motion planning (guidance) with regard to optimizing trajectories for dynamical systems.

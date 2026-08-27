@@ -5,17 +5,15 @@ slug: anpl
 kind: research-group
 leader_names:
   - Vadim Indelman
-summary: ANPL conducts fundamental and applied research in autonomous navigation, perception, simultaneous localization and mapping (SLAM), planning under uncertainty, and multi-robot systems.
-website: https://anpl-technion.github.io/
-email: vadim.indelman@technion.ac.il
+summary: Investigates problems related to single and multi-robot collaborative autonomous navigation and perception, with a particular focus on online, accurate and reliable operation in uncertain and unknown environments.
+website: https://anpl.technion.ac.il/
 active: true
 order: 10
 research_topics:
-  - SLAM and State Estimation
+  - Autonomous Navigation & SLAM
+  - Multi-Robot Collaboration
   - Decision Making under Uncertainty
-  - Active Perception and Information Acquisition
-  - Multi-Robot Cooperative Navigation
+  - Active Perception
 ---
 
-The Autonomous Navigation and Perception Laboratory (ANPL) investigates advanced algorithmic solutions for autonomous systems operating in GPS-denied and uncertain environments.
-
+ANPL investigates problems related to single and multi-robot collaborative autonomous navigation and perception, with a particular focus on online, accurate and reliable operation in uncertain and unknown environments.
