@@ -1,0 +1,58 @@
+---
+layout: default
+---
+<section class="pfcl-hero hero mb-5">
+  <div class="container">
+    <div class="pfcl-badge-group mb-2">
+      {% if page.recruitment_status == "available" %}
+        <span class="tag is-success">Recruiting</span>
+      {% elsif page.recruitment_status == "ongoing" %}
+        <span class="tag is-info is-light">Ongoing</span>
+      {% else %}
+        <span class="tag is-light">Completed</span>
+      {% endif %}
+      {% for lab in page.lab_ids %}
+        <span class="tag is-dark is-light">{{ lab | upcase }}</span>
+      {% endfor %}
+    </div>
+    <h1 class="title is-2">{{ page.title }}</h1>
+    <p class="subtitle is-5"><strong>Advisors:</strong> {{ page.advisor_names | join: ", " }}</p>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8">
+        <div class="content">
+          <h3>Project Summary</h3>
+          <p class="is-size-5">{{ page.summary }}</p>
+          {{ content }}
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="box">
+          <h4 class="title is-6">Project Metadata</h4>
+          <p class="mb-2"><strong>Status:</strong> {{ page.recruitment_status | capitalize }}</p>
+          <p class="mb-2"><strong>Student Level:</strong> {{ page.student_levels | join: ", " | capitalize }}</p>
+          <p class="mb-2"><strong>Type:</strong> {{ page.project_types | join: ", " | capitalize }}</p>
+          {% if page.duration %}
+            <p class="mb-2"><strong>Duration:</strong> {{ page.duration }}</p>
+          {% endif %}
+          {% if page.skills %}
+            <h5 class="title is-6 mt-4 mb-2">Required Skills</h5>
+            <div class="tags">
+              {% for s in page.skills %}
+                <span class="tag is-light">{{ s }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+          {% if page.contact_email and page.recruitment_status == "available" %}
+            <hr>
+            <a href="mailto:{{ page.contact_email }}?subject=PFCL%20Project%20Application:%20{{ page.title | url_encode }}" class="button is-primary is-fullwidth">Apply for this Project</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

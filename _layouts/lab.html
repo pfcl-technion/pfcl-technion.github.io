@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<section class="pfcl-hero hero mb-5">
+  <div class="container">
+    <div class="pfcl-badge-group mb-2">
+      <span class="tag is-info is-light">{{ page.kind | replace: "-", " " | capitalize }}</span>
+      {% if page.short_name %}
+        <span class="tag is-primary is-light has-text-weight-bold">{{ page.short_name }}</span>
+      {% endif %}
+    </div>
+    <h1 class="title is-2">{{ page.title }}</h1>
+    <p class="subtitle is-5"><strong>Leader:</strong> {{ page.leader_names | join: ", " }}</p>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8">
+        <div class="content">
+          <h3>Overview</h3>
+          <p class="is-size-5">{{ page.summary }}</p>
+          {{ content }}
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="box">
+          <h4 class="title is-6">Group Information</h4>
+          {% if page.website %}
+            <p class="mb-2"><strong>Website:</strong> <a href="{{ page.website }}" target="_blank" rel="noopener">{{ page.website }}</a></p>
+          {% endif %}
+          {% if page.email %}
+            <p class="mb-2"><strong>Contact:</strong> <a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+          {% endif %}
+          {% if page.research_topics %}
+            <h5 class="title is-6 mt-4 mb-2">Key Research Topics</h5>
+            <div class="tags">
+              {% for topic in page.research_topics %}
+                <span class="tag is-info is-light">{{ topic }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

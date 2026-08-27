@@ -60,3 +60,16 @@ kramdown:
 
 include:
   - _data
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Dockerfile
+  - compose.yml
+  - .devcontainer
+  - scripts
+  - test
+  - docs
+  - AGENTS.md
+  - README.md
+  - vendor

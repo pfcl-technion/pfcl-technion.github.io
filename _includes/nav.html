@@ -1,0 +1,33 @@
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item has-text-weight-bold is-size-5" href="{{ '/' | relative_url }}">
+        PFCL
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="pfclNavbar">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="pfclNavbar" class="navbar-menu">
+      <div class="navbar-end">
+        {% for item in site.data.navigation.main %}
+          {% if item.children %}
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">{{ item.title }}</a>
+              <div class="navbar-dropdown">
+                {% for sub in item.children %}
+                  <a class="navbar-item" href="{{ sub.url | relative_url }}">{{ sub.title }}</a>
+                {% endfor %}
+              </div>
+            </div>
+          {% else %}
+            <a class="navbar-item" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</nav>

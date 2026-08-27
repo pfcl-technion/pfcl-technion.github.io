@@ -1,0 +1,39 @@
+  <footer class="footer mt-6" style="background-color: #001a2c; color: #cbd5e1;">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-5">
+          <h3 class="title is-5 has-text-white">{{ site.title }}</h3>
+          <p class="is-size-6">
+            Faculty of Aerospace Engineering<br>
+            Technion - Israel Institute of Technology<br>
+            Haifa 3200003, Israel
+          </p>
+          <p class="is-size-7 mt-2">
+            Email: <a href="mailto:{{ site.email }}" class="has-text-info-light">{{ site.email }}</a>
+          </p>
+        </div>
+        <div class="column is-4">
+          <h4 class="title is-6 has-text-white">Affiliations & Links</h4>
+          <ul>
+            {% for link in site.data.navigation.footer %}
+              <li><a href="{{ link.url }}" class="has-text-info-light" target="_blank" rel="noopener">{{ link.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="column is-3">
+          <h4 class="title is-6 has-text-white">Quick Routes</h4>
+          <ul>
+            <li><a href="{{ '/projects/' | relative_url }}" class="has-text-info-light">Student Projects</a></li>
+            <li><a href="{{ '/labs/' | relative_url }}" class="has-text-info-light">Research Groups</a></li>
+            <li><a href="{{ '/contact/' | relative_url }}" class="has-text-info-light">Contact & Directions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content has-text-centered has-text-grey-light is-size-7 mt-5">
+        <p>&copy; {{ 'now' | date: "%Y" }} Philadelphia Flight Control Laboratory, Technion. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

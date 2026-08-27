@@ -1,0 +1,52 @@
+<div class="pfcl-filter-bar mb-5">
+  <div class="columns is-multiline">
+    <div class="column is-3">
+      <label class="label is-small" for="filter-lab">Research Group</label>
+      <div class="select is-small is-fullwidth">
+        <select id="filter-lab">
+          <option value="all">All Groups & Facilities</option>
+          {% for lab in site.labs %}
+            <option value="{{ lab.slug }}">{{ lab.short_name | default: lab.title }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+    <div class="column is-3">
+      <label class="label is-small" for="filter-status">Status</label>
+      <div class="select is-small is-fullwidth">
+        <select id="filter-status">
+          <option value="all">All Statuses</option>
+          <option value="available" selected>Available (Recruiting)</option>
+          <option value="ongoing">Ongoing</option>
+          <option value="completed">Completed</option>
+        </select>
+      </div>
+    </div>
+    <div class="column is-3">
+      <label class="label is-small" for="filter-type">Project Type</label>
+      <div class="select is-small is-fullwidth">
+        <select id="filter-type">
+          <option value="all">All Project Types</option>
+          {% for pt in site.data.taxonomies.project_types %}
+            <option value="{{ pt.id }}">{{ pt.label }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+    <div class="column is-3">
+      <label class="label is-small" for="filter-level">Student Level</label>
+      <div class="select is-small is-fullwidth">
+        <select id="filter-level">
+          <option value="all">All Student Levels</option>
+          {% for sl in site.data.taxonomies.student_levels %}
+            <option value="{{ sl.id }}">{{ sl.label }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="is-flex is-justify-content-space-between is-align-items-center mt-2">
+    <span id="filtered-count" class="is-size-7 has-text-weight-bold has-text-grey">Showing all projects</span>
+    <button id="filter-reset-btn" type="button" class="button is-small is-ghost">Reset Filters</button>
+  </div>
+</div>

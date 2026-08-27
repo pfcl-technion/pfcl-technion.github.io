@@ -1,0 +1,30 @@
+<div class="pfcl-card">
+  <div class="card-content">
+    <div class="pfcl-badge-group">
+      <span class="tag is-info is-light">{{ include.lab.kind | replace: "-", " " | capitalize }}</span>
+      {% if include.lab.short_name %}
+        <span class="tag is-primary is-light has-text-weight-bold">{{ include.lab.short_name }}</span>
+      {% endif %}
+    </div>
+    <h3 class="title is-5 mb-2">
+      <a href="{{ include.lab.url | relative_url }}">{{ include.lab.title }}</a>
+    </h3>
+    <p class="is-size-7 has-text-grey mb-3">
+      <strong>Leader:</strong> {{ include.lab.leader_names | join: ", " }}
+    </p>
+    <p class="is-size-6 mb-4">{{ include.lab.summary }}</p>
+    {% if include.lab.research_topics %}
+      <div class="tags are-small mt-auto">
+        {% for topic in include.lab.research_topics limit:3 %}
+          <span class="tag is-rounded">{{ topic }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+  <footer class="card-footer">
+    <a href="{{ include.lab.url | relative_url }}" class="card-footer-item">Lab Overview &rarr;</a>
+    {% if include.lab.website %}
+      <a href="{{ include.lab.website }}" class="card-footer-item" target="_blank" rel="noopener">External Site &nearr;</a>
+    {% endif %}
+  </footer>
+</div>

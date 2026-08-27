@@ -1,0 +1,7 @@
+@import "pfcl_variables";
+@import "pfcl_components";
+
+a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible {
+  outline: 3px solid #ffbf47 !important;
+  outline-offset: 2px !important;
+}

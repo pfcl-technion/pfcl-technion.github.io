@@ -1,0 +1,40 @@
+<div class="pfcl-project-item pfcl-card"
+     data-labs="{{ include.project.lab_ids | join: ',' }}"
+     data-status="{{ include.project.recruitment_status }}"
+     data-types="{{ include.project.project_types | join: ',' }}"
+     data-levels="{{ include.project.student_levels | join: ',' }}">
+  <div class="card-content">
+    <div class="pfcl-badge-group">
+      {% if include.project.recruitment_status == "available" %}
+        <span class="tag is-success">Recruiting</span>
+      {% elsif include.project.recruitment_status == "ongoing" %}
+        <span class="tag is-info is-light">Ongoing</span>
+      {% else %}
+        <span class="tag is-light">Completed</span>
+      {% endif %}
+      {% for lab_id in include.project.lab_ids %}
+        <span class="tag is-dark is-light">{{ lab_id | upcase }}</span>
+      {% endfor %}
+    </div>
+    <h3 class="title is-5 mb-2">
+      <a href="{{ include.project.url | relative_url }}">{{ include.project.title }}</a>
+    </h3>
+    <p class="is-size-7 has-text-grey mb-2">
+      <strong>Advisors:</strong> {{ include.project.advisor_names | join: ", " }}
+    </p>
+    <p class="is-size-6 mb-3">{{ include.project.summary }}</p>
+    {% if include.project.skills %}
+      <div class="tags are-small mb-3">
+        {% for skill in include.project.skills %}
+          <span class="tag is-white" style="border: 1px solid #e2e8f0;">{{ skill }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+  <footer class="card-footer">
+    <a href="{{ include.project.url | relative_url }}" class="card-footer-item">Details</a>
+    {% if include.project.contact_email and include.project.recruitment_status == "available" %}
+      <a href="mailto:{{ include.project.contact_email }}?subject=PFCL%20Project%20Inquiry:%20{{ include.project.title | url_encode }}" class="card-footer-item has-text-weight-semibold">Apply / Contact</a>
+    {% endif %}
+  </footer>
+</div>
