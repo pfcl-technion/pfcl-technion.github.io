@@ -1,0 +1,16 @@
+{
+  "name": "PFCL Website",
+  "dockerComposeFile": "../compose.yml",
+  "service": "site",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rebornix.Ruby",
+        "sibiraj-s.vscode-scss-formatter",
+        "DavidAnson.vscode-markdownlint"
+      ]
+    }
+  },
+  "forwardPorts": [4000, 35729]
+}

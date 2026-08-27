@@ -1,0 +1,77 @@
+lab_kinds:
+  - id: research-group
+    label: "Research Group"
+    description: "Principal research laboratory or group within PFCL"
+  - id: teaching-lab
+    label: "Teaching Laboratory"
+    description: "Laboratory supporting undergraduate and graduate coursework and teaching experiments"
+  - id: shared-facility
+    label: "Shared Facility"
+    description: "Shared infrastructure, flight testing areas, and equipment"
+
+team_categories:
+  - id: leadership
+    label: "Leadership & Directors"
+    order: 1
+  - id: faculty
+    label: "Faculty Members"
+    order: 2
+  - id: research-staff
+    label: "Research Scientists & Postdocs"
+    order: 3
+  - id: lab-staff
+    label: "Lab Engineers & Technical Staff"
+    order: 4
+  - id: visiting
+    label: "Visiting Researchers"
+    order: 5
+  - id: emeritus
+    label: "Emeritus Faculty"
+    order: 6
+
+recruitment_statuses:
+  - id: available
+    label: "Available / Recruiting"
+    badge_class: "is-success"
+  - id: ongoing
+    label: "Ongoing"
+    badge_class: "is-info"
+  - id: completed
+    label: "Completed"
+    badge_class: "is-light"
+
+project_types:
+  - id: research
+    label: "Theoretical & Algorithmic Research"
+  - id: experimental
+    label: "Flight Testing & Experimental"
+  - id: software
+    label: "Software & Simulation"
+  - id: hardware
+    label: "Avionics & Hardware Design"
+  - id: teaching
+    label: "Teaching & Capstone"
+
+student_levels:
+  - id: undergraduate
+    label: "Undergraduate (B.Sc.)"
+  - id: master
+    label: "Master (M.Sc.)"
+  - id: phd
+    label: "Doctoral (Ph.D.)"
+
+news_categories:
+  - id: news
+    label: "News"
+  - id: event
+    label: "Event & Seminar"
+  - id: publication
+    label: "Publication Highlight"
+  - id: project
+    label: "Project Update"
+  - id: award
+    label: "Award & Honor"
+  - id: position
+    label: "Open Position"
+  - id: research-highlight
+    label: "Research Highlight"

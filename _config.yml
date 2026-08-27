@@ -1,0 +1,62 @@
+title: "Philadelphia Flight Control Laboratory"
+tagline: "Aerospace Systems, Autonomous Flight & Navigation Research"
+description: "The Philadelphia Flight Control Laboratory (PFCL) at the Technion Faculty of Aerospace Engineering is the umbrella research facility for autonomous navigation, perception, control, and aerospace systems."
+email: "pfcl@technion.ac.il"
+url: "https://pfcl-technion.github.io"
+baseurl: ""
+
+theme: "bulma-clean-theme"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  labs:
+    output: true
+    permalink: /labs/:slug/
+  team:
+    output: true
+    permalink: /team/:slug/
+  projects:
+    output: true
+    permalink: /projects/:slug/
+  news:
+    output: true
+    permalink: /news/:year/:month/:day/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: "labs"
+    values:
+      layout: "lab"
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "page"
+
+sass:
+  style: compressed
+  sass_dir: _sass
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+include:
+  - _data
