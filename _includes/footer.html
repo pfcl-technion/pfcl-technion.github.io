@@ -2,7 +2,10 @@
     <div class="container">
       <div class="columns">
         <div class="column is-5">
-          <h3 class="title is-5 has-text-white">{{ site.title }}</h3>
+          <div class="is-flex is-align-items-center mb-3">
+            <img src="{{ '/assets/images/PFCL-1.png' | relative_url }}" alt="PFCL Emblem" style="max-height: 40px; filter: brightness(0) invert(1);" class="mr-3">
+            <h3 class="title is-5 has-text-white mb-0">{{ site.title }}</h3>
+          </div>
           <p class="is-size-6">
             Faculty of Aerospace Engineering<br>
             Technion - Israel Institute of Technology<br>
@@ -37,3 +40,4 @@
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>
+

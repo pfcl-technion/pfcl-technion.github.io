@@ -1,5 +1,5 @@
 ---
-title: Complex Autonomous Systems Laboratory
+title: Cooperative Autonomous Systems Laboratory
 short_name: CASY
 slug: casy
 kind: research-group
@@ -15,4 +15,5 @@ research_topics:
   - Game Theory in Autonomous Systems
 ---
 
-CASY focuses on mathematical and algorithmic foundations of complex autonomous systems.
+CASY focuses on mathematical and algorithmic foundations of cooperative autonomous systems.
+

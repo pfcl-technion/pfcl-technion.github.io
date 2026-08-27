@@ -11,3 +11,4 @@ active: true
 order: 20
 bio: Tal Shima is a Professor of Aerospace Engineering specializing in guidance, control, and multi-agent differential games.
 ---
+

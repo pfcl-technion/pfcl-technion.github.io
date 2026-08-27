@@ -18,3 +18,4 @@ research_topics:
 ---
 
 The Autonomous Navigation and Perception Laboratory (ANPL) investigates advanced algorithmic solutions for autonomous systems operating in GPS-denied and uncertain environments.
+

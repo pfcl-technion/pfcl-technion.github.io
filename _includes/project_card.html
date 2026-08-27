@@ -19,14 +19,14 @@
     <h3 class="title is-5 mb-2">
       <a href="{{ include.project.url | relative_url }}">{{ include.project.title }}</a>
     </h3>
-    <p class="is-size-7 has-text-grey mb-2">
+    <p class="pfcl-meta mb-2">
       <strong>Advisors:</strong> {{ include.project.advisor_names | join: ", " }}
     </p>
-    <p class="is-size-6 mb-3">{{ include.project.summary }}</p>
+    <p class="pfcl-body-text mb-3">{{ include.project.summary }}</p>
     {% if include.project.skills %}
       <div class="tags are-small mb-3">
         {% for skill in include.project.skills %}
-          <span class="tag is-white" style="border: 1px solid #e2e8f0;">{{ skill }}</span>
+          <span class="tag pfcl-tag">{{ skill }}</span>
         {% endfor %}
       </div>
     {% endif %}

@@ -17,3 +17,4 @@ permalink: /teaching/
     </div>
   {% endfor %}
 </div>
+

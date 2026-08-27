@@ -3,7 +3,7 @@
     <div class="pfcl-badge-group">
       <span class="tag is-primary is-light">{{ include.item.category | replace: "-", " " | capitalize }}</span>
       <span class="tag is-dark is-light">{{ include.item.source_name | default: include.item.lab_id | upcase }}</span>
-      <span class="tag is-light">{{ include.item.date | default: include.item.published_at | date: "%B %d, %Y" }}</span>
+      <span class="tag pfcl-tag">{{ include.item.date | default: include.item.published_at | date: "%B %d, %Y" }}</span>
     </div>
     <h3 class="title is-5 mb-2">
       {% if include.item.canonical_url %}
@@ -12,6 +12,6 @@
         <a href="{{ include.item.url | relative_url }}">{{ include.item.title }}</a>
       {% endif %}
     </h3>
-    <p class="is-size-6">{{ include.item.excerpt }}</p>
+    <p class="pfcl-body-text">{{ include.item.excerpt }}</p>
   </div>
 </div>

@@ -9,14 +9,14 @@
     <h3 class="title is-5 mb-2">
       <a href="{{ include.lab.url | relative_url }}">{{ include.lab.title }}</a>
     </h3>
-    <p class="is-size-7 has-text-grey mb-3">
+    <p class="pfcl-meta mb-3">
       <strong>Leader:</strong> {{ include.lab.leader_names | join: ", " }}
     </p>
-    <p class="is-size-6 mb-4">{{ include.lab.summary }}</p>
+    <p class="pfcl-body-text">{{ include.lab.summary }}</p>
     {% if include.lab.research_topics %}
       <div class="tags are-small mt-auto">
         {% for topic in include.lab.research_topics limit:3 %}
-          <span class="tag is-rounded">{{ topic }}</span>
+          <span class="tag pfcl-tag is-rounded">{{ topic }}</span>
         {% endfor %}
       </div>
     {% endif %}

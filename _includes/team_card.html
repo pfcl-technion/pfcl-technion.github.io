@@ -1,14 +1,14 @@
 <div class="pfcl-card">
   <div class="card-content">
     <h3 class="title is-5 mb-1">{{ include.person.title }}</h3>
-    <p class="subtitle is-6 has-text-grey mb-2">{{ include.person.role }}</p>
+    <p class="subtitle is-6 mb-2">{{ include.person.role }}</p>
     <div class="pfcl-badge-group">
       {% for lab_id in include.person.lab_ids %}
         <span class="tag is-info is-light">{{ lab_id | upcase }}</span>
       {% endfor %}
     </div>
     {% if include.person.bio %}
-      <p class="is-size-6 mt-2">{{ include.person.bio }}</p>
+      <p class="pfcl-body-text mt-2">{{ include.person.bio }}</p>
     {% endif %}
   </div>
   {% if include.person.email or include.person.website %}

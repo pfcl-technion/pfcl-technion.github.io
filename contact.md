@@ -21,3 +21,4 @@ Technion City, Haifa 3200003, Israel
 ### Student Project Applications
 
 Interested in pursuing a B.Sc., M.Sc., or Ph.D. project? Explore our [Student Projects]({{ '/projects/' | relative_url }}) directory and reach out directly to the advisor listed on the project card.
+

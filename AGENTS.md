@@ -14,3 +14,4 @@ Instructions for AI Agents and Contributors working on the PFCL Website project.
 8. **Run Verification Before Completion:** Always run `bundle exec ruby scripts/validate_content.rb`, `bundle exec ruby -Itest test/content_validation_test.rb`, and `bundle exec jekyll build` before claiming completion.
 9. **Accessibility & Progressive Enhancement:** Keep the website functional without JavaScript. Ensure WCAG 2.2 AA color contrast and respect `prefers-reduced-motion`.
 10. **Domain Safety:** Do not alter DNS, GitHub Pages custom domain settings, or the live `pfcl.technion.ac.il` site without explicit authorization.
+

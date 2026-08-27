@@ -29,3 +29,4 @@ jobs:
         run: bundle exec jekyll build --config _config.yml,_config.preview.yml --trace
         env:
           JEKYLL_ENV: production
+

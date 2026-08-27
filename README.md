@@ -36,3 +36,4 @@ docker compose run --rm site bundle exec jekyll build --config _config.yml,_conf
 ## Content Guidelines
 
 See [AGENTS.md](AGENTS.md) and [docs/superpowers/specs/2026-08-27-pfcl-website-foundation-design.md](docs/superpowers/specs/2026-08-27-pfcl-website-foundation-design.md) for data schemas and contributor guidelines.
+

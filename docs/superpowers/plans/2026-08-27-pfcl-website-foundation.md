@@ -2197,3 +2197,4 @@ git commit -m "docs: add AGENTS rules, README quickstart, and GitHub Actions CI/
 - [ ] **Step 2: Run Minitest test suite**
 - [ ] **Step 3: Execute full Jekyll build with preview configuration**
 - [ ] **Step 4: Verify generated site structure, links, and assets**
+

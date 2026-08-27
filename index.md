@@ -5,13 +5,20 @@ title: Home
 
 <section class="pfcl-hero hero">
   <div class="container">
-    <h1 class="title is-1">Philadelphia Flight Control Laboratory</h1>
-    <p class="subtitle is-4 mt-3">
-      Advancing autonomous flight, navigation, perception, and aerospace control systems at the Technion Faculty of Aerospace Engineering.
-    </p>
-    <div class="buttons mt-5">
-      <a href="{{ '/projects/' | relative_url }}" class="button is-warning has-text-weight-bold">Explore Available Projects</a>
-      <a href="{{ '/labs/' | relative_url }}" class="button is-light is-outlined has-text-weight-bold">Research Groups</a>
+    <div class="columns is-vcentered">
+      <div class="column is-8">
+        <h1 class="title is-1">Philadelphia Flight Control Laboratory</h1>
+        <p class="subtitle is-4 mt-3">
+          Advancing autonomous flight, navigation, perception, and aerospace control systems at the Technion Faculty of Aerospace Engineering.
+        </p>
+        <div class="buttons mt-5">
+          <a href="{{ '/projects/' | relative_url }}" class="button is-warning has-text-weight-bold">Explore Available Projects</a>
+          <a href="{{ '/labs/' | relative_url }}" class="button is-light is-outlined has-text-weight-bold">Research Groups</a>
+        </div>
+      </div>
+      <div class="column is-4 has-text-centered is-hidden-touch">
+        <img src="{{ '/assets/images/PFCL-2.png' | relative_url }}" alt="PFCL Emblem" style="max-height: 180px; filter: brightness(0) invert(1); opacity: 0.95;">
+      </div>
     </div>
   </div>
 </section>
@@ -84,3 +91,4 @@ title: Home
     </div>
   </div>
 </section>
+

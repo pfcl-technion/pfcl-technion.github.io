@@ -17,3 +17,4 @@ research_topics:
 ---
 
 The Control and Navigation Systems Laboratory (ConNect) develops novel guidance and control architectures for aerospace systems.
+

@@ -274,3 +274,4 @@ end
 if __FILE__ == $PROGRAM_NAME
   ContentValidator.new(".").run
 end
+

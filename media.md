@@ -12,3 +12,4 @@ permalink: /media/
 <div class="notification is-light">
   Curated media assets from recent flight tests and lab milestones will appear here.
 </div>
+

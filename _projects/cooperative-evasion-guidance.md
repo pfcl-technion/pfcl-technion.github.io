@@ -24,3 +24,4 @@ skills:
 ---
 
 Investigate cooperative pursuit-evasion game formulation with numerical and high-fidelity flight simulation validation.
+

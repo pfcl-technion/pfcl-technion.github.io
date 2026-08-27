@@ -26,3 +26,4 @@ skills:
 ---
 
 This project tackles active perception and cooperative mapping under uncertainty. Students will design and validate estimation and planning algorithms in simulation and evaluate them on physical multi-rotor platforms in the PFCL arena.
+
