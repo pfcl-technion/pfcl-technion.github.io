@@ -1,0 +1,10 @@
+services:
+  site:
+    build: .
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/site
+      - bundle_cache:/bundle
+volumes:
+  bundle_cache:
