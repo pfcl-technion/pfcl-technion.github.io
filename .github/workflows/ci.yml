@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build site image
+        run: docker compose build
+
+      - name: Install dependencies
+        run: docker compose run --rm site sh -c "bundle check || bundle install"
+
+      - name: Validate content
+        run: docker compose run --rm site bundle exec ruby scripts/validate_content.rb
+
+      - name: Run tests
+        run: docker compose run --rm site bundle exec ruby -Itest test/content_validation_test.rb
+
+      - name: Build site (production)
+        run: docker compose run -e JEKYLL_ENV=production --rm site bundle exec jekyll build --trace
