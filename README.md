@@ -7,8 +7,12 @@ Markdown collections, validated before every build.
 ## Development (Docker)
 
 ```bash
-docker compose up --build            # dev server at http://localhost:4000
+docker compose up --build            # dev server at http://localhost:4000/pfcl-technion.github.io/
 ```
+
+The dev server serves the site under the same base path as the GitHub
+Pages preview, so visiting `http://localhost:4000/` alone returns 404 —
+this is expected.
 
 ## Verification
 
