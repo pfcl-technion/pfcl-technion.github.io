@@ -155,8 +155,13 @@ class ContentValidator
       error(rel, "missing YAML frontmatter")
       return nil
     end
-    parts = content.split(/^---\s*$/)
-    return error(rel, "unterminated YAML frontmatter") if parts.length < 3
+    # Negative limit keeps trailing empty strings, so documents with an empty
+    # body still split into [preamble, frontmatter, body].
+    parts = content.split(/^---\s*$/, -1)
+    if parts.length < 3
+      error(rel, "unterminated YAML frontmatter")
+      return nil
+    end
 
     begin
       fields = YAML.safe_load(parts[1], permitted_classes: [Date], aliases: false) || {}

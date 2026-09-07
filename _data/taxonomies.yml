@@ -1,0 +1,13 @@
+team_categories:
+  - id: leadership
+    label: Leadership
+  - id: faculty
+    label: Faculty
+  - id: research-staff
+    label: Research Staff
+  - id: lab-staff
+    label: Lab Staff
+  - id: visiting
+    label: Visiting
+  - id: emeritus
+    label: Emeritus

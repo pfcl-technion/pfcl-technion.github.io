@@ -82,6 +82,22 @@ class ContentValidationTest < Minitest::Test
     assert_empty validate
   end
 
+  def test_document_without_body_is_valid
+    write "_labs/nobody.md", <<~YAML
+      ---
+      title: No Body
+      slug: no-body
+      kind: research-group
+      leader_names: [X]
+      summary: s
+      active: true
+      order: 10
+      ---
+    YAML
+
+    assert_empty validate
+  end
+
   def test_missing_required_field_is_reported
     write "_team/no-role.md", <<~YAML
       ---
