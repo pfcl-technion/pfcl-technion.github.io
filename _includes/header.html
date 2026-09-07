@@ -1,0 +1,34 @@
+<nav class="navbar is-primary {% if site.fixed_navbar %} is-fixed-{{ site.fixed_navbar }}{% endif %}" x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="{{ site.baseurl }}/" class="navbar-item pfcl-navbar-brand">
+                <img src="{{ '/assets/images/PFCL-2.png' | relative_url }}" alt="PFCL emblem" height="28">
+                <span class="pfcl-navbar-title">Philadelphia Flight Control Laboratory</span>
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-end">
+                <a href="{{ site.baseurl }}/" class="navbar-item {% if page.url == '/' %}is-active{% endif %}">Home</a>
+                {% for item in site.data.navigation %}
+                    {% if item.dropdown %}
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="{{ item.link | relative_url }}" class="navbar-link {% if page.url contains item.link %}is-active{% endif %}">{{ item.name }}</a>
+                            <div class="navbar-dropdown">
+                                {% for subitem in item.dropdown %}
+                                    <a href="{{ subitem.link | relative_url }}" class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.name }}</a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% else %}
+                        <a href="{{ item.link | relative_url }}" class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</nav>

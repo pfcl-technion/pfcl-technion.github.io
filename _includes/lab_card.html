@@ -1,0 +1,12 @@
+<div class="card pfcl-card">
+    <div class="card-content">
+        <p class="title is-4">{{ include.lab.title }}</p>
+        <p class="subtitle is-6">
+            {% if include.lab.short_name %}{{ include.lab.short_name }} — {% endif %}{{ include.lab.leader_names | join: ', ' }}
+        </p>
+        <div class="content">{{ include.lab.summary }}</div>
+        {% if include.lab.website %}
+            <a href="{{ include.lab.website }}" target="_blank" rel="noopener noreferrer" class="button is-small is-primary is-outlined">Visit website</a>
+        {% endif %}
+    </div>
+</div>

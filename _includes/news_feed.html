@@ -1,0 +1,49 @@
+{% comment %}
+  Combined activity feed: local _news documents plus generated update objects
+  from _data/generated/updates.json (aggregation deliverable). Generated items
+  should expose a top-level "date" alongside published_at for correct
+  interleaving; items lacking it sort after dated local news.
+  External items always link to their canonical_url with source attribution —
+  never presented as PFCL-authored.
+{% endcomment %}
+{% assign limit = include.limit | default: 0 | plus: 0 %}
+{% assign items = '' | split: '' %}
+{% for item in site.news %}
+    {% assign items = items | push: item %}
+{% endfor %}
+{% for item in site.data.generated.updates %}
+    {% assign items = items | push: item %}
+{% endfor %}
+{% assign sorted = items | sort: 'date' | reverse %}
+{% if sorted.size == 0 %}
+    <p class="pfcl-placeholder">[Placeholder: news and updates will be listed here.]</p>
+{% else %}
+    <ul class="pfcl-news-list">
+        {% for item in sorted %}
+            {% if limit > 0 and forloop.index > limit %}{% break %}{% endif %}
+            {% assign item_date = item.date | default: item.published_at %}
+            {% if item.lab_id == 'pfcl' %}
+                {% assign source_label = 'PFCL' %}
+            {% else %}
+                {% assign source_lab = site.labs | where: 'slug', item.lab_id | first %}
+                {% assign source_label = item.source_name | default: source_lab.short_name | default: 'PFCL' %}
+            {% endif %}
+            <li class="pfcl-news-item">
+                <p class="pfcl-news-meta is-size-7 has-text-grey">
+                    <time datetime="{{ item_date | date_to_xmlschema }}">{{ item_date | date: '%B %-d, %Y' }}</time>
+                    — {{ source_label }}
+                </p>
+                <p class="mb-1">
+                    {% if item.url %}
+                        <a href="{{ item.url }}">{{ item.title }}</a>
+                    {% elsif item.canonical_url and item.lab_id != 'pfcl' %}
+                        <a href="{{ item.canonical_url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+                    {% else %}
+                        {{ item.title }}
+                    {% endif %}
+                </p>
+                <p class="is-size-6">{{ item.excerpt }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
