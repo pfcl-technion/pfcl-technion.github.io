@@ -70,8 +70,8 @@ Built as fresh overrides on the `bulma-clean-theme` gem:
 
 Three-zone footer above a copyright bar, entirely data-driven from `_data/footer.yml`:
 
-- **Left (~50%):** two or three menu columns, each a heading + link list (site sections).
-- **Middle (~25%):** email icon + `pfcl@technion.ac.il`, phone icon + `+972-4-829-3820`, divider, YouTube channel link.
+- **Left (~50%):** three menu columns: "About" (About PFCL, History, Dedication, Team), "Research & Teaching" (Research Groups, Teaching Labs, News, Media), "For Students" (Student Projects, Contact).
+- **Middle (~25%):** email icon + `pfcl@technion.ac.il`, phone icon + `+972-4-829-3820`, divider, YouTube channel link. The YouTube URL is unverified, so the field starts empty and the footer omits that row until a real URL is supplied.
 - **Right (~25%):** stacked logo images linking out — Technion, Faculty of Aerospace Engineering, `[additional partner/donor logos to confirm]`.
 - **Copyright bar:** `© 2026 Philadelphia Flight Control Laboratory — Technion`. No web-designer credit.
 
@@ -80,7 +80,7 @@ Three-zone footer above a copyright bar, entirely data-driven from `_data/footer
 - `_labs` (7): ANPL, ConNeCt, CASY, Idan Group, Ben-Asher Group, Oshman Group, Flight Control Teaching Lab — real names, real PIs, placeholder summaries.
 - `_team` (8): Daniel Zelazo, Vadim Indelman, Tal Shima, Moshe Idan, Yossi Ben-Asher, Yaakov Oshman, Ruslan Arhipov (Lab Engineer), Arthur Grunwald (emeritus, history author). Placeholder bios; no emails or phones unless verified.
 - `_projects`: none; page shell only.
-- `_news`: one placeholder welcome item or none, per implementation judgment.
+- `_news`: exactly one document titled "Welcome to the new PFCL website" with `lab_id: pfcl`, `category: news`, a placeholder excerpt, and a body whose entire content is a bracketed placeholder — it exists so the news feed renders during structural review and is replaced or deleted in the content phase.
 - Pages: the eleven routes from the foundation spec, each a titled shell with section placeholders.
 
 ## Acceptance criteria
