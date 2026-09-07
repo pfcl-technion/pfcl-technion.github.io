@@ -1,0 +1,44 @@
+menus:
+  - title: About
+    links:
+      - name: About PFCL
+        url: /about/
+      - name: History
+        url: /history/
+      - name: PFCL Dedication
+        url: /dedication/
+      - name: Team
+        url: /team/
+  - title: Research & Teaching
+    links:
+      - name: Research Groups
+        url: /labs/
+      - name: Teaching Labs
+        url: /teaching/
+      - name: News
+        url: /news/
+      - name: Media
+        url: /media/
+  - title: For Students
+    links:
+      - name: Student Projects
+        url: /projects/
+      - name: Contact
+        url: /contact/
+
+contact:
+  email: pfcl@technion.ac.il
+  phone: "+972-4-829-3820"
+  youtube: "" # [Placeholder: YouTube channel URL — supply before enabling]
+
+logos_heading: Partners
+
+logos:
+  - name: Technion - Israel Institute of Technology
+    url: https://www.technion.ac.il/
+    image: # [Placeholder: logo image path once asset is supplied]
+  - name: Faculty of Aerospace Engineering
+    url: https://aerospace.technion.ac.il/
+    image: # [Placeholder: logo image path once asset is supplied]
+
+copyright: "© 2026 Philadelphia Flight Control Laboratory — Technion"
