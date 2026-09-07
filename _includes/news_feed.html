@@ -34,9 +34,7 @@
                     — {{ source_label }}
                 </p>
                 <p class="mb-1">
-                    {% if item.url %}
-                        <a href="{{ item.url }}">{{ item.title }}</a>
-                    {% elsif item.canonical_url and item.lab_id != 'pfcl' %}
+                    {% if item.canonical_url and item.lab_id != 'pfcl' %}
                         <a href="{{ item.canonical_url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
                     {% else %}
                         {{ item.title }}

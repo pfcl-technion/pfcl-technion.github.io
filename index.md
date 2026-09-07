@@ -6,7 +6,7 @@ hide_hero: false
 carousel:
   - caption: Photograph of the PFCL flight testbeds
   - caption: Photograph of researchers operating a quadcopter experiment
-  - caption: Research-figure slide — [Placeholder: caption of concept figure]
+  - caption: "Research-figure slide — [Placeholder: caption of concept figure]"
 ---
 
 ## Welcome
