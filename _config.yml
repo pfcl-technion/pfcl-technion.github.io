@@ -1,0 +1,65 @@
+title: Philadelphia Flight Control Laboratory
+tagline: Faculty of Aerospace Engineering, Technion
+description: >-
+  [Placeholder: one-to-two sentence site description for search engines about
+  the Philadelphia Flight Control Laboratory.]
+lang: en
+email: pfcl@technion.ac.il
+
+url: https://philadelphia-flight-control-laboratory.github.io
+baseurl: /pfcl-technion.github.io
+permalink: pretty
+
+theme: bulma-clean-theme
+
+fixed_navbar: top
+theme_color: '#eeeeee'
+favicon: /assets/images/PFCL-2.png
+hide_share_buttons: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+sass:
+  style: compressed
+  source_dir: _sass
+
+collections:
+  labs:
+    output: false
+  team:
+    output: false
+  projects:
+    output: false
+  news:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      show_sidebar: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Dockerfile
+  - compose.yml
+  - .devcontainer
+  - scripts
+  - test
+  - docs
+  - references
+  - AGENTS.md
+  - README.md
+  - vendor
+  - node_modules

@@ -1,0 +1,16 @@
+// PFCL custom styles (v2 rebuild). Imported after the theme's main.scss,
+// so Bulma variables ($light, $border, $grey-light, $primary) are in scope.
+
+.pfcl-navbar-title {
+  font-weight: 600;
+  margin-left: 0.5rem;
+  white-space: nowrap;
+}
+
+.pfcl-placeholder {
+  background: $light;
+  border: 1px dashed $border;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+  color: $grey-light;
+}

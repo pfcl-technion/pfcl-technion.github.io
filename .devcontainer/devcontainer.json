@@ -1,0 +1,14 @@
+{
+  "name": "PFCL Website",
+  "dockerComposeFile": ["../compose.yml"],
+  "service": "site",
+  "workspaceFolder": "/site",
+  "overrideCommand": true,
+  "postStartCommand": "bundle check || bundle install",
+  "forwardPorts": [4000],
+  "customizations": {
+    "vscode": {
+      "extensions": ["shopify.ruby-lsp", "DavidAnson.vscode-markdownlint"]
+    }
+  }
+}
