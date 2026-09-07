@@ -1,0 +1,65 @@
+<footer class="footer pfcl-footer" role="contentinfo">
+    <div class="container">
+        <div class="columns is-multiline">
+            <div class="column is-6-desktop">
+                <div class="columns is-multiline">
+                    {% for menu in site.data.footer.menus %}
+                        <div class="column is-4-desktop is-6-tablet">
+                            <h3 class="title is-6 pfcl-footer-heading">{{ menu.title }}</h3>
+                            <ul class="pfcl-footer-list">
+                                {% for link in menu.links %}
+                                    <li><a href="{{ link.url | relative_url }}">{{ link.name }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="column is-3-desktop">
+                <h3 class="title is-6 pfcl-footer-heading">Contact</h3>
+                <ul class="pfcl-footer-list pfcl-footer-contact">
+                    {% assign c = site.data.footer.contact %}
+                    {% if c.email != blank %}
+                        <li>
+                            <span class="icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
+                            <a href="mailto:{{ c.email }}">{{ c.email }}</a>
+                        </li>
+                    {% endif %}
+                    {% if c.phone != blank %}
+                        <li>
+                            <span class="icon" aria-hidden="true"><i class="fas fa-phone"></i></span>
+                            <a href="tel:{{ c.phone }}">{{ c.phone }}</a>
+                        </li>
+                    {% endif %}
+                    {% if c.youtube != blank %}
+                        <li class="pfcl-footer-divider">
+                            <span class="icon" aria-hidden="true"><i class="fab fa-youtube"></i></span>
+                            <a href="{{ c.youtube }}" target="_blank" rel="noopener noreferrer">Visit our channel</a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+            <div class="column is-3-desktop">
+                <h3 class="title is-6 pfcl-footer-heading">{{ site.data.footer.logos_heading }}</h3>
+                <ul class="pfcl-footer-list pfcl-footer-logos">
+                    {% for logo in site.data.footer.logos %}
+                        <li class="mb-3">
+                            <a href="{{ logo.url }}" target="_blank" rel="noopener noreferrer" title="{{ logo.name }}">
+                                {% if logo.image != blank %}
+                                    <img src="{{ logo.image | relative_url }}" alt="{{ logo.name }}">
+                                {% else %}
+                                    <span class="pfcl-footer-logo-text">{{ logo.name }}</span>
+                                {% endif %}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<section class="pfcl-copyright">
+    <div class="container has-text-centered">
+        <p>{{ site.data.footer.copyright }}</p>
+    </div>
+</section>
