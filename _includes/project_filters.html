@@ -1,49 +1,49 @@
 <div class="pfcl-filters field is-grouped">
-    <div class="control">
-        <label class="label is-small" for="pfcl-filter-labs">Research group</label>
-        <div class="select is-small">
-            <select id="pfcl-filter-labs" data-filter="labs">
-                <option value="">All groups</option>
-                {% for lab in site.labs %}
-                    <option value="{{ lab.slug }}">{{ lab.short_name | default: lab.title }}</option>
-                {% endfor %}
-                <option value="pfcl">PFCL</option>
-            </select>
-        </div>
+  <div class="control">
+    <label class="label is-small" for="pfcl-filter-labs">Research group</label>
+    <div class="select is-small">
+      <select id="pfcl-filter-labs" data-filter="labs">
+        <option value="">All groups</option>
+        {% for lab in site.labs %}
+          <option value="{{ lab.slug }}">{{ lab.short_name | default: lab.title }}</option>
+        {% endfor %}
+        <option value="pfcl">PFCL</option>
+      </select>
     </div>
-    <div class="control">
-        <label class="label is-small" for="pfcl-filter-status">Status</label>
-        <div class="select is-small">
-            <select id="pfcl-filter-status" data-filter="status">
-                <option value="">All statuses</option>
-                <option value="available">Available</option>
-                <option value="ongoing">Ongoing</option>
-                <option value="completed">Completed</option>
-            </select>
-        </div>
+  </div>
+  <div class="control">
+    <label class="label is-small" for="pfcl-filter-status">Status</label>
+    <div class="select is-small">
+      <select id="pfcl-filter-status" data-filter="status">
+        <option value="">All statuses</option>
+        <option value="available">Available</option>
+        <option value="ongoing">Ongoing</option>
+        <option value="completed">Completed</option>
+      </select>
     </div>
-    <div class="control">
-        <label class="label is-small" for="pfcl-filter-types">Type</label>
-        <div class="select is-small">
-            <select id="pfcl-filter-types" data-filter="types">
-                <option value="">All types</option>
-                <option value="research">Research</option>
-                <option value="experimental">Experimental</option>
-                <option value="software">Software</option>
-                <option value="hardware">Hardware</option>
-                <option value="teaching">Teaching</option>
-            </select>
-        </div>
+  </div>
+  <div class="control">
+    <label class="label is-small" for="pfcl-filter-types">Type</label>
+    <div class="select is-small">
+      <select id="pfcl-filter-types" data-filter="types">
+        <option value="">All types</option>
+        <option value="research">Research</option>
+        <option value="experimental">Experimental</option>
+        <option value="software">Software</option>
+        <option value="hardware">Hardware</option>
+        <option value="teaching">Teaching</option>
+      </select>
     </div>
-    <div class="control">
-        <label class="label is-small" for="pfcl-filter-levels">Student level</label>
-        <div class="select is-small">
-            <select id="pfcl-filter-levels" data-filter="levels">
-                <option value="">All levels</option>
-                <option value="undergraduate">Undergraduate</option>
-                <option value="masters">Masters</option>
-                <option value="phd">PhD</option>
-            </select>
-        </div>
+  </div>
+  <div class="control">
+    <label class="label is-small" for="pfcl-filter-levels">Student level</label>
+    <div class="select is-small">
+      <select id="pfcl-filter-levels" data-filter="levels">
+        <option value="">All levels</option>
+        <option value="undergraduate">Undergraduate</option>
+        <option value="masters">Masters</option>
+        <option value="phd">PhD</option>
+      </select>
     </div>
+  </div>
 </div>

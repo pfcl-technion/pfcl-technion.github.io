@@ -31,20 +31,20 @@
                             <a href="tel:{{ c.phone }}">{{ c.phone }}</a>
                         </li>
                     {% endif %}
-                    {% if c.youtube != blank %}
-                        <li class="pfcl-footer-divider">
-                            <span class="icon" aria-hidden="true"><i class="fab fa-youtube"></i></span>
-                            <a href="{{ c.youtube }}" target="_blank" rel="noopener noreferrer">Visit our channel</a>
-                        </li>
-                    {% endif %}
                 </ul>
             </div>
             <div class="column is-3-desktop">
-                <h3 class="title is-6 pfcl-footer-heading">{{ site.data.footer.logos_heading }}</h3>
+                {% if site.data.footer.logos_heading and site.data.footer.logos_heading != "" and site.data.footer.logos_heading != empty %}
+                    <h3 class="title is-6 pfcl-footer-heading">{{ site.data.footer.logos_heading }}</h3>
+                {% endif %}
                 <ul class="pfcl-footer-list pfcl-footer-logos">
                     {% for logo in site.data.footer.logos %}
-                        <li class="mb-3">
-                            <a href="{{ logo.url }}" target="_blank" rel="noopener noreferrer" title="{{ logo.name }}">
+                        <li>
+                            {% if logo.internal %}
+                                <a href="{{ logo.url | relative_url }}" title="{{ logo.name }}">
+                            {% else %}
+                                <a href="{{ logo.url }}" target="_blank" rel="noopener noreferrer" title="{{ logo.name }}">
+                            {% endif %}
                                 {% if logo.image != blank %}
                                     <img src="{{ logo.image | relative_url }}" alt="{{ logo.name }}">
                                 {% else %}

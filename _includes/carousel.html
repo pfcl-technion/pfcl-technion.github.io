@@ -1,10 +1,10 @@
 {% if page.carousel %}
 <div class="pfcl-carousel" role="region" aria-label="Laboratory highlights carousel">
-    {% for slide in page.carousel %}
-    <figure class="pfcl-carousel-slide">
-        <div class="pfcl-carousel-frame">{{ slide.caption }}</div>
-        <figcaption class="is-size-7 has-text-grey">[Carousel image placeholder — {{ slide.caption }}]</figcaption>
-    </figure>
-    {% endfor %}
+  {% for slide in page.carousel %}
+  <figure class="pfcl-carousel-slide">
+    <div class="pfcl-carousel-frame">{{ slide.caption }}</div>
+    <figcaption class="is-size-7 has-text-grey">[Carousel image placeholder — {{ slide.caption }}]</figcaption>
+  </figure>
+  {% endfor %}
 </div>
 {% endif %}

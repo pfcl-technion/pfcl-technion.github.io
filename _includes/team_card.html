@@ -1,19 +1,19 @@
 <div class="card pfcl-card">
-    <div class="card-content">
-        <div class="pfcl-team-photo" aria-hidden="true">[Photo]</div>
-        <p class="title is-5 mt-3">{{ include.person.title }}</p>
-        <p class="subtitle is-6 mb-2">{{ include.person.role }}</p>
-        {% assign lab_links = '' | split: '' %}
-        {% for id in include.person.lab_ids %}
-            {% if id == 'pfcl' %}
-                {% assign lab_links = lab_links | push: 'PFCL' %}
-            {% else %}
-                {% assign member_lab = site.labs | where: 'slug', id | first %}
-                {% if member_lab %}{% assign lab_links = lab_links | push: member_lab.short_name %}{% endif %}
-            {% endif %}
-        {% endfor %}
-        {% if lab_links.size > 0 %}
-            <p class="is-size-7 has-text-grey">{{ lab_links | join: ' · ' }}</p>
-        {% endif %}
-    </div>
+  <div class="card-content">
+    <div class="pfcl-team-photo" aria-hidden="true">[Photo]</div>
+    <p class="title is-5 mt-3">{{ include.person.title }}</p>
+    <p class="subtitle is-6 mb-2">{{ include.person.role }}</p>
+    {% assign lab_links = '' | split: '' %}
+    {% for id in include.person.lab_ids %}
+      {% if id == 'pfcl' %}
+        {% assign lab_links = lab_links | push: 'PFCL' %}
+      {% else %}
+        {% assign member_lab = site.labs | where: 'slug', id | first %}
+        {% if member_lab %}{% assign lab_links = lab_links | push: member_lab.short_name %}{% endif %}
+      {% endif %}
+    {% endfor %}
+    {% if lab_links.size > 0 %}
+      <p class="is-size-7 has-text-grey">{{ lab_links | join: ' · ' }}</p>
+    {% endif %}
+  </div>
 </div>
