@@ -9,3 +9,5 @@ node_modules/
 *.log
 .claude/
 references/
+backup_*/
+references/backup_*/
