@@ -29,16 +29,18 @@ menus:
 contact:
   email: pfcl@technion.ac.il
   phone: "+972-4-829-3820"
-  youtube: "" # [Placeholder: YouTube channel URL — supply before enabling]
 
-logos_heading: Partners
 
 logos:
-  - name: Technion - Israel Institute of Technology
-    url: https://www.technion.ac.il/
-    image: # [Placeholder: logo image path once asset is supplied]
+  - name: Philadelphia Flight Control Laboratory
+    url: /
+    image: /assets/images/footer_logo_philadelphia.png
+    internal: true
   - name: Faculty of Aerospace Engineering
     url: https://aerospace.technion.ac.il/
-    image: # [Placeholder: logo image path once asset is supplied]
+    image: /assets/images/footer_logo_aerospace.png
+  - name: Technion - Israel Institute of Technology
+    url: https://www.technion.ac.il/en/home-2/
+    image: /assets/images/footer_logo_technion.png
 
 copyright: "© 2026 Philadelphia Flight Control Laboratory — Technion"

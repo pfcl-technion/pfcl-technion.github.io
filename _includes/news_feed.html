@@ -16,32 +16,32 @@
 {% endfor %}
 {% assign sorted = items | sort: 'date' | reverse %}
 {% if sorted.size == 0 %}
-    <p class="pfcl-placeholder">[Placeholder: news and updates will be listed here.]</p>
+<p class="pfcl-placeholder">[Placeholder: news and updates will be listed here.]</p>
 {% else %}
-    <ul class="pfcl-news-list">
-        {% for item in sorted %}
-            {% if limit > 0 and forloop.index > limit %}{% break %}{% endif %}
-            {% assign item_date = item.date | default: item.published_at %}
-            {% if item.lab_id == 'pfcl' %}
-                {% assign source_label = 'PFCL' %}
-            {% else %}
-                {% assign source_lab = site.labs | where: 'slug', item.lab_id | first %}
-                {% assign source_label = item.source_name | default: source_lab.short_name | default: 'PFCL' %}
-            {% endif %}
-            <li class="pfcl-news-item">
-                <p class="pfcl-news-meta is-size-7 has-text-grey">
-                    <time datetime="{{ item_date | date_to_xmlschema }}">{{ item_date | date: '%B %-d, %Y' }}</time>
-                    — {{ source_label }}
-                </p>
-                <p class="mb-1">
-                    {% if item.canonical_url and item.lab_id != 'pfcl' %}
-                        <a href="{{ item.canonical_url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
-                    {% else %}
-                        {{ item.title }}
-                    {% endif %}
-                </p>
-                <p class="is-size-6">{{ item.excerpt }}</p>
-            </li>
-        {% endfor %}
-    </ul>
+<ul class="pfcl-news-list">
+  {% for item in sorted %}
+    {% if limit > 0 and forloop.index > limit %}{% break %}{% endif %}
+    {% assign item_date = item.date | default: item.published_at %}
+    {% if item.lab_id == 'pfcl' %}
+      {% assign source_label = 'PFCL' %}
+    {% else %}
+      {% assign source_lab = site.labs | where: 'slug', item.lab_id | first %}
+      {% assign source_label = item.source_name | default: source_lab.short_name | default: 'PFCL' %}
+    {% endif %}
+    <li class="pfcl-news-item">
+      <p class="pfcl-news-meta is-size-7 has-text-grey">
+        <time datetime="{{ item_date | date_to_xmlschema }}">{{ item_date | date: '%B %-d, %Y' }}</time>
+        — {{ source_label }}
+      </p>
+      <p class="mb-1">
+        {% if item.canonical_url and item.lab_id != 'pfcl' %}
+          <a href="{{ item.canonical_url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+        {% else %}
+          {{ item.title }}
+        {% endif %}
+      </p>
+      <p class="is-size-6">{{ item.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
 {% endif %}

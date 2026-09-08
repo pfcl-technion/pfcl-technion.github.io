@@ -1,6 +1,88 @@
 // PFCL custom styles (v2 rebuild). Imported after the theme's main.scss,
 // so Bulma variables ($light, $border, $grey-light, $primary) are in scope.
 
+// ---- Lock site to light mode (suppress dark mode) ----
+:root,
+html,
+body {
+  color-scheme: light;
+  background-color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root,
+  html,
+  body,
+  .theme-light {
+    --bulma-scheme-main: #ffffff;
+    --bulma-scheme-main-bis: #fafafa;
+    --bulma-scheme-main-ter: #f5f5f5;
+    --bulma-body-background-color: #ffffff;
+    --bulma-body-color: #4a4a4a;
+    --bulma-text: #4a4a4a;
+    --bulma-text-strong: #363636;
+    --bulma-card-background-color: #ffffff;
+    --bulma-card-color: #4a4a4a;
+    --bulma-background: #ffffff;
+    --bulma-footer-background-color: #fafafa;
+    --bulma-border: #dbdbdb;
+  }
+}
+
+// ---- Header Navbar & Hero separation ----
+.navbar.is-primary {
+  background-color: #0b5866 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+
+  .navbar-brand .navbar-item {
+    color: #ffffff;
+  }
+
+  .navbar-end > .navbar-item,
+  .navbar-end .navbar-link {
+    color: #ffffff;
+
+    &:hover,
+    &.is-active {
+      background-color: rgba(255, 255, 255, 0.12) !important;
+      color: #ffffff !important;
+    }
+  }
+
+  .navbar-dropdown {
+    background-color: #0b5866;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+
+    .navbar-item {
+      color: #ffffff;
+
+      &:hover,
+      &.is-active {
+        background-color: rgba(255, 255, 255, 0.15) !important;
+        color: #ffffff !important;
+      }
+    }
+  }
+
+  .navbar-burger {
+    color: #ffffff;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+  }
+}
+
+.hero.is-primary {
+  background: linear-gradient(135deg, #0e6c7d 0%, #084c59 100%) !important;
+
+  .title,
+  .subtitle {
+    color: #ffffff !important;
+  }
+}
+
 .pfcl-navbar-title {
   font-weight: 600;
   margin-left: 0.5rem;
@@ -43,6 +125,33 @@
 
   .pfcl-footer-logo-text {
     font-weight: 600;
+  }
+
+  .pfcl-footer-logos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+
+    li {
+      margin-bottom: 0 !important;
+      line-height: 1;
+    }
+
+    a {
+      display: inline-block;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    img {
+      display: block;
+      max-height: 38px;
+      width: auto;
+      object-fit: contain;
+    }
   }
 }
 

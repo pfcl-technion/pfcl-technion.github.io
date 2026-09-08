@@ -13,6 +13,7 @@ permalink: pretty
 theme: bulma-clean-theme
 
 fixed_navbar: top
+force_theme: light
 theme_color: '#eeeeee'
 favicon: /assets/images/PFCL-2.png
 hide_share_buttons: true
