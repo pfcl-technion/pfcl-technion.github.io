@@ -52,8 +52,8 @@ class ContentValidationTest < Minitest::Test
       slug: test-project
       lab_ids: [anpl]
       recruitment_status: available
-      project_types: [research]
-      student_levels: [undergraduate]
+      project_type: research
+      tags: [software]
       advisor_names: [Test Person]
       summary: "[Placeholder: summary]"
       contact_email: contact@technion.ac.il
@@ -287,8 +287,8 @@ class ContentValidationTest < Minitest::Test
       slug: valid-thumb
       lab_ids: [pfcl]
       recruitment_status: available
-      project_types: [software]
-      student_levels: [masters]
+      project_type: research
+      tags: [software]
       advisor_names: [X]
       thumbnail: /assets/images/projects/test.jpg
       summary: s
@@ -308,8 +308,8 @@ class ContentValidationTest < Minitest::Test
       slug: bad-thumb
       lab_ids: [pfcl]
       recruitment_status: available
-      project_types: [software]
-      student_levels: [masters]
+      project_type: research
+      tags: [software]
       advisor_names: [X]
       thumbnail: invalid-path
       summary: s
@@ -322,6 +322,28 @@ class ContentValidationTest < Minitest::Test
       body
     YAML
     assert(validate.any? { |e| e.include?("thumbnail") && e.include?("invalid-path") })
+  end
+
+  def test_project_type_validation
+    write "_projects/type-bad.md", <<~YAML
+      ---
+      title: Bad Type
+      slug: bad-type
+      lab_ids: [pfcl]
+      recruitment_status: available
+      project_type: software
+      advisor_names: [X]
+      summary: s
+      contact_email: a@b.com
+      published: true
+      updated_at: 2026-09-07
+      featured: false
+      show_on_showcase: true
+      ---
+      body
+    YAML
+    errors = validate
+    assert(errors.any? { |e| e.include?("project_type") })
   end
 
   private

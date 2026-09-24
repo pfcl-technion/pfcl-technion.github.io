@@ -3,13 +3,10 @@ title: Collaborative Multi-Robot Aerial Autonomous Navigation
 slug: collaborative-aerial-navigation
 lab_ids: [anpl]
 recruitment_status: available
-project_types:
-  - research
-  - experimental
+project_type: experimental
+tags:
   - software
-student_levels:
-  - undergraduate
-  - masters
+  - hardware
 advisor_names:
   - Vadim Indelman
 thumbnail: /assets/images/projects/collaborative-aerial-navigation.png
