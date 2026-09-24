@@ -8,7 +8,7 @@ lang: en
 email: pfcl@technion.ac.il
 
 url: https://philadelphia-flight-control-laboratory.github.io
-baseurl: ""
+baseurl: /pfcl-technion.github.io
 permalink: pretty
 
 theme: bulma-clean-theme
