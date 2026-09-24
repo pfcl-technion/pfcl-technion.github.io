@@ -96,6 +96,7 @@ class ContentValidator
         check_url(rel, fields, "application_url")
         check_url(rel, fields, "canonical_url")
         check_date(rel, fields, "updated_at")
+        check_thumbnail(rel, fields, "thumbnail")
         if fields["recruitment_status"] == "available" &&
            !present?(fields["contact_email"]) && !present?(fields["application_url"])
           error(rel, "available project needs a public contact path (contact_email or application_url)")
@@ -227,6 +228,14 @@ class ContentValidator
 
     local_ok = fields["lab_id"].to_s == RESERVED_LAB_ID && value.to_s.start_with?("/")
     error(rel, "canonical_url must be an http(s) URL (or a local /path for lab_id 'pfcl')") unless local_ok || valid_url?(value)
+  end
+
+  def check_thumbnail(rel, fields, field)
+    value = fields[field]
+    return unless present?(value)
+
+    valid = value.is_a?(String) && (value.start_with?("/assets/") || valid_url?(value))
+    error(rel, "#{field} '#{value}' must start with '/assets/' or be an http(s) URL") unless valid
   end
 
   def valid_url?(value)

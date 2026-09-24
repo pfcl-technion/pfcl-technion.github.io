@@ -280,6 +280,50 @@ class ContentValidationTest < Minitest::Test
     assert(validate.any? { |e| e.include?("unknown lab_id") })
   end
 
+  def test_project_thumbnail_validation
+    write "_projects/thumb-valid.md", <<~YAML
+      ---
+      title: Valid Thumb
+      slug: valid-thumb
+      lab_ids: [pfcl]
+      recruitment_status: available
+      project_types: [software]
+      student_levels: [masters]
+      advisor_names: [X]
+      thumbnail: /assets/images/projects/test.jpg
+      summary: s
+      contact_email: a@b.com
+      published: true
+      updated_at: 2026-09-07
+      featured: false
+      show_on_showcase: true
+      ---
+      body
+    YAML
+    assert_empty validate
+
+    write "_projects/thumb-bad.md", <<~YAML
+      ---
+      title: Bad Thumb
+      slug: bad-thumb
+      lab_ids: [pfcl]
+      recruitment_status: available
+      project_types: [software]
+      student_levels: [masters]
+      advisor_names: [X]
+      thumbnail: invalid-path
+      summary: s
+      contact_email: a@b.com
+      published: true
+      updated_at: 2026-09-07
+      featured: false
+      show_on_showcase: true
+      ---
+      body
+    YAML
+    assert(validate.any? { |e| e.include?("thumbnail") && e.include?("invalid-path") })
+  end
+
   private
 
   def validate
