@@ -1,8 +1,9 @@
 title: Philadelphia Flight Control Laboratory
 tagline: Faculty of Aerospace Engineering, Technion
 description: >-
-  [Placeholder: one-to-two sentence site description for search engines about
-  the Philadelphia Flight Control Laboratory.]
+  The Philadelphia Flight Control Laboratory (PFCL) is the umbrella laboratory for
+  Guidance, Navigation, and Control (GNC) research and education in the Faculty of
+  Aerospace Engineering at the Technion.
 lang: en
 email: pfcl@technion.ac.il
 
@@ -15,7 +16,7 @@ theme: bulma-clean-theme
 fixed_navbar: top
 force_theme: light
 theme_color: '#eeeeee'
-favicon: /assets/images/PFCL-2.png
+favicon: /assets/images/pfcl_logo_white.png
 hide_share_buttons: true
 
 plugins:

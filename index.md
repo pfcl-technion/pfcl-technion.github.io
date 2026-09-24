@@ -8,7 +8,7 @@ hero_image: "/assets/images/drone2.jpg"
 carousel:
   - caption: Photograph of the PFCL flight testbeds
   - caption: Photograph of researchers operating a quadcopter experiment
-  - caption: "Research-figure slide — [Placeholder: caption of concept figure]"
+  - caption: "Research-figure slide — [To be updated: caption of concept figure]"
 ---
 
 ## Welcome

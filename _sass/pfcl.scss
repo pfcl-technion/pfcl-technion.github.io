@@ -1,12 +1,29 @@
 // PFCL custom styles (v2 rebuild). Imported after the theme's main.scss,
 // so Bulma variables ($light, $border, $grey-light, $primary) are in scope.
 
+// ---- Faculty of Aerospace Engineering, Technion Brand Palette ----
+$aero-navy-dark: #000e1f;     // Header top bar / obsidian navy
+$aero-navy: #001b54;          // Main brand royal navy (logo, primary buttons)
+$aero-navy-text: #002147;     // Deep navy text & links
+$aero-cyan: #31bfe4;          // Vibrant sky cyan accent (borders, highlights, active)
+$aero-cyan-bright: #47c6e9;   // Bright cyan line
+$aero-cyan-soft: #e0f5fb;     // Soft light cyan hover tint
+$aero-gray-bg: #f8fafc;       // Light neutral surface
+$aero-gray-border: #e2e8f0;   // Subtle light gray border
+
 // ---- Lock site to light mode (suppress dark mode) ----
 :root,
 html,
 body {
   color-scheme: light;
   background-color: #ffffff;
+  --bulma-primary: #001b54;
+  --bulma-primary-h: 221deg;
+  --bulma-primary-s: 100%;
+  --bulma-primary-l: 16%;
+  --bulma-link: #001b54;
+  --bulma-link-hover: #31bfe4;
+  --bulma-info: #31bfe4;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,71 +35,120 @@ body {
     --bulma-scheme-main-bis: #fafafa;
     --bulma-scheme-main-ter: #f5f5f5;
     --bulma-body-background-color: #ffffff;
-    --bulma-body-color: #4a4a4a;
-    --bulma-text: #4a4a4a;
-    --bulma-text-strong: #363636;
+    --bulma-body-color: #2d3748;
+    --bulma-text: #2d3748;
+    --bulma-text-strong: #001b54;
     --bulma-card-background-color: #ffffff;
-    --bulma-card-color: #4a4a4a;
+    --bulma-card-color: #2d3748;
     --bulma-background: #ffffff;
-    --bulma-footer-background-color: #fafafa;
-    --bulma-border: #dbdbdb;
+    --bulma-footer-background-color: #f8fafc;
+    --bulma-border: #e2e8f0;
+  }
+}
+
+// Typography & Base Elements
+h1, h2, h3, h4, h5, h6 {
+  color: #001b54;
+}
+
+.content h1, .content h2, .content h3, .content h4 {
+  color: #001b54;
+}
+
+a {
+  color: #002147;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #31bfe4;
   }
 }
 
 // ---- Header Navbar & Hero separation ----
 .navbar.is-primary {
-  background-color: #0b5866 !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  background-color: #000e1f !important;
+  border-bottom: 3px solid #31bfe4 !important;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
 
   .navbar-brand .navbar-item {
     color: #ffffff;
+    background-color: transparent !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent !important;
+      color: #ffffff !important;
+    }
   }
 
   .navbar-end > .navbar-item,
   .navbar-end .navbar-link {
     color: #ffffff;
+    transition: all 0.2s ease;
 
     &:hover,
     &.is-active {
-      background-color: rgba(255, 255, 255, 0.12) !important;
-      color: #ffffff !important;
+      background-color: rgba(49, 191, 228, 0.12) !important;
+      color: #31bfe4 !important;
     }
   }
 
   @media screen and (min-width: 1024px) {
     .navbar-dropdown {
       background-color: #ffffff !important;
-      border: 1px solid rgba(0, 0, 0, 0.08);
-      border-top: 3px solid #0b5866;
-      border-radius: 0 0 6px 6px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(0, 27, 84, 0.1);
+      border-top: 3px solid #31bfe4;
+      border-radius: 0 !important;
+      box-shadow: 0 8px 24px rgba(0, 14, 31, 0.15);
 
-      .navbar-item {
-        color: #2d3748 !important;
+      .navbar-item,
+      a.navbar-item,
+      .navbar-item:not(.is-active, .is-selected) {
+        background-color: #ffffff !important;
+        color: #010f20 !important;
         font-weight: 400;
 
         &:hover,
         &.is-active {
-          background-color: #f0f8fa !important;
-          color: #0b5866 !important;
-          font-weight: 500;
+          background-color: #e0f5fb !important;
+          color: #001b54 !important;
+          font-weight: 600;
         }
       }
     }
   }
 
   @media screen and (max-width: 1023px) {
-    .navbar-dropdown {
-      background-color: rgba(0, 0, 0, 0.12) !important;
+    .navbar-menu {
+      background-color: #000e1f !important;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3) !important;
+      padding: 0.5rem 0 !important;
+    }
 
-      .navbar-item {
-        color: #ffffff !important;
+    .navbar-link:not(.is-arrowless)::after {
+      border-color: #31bfe4 !important;
+    }
+
+    .navbar-dropdown {
+      background-color: rgba(0, 0, 0, 0.25) !important;
+      border: none !important;
+      box-shadow: none !important;
+      padding: 0.25rem 0 0.5rem 0 !important;
+
+      .navbar-item,
+      a.navbar-item,
+      .navbar-item:not(.is-active, .is-selected) {
+        background-color: transparent !important;
+        color: #e2e8f0 !important;
+        padding-left: 2rem !important;
+        font-size: 0.95rem;
 
         &:hover,
         &.is-active {
-          background-color: rgba(255, 255, 255, 0.15) !important;
-          color: #ffffff !important;
+          background-color: rgba(49, 191, 228, 0.15) !important;
+          color: #31bfe4 !important;
+          font-weight: 500;
         }
       }
     }
@@ -92,14 +158,15 @@ body {
     color: #ffffff;
 
     &:hover {
-      background-color: rgba(255, 255, 255, 0.12);
+      background-color: rgba(49, 191, 228, 0.15);
+      color: #31bfe4;
     }
   }
 }
 
 .hero.is-primary {
   position: relative;
-  background-color: #0b5866;
+  background-color: #001b54;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -111,8 +178,8 @@ body {
       inset: 0;
       background: linear-gradient(
         180deg,
-        rgba(8, 45, 54, 0.60) 0%,
-        rgba(5, 30, 36, 0.74) 100%
+        rgba(0, 14, 31, 0.65) 0%,
+        rgba(0, 27, 84, 0.82) 100%
       );
       z-index: 1;
     }
@@ -124,20 +191,25 @@ body {
   }
 
   &:not(.has-background-image) {
-    background: linear-gradient(135deg, #0e6c7d 0%, #084c59 100%);
+    background: linear-gradient(135deg, #001b54 0%, #000e1f 100%);
   }
 
   .title {
     color: #ffffff !important;
     font-weight: 700;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+    text-shadow: 0 2px 8px rgba(0, 14, 31, 0.6);
   }
 
   .subtitle {
     color: #ffffff !important;
     font-weight: 400;
     opacity: 0.95;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 1px 6px rgba(0, 14, 31, 0.5);
+  }
+
+  .pfcl-hero-subheading {
+    font-weight: 500;
+    margin-bottom: 0.5rem !important;
   }
 
   &.is-small {
@@ -153,15 +225,20 @@ body {
     .subtitle {
       font-size: 1.15rem;
     }
+
+    .pfcl-hero-subheading {
+      font-size: 1.25rem;
+    }
   }
 
   &.is-medium {
-    min-height: 380px;
+    min-height: 420px;
     display: flex;
     align-items: center;
+    background-position: center 48% !important;
 
     .hero-body {
-      padding: 4.5rem 1.5rem;
+      padding: 4rem 1.5rem;
       width: 100%;
     }
 
@@ -173,26 +250,104 @@ body {
     .subtitle {
       font-size: 1.5rem;
     }
+
+    .pfcl-hero-subheading {
+      font-size: 1.6rem;
+      margin-bottom: 0.4rem !important;
+    }
+
+    .pfcl-hero-subheading + .pfcl-hero-subtitle {
+      font-size: 1.25rem;
+      opacity: 0.9;
+    }
+  }
+}
+
+.pfcl-navbar-brand {
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 32px;
+    max-height: 32px;
+    width: auto;
+    object-fit: contain;
   }
 }
 
 .pfcl-navbar-title {
   font-weight: 600;
-  margin-left: 0.5rem;
+  margin-left: 0.65rem;
   white-space: nowrap;
 }
 
 .pfcl-placeholder {
-  background: $light;
-  border: 1px dashed $border;
-  border-radius: 0.25rem;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 0 !important;
   padding: 0.75rem 1rem;
-  color: $grey-light;
+  color: #64748b;
+}
+
+// ---- Buttons (Sharp, precision engineered corners) ----
+.button {
+  border-radius: 0 !important;
+}
+
+.button.is-primary {
+  background-color: #001b54 !important;
+  border-color: #001b54 !important;
+  border-radius: 0 !important;
+  color: #ffffff !important;
+  font-weight: 500;
+  transition: all 0.2s ease;
+
+  &:hover,
+  &.is-hovered {
+    background-color: #31bfe4 !important;
+    border-color: #31bfe4 !important;
+    color: #000e1f !important;
+  }
+
+  &.is-outlined {
+    background-color: transparent !important;
+    border-color: #001b54 !important;
+    border-radius: 0 !important;
+    color: #001b54 !important;
+
+    &:hover,
+    &.is-hovered {
+      background-color: #001b54 !important;
+      border-color: #001b54 !important;
+      color: #ffffff !important;
+    }
+  }
+
+  &.is-inverted.is-outlined {
+    background-color: transparent !important;
+    border-color: #ffffff !important;
+    border-radius: 0 !important;
+    color: #ffffff !important;
+
+    &:hover,
+    &.is-hovered {
+      background-color: #31bfe4 !important;
+      border-color: #31bfe4 !important;
+      color: #000e1f !important;
+    }
+  }
 }
 
 // ---- Footer (WordPress-pattern three zones + copyright bar) ----
 .pfcl-footer {
   padding-bottom: 1.5rem;
+  background-color: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+
+  .title.is-6 {
+    color: #001b54;
+    font-weight: 600;
+  }
 
   .pfcl-footer-list {
     list-style: none;
@@ -213,11 +368,12 @@ body {
   .pfcl-footer-divider {
     margin-top: 0.75rem;
     padding-top: 0.75rem;
-    border-top: 1px solid $border;
+    border-top: 1px solid #e2e8f0;
   }
 
   .pfcl-footer-logo-text {
     font-weight: 600;
+    color: #001b54;
   }
 
   .pfcl-footer-logos {
@@ -249,10 +405,20 @@ body {
 }
 
 .pfcl-copyright {
-  background: $light;
-  border-top: 1px solid $border;
+  background: #edf2f7;
+  border-top: 1px solid #e2e8f0;
   padding: 0.75rem 0;
   font-size: 0.875rem;
+  color: #64748b;
+
+  a {
+    color: #001b54;
+    text-decoration: underline;
+
+    &:hover {
+      color: #31bfe4;
+    }
+  }
 }
 
 // ---- Cards ----
@@ -262,13 +428,184 @@ body {
   flex-direction: column;
 }
 
+// Research Groups / Lab card (Faculty of Aerospace Engineering styled)
+.pfcl-lab-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0 !important;
+  box-shadow: 0 2px 8px rgba(0, 27, 84, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 8px 24px rgba(0, 27, 84, 0.1);
+    transform: translateY(-2px);
+
+    .pfcl-lab-title-bar {
+      background: linear-gradient(to right, #001b54 60%, rgba(0, 27, 84, 0.05) 100%);
+    }
+  }
+
+  .card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
+
+.pfcl-lab-header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.15rem;
+}
+
+.pfcl-lab-circle {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  border-radius: 50%;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 27, 84, 0.06);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &.pfcl-lab-logo img {
+    object-fit: contain;
+    padding: 6px;
+  }
+}
+
+a.pfcl-lab-circle {
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    border-color: #31bfe4;
+    box-shadow: 0 0 0 3px rgba(49, 191, 228, 0.35), 0 4px 12px rgba(0, 27, 84, 0.12);
+    transform: scale(1.05);
+  }
+}
+
+.pfcl-lab-dot {
+  color: #31bfe4;
+  font-size: 1.8rem;
+  line-height: 1;
+  user-select: none;
+}
+
+.pfcl-lab-leader-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.35;
+  margin-left: 0.25rem;
+
+  .pfcl-lab-leader-label {
+    color: #64748b;
+    font-size: 0.95rem;
+    font-weight: 300;
+  }
+
+  .pfcl-lab-leader-name {
+    font-size: 1.05rem;
+    font-weight: 600;
+
+    a {
+      color: #001b54;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+        color: #31bfe4;
+      }
+    }
+
+    strong {
+      color: #001b54;
+    }
+  }
+
+  .pfcl-lab-leader-email {
+    font-size: 0.85rem;
+    margin-top: 0.15rem;
+
+    a {
+      color: #475569;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+
+      i {
+        color: #31bfe4;
+      }
+
+      &:hover {
+        color: #001b54;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.pfcl-lab-title-bar {
+  padding: 0.65rem 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 0 !important;
+  background: linear-gradient(to right, #001b54 60%, rgba(0, 27, 84, 0.08) 100%);
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.35;
+  transition: background 0.25s ease;
+
+  .pfcl-lab-title-link {
+    color: #ffffff !important;
+    display: block;
+    text-decoration: none;
+
+    &:hover {
+      color: #ffffff !important;
+      text-decoration: none;
+    }
+  }
+
+  .pfcl-lab-title-text {
+    color: #ffffff;
+    display: block;
+  }
+}
+
+.pfcl-lab-summary {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 1.25rem !important;
+}
+
+.pfcl-lab-footer {
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
 .pfcl-team-photo {
   align-items: center;
   aspect-ratio: 1;
-  background: $light;
-  border: 1px dashed $border;
-  border-radius: 0.25rem;
-  color: $grey-light;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 0 !important;
+  color: #64748b;
   display: flex;
   font-size: 0.875rem;
   justify-content: center;
@@ -293,10 +630,10 @@ body {
 .pfcl-carousel-frame {
   align-items: center;
   aspect-ratio: 16 / 9;
-  background: $light;
-  border: 2px dashed $border;
-  border-radius: 0.5rem;
-  color: $grey-light;
+  background: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  border-radius: 0 !important;
+  color: #64748b;
   display: flex;
   justify-content: center;
   padding: 1rem;
@@ -317,7 +654,7 @@ body {
 }
 
 .pfcl-news-item {
-  border-bottom: 1px solid $border;
+  border-bottom: 1px solid #e2e8f0;
   padding: 1rem 0;
 
   &:last-child {
@@ -337,13 +674,89 @@ body {
 .pfcl-partner-placeholder {
   align-items: center;
   aspect-ratio: 3 / 1;
-  background: $light;
-  border: 1px dashed $border;
-  border-radius: 0.25rem;
-  color: $grey-light;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 0 !important;
+  color: #64748b;
   display: flex;
   font-size: 0.8rem;
   padding: 0.5rem 1rem;
   text-align: center;
   width: 180px;
 }
+
+// ==========================================================================
+// Universal Sharp-Corner Policy (Engineering & Precision Aesthetic)
+// ==========================================================================
+.button,
+button,
+input,
+textarea,
+select,
+.input,
+.textarea,
+.select,
+.select select,
+.card,
+.box,
+.tag,
+.tags .tag,
+.pagination-link,
+.pagination-previous,
+.pagination-next,
+.navbar-dropdown,
+.navbar-item,
+.dropdown-content,
+.pfcl-card,
+.pfcl-lab-card,
+.pfcl-lab-title-bar,
+.pfcl-placeholder,
+.pfcl-carousel-frame,
+.pfcl-team-photo,
+.pfcl-partner-placeholder {
+  border-radius: 0 !important;
+}
+
+// Student project filter visibility overrides (ensures Bulma's .column class does not override hidden attribute)
+[hidden],
+.column[hidden],
+[data-project-card][hidden],
+[data-project-card].is-hidden {
+  display: none !important;
+}
+
+.pfcl-empty-filter {
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  background-color: #f8fafc;
+  border-left: 3px solid #31bfe4;
+  color: #475569;
+}
+
+// ---- Directions Google Maps embed container ----
+.map-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; // 16:9 widescreen ratio
+  height: 0;
+  width: 100%;
+  margin: 1.5rem 0;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 27, 84, 0.08);
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 75%; // Taller on tablet & mobile
+  }
+
+  iframe,
+  #gmap_canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+

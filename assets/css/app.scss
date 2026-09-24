@@ -1,7 +1,22 @@
 ---
 ---
 
+// Faculty of Aerospace Engineering, Technion brand palette
+$primary: #001b54;
+$link: #001b54;
+$link-hover: #31bfe4;
+$info: #31bfe4;
+
+// Precision sharp corners policy (no rounded corners)
+$radius-small: 0;
+$radius: 0;
+$radius-medium: 0;
+$radius-large: 0;
+$radius-rounded: 0;
+$card-radius: 0;
+
 // Theme base (imports Bulma + theme partials from the gem)
 @import "main";
 // PFCL overrides
 @import "pfcl";
+
