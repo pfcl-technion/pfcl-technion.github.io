@@ -12,6 +12,7 @@ student_levels:
   - masters
 advisor_names:
   - Vadim Indelman
+thumbnail: /assets/images/projects/collaborative-aerial-navigation.png
 summary: "Collaborative multi-robot aerial autonomous navigation and 3D reconstruction in GPS-denied environments."
 contact_email: vadim.indelman@technion.ac.il
 application_url: https://anpl-technion.github.io/student_projects/
