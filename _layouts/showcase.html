@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" class="showcase-html">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }} — Showcase</title>
+  <link rel="stylesheet" href="{{ '/assets/css/app.css' | relative_url }}">
+  <link rel="shortcut icon" type="image/png" href="{{ site.favicon | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous">
+</head>
+<body class="showcase-body">
+  <header class="showcase-header">
+    <div class="showcase-brand">
+      <img src="{{ '/assets/images/pfcl_logo_white.png' | relative_url }}" alt="PFCL Emblem" class="showcase-logo">
+      <div class="showcase-titles">
+        <h1 class="showcase-main-title">Philadelphia Flight Control Laboratory</h1>
+        <p class="showcase-sub-title">Stephen B. Klein Faculty of Aerospace Engineering — Technion</p>
+      </div>
+    </div>
+    <div class="showcase-clock-container">
+      <div id="showcase-clock" class="showcase-clock">--:--:--</div>
+      <div id="showcase-date" class="showcase-date">Loading...</div>
+    </div>
+  </header>
+
+  <main class="showcase-main">
+    {{ content }}
+  </main>
+
+  <footer class="showcase-footer">
+    <div class="showcase-status-left">
+      <span id="showcase-category" class="showcase-category-badge">OVERVIEW</span>
+      <span id="showcase-counter" class="showcase-counter">Slide 1 of --</span>
+      <span id="showcase-pause-status" class="showcase-pause-badge" style="display:none;"><i class="fa-solid fa-pause"></i> PAUSED</span>
+    </div>
+
+    <div class="showcase-progress-wrapper">
+      <div id="showcase-progress" class="showcase-progress-bar"></div>
+    </div>
+
+    <div class="showcase-status-right">
+      <div class="showcase-qr-box">
+        <span class="showcase-qr-label">Visit Website</span>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=70x70&data=https%3A%2F%2Fpfcl-technion.github.io%2F" alt="QR Code" class="showcase-qr-img">
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ '/assets/js/showcase.js' | relative_url }}"></script>
+</body>
+</html>
