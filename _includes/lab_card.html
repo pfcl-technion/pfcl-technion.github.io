@@ -1,12 +1,79 @@
-<div class="card pfcl-card">
+<div class="card pfcl-card pfcl-lab-card">
   <div class="card-content">
-    <p class="title is-4">{{ include.lab.title }}</p>
-    <p class="subtitle is-6">
-      {% if include.lab.short_name %}{{ include.lab.short_name }} — {% endif %}{{ include.lab.leader_names | join: ', ' }}
-    </p>
-    <div class="content">{{ include.lab.summary }}</div>
+    <div class="pfcl-lab-header">
+      {% if include.lab.leader_photo %}
+        {% if include.lab.faculty_url %}
+          <a href="{{ include.lab.faculty_url }}" target="_blank" rel="noopener noreferrer" class="pfcl-lab-circle pfcl-lab-leader-photo" title="{{ include.lab.leader_names | first }}">
+            <img src="{{ include.lab.leader_photo | relative_url }}" alt="{{ include.lab.leader_names | first }}">
+          </a>
+        {% else %}
+          <div class="pfcl-lab-circle pfcl-lab-leader-photo">
+            <img src="{{ include.lab.leader_photo | relative_url }}" alt="{{ include.lab.leader_names | first }}">
+          </div>
+        {% endif %}
+        {% if include.lab.logo and include.lab.logo != '' and include.lab.logo != '/assets/images/lab_blank.jpg' %}
+          <span class="pfcl-lab-dot">•</span>
+        {% endif %}
+      {% endif %}
+      {% if include.lab.logo and include.lab.logo != '' and include.lab.logo != '/assets/images/lab_blank.jpg' %}
+        {% if include.lab.website %}
+          <a href="{{ include.lab.website }}" target="_blank" rel="noopener noreferrer" class="pfcl-lab-circle pfcl-lab-logo" title="{{ include.lab.short_name | default: include.lab.title }}">
+            <img src="{{ include.lab.logo | relative_url }}" alt="{{ include.lab.short_name | default: include.lab.title }} logo">
+          </a>
+        {% else %}
+          <div class="pfcl-lab-circle pfcl-lab-logo">
+            <img src="{{ include.lab.logo | relative_url }}" alt="{{ include.lab.short_name | default: include.lab.title }} logo">
+          </div>
+        {% endif %}
+      {% endif %}
+      <div class="pfcl-lab-leader-info">
+        <span class="pfcl-lab-leader-label">Group leader:</span>
+        <span class="pfcl-lab-leader-name">
+          {% if include.lab.faculty_url %}
+            <a href="{{ include.lab.faculty_url }}" target="_blank" rel="noopener noreferrer">{{ include.lab.leader_names | join: ', ' }}</a>
+          {% elsif include.lab.website %}
+            <a href="{{ include.lab.website }}" target="_blank" rel="noopener noreferrer">{{ include.lab.leader_names | join: ', ' }}</a>
+          {% else %}
+            <strong>{{ include.lab.leader_names | join: ', ' }}</strong>
+          {% endif %}
+        </span>
+        {% if include.lab.leader_email %}
+          <span class="pfcl-lab-leader-email">
+            <a href="mailto:{{ include.lab.leader_email }}"><i class="fas fa-envelope mr-1" aria-hidden="true"></i>{{ include.lab.leader_email }}</a>
+          </span>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="pfcl-lab-title-bar">
+      {% assign show_parens = false %}
+      {% if include.lab.short_name and include.lab.short_name != include.lab.title %}
+        {% unless include.lab.short_name contains 'Group' or include.lab.title contains include.lab.short_name %}
+          {% assign show_parens = true %}
+        {% endunless %}
+      {% endif %}
+
+      {% if include.lab.website %}
+        <a href="{{ include.lab.website }}" target="_blank" rel="noopener noreferrer" class="pfcl-lab-title-link">
+          {{ include.lab.title }}{% if show_parens %} ({{ include.lab.short_name }}){% endif %}
+        </a>
+      {% else %}
+        <span class="pfcl-lab-title-text">
+          {{ include.lab.title }}{% if show_parens %} ({{ include.lab.short_name }}){% endif %}
+        </span>
+      {% endif %}
+    </div>
+
+    <div class="content pfcl-lab-summary">
+      <p>{{ include.lab.summary }}</p>
+    </div>
+
     {% if include.lab.website %}
-      <a href="{{ include.lab.website }}" target="_blank" rel="noopener noreferrer" class="button is-small is-primary is-outlined">Visit website</a>
+      <div class="pfcl-lab-footer">
+        <a href="{{ include.lab.website }}" target="_blank" rel="noopener noreferrer" class="button is-small is-primary is-outlined">
+          Visit website &rarr;
+        </a>
+      </div>
     {% endif %}
   </div>
 </div>
