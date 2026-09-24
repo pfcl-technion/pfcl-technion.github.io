@@ -18,8 +18,6 @@
   let startTime = Date.now();
   let animationFrameId = null;
 
-  if (slides.length === 0) return;
-
   function updateClock() {
     const now = new Date();
     const hours = String(now.getHours()).padStart(2, '0');
@@ -34,11 +32,13 @@
   }
 
   function showSlide(index) {
+    if (slides.length === 0) return;
     slides.forEach((slide, i) => {
       slide.classList.toggle('is-active', i === index);
     });
 
     const activeSlide = slides[index];
+    if (!activeSlide) return;
     const category = activeSlide.dataset.category || 'SHOWCASE';
 
     if (categoryBadge) categoryBadge.textContent = category;
@@ -49,19 +49,24 @@
   }
 
   function nextSlide() {
+    if (slides.length === 0) return;
     currentIndex = (currentIndex + 1) % slides.length;
     showSlide(currentIndex);
   }
 
   function prevSlide() {
+    if (slides.length === 0) return;
     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
     showSlide(currentIndex);
   }
 
   function togglePause() {
+    if (slides.length === 0) return;
     isPaused = !isPaused;
     if (pauseBadge) pauseBadge.style.display = isPaused ? 'inline-block' : 'none';
-    if (!isPaused) {
+    if (isPaused) {
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
+    } else {
       startTime = Date.now();
       tick();
     }
@@ -111,6 +116,7 @@
   }, RELOAD_INTERVAL_MS);
 
   // Start presentation
+  if (slides.length === 0) return;
   showSlide(0);
-  animationFrameId = requestAnimationFrame(tick);
+  tick();
 })();

@@ -101,6 +101,12 @@ body.showcase-body {
   transform: scale(0.98);
   width: 100%;
 
+  &:first-child {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+  }
+
   &.is-active {
     opacity: 1;
     pointer-events: auto;
@@ -362,3 +368,21 @@ body.showcase-body {
   padding: 3px;
   width: 52px;
 }
+
+// Accessibility: Respect user motion preferences (AGENTS.md Rule 11)
+@media (prefers-reduced-motion: reduce) {
+  .showcase-slide {
+    transform: none;
+    transition: none;
+
+    &:first-child,
+    &.is-active {
+      transform: none;
+    }
+  }
+
+  .showcase-progress-bar {
+    transition: none;
+  }
+}
+
