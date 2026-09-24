@@ -19,7 +19,7 @@ class ContentValidator
   }.freeze
 
   LAB_KINDS = %w[research-group teaching-lab shared-facility].freeze
-  TEAM_CATEGORIES = %w[leadership faculty research-staff lab-staff visiting emeritus].freeze
+  TEAM_CATEGORIES = %w[leadership faculty research-fellows research-staff lab-staff visiting emeritus].freeze
   RECRUITMENT_STATUSES = %w[available ongoing completed].freeze
   PROJECT_TYPES = %w[research experimental software hardware teaching].freeze
   STUDENT_LEVELS = %w[undergraduate masters phd].freeze
@@ -83,6 +83,7 @@ class ContentValidator
         check_enum(rel, fields, "kind", LAB_KINDS)
         check_string_list(rel, fields, "leader_names")
         check_url(rel, fields, "website")
+        check_url(rel, fields, "faculty_url")
       when "team"
         check_enum(rel, fields, "category", TEAM_CATEGORIES)
         check_string_list(rel, fields, "lab_ids", known_labs)

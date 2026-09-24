@@ -5,7 +5,8 @@ slug: flight-control-teaching-lab
 kind: teaching-lab
 leader_names:
   - Ruslan Arhipov
-summary: "[Placeholder: one-paragraph summary of the teaching laboratories — control education for Aerospace and Mechanical Engineering students.]"
+leader_photo: /assets/images/pi_arhipov.jpg
+summary: "Flight control teaching laboratories supporting hands-on aerospace control education, experimentation, and student projects for undergraduate and graduate students."
 active: true
 order: 90
 ---

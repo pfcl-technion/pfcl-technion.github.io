@@ -1,8 +1,31 @@
 <div class="card pfcl-card">
   <div class="card-content">
-    <div class="pfcl-team-photo" aria-hidden="true">[Photo]</div>
-    <p class="title is-5 mt-3">{{ include.person.title }}</p>
+    {% if include.person.photo %}
+      <div class="pfcl-team-photo-img mb-3">
+        {% if include.person.faculty_url %}
+          <a href="{{ include.person.faculty_url }}" target="_blank" rel="noopener noreferrer">
+            <img src="{{ include.person.photo | relative_url }}" alt="{{ include.person.title }}" style="width: 100%; aspect-ratio: 4/3; object-fit: cover;">
+          </a>
+        {% else %}
+          <img src="{{ include.person.photo | relative_url }}" alt="{{ include.person.title }}" style="width: 100%; aspect-ratio: 4/3; object-fit: cover;">
+        {% endif %}
+      </div>
+    {% else %}
+      <div class="pfcl-team-photo" aria-hidden="true">[Photo]</div>
+    {% endif %}
+    <p class="title is-5 mt-2">
+      {% if include.person.faculty_url %}
+        <a href="{{ include.person.faculty_url }}" target="_blank" rel="noopener noreferrer">{{ include.person.title }}</a>
+      {% else %}
+        {{ include.person.title }}
+      {% endif %}
+    </p>
     <p class="subtitle is-6 mb-2">{{ include.person.role }}</p>
+    {% if include.person.email %}
+      <p class="is-size-7 mb-2">
+        <a href="mailto:{{ include.person.email }}" class="has-text-grey-dark"><i class="fas fa-envelope mr-1" aria-hidden="true"></i>{{ include.person.email }}</a>
+      </p>
+    {% endif %}
     {% assign lab_links = '' | split: '' %}
     {% for id in include.person.lab_ids %}
       {% if id == 'pfcl' %}

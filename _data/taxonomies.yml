@@ -3,6 +3,8 @@ team_categories:
     label: Leadership
   - id: faculty
     label: Faculty
+  - id: research-fellows
+    label: Research Fellows
   - id: research-staff
     label: Research Staff
   - id: lab-staff
