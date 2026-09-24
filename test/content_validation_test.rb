@@ -388,6 +388,48 @@ class ContentValidationTest < Minitest::Test
     assert(validate.any? { |e| e.include?("prerequisites must be a string or list of strings") })
   end
 
+  def test_project_duration_validation
+    write "_projects/duration-valid.md", <<~YAML
+      ---
+      title: Valid Duration
+      slug: duration-valid
+      lab_ids: [pfcl]
+      recruitment_status: available
+      project_type: research
+      duration: "1–2 Semesters"
+      advisor_names: [X]
+      summary: s
+      contact_email: a@b.com
+      published: true
+      updated_at: 2026-09-07
+      featured: false
+      show_on_showcase: true
+      ---
+      body
+    YAML
+    assert_empty validate
+
+    write "_projects/duration-bad.md", <<~YAML
+      ---
+      title: Bad Duration
+      slug: duration-bad
+      lab_ids: [pfcl]
+      recruitment_status: available
+      project_type: research
+      duration: 123
+      advisor_names: [X]
+      summary: s
+      contact_email: a@b.com
+      published: true
+      updated_at: 2026-09-07
+      featured: false
+      show_on_showcase: true
+      ---
+      body
+    YAML
+    assert(validate.any? { |e| e.include?("duration must be a string") })
+  end
+
   private
 
   def validate

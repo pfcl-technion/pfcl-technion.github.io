@@ -64,6 +64,12 @@
         {{ p.project_type | capitalize }}
       </span>
 
+      {% if p.duration and p.duration != '' %}
+        <span class="tag is-light has-text-grey-dark" title="Duration">
+          <i class="far fa-clock mr-1"></i>{{ p.duration }}
+        </span>
+      {% endif %}
+
       {% for tag in p.tags %}
         <span class="tag is-light" title="Topic">
           {{ tag | capitalize }}

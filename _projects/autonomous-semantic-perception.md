@@ -7,6 +7,7 @@ project_type: research
 tags:
   - software
 prerequisites: "Linear Systems (084733), Linear Algebra, Python / C++"
+duration: "1–2 Semesters"
 advisor_names:
   - Vadim Indelman
 thumbnail: /assets/images/projects/autonomous-semantic-perception.png
