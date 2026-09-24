@@ -6,6 +6,7 @@ recruitment_status: available
 project_type: research
 tags:
   - software
+prerequisites: "Linear Systems (084733), Linear Algebra, Python / C++"
 advisor_names:
   - Vadim Indelman
 thumbnail: /assets/images/projects/autonomous-semantic-perception.png

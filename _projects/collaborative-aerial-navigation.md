@@ -7,6 +7,7 @@ project_type: experimental
 tags:
   - software
   - hardware
+prerequisites: "Linear Systems (084733), Aerial Robotics basics, MATLAB / C++"
 advisor_names:
   - Vadim Indelman
 thumbnail: /assets/images/projects/collaborative-aerial-navigation.png
