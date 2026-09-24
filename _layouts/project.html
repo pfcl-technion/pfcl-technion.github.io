@@ -4,122 +4,110 @@ layout: default
 
 {% assign thumb = page.thumbnail | default: '/assets/images/project_default.jpg' %}
 
-<section class="hero is-small is-primary pfcl-hero pfcl-project-detail-hero">
-  <div class="hero-body">
-    <div class="container">
-      <nav class="breadcrumb is-small mb-3" aria-label="breadcrumbs">
-        <ul>
-          <li><a href="{{ '/' | relative_url }}">Home</a></li>
-          <li><a href="{{ '/projects/' | relative_url }}">Student Projects</a></li>
-          <li class="is-active"><a href="#" aria-current="page">{{ page.title }}</a></li>
-        </ul>
-      </nav>
-      <h1 class="title is-2">{{ page.title }}</h1>
-      <p class="subtitle is-5">{{ page.summary }}</p>
+<nav class="breadcrumb is-small mb-4" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+    <li><a href="{{ '/projects/' | relative_url }}">Student Projects</a></li>
+    <li class="is-active"><a href="#" aria-current="page">{{ page.title }}</a></li>
+  </ul>
+</nav>
+
+<div class="columns is-multiline">
+  <!-- Left Column: High-Res Project Image -->
+  <div class="column is-6-desktop is-12-tablet">
+    <div class="pfcl-project-detail-image-wrapper">
+      <img src="{{ thumb | relative_url }}" alt="{{ page.title }}" class="pfcl-project-detail-image">
+      <span class="pfcl-project-status pfcl-status-{{ page.recruitment_status }}">
+        {{ page.recruitment_status | capitalize }}
+      </span>
     </div>
   </div>
-</section>
 
-<section class="section">
-  <div class="container">
-    <div class="columns is-multiline">
-      <!-- Left Column: High-Res Project Image -->
-      <div class="column is-6-desktop is-12-tablet">
-        <div class="pfcl-project-detail-image-wrapper">
-          <img src="{{ thumb | relative_url }}" alt="{{ page.title }}" class="pfcl-project-detail-image">
-          <span class="pfcl-project-status pfcl-status-{{ page.recruitment_status }}">
-            {{ page.recruitment_status | capitalize }}
-          </span>
-        </div>
-      </div>
+  <!-- Right Column: Project Metadata Box -->
+  <div class="column is-6-desktop is-12-tablet">
+    <div class="card pfcl-card pfcl-project-detail-meta">
+      <div class="card-content">
+        <h2 class="title is-5 mb-4">Project Overview</h2>
 
-      <!-- Right Column: Project Metadata Box -->
-      <div class="column is-6-desktop is-12-tablet">
-        <div class="card pfcl-card pfcl-project-detail-meta">
-          <div class="card-content">
-            <h2 class="title is-5 mb-4">Project Overview</h2>
-
-            <!-- Supervising Advisors -->
-            <div class="mb-4">
-              <span class="is-size-7 has-text-grey is-uppercase has-text-weight-bold">Supervising Advisors</span>
-              <div class="mt-2">
-                {% for advisor_name in page.advisor_names %}
-                  {% assign advisor_member = site.team | where: "title", advisor_name | first %}
-                  <div class="pfcl-supervisor-item mb-2">
-                    {% if advisor_member.photo %}
-                      <img src="{{ advisor_member.photo | relative_url }}" alt="{{ advisor_name }}" class="pfcl-supervisor-avatar">
-                    {% else %}
-                      <span class="pfcl-supervisor-avatar-placeholder"><i class="fas fa-user"></i></span>
-                    {% endif %}
-                    <div class="pfcl-supervisor-info">
-                      {% if advisor_member.faculty_url %}
-                        <a href="{{ advisor_member.faculty_url }}" target="_blank" rel="noopener noreferrer" class="has-text-weight-semibold">{{ advisor_name }}</a>
-                      {% elsif advisor_member.email %}
-                        <a href="mailto:{{ advisor_member.email }}" class="has-text-weight-semibold">{{ advisor_name }}</a>
-                      {% else %}
-                        <span class="has-text-weight-semibold">{{ advisor_name }}</span>
-                      {% endif %}
-                      {% if advisor_member.role %}
-                        <span class="is-size-7 has-text-grey">{{ advisor_member.role }}</span>
-                      {% endif %}
-                    </div>
-                  </div>
-                {% endfor %}
+        <!-- Supervising Advisors -->
+        <div class="mb-4">
+          <span class="is-size-7 has-text-grey is-uppercase has-text-weight-bold">Supervising Advisors</span>
+          <div class="mt-2">
+            {% for advisor_name in page.advisor_names %}
+              {% assign advisor_member = site.team | where: "title", advisor_name | first %}
+              <div class="pfcl-supervisor-item mb-2">
+                {% if advisor_member.photo %}
+                  <img src="{{ advisor_member.photo | relative_url }}" alt="{{ advisor_name }}" class="pfcl-supervisor-avatar">
+                {% else %}
+                  <span class="pfcl-supervisor-avatar-placeholder"><i class="fas fa-user"></i></span>
+                {% endif %}
+                <div class="pfcl-supervisor-info">
+                  {% if advisor_member.faculty_url %}
+                    <a href="{{ advisor_member.faculty_url }}" target="_blank" rel="noopener noreferrer" class="has-text-weight-semibold">{{ advisor_name }}</a>
+                  {% elsif advisor_member.email %}
+                    <a href="mailto:{{ advisor_member.email }}" class="has-text-weight-semibold">{{ advisor_name }}</a>
+                  {% else %}
+                    <span class="has-text-weight-semibold">{{ advisor_name }}</span>
+                  {% endif %}
+                  {% if advisor_member.role %}
+                    <span class="is-size-7 has-text-grey">{{ advisor_member.role }}</span>
+                  {% endif %}
+                </div>
               </div>
-            </div>
-
-            <!-- Research Groups -->
-            <div class="mb-4">
-              <span class="is-size-7 has-text-grey is-uppercase has-text-weight-bold">Research Group</span>
-              <div class="tags mt-1">
-                {% for lab_slug in page.lab_ids %}
-                  {% assign lab = site.labs | where: "slug", lab_slug | first %}
-                  <a href="{{ '/labs/' | relative_url }}" class="tag is-info is-light">
-                    <i class="fas fa-flask mr-1"></i>{{ lab.title | default: lab_slug }}
-                  </a>
-                {% endfor %}
-              </div>
-            </div>
-
-            <!-- Target Degree Levels & Types -->
-            <div class="mb-5">
-              <span class="is-size-7 has-text-grey is-uppercase has-text-weight-bold">Degree Levels &amp; Project Types</span>
-              <div class="tags mt-1">
-                {% for level in page.student_levels %}
-                  <span class="tag is-primary is-light">{{ level | capitalize }}</span>
-                {% endfor %}
-                {% for ptype in page.project_types %}
-                  <span class="tag is-light">{{ ptype | capitalize }}</span>
-                {% endfor %}
-              </div>
-            </div>
-
-            <!-- Action Button -->
-            <button type="button" class="button is-primary is-fullwidth"
-                    data-inquiry-btn
-                    data-project-title="{{ page.title }}"
-                    data-project-advisor="{{ page.advisor_names | join: ', ' }}"
-                    data-project-contact="{{ page.contact_email | default: site.email }}">
-              <i class="fas fa-paper-plane mr-2"></i>Hear more / Inquire
-            </button>
+            {% endfor %}
           </div>
         </div>
+
+        <!-- Research Groups -->
+        <div class="mb-4">
+          <span class="is-size-7 has-text-grey is-uppercase has-text-weight-bold">Research Group</span>
+          <div class="tags mt-1">
+            {% for lab_slug in page.lab_ids %}
+              {% assign lab = site.labs | where: "slug", lab_slug | first %}
+              <a href="{{ '/labs/' | relative_url }}" class="tag is-info is-light">
+                <i class="fas fa-flask mr-1"></i>{{ lab.title | default: lab_slug }}
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+
+        <!-- Target Degree Levels & Types -->
+        <div class="mb-5">
+          <span class="is-size-7 has-text-grey is-uppercase has-text-weight-bold">Degree Levels &amp; Project Types</span>
+          <div class="tags mt-1">
+            {% for level in page.student_levels %}
+              <span class="tag is-primary is-light">{{ level | capitalize }}</span>
+            {% endfor %}
+            {% for ptype in page.project_types %}
+              <span class="tag is-light">{{ ptype | capitalize }}</span>
+            {% endfor %}
+          </div>
+        </div>
+
+        <!-- Action Button -->
+        <button type="button" class="button is-primary is-fullwidth"
+                data-inquiry-btn
+                data-project-title="{{ page.title }}"
+                data-project-advisor="{{ page.advisor_names | join: ', ' }}"
+                data-project-contact="{{ page.contact_email | default: site.email }}">
+          <i class="fas fa-paper-plane mr-2"></i>Hear more / Inquire
+        </button>
       </div>
     </div>
-
-    <!-- Main Project Description -->
-    <div class="content pfcl-project-detail-body mt-5">
-      <hr>
-      {{ content }}
-    </div>
-
-    <div class="mt-6">
-      <a href="{{ '/projects/' | relative_url }}" class="button is-light">
-        &larr; Back to all student projects
-      </a>
-    </div>
   </div>
-</section>
+</div>
+
+<!-- Main Project Description -->
+<div class="content pfcl-project-detail-body mt-5">
+  <hr>
+  {{ content }}
+</div>
+
+<div class="mt-6">
+  <a href="{{ '/projects/' | relative_url }}" class="button is-light">
+    &larr; Back to all student projects
+  </a>
+</div>
 
 <!-- Inquiry Modal -->
 <div class="modal" id="pfcl-project-modal" aria-hidden="true">
