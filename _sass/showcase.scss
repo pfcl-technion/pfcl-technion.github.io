@@ -5,7 +5,7 @@ html.showcase-html,
 body.showcase-body {
   background-color: #f8fafc !important;
   color: #2d3748;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: "Montserrat", sans-serif;
   height: 100vh;
   margin: 0;
   overflow: hidden;
@@ -64,7 +64,7 @@ body.showcase-body {
 
 .showcase-clock {
   color: #31bfe4;
-  font-family: monospace;
+  font-family: "Inconsolata", "Hack", "SF Mono", "Roboto Mono", "Source Code Pro", "Ubuntu Mono", monospace;
   font-size: 1.9rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -152,11 +152,6 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   padding: 0.45rem 1.25rem;
   text-transform: uppercase;
 
-  &.pill-cyan {
-    background: #001b54;
-    border-left: 4px solid #31bfe4;
-    color: #ffffff;
-  }
   &.pill-emerald {
     background: #001b54;
     border-left: 4px solid #10b981;
@@ -188,37 +183,6 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   padding: 3rem 3.5rem;
 }
 
-.showcase-card-left {
-  align-items: center;
-  border-right: 1px solid #e2e8f0;
-  display: flex;
-  flex: 0 0 340px;
-  flex-direction: column;
-  justify-content: center;
-  padding-right: 3rem;
-  text-align: center;
-}
-
-.showcase-lab-logo {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 0 !important;
-  margin-bottom: 2rem;
-  max-height: 140px;
-  max-width: 260px;
-  object-fit: contain;
-  padding: 1.25rem;
-}
-
-.showcase-leader-box {
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-left: 3px solid #31bfe4;
-  border-radius: 0 !important;
-  padding: 1.1rem 1.5rem;
-  width: 100%;
-}
-
 .showcase-meta-label {
   color: #64748b;
   display: block;
@@ -229,20 +193,6 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   text-transform: uppercase;
 }
 
-.showcase-leader-name {
-  color: #001b54;
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin: 0;
-}
-
-.showcase-leader-email {
-  color: #002147;
-  font-size: 0.95rem;
-  margin-top: 0.35rem;
-}
-
-.showcase-card-right,
 .showcase-card-main {
   display: flex;
   flex: 1;
@@ -305,6 +255,45 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   font-weight: 600;
   padding: 0.35rem 0.85rem;
   text-transform: capitalize;
+}
+
+// Per-slide QR aside (project page / canonical story URL)
+.showcase-qr-aside {
+  align-items: center;
+  border-left: 1px solid #e2e8f0;
+  display: flex;
+  flex: 0 0 260px;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+}
+
+.showcase-qr-frame {
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0 !important;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  padding: 20px;
+  width: 200px;
+
+  svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.showcase-qr-caption {
+  color: #64748b;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-top: 1rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 // Bottom Kiosk Bar
@@ -383,8 +372,8 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   border: 1px solid #e2e8f0;
   border-radius: 0 !important;
   display: flex;
-  gap: 0.85rem;
-  padding: 0.4rem 0.85rem;
+  gap: 1.25rem;
+  padding: 0.75rem 1.25rem;
 }
 
 .showcase-qr-label {
@@ -398,8 +387,8 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 .showcase-qr-img {
   border-radius: 0 !important;
   display: block;
-  height: 48px;
-  width: 48px;
+  height: 120px;
+  width: 120px;
 }
 
 // Accessibility: Respect user motion preferences (AGENTS.md Rule 11)
