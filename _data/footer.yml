@@ -1,30 +1,28 @@
 menus:
-  - title: About
+  - title: Explore
     links:
-      - name: About PFCL
-        url: /about/
-      - name: History
-        url: /history/
-      - name: PFCL Dedication
-        url: /dedication/
-      - name: Team
-        url: /team/
-  - title: Research & Teaching
-    links:
+      - name: Home
+        url: /
       - name: Research Groups
         url: /labs/
+      - name: Student Projects
+        url: /projects/
       - name: Teaching Labs
         url: /teaching/
       - name: News
         url: /news/
+  - title: About
+    links:
+      - name: About PFCL
+        url: /about/
+      - name: Team
+        url: /team/
       - name: Media
         url: /media/
-  - title: For Students
-    links:
-      - name: Student Projects
-        url: /projects/
-      - name: Contact
-        url: /contact/
+      - name: History
+        url: /history/
+      - name: PFCL Dedication
+        url: /dedication/
 
 contact:
   email: pfcl@technion.ac.il
