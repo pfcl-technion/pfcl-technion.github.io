@@ -6,7 +6,6 @@
   <title>{{ page.title | default: site.title }} — Showcase</title>
   <link rel="stylesheet" href="{{ '/assets/css/app.css' | relative_url }}">
   <link rel="shortcut icon" type="image/png" href="{{ site.favicon | relative_url }}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous">
 </head>
 <body class="showcase-body">
   <header class="showcase-header">
@@ -31,7 +30,7 @@
     <div class="showcase-status-left">
       <span id="showcase-category" class="showcase-category-badge">OVERVIEW</span>
       <span id="showcase-counter" class="showcase-counter">Slide 1 of --</span>
-      <span id="showcase-pause-status" class="showcase-pause-badge" style="display:none;"><i class="fa-solid fa-pause"></i> PAUSED</span>
+      <span id="showcase-pause-status" class="showcase-pause-badge" style="display:none;"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: -1px; margin-right: 2px;"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg> PAUSED</span>
     </div>
 
     <div class="showcase-progress-wrapper">
@@ -41,7 +40,7 @@
     <div class="showcase-status-right">
       <div class="showcase-qr-box">
         <span class="showcase-qr-label">Visit Website</span>
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=70x70&data=https%3A%2F%2Fpfcl-technion.github.io%2F" alt="QR Code" class="showcase-qr-img">
+        <img src="{{ '/assets/images/showcase_qr.png' | relative_url }}" alt="QR Code" class="showcase-qr-img">
       </div>
     </div>
   </footer>
