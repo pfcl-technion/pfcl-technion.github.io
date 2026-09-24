@@ -71,15 +71,13 @@ layout: default
           </div>
         </div>
 
-        <!-- Target Degree Levels & Types -->
+        <!-- Project Type & Topics -->
         <div class="mb-5">
-          <span class="is-size-7 has-text-grey is-uppercase has-text-weight-bold">Degree Levels &amp; Project Types</span>
+          <span class="is-size-7 has-text-grey is-uppercase has-text-weight-bold">Project Type &amp; Topics</span>
           <div class="tags mt-1">
-            {% for level in page.student_levels %}
-              <span class="tag is-primary is-light">{{ level | capitalize }}</span>
-            {% endfor %}
-            {% for ptype in page.project_types %}
-              <span class="tag is-light">{{ ptype | capitalize }}</span>
+            <span class="tag is-primary is-light">{{ page.project_type | capitalize }}</span>
+            {% for tag in page.tags %}
+              <span class="tag is-light">{{ tag | capitalize }}</span>
             {% endfor %}
           </div>
         </div>
