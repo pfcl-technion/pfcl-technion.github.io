@@ -28,18 +28,7 @@ The Philadelphia Flight Control Laboratory, also known as the Control Lab in the
   <a href="{{ '/news/' | relative_url }}" class="button is-primary is-outlined">All news &amp; updates</a>
 </div>
 
-## Research groups
-
-<div class="columns is-multiline">
-{% assign labs = site.labs | where: "kind", "research-group" | sort: 'order' %}
-{% for lab in labs %}
-  <div class="column is-6-desktop is-12-tablet">
-    {% include lab_card.html lab=lab %}
-  </div>
-{% endfor %}
-</div>
-
-## Selected student projects
+## Selected projects looking for students
 
 <div class="columns is-multiline">
 {% assign available_projects = site.projects | where: "published", true | where: "recruitment_status", "available" | sort: 'order' %}
@@ -52,6 +41,17 @@ The Philadelphia Flight Control Laboratory, also known as the Control Lab in the
 
 <div class="buttons mt-4">
   <a href="{{ '/projects/' | relative_url }}" class="button is-primary is-outlined">All student projects &rarr;</a>
+</div>
+
+## Research groups
+
+<div class="columns is-multiline">
+{% assign labs = site.labs | where: "kind", "research-group" | sort: 'order' %}
+{% for lab in labs %}
+  <div class="column is-6-desktop is-12-tablet">
+    {% include lab_card.html lab=lab %}
+  </div>
+{% endfor %}
 </div>
 
 <div class="mt-6">
