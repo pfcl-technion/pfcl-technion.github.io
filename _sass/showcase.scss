@@ -101,18 +101,18 @@ body.showcase-body {
   transform: scale(0.98);
   width: 100%;
 
-  &:first-child {
-    opacity: 1;
-    pointer-events: auto;
-    transform: scale(1);
-  }
-
   &.is-active {
     opacity: 1;
     pointer-events: auto;
     transform: scale(1);
     z-index: 10;
   }
+}
+
+html:not(.has-showcase-js) .showcase-slide:first-child {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
 }
 
 // Showcase Card Design
@@ -375,10 +375,13 @@ body.showcase-body {
     transform: none;
     transition: none;
 
-    &:first-child,
     &.is-active {
       transform: none;
     }
+  }
+
+  html:not(.has-showcase-js) .showcase-slide:first-child {
+    transform: none;
   }
 
   .showcase-progress-bar {

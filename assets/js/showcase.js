@@ -2,6 +2,8 @@
 (function() {
   'use strict';
 
+  document.documentElement.classList.add('has-showcase-js');
+
   const DURATION_MS = 12000; // 12 seconds per slide
   const RELOAD_INTERVAL_MS = 30 * 60 * 1000; // 30 minutes silent refresh
 
