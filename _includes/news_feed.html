@@ -16,7 +16,7 @@
 {% endfor %}
 {% assign sorted = items | sort: 'date' | reverse %}
 {% if sorted.size == 0 %}
-<p class="pfcl-placeholder">[Placeholder: news and updates will be listed here.]</p>
+<p class="has-text-grey">No news or updates at this time.</p>
 {% else %}
 <ul class="pfcl-news-list">
   {% for item in sorted %}
