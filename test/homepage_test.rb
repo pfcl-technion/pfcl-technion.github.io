@@ -38,4 +38,8 @@ class HomepageTest < Minitest::Test
   def test_homepage_includes_inquiry_modal
     assert_includes @content, "pfcl-project-modal", "Homepage must include inquiry modal"
   end
+
+  def test_welcome_buttons_removed
+    refute_includes @content, "Available student projects", "Welcome CTA button 'Available student projects' should be removed"
+  end
 end
