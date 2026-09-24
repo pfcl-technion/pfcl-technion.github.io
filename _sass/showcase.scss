@@ -1,0 +1,391 @@
+// PFCL Hallway TV Showcase Display Styles (16:9 1080p/4K Optimized)
+
+html.showcase-html,
+body.showcase-body {
+  background-color: #0b1120 !important;
+  color: #f1f5f9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  width: 100vw;
+}
+
+.showcase-body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+// Top Branding Bar
+.showcase-header {
+  align-items: center;
+  background: rgba(15, 23, 42, 0.95);
+  border-bottom: 2px solid #1e293b;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 1.25rem 3rem;
+}
+
+.showcase-brand {
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.showcase-logo {
+  height: 52px;
+  width: auto;
+}
+
+.showcase-main-title {
+  color: #ffffff;
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.showcase-sub-title {
+  color: #94a3b8;
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 0.2rem 0 0 0;
+}
+
+.showcase-clock-container {
+  text-align: right;
+}
+
+.showcase-clock {
+  color: #38bdf8;
+  font-family: monospace;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.showcase-date {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+// Main Slide Area
+.showcase-main {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  overflow: hidden;
+  padding: 2rem 4rem;
+  position: relative;
+}
+
+.showcase-slider {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.showcase-slide {
+  display: flex;
+  height: 100%;
+  inset: 0;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  transform: scale(0.98);
+  width: 100%;
+
+  &.is-active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    z-index: 10;
+  }
+}
+
+html:not(.has-showcase-js) .showcase-slide:first-child {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+// Showcase Card Design
+.showcase-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1400px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.showcase-card-header {
+  align-items: center;
+  background: #0f172a;
+  border-bottom: 1px solid #334155;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 2.5rem;
+}
+
+.showcase-pill {
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 0.4rem 1.25rem;
+  text-transform: uppercase;
+
+  &.pill-cyan { background: #0284c7; color: #ffffff; }
+  &.pill-emerald { background: #059669; color: #ffffff; }
+  &.pill-amber { background: #d97706; color: #ffffff; }
+  &.pill-purple { background: #7c3aed; color: #ffffff; }
+}
+
+.showcase-tag {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.showcase-card-body {
+  display: flex;
+  flex: 1;
+  gap: 3rem;
+  overflow: hidden;
+  padding: 3rem;
+}
+
+.showcase-card-left {
+  align-items: center;
+  border-right: 1px solid #334155;
+  display: flex;
+  flex: 0 0 320px;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 2.5rem;
+  text-align: center;
+}
+
+.showcase-lab-logo {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  max-height: 140px;
+  max-width: 240px;
+  object-fit: contain;
+  padding: 1rem;
+}
+
+.showcase-leader-box {
+  background: #0f172a;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  width: 100%;
+}
+
+.showcase-meta-label {
+  color: #64748b;
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+.showcase-leader-name {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.showcase-leader-email {
+  color: #38bdf8;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+.showcase-card-right,
+.showcase-card-main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.showcase-title {
+  color: #ffffff;
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 1.5rem 0;
+}
+
+.showcase-advisors,
+.showcase-news-meta {
+  color: #cbd5e1;
+  font-size: 1.35rem;
+  margin-bottom: 1.5rem;
+
+  strong {
+    color: #38bdf8;
+  }
+}
+
+.showcase-contact-email {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  margin-left: 1.5rem;
+}
+
+.showcase-summary {
+  color: #cbd5e1;
+  font-size: 1.45rem;
+  line-height: 1.6;
+  margin: 0 0 2rem 0;
+}
+
+.showcase-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.showcase-badge {
+  background: #334155;
+  border-radius: 6px;
+  color: #f1f5f9;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  text-transform: capitalize;
+}
+
+.showcase-link-note {
+  color: #38bdf8;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+// Bottom Footer & Progress Bar
+.showcase-footer {
+  align-items: center;
+  background: rgba(15, 23, 42, 0.95);
+  border-top: 2px solid #1e293b;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+
+.showcase-status-left {
+  align-items: center;
+  display: flex;
+  flex: 0 0 350px;
+  gap: 1.25rem;
+}
+
+.showcase-category-badge {
+  background: #334155;
+  border-radius: 6px;
+  color: #f8fafc;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.35rem 0.75rem;
+}
+
+.showcase-counter {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.showcase-pause-badge {
+  background: #dc2626;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.2rem 0.5rem;
+}
+
+.showcase-progress-wrapper {
+  background: #334155;
+  border-radius: 9999px;
+  flex: 1;
+  height: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.showcase-progress-bar {
+  background: linear-gradient(90deg, #0284c7, #38bdf8);
+  height: 100%;
+  transition: width 0.1s linear;
+  width: 0%;
+}
+
+.showcase-status-right {
+  align-items: center;
+  display: flex;
+  flex: 0 0 220px;
+  justify-content: flex-end;
+}
+
+.showcase-qr-box {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.showcase-qr-label {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.showcase-qr-img {
+  background: #ffffff;
+  border-radius: 6px;
+  height: 52px;
+  padding: 3px;
+  width: 52px;
+}
+
+// Accessibility: Respect user motion preferences (AGENTS.md Rule 11)
+@media (prefers-reduced-motion: reduce) {
+  .showcase-slide {
+    transform: none;
+    transition: none;
+
+    &.is-active {
+      transform: none;
+    }
+  }
+
+  html:not(.has-showcase-js) .showcase-slide:first-child {
+    transform: none;
+  }
+
+  .showcase-progress-bar {
+    transition: none;
+  }
+}
+
