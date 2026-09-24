@@ -1,3 +1,13 @@
+{% assign published_projects = site.projects | where: "published", true %}
+{% assign active_lab_ids = "" | split: "" %}
+{% for p in published_projects %}
+  {% for lab_id in p.lab_ids %}
+    {% unless active_lab_ids contains lab_id %}
+      {% assign active_lab_ids = active_lab_ids | push: lab_id %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+
 <div class="pfcl-filters-wrapper mb-5">
   <div class="field is-grouped is-grouped-multiline">
     <div class="control is-expanded">
@@ -15,9 +25,13 @@
         <select id="pfcl-filter-labs" data-filter="labs">
           <option value="">All groups</option>
           {% for lab in site.labs %}
-            <option value="{{ lab.slug }}">{{ lab.short_name | default: lab.title }}</option>
+            {% if active_lab_ids contains lab.slug %}
+              <option value="{{ lab.slug }}">{{ lab.short_name | default: lab.title }}</option>
+            {% endif %}
           {% endfor %}
-          <option value="pfcl">PFCL</option>
+          {% if active_lab_ids contains "pfcl" %}
+            <option value="pfcl">PFCL</option>
+          {% endif %}
         </select>
       </div>
     </div>
@@ -33,26 +47,12 @@
       </div>
     </div>
     <div class="control">
-      <label class="label is-small" for="pfcl-filter-types">Type</label>
+      <label class="label is-small" for="pfcl-filter-type">Type</label>
       <div class="select is-small">
-        <select id="pfcl-filter-types" data-filter="types">
+        <select id="pfcl-filter-type" data-filter="type">
           <option value="">All types</option>
           <option value="research">Research</option>
           <option value="experimental">Experimental</option>
-          <option value="software">Software</option>
-          <option value="hardware">Hardware</option>
-          <option value="teaching">Teaching</option>
-        </select>
-      </div>
-    </div>
-    <div class="control">
-      <label class="label is-small" for="pfcl-filter-levels">Student level</label>
-      <div class="select is-small">
-        <select id="pfcl-filter-levels" data-filter="levels">
-          <option value="">All levels</option>
-          <option value="undergraduate">Undergraduate</option>
-          <option value="masters">Masters</option>
-          <option value="phd">PhD</option>
         </select>
       </div>
     </div>
