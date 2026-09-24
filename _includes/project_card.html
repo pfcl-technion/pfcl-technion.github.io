@@ -12,9 +12,9 @@
   </div>
 
   <div class="card-content pfcl-project-body">
-    <p class="title is-5 pfcl-project-title mb-2">
+    <h3 class="title is-5 pfcl-project-title mb-2">
       <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
-    </p>
+    </h3>
 
     <!-- Supervisor Section -->
     <div class="pfcl-project-supervisor mb-3">
@@ -27,13 +27,13 @@
             <span class="pfcl-supervisor-avatar-placeholder"><i class="fas fa-user"></i></span>
           {% endif %}
           <div class="pfcl-supervisor-info">
-            <span class="is-size-7 has-text-grey">Advisor:</span>
+            <span class="pfcl-supervisor-label">Advisor</span>
             {% if advisor_member.faculty_url %}
-              <a href="{{ advisor_member.faculty_url }}" target="_blank" rel="noopener noreferrer" class="is-size-6 has-text-weight-semibold">{{ advisor_name }}</a>
+              <a href="{{ advisor_member.faculty_url }}" target="_blank" rel="noopener noreferrer" class="pfcl-supervisor-name">{{ advisor_name }}</a>
             {% elsif advisor_member.email %}
-              <a href="mailto:{{ advisor_member.email }}" class="is-size-6 has-text-weight-semibold">{{ advisor_name }}</a>
+              <a href="mailto:{{ advisor_member.email }}" class="pfcl-supervisor-name">{{ advisor_name }}</a>
             {% else %}
-              <span class="is-size-6 has-text-weight-semibold">{{ advisor_name }}</span>
+              <span class="pfcl-supervisor-name">{{ advisor_name }}</span>
             {% endif %}
           </div>
         </div>

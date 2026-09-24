@@ -346,6 +346,48 @@ class ContentValidationTest < Minitest::Test
     assert(errors.any? { |e| e.include?("project_type") })
   end
 
+  def test_project_prerequisites_validation
+    write "_projects/prereq-valid.md", <<~YAML
+      ---
+      title: Valid Prereq
+      slug: prereq-valid
+      lab_ids: [pfcl]
+      recruitment_status: available
+      project_type: research
+      prerequisites: "Linear Systems (084733)"
+      advisor_names: [X]
+      summary: s
+      contact_email: a@b.com
+      published: true
+      updated_at: 2026-09-07
+      featured: false
+      show_on_showcase: true
+      ---
+      body
+    YAML
+    assert_empty validate
+
+    write "_projects/prereq-bad.md", <<~YAML
+      ---
+      title: Bad Prereq
+      slug: prereq-bad
+      lab_ids: [pfcl]
+      recruitment_status: available
+      project_type: research
+      prerequisites: 12345
+      advisor_names: [X]
+      summary: s
+      contact_email: a@b.com
+      published: true
+      updated_at: 2026-09-07
+      featured: false
+      show_on_showcase: true
+      ---
+      body
+    YAML
+    assert(validate.any? { |e| e.include?("prerequisites must be a string or list of strings") })
+  end
+
   private
 
   def validate

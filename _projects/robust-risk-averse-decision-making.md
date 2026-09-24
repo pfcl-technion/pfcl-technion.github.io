@@ -6,6 +6,7 @@ recruitment_status: available
 project_type: research
 tags:
   - software
+prerequisites: "Probability and Statistics, Linear Systems (084733), Python"
 advisor_names:
   - Vadim Indelman
 thumbnail: /assets/images/projects/robust-risk-averse-decision-making.png
