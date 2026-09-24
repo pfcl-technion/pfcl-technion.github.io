@@ -19,8 +19,7 @@ The Control Lab offers diverse research and engineering project opportunities fo
   <div class="column is-4-desktop is-6-tablet is-12-mobile" data-project-card
        data-labs="{{ project.lab_ids | join: ' ' }}"
        data-status="{{ project.recruitment_status }}"
-       data-types="{{ project.project_types | join: ' ' }}"
-       data-levels="{{ project.student_levels | join: ' ' }}">
+       data-type="{{ project.project_type }}">
     {% include project_card.html project=project %}
   </div>
 {% endfor %}
