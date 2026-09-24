@@ -7,12 +7,10 @@ Markdown collections, validated before every build.
 ## Development (Docker)
 
 ```bash
-docker compose up --build            # dev server at http://localhost:4000/pfcl-technion.github.io/
+docker compose up --build            # dev server at http://localhost:4000/
 ```
 
-The dev server serves the site under the same base path as the GitHub
-Pages preview, so visiting `http://localhost:4000/` alone returns 404 —
-this is expected.
+The dev server serves the site at `http://localhost:4000/`.
 
 ## Verification
 
@@ -167,7 +165,7 @@ For lab items other than `pfcl`, `canonical_url` must be a full HTTP or HTTPS UR
 
 ## Deployment
 
-GitHub Actions builds and deploys `main` to GitHub Pages. Preview URL:
-`https://philadelphia-flight-control-laboratory.github.io/pfcl-technion.github.io/`.
+GitHub Actions builds and deploys to GitHub Pages. Preview URL:
+`https://philadelphia-flight-control-laboratory.github.io/`.
 The production domain `pfcl.technion.ac.il` is not connected to this
 repository; any cutover is a separate, explicitly approved operation.
