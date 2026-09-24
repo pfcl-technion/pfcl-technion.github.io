@@ -24,7 +24,7 @@ permalink: /showcase/
             <span class="showcase-meta-label">Group Leader</span>
             <p class="showcase-leader-name">{{ lab.leader_names | join: ', ' }}</p>
             {% if lab.leader_email %}
-              <p class="showcase-leader-email"><i class="fa-solid fa-envelope"></i> {{ lab.leader_email }}</p>
+              <p class="showcase-leader-email"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: -2px; margin-right: 4px;"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg> {{ lab.leader_email }}</p>
             {% endif %}
           </div>
         </div>
@@ -32,7 +32,7 @@ permalink: /showcase/
           <h2 class="showcase-title">{{ lab.title }}</h2>
           <p class="showcase-summary">{{ lab.summary }}</p>
           {% if lab.website %}
-            <p class="showcase-link-note"><i class="fa-solid fa-globe"></i> {{ lab.website }}</p>
+            <p class="showcase-link-note"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: -2px; margin-right: 4px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> {{ lab.website }}</p>
           {% endif %}
         </div>
       </div>
@@ -58,7 +58,7 @@ permalink: /showcase/
             <span class="showcase-meta-label">Advisor:</span>
             <strong>{{ project.advisor_names | join: ', ' }}</strong>
             {% if project.contact_email %}
-              <span class="showcase-contact-email"><i class="fa-solid fa-envelope"></i> {{ project.contact_email }}</span>
+              <span class="showcase-contact-email"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: -2px; margin-right: 4px;"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg> {{ project.contact_email }}</span>
             {% endif %}
           </div>
           <p class="showcase-summary">{{ project.summary }}</p>
@@ -100,7 +100,7 @@ permalink: /showcase/
             </div>
             <p class="showcase-summary">{{ item.excerpt }}</p>
             {% if item.canonical_url %}
-              <p class="showcase-link-note"><i class="fa-solid fa-arrow-up-right-from-square"></i> Read online</p>
+              <p class="showcase-link-note"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: -2px; margin-right: 4px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Read online</p>
             {% endif %}
           </div>
         </div>
