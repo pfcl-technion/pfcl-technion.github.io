@@ -5,14 +5,14 @@ subtitle: Available and ongoing student research projects
 permalink: /projects/
 ---
 
-[Placeholder: introduction for students — how to read statuses and apply.]
+Explore available research and experimental projects across PFCL laboratories. Use the filters below to browse by research group, student level, or project type, and contact the listed project advisor to apply.
 
 <div data-project-list>
 {% include project_filters.html %}
 
 {% assign projects = site.projects | where: 'published', true | sort: 'order' %}
 {% if projects.size == 0 %}
-<p class="pfcl-placeholder" data-project-empty>[Placeholder: student projects will be listed here once the <code>_projects</code> collection is populated.]</p>
+<p class="has-text-grey" data-project-empty>No student projects are currently listed. Please check back later or contact our research groups directly.</p>
 {% else %}
 <div class="columns is-multiline">
 {% for project in projects %}
