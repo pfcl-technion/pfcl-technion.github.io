@@ -7,6 +7,7 @@ project_type: research
 tags:
   - software
 prerequisites: "Probability and Statistics, Linear Systems (084733), Python"
+duration: "1–2 Semesters"
 advisor_names:
   - Vadim Indelman
 thumbnail: /assets/images/projects/robust-risk-averse-decision-making.png

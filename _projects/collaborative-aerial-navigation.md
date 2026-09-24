@@ -8,6 +8,7 @@ tags:
   - software
   - hardware
 prerequisites: "Linear Systems (084733), Aerial Robotics basics, MATLAB / C++"
+duration: "2 Semesters"
 advisor_names:
   - Vadim Indelman
 thumbnail: /assets/images/projects/collaborative-aerial-navigation.png

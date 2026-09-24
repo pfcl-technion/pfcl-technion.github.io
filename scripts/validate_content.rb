@@ -92,6 +92,7 @@ class ContentValidator
         check_enum(rel, fields, "project_type", PROJECT_TYPES)
         check_string_list(rel, fields, "tags") if fields.key?("tags")
         check_string_or_list(rel, fields, "prerequisites") if fields.key?("prerequisites")
+        check_string(rel, fields, "duration") if fields.key?("duration")
         check_string_list(rel, fields, "advisor_names")
         check_url(rel, fields, "application_url")
         check_url(rel, fields, "canonical_url")
@@ -244,6 +245,13 @@ class ContentValidator
 
     valid = value.is_a?(String) || (value.is_a?(Array) && value.all? { |v| v.is_a?(String) })
     error(rel, "#{field} must be a string or list of strings") unless valid
+  end
+
+  def check_string(rel, fields, field)
+    value = fields[field]
+    return unless present?(value)
+
+    error(rel, "#{field} must be a string") unless value.is_a?(String)
   end
 
   def valid_url?(value)
