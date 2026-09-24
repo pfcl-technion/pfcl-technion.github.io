@@ -3,12 +3,9 @@ title: Autonomous Viewpoint-Dependent Semantic Perception
 slug: autonomous-semantic-perception
 lab_ids: [anpl]
 recruitment_status: available
-project_types:
-  - research
+project_type: research
+tags:
   - software
-student_levels:
-  - undergraduate
-  - masters
 advisor_names:
   - Vadim Indelman
 thumbnail: /assets/images/projects/autonomous-semantic-perception.png

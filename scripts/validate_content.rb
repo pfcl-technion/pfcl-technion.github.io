@@ -13,7 +13,7 @@ class ContentValidator
   REQUIRED_FIELDS = {
     "labs" => %w[title slug kind leader_names summary active order],
     "team" => %w[title slug role category lab_ids active order],
-    "projects" => %w[title slug lab_ids recruitment_status project_types student_levels
+    "projects" => %w[title slug lab_ids recruitment_status project_type
                     advisor_names summary contact_email published updated_at featured show_on_showcase],
     "news" => %w[title date lab_id category excerpt canonical_url source_name featured show_on_showcase]
   }.freeze
@@ -21,8 +21,7 @@ class ContentValidator
   LAB_KINDS = %w[research-group teaching-lab shared-facility].freeze
   TEAM_CATEGORIES = %w[leadership faculty research-fellows research-staff lab-staff visiting emeritus].freeze
   RECRUITMENT_STATUSES = %w[available ongoing completed].freeze
-  PROJECT_TYPES = %w[research experimental software hardware teaching].freeze
-  STUDENT_LEVELS = %w[undergraduate masters phd].freeze
+  PROJECT_TYPES = %w[research experimental].freeze
   NEWS_CATEGORIES = %w[news event publication project award position research-highlight].freeze
   RESERVED_LAB_ID = "pfcl"
   UPDATE_REQUIRED_KEYS = %w[id title published_at lab_id category excerpt canonical_url
@@ -90,8 +89,8 @@ class ContentValidator
       when "projects"
         check_enum(rel, fields, "recruitment_status", RECRUITMENT_STATUSES)
         check_string_list(rel, fields, "lab_ids", known_labs)
-        check_string_list(rel, fields, "project_types", PROJECT_TYPES)
-        check_string_list(rel, fields, "student_levels", STUDENT_LEVELS)
+        check_enum(rel, fields, "project_type", PROJECT_TYPES)
+        check_string_list(rel, fields, "tags") if fields.key?("tags")
         check_string_list(rel, fields, "advisor_names")
         check_url(rel, fields, "application_url")
         check_url(rel, fields, "canonical_url")

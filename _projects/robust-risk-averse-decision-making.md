@@ -3,12 +3,9 @@ title: Robust and Risk-Averse Decision-Making Under Uncertainty
 slug: robust-risk-averse-decision-making
 lab_ids: [anpl]
 recruitment_status: available
-project_types:
-  - research
+project_type: research
+tags:
   - software
-student_levels:
-  - undergraduate
-  - masters
 advisor_names:
   - Vadim Indelman
 thumbnail: /assets/images/projects/robust-risk-averse-decision-making.png
