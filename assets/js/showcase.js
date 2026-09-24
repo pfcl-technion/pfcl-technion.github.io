@@ -33,6 +33,33 @@
     }
   }
 
+  // Randomize slide order per page load (re-shuffled on the 30-min reload).
+  // DOM order is untouched; only the rotation sequence changes.
+  function shuffleSlides() {
+    for (let i = slides.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [slides[i], slides[j]] = [slides[j], slides[i]];
+    }
+  }
+
+  // Render a per-slide QR code (project page / canonical story URL) into the
+  // slide's [data-qr-target] frame as a scalable SVG. Degrades silently.
+  function renderQrCodes() {
+    if (typeof qrcode !== 'function') return;
+    document.querySelectorAll('[data-qr-url]').forEach((slide) => {
+      const target = slide.querySelector('[data-qr-target]');
+      if (!target || target.childElementCount > 0) return;
+      try {
+        const qr = qrcode(0, 'M');
+        qr.addData(slide.dataset.qrUrl);
+        qr.make();
+        target.innerHTML = qr.createSvgTag({ cellSize: 4, margin: 0, scalable: true });
+      } catch (err) {
+        // Unscannable URL or renderer failure — the slide stays informative.
+      }
+    });
+  }
+
   function showSlide(index) {
     if (slides.length === 0) return;
     slides.forEach((slide, i) => {
@@ -119,6 +146,8 @@
 
   // Start presentation
   if (slides.length === 0) return;
+  shuffleSlides();
+  renderQrCodes();
   showSlide(0);
   tick();
 })();
