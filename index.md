@@ -45,20 +45,45 @@ The Philadelphia Flight Control Laboratory, also known as the Control Lab in the
 
 <div class="columns is-multiline">
 {% assign available_projects = site.projects | where: "published", true | where: "recruitment_status", "available" | sort: 'order' %}
-{% for project in available_projects limit: 4 %}
-  <div class="column is-6-desktop is-12-tablet">
-    <div class="card pfcl-card">
-      <div class="card-content">
-        <p class="title is-5"><a href="{{ '/projects/' | relative_url }}">{{ project.title }}</a></p>
-        <p class="subtitle is-6">{{ project.advisor_names | join: ', ' }}</p>
-        <div class="content">{{ project.summary }}</div>
-      </div>
-    </div>
+{% for project in available_projects limit: 3 %}
+  <div class="column is-4-desktop is-6-tablet is-12-mobile">
+    {% include project_card.html project=project %}
   </div>
 {% endfor %}
 </div>
 
-<div class="buttons">
-  <a href="{{ '/projects/' | relative_url }}" class="button is-primary is-outlined">All student projects</a>
+<div class="buttons mt-4">
+  <a href="{{ '/projects/' | relative_url }}" class="button is-primary is-outlined">All student projects &rarr;</a>
 </div>
+
+<!-- Inquiry Modal -->
+<div class="modal" id="pfcl-project-modal" aria-hidden="true">
+  <div class="modal-background" data-modal-close></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title is-size-5" id="pfcl-modal-title">Inquire about project</p>
+      <button class="delete" aria-label="close" data-modal-close></button>
+    </header>
+    <section class="modal-card-body">
+      {% if site.project_inquiry_form_url and site.project_inquiry_form_url != '' %}
+        <iframe id="pfcl-modal-iframe" src="{{ site.project_inquiry_form_url }}" width="100%" height="480" frameborder="0">Loading inquiry form...</iframe>
+      {% else %}
+        <div class="content">
+          <p>Interested in learning more or applying for this project? Reach out to the lab and advisor directly:</p>
+          <p id="pfcl-modal-direct-contact"></p>
+          <div class="buttons mt-4">
+            <a id="pfcl-modal-email-btn" href="mailto:{{ site.email }}" class="button is-primary">
+              <i class="fas fa-envelope mr-2"></i>Send Email Inquiry
+            </a>
+          </div>
+        </div>
+      {% endif %}
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-small" data-modal-close>Close</button>
+    </footer>
+  </div>
+</div>
+
+<script src="{{ '/assets/js/projects.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 
