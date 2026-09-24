@@ -12,6 +12,8 @@ class ProjectCardTest < Minitest::Test
     assert_includes @template, "pfcl-project-thumb", "Must have thumbnail"
     assert_includes @template, "p.url", "Must link to project detail page"
     assert_includes @template, "pfcl-project-tags", "Must have tags"
+    assert_includes @template, "p.project_type", "Must render project_type"
+    refute_includes @template, "student_levels", "Must not reference student_levels"
     assert_includes @template, "data-inquiry-btn", "Must have inquiry trigger"
   end
 end

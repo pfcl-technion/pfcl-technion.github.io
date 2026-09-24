@@ -60,15 +60,13 @@
         </span>
       {% endfor %}
 
-      {% for ptype in p.project_types %}
-        <span class="tag is-primary is-light" title="Project Type">
-          {{ ptype | capitalize }}
-        </span>
-      {% endfor %}
+      <span class="tag is-primary is-light" title="Project Type">
+        {{ p.project_type | capitalize }}
+      </span>
 
-      {% for level in p.student_levels %}
-        <span class="tag is-light" title="Student Level">
-          {{ level | capitalize }}
+      {% for tag in p.tags %}
+        <span class="tag is-light" title="Topic">
+          {{ tag | capitalize }}
         </span>
       {% endfor %}
     </div>
