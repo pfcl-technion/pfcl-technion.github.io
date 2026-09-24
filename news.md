@@ -1,7 +1,7 @@
 ---
 layout: page
 title: News
-subtitle: PFCL-wide activity feed
+subtitle: Control Lab activities feed
 permalink: /news/
 ---
 
