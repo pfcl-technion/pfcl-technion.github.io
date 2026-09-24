@@ -20,9 +20,9 @@ class HomepageTest < Minitest::Test
     refute_nil projects_pos, "Expected '## Selected projects looking for students' section in index.md"
     refute_nil labs_pos, "Expected '## Research groups' section in index.md"
 
-    assert news_pos > welcome_pos, "News & updates should appear after Welcome"
-    assert projects_pos > news_pos, "Selected projects looking for students should appear after News & updates"
-    assert labs_pos > projects_pos, "Research groups should appear after Selected projects looking for students"
+    assert projects_pos > welcome_pos, "Selected projects looking for students should appear after Welcome"
+    assert news_pos > projects_pos, "News & updates should appear after Selected projects looking for students"
+    assert labs_pos > news_pos, "Research groups should appear after News & updates"
     assert carousel_pos > labs_pos, "Carousel should appear after Research groups"
   end
 
