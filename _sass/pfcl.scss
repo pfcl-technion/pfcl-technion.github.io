@@ -713,7 +713,11 @@ select,
 .pfcl-placeholder,
 .pfcl-carousel-frame,
 .pfcl-team-photo,
-.pfcl-partner-placeholder {
+.pfcl-partner-placeholder,
+.pfcl-project-card,
+.pfcl-project-status,
+.pfcl-project-detail-image-wrapper,
+.pfcl-project-detail-meta {
   border-radius: 0 !important;
 }
 
@@ -731,6 +735,194 @@ select,
   background-color: #f8fafc;
   border-left: 3px solid #31bfe4;
   color: #475569;
+}
+
+// ---- Student Projects Component & Detail Styles ----
+.pfcl-project-status {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 0 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+
+  &.pfcl-status-available {
+    background: #15803d;
+    color: #ffffff;
+  }
+
+  &.pfcl-status-ongoing {
+    background: #001b54;
+    color: #ffffff;
+  }
+
+  &.pfcl-status-completed {
+    background: #64748b;
+    color: #ffffff;
+  }
+}
+
+.pfcl-supervisor-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+
+  .pfcl-supervisor-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #cbd5e1;
+    flex-shrink: 0;
+  }
+
+  .pfcl-supervisor-avatar-placeholder {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #e2e8f0;
+    color: #64748b;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+
+  .pfcl-supervisor-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+
+    a {
+      color: #001b54;
+      text-decoration: none;
+
+      &:hover {
+        color: #31bfe4;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Project Detail Page
+.pfcl-project-detail-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000e1f;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 0 !important;
+
+  .pfcl-project-detail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.pfcl-project-detail-meta {
+  border-radius: 0 !important;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+// Project Card
+.pfcl-project-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0 !important;
+  box-shadow: 0 2px 8px rgba(0, 27, 84, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 8px 24px rgba(0, 27, 84, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .pfcl-project-thumb-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000e1f;
+    overflow: hidden;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .pfcl-project-thumb {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover .pfcl-project-thumb {
+      transform: scale(1.03);
+    }
+  }
+
+  .pfcl-project-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .pfcl-project-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.35;
+
+    a {
+      color: #001b54;
+      text-decoration: none;
+
+      &:hover {
+        color: #31bfe4;
+      }
+    }
+  }
+
+  .pfcl-project-summary {
+    color: #4b5563;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    flex-grow: 1;
+  }
+
+  .pfcl-project-tags {
+    margin-top: auto;
+    padding-top: 0.5rem;
+    gap: 0.35rem;
+
+    .tag {
+      font-size: 0.75rem;
+      border-radius: 0 !important;
+    }
+  }
+
+  .pfcl-project-footer {
+    padding-top: 0.75rem;
+    border-top: 1px solid #f1f5f9;
+    display: flex;
+    gap: 0.5rem;
+  }
 }
 
 // ---- Directions Google Maps embed container ----
@@ -758,5 +950,6 @@ select,
     border: none;
   }
 }
+
 
 
