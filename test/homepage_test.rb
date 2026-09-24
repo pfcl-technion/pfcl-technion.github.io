@@ -30,4 +30,12 @@ class HomepageTest < Minitest::Test
     assert_includes @content, "{{ '/news/' | relative_url }}", "Homepage should include a link to /news/"
     assert_includes @content, "All news &amp; updates", "Homepage should include 'All news & updates' button text"
   end
+
+  def test_homepage_includes_project_card
+    assert_includes @content, "project_card.html", "Homepage must use project_card.html"
+  end
+
+  def test_homepage_includes_inquiry_modal
+    assert_includes @content, "pfcl-project-modal", "Homepage must include inquiry modal"
+  end
 end
