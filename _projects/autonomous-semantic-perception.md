@@ -11,6 +11,7 @@ student_levels:
   - masters
 advisor_names:
   - Vadim Indelman
+thumbnail: /assets/images/projects/autonomous-semantic-perception.png
 summary: "Development of active perception algorithms enabling mobile robots to optimize viewpoints for semantic understanding and scene reconstruction."
 contact_email: vadim.indelman@technion.ac.il
 application_url: https://anpl-technion.github.io/student_projects/

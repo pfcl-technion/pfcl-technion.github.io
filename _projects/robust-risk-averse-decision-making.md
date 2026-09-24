@@ -11,6 +11,7 @@ student_levels:
   - masters
 advisor_names:
   - Vadim Indelman
+thumbnail: /assets/images/projects/robust-risk-averse-decision-making.png
 summary: "Investigating robust and risk-averse decision-making strategies for autonomous navigation and perception under belief-space uncertainty."
 contact_email: vadim.indelman@technion.ac.il
 application_url: https://anpl-technion.github.io/student_projects/
