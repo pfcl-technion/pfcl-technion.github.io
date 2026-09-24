@@ -15,11 +15,6 @@ carousel:
 
 The Philadelphia Flight Control Laboratory, also known as the Control Lab in the Stephen B. Klein faculty of Aerospace Engineering, is comprised of research groups and teaching labs in the fields of Guidance, Navigation, and Control (GNC).
 
-<div class="buttons">
-  <a href="{{ '/labs/' | relative_url }}" class="button is-primary">Research groups</a>
-  <a href="{{ '/projects/' | relative_url }}" class="button is-primary is-outlined">Available student projects</a>
-</div>
-
 ## News &amp; updates
 
 {% include news_feed.html limit=4 %}
