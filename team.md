@@ -5,8 +5,6 @@ subtitle: Faculty, staff, and researchers
 permalink: /team/
 ---
 
-[Placeholder: optional introduction to the PFCL team.]
-
 {% for cat in site.data.taxonomies.team_categories %}
 {% assign members = site.team | where: 'category', cat.id | sort: 'order' %}
 {% if members.size > 0 %}

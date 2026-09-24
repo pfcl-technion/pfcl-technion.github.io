@@ -5,25 +5,13 @@ subtitle: The umbrella laboratory for GNC research at Technion
 permalink: /about/
 ---
 
-[Placeholder: concise institutional overview — 2–3 paragraphs about the Philadelphia Flight Control Laboratory.]
+The Philadelphia Flight Control Laboratory (PFCL) is the heart of the Guidance, Navigation, and Control (GNC) research group within the Faculty of Aerospace Engineering at the Technion – Israel Institute of Technology.
 
-## Constituent research groups
+The scope of the interdisciplinary research performed in the laboratory includes high-level control objectives such as cooperative team mission planning (task assignment) and multi-robot coordination, motion planning (guidance) with regard to optimizing trajectories for dynamical systems, trajectory-following, low-level control objectives focused on the control of single vehicles and platforms, and vision-aided single- and multi-vehicle autonomous navigation in uncertain environments.
 
-[Placeholder: short introduction.]
-
-<div class="columns is-multiline">
-  {% assign labs = site.labs | sort: 'order' %}
-  {% for lab in labs %}
-    <div class="column is-6-desktop is-12-tablet">
-      {% include lab_card.html lab=lab %}
-    </div>
-  {% endfor %}
+<div class="buttons mt-5">
+  <a href="{{ '/team/' | relative_url }}" class="button is-primary">Team</a>
+  <a href="{{ '/media/' | relative_url }}" class="button is-primary is-outlined">Media</a>
+  <a href="{{ '/history/' | relative_url }}" class="button is-primary is-outlined">History</a>
+  <a href="{{ '/dedication/' | relative_url }}" class="button is-primary is-outlined">PFCL Dedication</a>
 </div>
-
-## Location
-
-Philadelphia Flight Control Laboratory
-Faculty of Aerospace Engineering
-Lady Davis Building
-Technion – Israel Institute of Technology
-Haifa 32000, Israel

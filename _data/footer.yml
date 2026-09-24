@@ -43,4 +43,4 @@ logos:
     url: https://www.technion.ac.il/en/home-2/
     image: /assets/images/footer_logo_technion.png
 
-copyright: "© 2026 Philadelphia Flight Control Laboratory — Technion"
+copyright: "© 2026 Philadelphia Flight Control Laboratory — Technion · Built using the <a href=\"https://github.com/chrisrhymes/bulma-clean-theme\" target=\"_blank\" rel=\"noopener noreferrer\">Bulma Clean Theme</a>"

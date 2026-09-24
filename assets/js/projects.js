@@ -9,11 +9,14 @@
   var selects = Array.prototype.slice.call(root.querySelectorAll("select[data-filter]"));
   var cards = Array.prototype.slice.call(root.querySelectorAll("[data-project-card]"));
 
+  var emptyNotice = root.querySelector("[data-empty-filter]");
+
   function cardValues(card, name) {
     return (card.getAttribute("data-" + name) || "").split(/\s+/).filter(Boolean);
   }
 
   function applyFilters() {
+    var visibleCount = 0;
     cards.forEach(function (card) {
       var visible = selects.every(function (select) {
         var value = select.value;
@@ -21,7 +24,15 @@
         return cardValues(card, select.getAttribute("data-filter")).indexOf(value) !== -1;
       });
       card.hidden = !visible;
+      card.style.display = visible ? "" : "none";
+      card.classList.toggle("is-hidden", !visible);
+      if (visible) visibleCount++;
     });
+
+    if (emptyNotice) {
+      emptyNotice.style.display = visibleCount === 0 ? "" : "none";
+      emptyNotice.classList.toggle("is-hidden", visibleCount > 0);
+    }
   }
 
   selects.forEach(function (select) {

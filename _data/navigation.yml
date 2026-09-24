@@ -1,16 +1,5 @@
 - name: Home
   link: /
-- name: About
-  link: /about/
-  dropdown:
-    - name: About PFCL
-      link: /about/
-    - name: History
-      link: /history/
-    - name: PFCL Dedication
-      link: /dedication/
-    - name: Team
-      link: /team/
 - name: Research Groups
   link: /labs/
 - name: Student Projects
@@ -19,7 +8,16 @@
   link: /teaching/
 - name: News
   link: /news/
-- name: Media
-  link: /media/
+- name: About
+  link: /about/
+  dropdown:
+    - name: Team
+      link: /team/
+    - name: Media
+      link: /media/
+    - name: History
+      link: /history/
+    - name: PFCL Dedication
+      link: /dedication/
 - name: Contact
   link: /contact/
