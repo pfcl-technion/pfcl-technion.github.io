@@ -43,4 +43,13 @@ class ShowcaseTest < Minitest::Test
     refute_includes content, "{% include header.html %}", "showcase layout must NOT include standard site header"
     refute_includes content, "{% include footer.html %}", "showcase layout must NOT include standard site footer"
   end
+
+  def test_showcase_light_theme_and_sharp_corners
+    skip unless File.exist?(@style_path)
+    content = File.read(@style_path)
+    assert_includes content, "#f8fafc", "Showcase styles must use #f8fafc light canvas surface"
+    assert_includes content, "#001b54", "Showcase styles must use #001b54 brand navy"
+    assert_includes content, "border-radius: 0", "Showcase styles must enforce sharp corners"
+    refute_match(/border-radius:\s*(16px|12px|8px|9999px)/, content, "Showcase styles must not use rounded corners")
+  end
 end
