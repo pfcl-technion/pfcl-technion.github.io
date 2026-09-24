@@ -20,8 +20,6 @@ The Philadelphia Flight Control Laboratory, also known as the Control Lab in the
   <a href="{{ '/projects/' | relative_url }}" class="button is-primary is-outlined">Available student projects</a>
 </div>
 
-{% include carousel.html %}
-
 ## News &amp; updates
 
 {% include news_feed.html limit=4 %}
@@ -54,6 +52,10 @@ The Philadelphia Flight Control Laboratory, also known as the Control Lab in the
 
 <div class="buttons mt-4">
   <a href="{{ '/projects/' | relative_url }}" class="button is-primary is-outlined">All student projects &rarr;</a>
+</div>
+
+<div class="mt-6">
+{% include carousel.html %}
 </div>
 
 <!-- Inquiry Modal -->
