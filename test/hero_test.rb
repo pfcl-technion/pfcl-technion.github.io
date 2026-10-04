@@ -28,4 +28,11 @@ class HeroTest < Minitest::Test
     refute_includes small_block, "margin-top: auto", "Small heroes are compact strips and must stay top-anchored"
     refute_includes small_block, "justify-content: flex-end", "Small heroes are compact strips and must stay top-anchored"
   end
+
+  def test_hero_defaults_to_small_height_across_pages
+    hero_include = File.read(File.expand_path("../_includes/hero.html", __dir__))
+    assert_includes hero_include, "hero_height | default: 'is-small'", "Hero template should default to is-small"
+    refute_includes hero_include, "default: 'is-medium'", "Hero template must not default home page to is-medium"
+  end
 end
+
