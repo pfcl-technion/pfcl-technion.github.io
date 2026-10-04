@@ -1,0 +1,32 @@
+[
+  {
+    "id": "2097017262284693848",
+    "text": "The paper \"Accelerated Risk-Averse Policy Evaluation with CVaR Bounds Under Surrogate Models\" has been accepted for publication in the Journal of Artificial Intelligence Research (JAIR).\nhttps://t.co/83yzdn4XWm",
+    "created_at": "2026-09-07T17:40:50.000Z",
+    "account": "ANPL_Technion",
+    "handle": "@ANPL_Technion",
+    "link": "https://twitter.com/ANPL_Technion/status/2097017262284693848",
+    "urls": [
+      {
+        "display_url": "arxiv.org/abs/2602.23073",
+        "expanded_url": "https://arxiv.org/abs/2602.23073",
+        "url": "https://t.co/83yzdn4XWm"
+      }
+    ]
+  },
+  {
+    "id": "2038310187577073944",
+    "text": "An MSc seminar by Tamir Shazman on \"Online Robust Planning under Model Uncertainty\".\nhttps://t.co/zntopnKjdW",
+    "created_at": "2026-03-29T17:39:53.000Z",
+    "account": "vadim_indelman",
+    "handle": "@vadim_indelman",
+    "link": "https://twitter.com/vadim_indelman/status/2038310187577073944",
+    "urls": [
+      {
+        "display_url": "youtube.com/watch?v=example",
+        "expanded_url": "https://www.youtube.com/watch?v=example",
+        "url": "https://t.co/zntopnKjdW"
+      }
+    ]
+  }
+]
