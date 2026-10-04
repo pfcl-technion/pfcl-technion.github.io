@@ -1,15 +1,13 @@
 {% if page.hero_image != false and page.hero_image != 'none' %}
   {% if page.url == '/' or page.url == '/index.html' %}
     {% assign hero_img = page.hero_image | default: '/assets/images/drone2.jpg' %}
-    {% assign hero_height_class = page.hero_height | default: 'is-medium' %}
   {% else %}
     {% assign hero_img = page.hero_image | default: '/assets/images/header_strip.jpg' %}
-    {% assign hero_height_class = page.hero_height | default: 'is-small' %}
   {% endif %}
 {% else %}
   {% assign hero_img = nil %}
-  {% assign hero_height_class = page.hero_height | default: 'is-small' %}
 {% endif %}
+{% assign hero_height_class = page.hero_height | default: 'is-small' %}
 
 <section
   class="hero {{ hero_height_class }} is-primary pfcl-hero {% if hero_img %}has-background-image{% endif %}"
