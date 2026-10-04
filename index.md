@@ -5,10 +5,6 @@ subheading: Stephen B. Klein Faculty of Aerospace Engineering
 subtitle: Technion – Israel Institute of Technology
 hide_hero: false
 hero_image: "/assets/images/drone2.jpg"
-carousel:
-  - caption: Photograph of the PFCL flight testbeds
-  - caption: Photograph of researchers operating a quadcopter experiment
-  - caption: "Research-figure slide — [To be updated: caption of concept figure]"
 ---
 
 ## Welcome
@@ -47,10 +43,6 @@ The Philadelphia Flight Control Laboratory, also known as the Control Lab in the
     {% include lab_card.html lab=lab %}
   </div>
 {% endfor %}
-</div>
-
-<div class="mt-6">
-{% include carousel.html %}
 </div>
 
 <!-- Inquiry Modal -->
