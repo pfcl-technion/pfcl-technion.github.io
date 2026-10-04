@@ -40,4 +40,9 @@ class HomepageTest < Minitest::Test
   def test_welcome_buttons_removed
     refute_includes @content, "Available student projects", "Welcome CTA button 'Available student projects' should be removed"
   end
+
+  def test_homepage_has_section_dividers
+    divider_count = @content.scan('<hr class="pfcl-section-divider">').length
+    assert_equal 3, divider_count, "Expected 3 section dividers separating the homepage sections"
+  end
 end
