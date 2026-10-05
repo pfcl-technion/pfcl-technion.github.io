@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "minitest/autorun"
+require "yaml"
 
 class ProjectCardTest < Minitest::Test
   def setup
@@ -22,6 +23,7 @@ class ProjectCardTest < Minitest::Test
     assert_includes @template, "if p.external"
     external_branch = @template[/\{%\s*if p\.external\s*%\}(.*?)\{%\s*else\s*%\}/m, 1].to_s
 
+    external_branch = @template.split(/\{%\s*else\s*%\}\s*<div class="card pfcl-card pfcl-project-card">/, 2).first
     assert_operator external_branch.scan("p.canonical_url").length, :>=, 3
     assert_match(/target=["']_blank["']/, external_branch)
     assert_match(/rel=["']noopener noreferrer["']/, external_branch)
@@ -41,5 +43,17 @@ class ProjectCardTest < Minitest::Test
     assert_includes native_branch, "p.url"
     assert_includes native_branch, "pfcl-project-status"
     assert_includes native_branch, "data-inquiry-btn"
+  end
+
+  def test_external_advisor_alias_resolves_vadim_to_his_pfcl_team_profile
+    aliases = YAML.safe_load_file(File.expand_path("../_data/external_advisor_aliases.yml", __dir__), aliases: false)
+    assert_equal "vadim-indelman", aliases.fetch("vadim indelman")
+
+    external_branch = @template[/\{%\s*if p\.external\s*%\}(.*?)\{%\s*else\s*%\}/m, 1].to_s
+    external_branch = @template.split(/\{%\s*else\s*%\}\s*<div class="card pfcl-card pfcl-project-card">/, 2).first
+    assert_includes external_branch, "site.data.external_advisor_aliases"
+    assert_includes external_branch, "advisor_member.photo"
+    assert_includes external_branch, "pfcl-project-supervisor"
+    assert_includes external_branch, "pfcl-supervisor-avatar-placeholder"
   end
 end

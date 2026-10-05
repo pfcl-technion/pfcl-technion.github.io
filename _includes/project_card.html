@@ -19,10 +19,23 @@
       <div class="pfcl-project-supervisor mb-3">
         {% for advisor_name in p.advisor_names %}
           <div class="pfcl-supervisor-item">
-            <span class="pfcl-supervisor-avatar-placeholder"><i class="fas fa-user"></i></span>
+            {% assign advisor_alias_key = advisor_name | downcase | strip %}
+            {% assign advisor_slug = site.data.external_advisor_aliases[advisor_alias_key] %}
+            {% assign advisor_member = site.team | where: "slug", advisor_slug | first %}
+            {% if advisor_member and advisor_member.photo %}
+              <img src="{{ advisor_member.photo | relative_url }}" alt="{{ advisor_name | escape }}" class="pfcl-supervisor-avatar">
+            {% else %}
+              <span class="pfcl-supervisor-avatar-placeholder"><i class="fas fa-user"></i></span>
+            {% endif %}
             <div class="pfcl-supervisor-info">
               <span class="pfcl-supervisor-label">Advisor</span>
-              <span class="pfcl-supervisor-name">{{ advisor_name | escape }}</span>
+              {% if advisor_member.faculty_url %}
+                <a href="{{ advisor_member.faculty_url | escape }}" target="_blank" rel="noopener noreferrer" class="pfcl-supervisor-name">{{ advisor_name | escape }}</a>
+              {% elsif advisor_member.email %}
+                <a href="mailto:{{ advisor_member.email | escape }}" class="pfcl-supervisor-name">{{ advisor_name | escape }}</a>
+              {% else %}
+                <span class="pfcl-supervisor-name">{{ advisor_name | escape }}</span>
+              {% endif %}
             </div>
           </div>
         {% endfor %}
