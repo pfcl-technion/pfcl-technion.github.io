@@ -1008,6 +1008,19 @@ select,
   }
 }
 
+.pfcl-project-source {
+  color: #334155;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pfcl-external-project-handoff {
+  border-left: 3px solid #31bfe4;
+  background: #f8fafc;
+  padding: 1.5rem;
+}
+
 // ---- Directions Google Maps embed container ----
 .map-container {
   position: relative;

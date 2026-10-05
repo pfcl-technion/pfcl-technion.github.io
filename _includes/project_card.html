@@ -1,6 +1,56 @@
 {% assign p = include.project %}
 {% assign thumb = p.thumbnail | default: '/assets/images/project_default.jpg' %}
 
+{% if p.external %}
+<div class="card pfcl-card pfcl-project-card pfcl-project-card-external">
+  <div class="pfcl-project-thumb-wrapper">
+    <a href="{{ p.canonical_url | escape }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ thumb | escape }}" alt="{{ p.title | escape }}" class="pfcl-project-thumb" loading="lazy">
+    </a>
+  </div>
+
+  <div class="card-content pfcl-project-body">
+    <p class="pfcl-project-source is-size-7 mb-2">ANPL listing</p>
+    <h3 class="title is-5 pfcl-project-title mb-2">
+      <a href="{{ p.canonical_url | escape }}" target="_blank" rel="noopener noreferrer">{{ p.title | escape }}</a>
+    </h3>
+
+    {% if p.advisor_names and p.advisor_names.size > 0 %}
+      <div class="pfcl-project-supervisor mb-3">
+        {% for advisor_name in p.advisor_names %}
+          <div class="pfcl-supervisor-item">
+            <span class="pfcl-supervisor-avatar-placeholder"><i class="fas fa-user"></i></span>
+            <div class="pfcl-supervisor-info">
+              <span class="pfcl-supervisor-label">Advisor</span>
+              <span class="pfcl-supervisor-name">{{ advisor_name | escape }}</span>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <div class="content pfcl-project-summary is-size-6 mb-3">
+      {{ p.summary | escape }}
+    </div>
+
+    <div class="pfcl-project-tags tags mb-3">
+      <span class="tag is-info is-light" title="Research Group">
+        <i class="fas fa-flask mr-1"></i>{{ p.source_name | escape }}
+      </span>
+      {% for tag in p.tags %}
+        <span class="tag is-light" title="Topic">{{ tag | escape }}</span>
+      {% endfor %}
+    </div>
+
+    <div class="pfcl-project-footer mt-auto buttons are-small">
+      <a href="{{ p.canonical_url | escape }}" target="_blank" rel="noopener noreferrer"
+         class="button is-primary is-outlined is-flex-grow-1">
+        View on ANPL &rarr;
+      </a>
+    </div>
+  </div>
+</div>
+{% else %}
 <div class="card pfcl-card pfcl-project-card">
   <div class="pfcl-project-thumb-wrapper">
     <a href="{{ p.url | relative_url }}">
@@ -92,3 +142,4 @@
     </div>
   </div>
 </div>
+{% endif %}

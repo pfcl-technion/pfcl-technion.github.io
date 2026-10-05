@@ -1,6 +1,19 @@
 // PFCL student-project filters and inquiry modal.
-(function () {
+(function (global) {
   "use strict";
+
+  function matchesProject(project, filters) {
+    var matchesLabs = !filters.labs || project.labs.indexOf(filters.labs) !== -1;
+    var matchesStatus = !filters.status || project.status.indexOf(filters.status) !== -1;
+    var matchesType = !filters.type || project.type.indexOf(filters.type) !== -1;
+    var matchesSearch = !filters.query || project.text.indexOf(filters.query) !== -1;
+    return matchesLabs && matchesStatus && matchesType && matchesSearch;
+  }
+
+  var api = { matchesProject: matchesProject };
+  if (typeof module !== "undefined" && module.exports) module.exports = api;
+  global.PFCLProjectFilters = api;
+  if (typeof document === "undefined") return;
 
   var root = document.querySelector("[data-project-list]");
   var modal = document.getElementById("pfcl-project-modal");
@@ -19,16 +32,19 @@
     function applyFilters() {
       var query = searchInput ? searchInput.value.trim().toLowerCase() : "";
       var visibleCount = 0;
+      var filters = { labs: "", status: "", type: "", query: query };
+      selects.forEach(function (select) {
+        filters[select.getAttribute("data-filter")] = select.value;
+      });
 
       cards.forEach(function (card) {
-        var matchesDropdowns = selects.every(function (select) {
-          var value = select.value;
-          if (!value) return true;
-          return cardValues(card, select.getAttribute("data-filter")).indexOf(value) !== -1;
-        });
-
-        var matchesSearch = !query || card.textContent.toLowerCase().indexOf(query) !== -1;
-        var visible = matchesDropdowns && matchesSearch;
+        var descriptor = {
+          labs: cardValues(card, "labs"),
+          status: cardValues(card, "status"),
+          type: cardValues(card, "type"),
+          text: card.textContent.toLowerCase()
+        };
+        var visible = matchesProject(descriptor, filters);
 
         card.hidden = !visible;
         card.style.display = visible ? "" : "none";
@@ -100,4 +116,4 @@
       }
     });
   }
-})();
+})(typeof globalThis !== "undefined" ? globalThis : this);
