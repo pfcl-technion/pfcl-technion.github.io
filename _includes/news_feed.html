@@ -22,25 +22,32 @@
   {% for item in sorted %}
     {% if limit > 0 and forloop.index > limit %}{% break %}{% endif %}
     {% assign item_date = item.date | default: item.published_at %}
+    {% assign published_at = item.published_at | default: item_date %}
     {% if item.lab_id == 'pfcl' %}
       {% assign source_label = 'PFCL' %}
     {% else %}
       {% assign source_lab = site.labs | where: 'slug', item.lab_id | first %}
       {% assign source_label = item.source_name | default: source_lab.short_name | default: 'PFCL' %}
     {% endif %}
+    {% assign source_label = source_label | escape %}
     <li class="pfcl-news-item">
       <p class="pfcl-news-meta is-size-7 has-text-grey">
-        <time datetime="{{ item_date | date_to_xmlschema }}">{{ item_date | date: '%B %-d, %Y' }}</time>
+        {% if item.date_precision == 'month' %}
+          {% assign month_date = published_at | append: '-01' %}
+          <time datetime="{{ published_at | escape }}">{{ month_date | date: '%B %Y' }}</time>
+        {% else %}
+          <time datetime="{{ published_at | date_to_xmlschema | escape }}">{{ published_at | date: '%B %-d, %Y' }}</time>
+        {% endif %}
         — {{ source_label }}
       </p>
       <p class="mb-1">
         {% if item.canonical_url and item.lab_id != 'pfcl' %}
-          <a href="{{ item.canonical_url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+          <a href="{{ item.canonical_url | escape }}" target="_blank" rel="noopener noreferrer">{{ item.title | escape }}</a>
         {% else %}
-          {{ item.title }}
+          {{ item.title | escape }}
         {% endif %}
       </p>
-      <p class="is-size-6">{{ item.excerpt }}</p>
+      <p class="is-size-6">{{ item.excerpt | escape }}</p>
     </li>
   {% endfor %}
 </ul>

@@ -8,18 +8,21 @@ permalink: /projects/
 The Control Lab offers diverse research and engineering project opportunities for undergraduate and graduate students. Browse currently available and active projects below, filter by topic or research group, or click any project to view its full details and prerequisites.
 
 <div data-project-list>
-{% include project_filters.html %}
+{% assign empty_projects = '' | split: '' %}
+{% assign native_projects = site.projects | where: 'published', true | where_exp: 'project', 'project.external != true' | sort: 'order' %}
+{% assign generated_projects = site.data.generated.projects | default: empty_projects | sort_natural: 'title' %}
+{% assign projects = native_projects | concat: generated_projects %}
+{% include project_filters.html projects=projects %}
 
-{% assign projects = site.projects | where: 'published', true | sort: 'order' %}
 {% if projects.size == 0 %}
 <p class="pfcl-placeholder" data-project-empty>No student projects are currently published.</p>
 {% else %}
 <div class="columns is-multiline">
 {% for project in projects %}
   <div class="column is-4-desktop is-6-tablet is-12-mobile" data-project-card
-       data-labs="{{ project.lab_ids | join: ' ' }}"
-       data-status="{{ project.recruitment_status }}"
-       data-type="{{ project.project_type }}">
+       data-labs="{{ project.lab_ids | join: ' ' | escape }}"
+       data-status="{{ project.recruitment_status | default: '' | escape }}"
+       data-type="{{ project.project_type | default: '' | escape }}">
     {% include project_card.html project=project %}
   </div>
 {% endfor %}

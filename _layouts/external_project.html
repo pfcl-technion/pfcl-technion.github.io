@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<nav class="breadcrumb is-small mb-4" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+    <li><a href="{{ '/projects/' | relative_url }}">Student Projects</a></li>
+    <li class="is-active"><a href="#" aria-current="page">{{ page.title | escape }}</a></li>
+  </ul>
+</nav>
+
+<article class="content pfcl-external-project-handoff">
+  <p class="pfcl-project-source">{{ page.source_name | escape }} listing</p>
+  <h2 class="title is-4">This project is maintained by {{ page.source_name | escape }}</h2>
+  <p>
+    This PFCL address is preserved as a stable handoff. The original project listing contains the current,
+    verified project details.
+  </p>
+  <p>
+    <a class="button is-primary" href="{{ page.canonical_url | escape }}"
+       target="_blank" rel="noopener noreferrer">View on ANPL &rarr;</a>
+  </p>
+  <p class="is-size-7">
+    If the button does not work, follow the
+    <a href="{{ page.canonical_url | escape }}" target="_blank" rel="noopener noreferrer">original ANPL listing</a>.
+  </p>
+</article>
+
+<div class="mt-6">
+  <a href="{{ '/projects/' | relative_url }}" class="button is-light">&larr; Back to all student projects</a>
+</div>
