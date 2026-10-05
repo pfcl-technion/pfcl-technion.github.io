@@ -232,6 +232,8 @@ module PFCL
       def provenance(entry)
         {
           "repository" => @source.repository,
+          "lab_id" => @source.lab_id,
+          "source_name" => @source.source_name,
           "revision" => @revision,
           "source_path" => @source.paths.fetch("publications"),
           "source_key" => entry.key.to_s
