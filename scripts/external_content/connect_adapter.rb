@@ -48,7 +48,7 @@ module PFCL
           "lab_id" => @source.lab_id,
           "category" => "news",
           "excerpt" => excerpt,
-          "canonical_url" => "#{@source.site_url}/news/#{url_segment(stem)}/",
+          "canonical_url" => "#{@source.site_url}/news/#{url_segment(stem)}",
           "source_name" => @source.source_name,
           "featured" => false,
           "show_on_showcase" => true,
