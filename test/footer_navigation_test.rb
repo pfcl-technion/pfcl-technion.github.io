@@ -29,6 +29,21 @@ class FooterNavigationTest < Minitest::Test
     assert_equal expected_menus, @footer.fetch("menus")
   end
 
+  def test_publications_follows_research_groups_in_both_navigation_menus
+    research_index = @navigation.index { |item| item["name"] == "Research Groups" }
+    assert_equal(
+      { "name" => "Publications", "link" => "/publications/" },
+      @navigation.fetch(research_index + 1)
+    )
+
+    explore = @footer.fetch("menus").find { |menu| menu["title"] == "Explore" }
+    footer_research_index = explore.fetch("links").index { |item| item["name"] == "Research Groups" }
+    assert_equal(
+      { "name" => "Publications", "url" => "/publications/" },
+      explore.fetch("links").fetch(footer_research_index + 1)
+    )
+  end
+
   private
 
   def footer_link(navigation_item)

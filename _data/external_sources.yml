@@ -1,0 +1,25 @@
+sources:
+  anpl:
+    lab_id: anpl
+    source_name: ANPL
+    repository: anpl-technion/anpl-technion.github.io
+    site_url: https://anpl-technion.github.io
+    publications_url: https://anpl-technion.github.io/publications/
+    paths:
+      news: _data/tweets.json
+      publications: _bibliography/VadimIndelman.bib
+      projects: _student-projects
+    legacy_project_slugs:
+      autonomous-semantic-perception: "AutonomousViewpoint-DependentSemantic Perception.md"
+      collaborative-aerial-navigation: "Collaborative_Multi-Robot_Aerial_Autonomous_Navigation_and 3D_Reconstruction.md"
+      robust-risk-averse-decision-making: "RobustRiskAverseDecisonMaking.md"
+  connect:
+    lab_id: connect
+    source_name: ConNeCt
+    repository: Connect-Lab-Technion/Connect-Lab-Technion.github.io
+    site_url: https://connect-lab-technion.github.io
+    publications_url: https://connect-lab-technion.github.io/publications/
+    paths:
+      news: _news
+      publications: _bibliography/DZ_Complete.bib
+    legacy_project_slugs: {}

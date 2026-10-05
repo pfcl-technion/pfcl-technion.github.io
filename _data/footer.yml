@@ -5,6 +5,8 @@ menus:
         url: /
       - name: Research Groups
         url: /labs/
+      - name: Publications
+        url: /publications/
       - name: Student Projects
         url: /projects/
       - name: Teaching Labs

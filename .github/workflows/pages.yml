@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
 
 permissions:
   contents: read
@@ -18,7 +20,35 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout PFCL source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Checkout ANPL source
+        uses: actions/checkout@v4
+        with:
+          repository: anpl-technion/anpl-technion.github.io
+          path: external/anpl
+          fetch-depth: 1
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            _data/tweets.json
+            _bibliography/VadimIndelman.bib
+            _student-projects
+
+      - name: Checkout ConNeCt source
+        uses: actions/checkout@v4
+        with:
+          repository: Connect-Lab-Technion/Connect-Lab-Technion.github.io
+          path: external/connect
+          fetch-depth: 1
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            _news
+            _bibliography/DZ_Complete.bib
 
       - name: Build site image
         run: docker compose build
@@ -26,11 +56,20 @@ jobs:
       - name: Install dependencies
         run: docker compose run --rm site sh -c "bundle check || bundle install"
 
+      - name: Sync external metadata
+        run: >-
+          docker compose run --rm site bundle exec ruby scripts/sync_external_content.rb
+          --anpl-root external/anpl
+          --connect-root external/connect
+          --output-dir _data/generated
+
       - name: Validate content
         run: docker compose run --rm site bundle exec ruby scripts/validate_content.rb
 
       - name: Run tests
-        run: docker compose run --rm site bundle exec ruby -Itest test/content_validation_test.rb
+        run: >-
+          docker compose run --rm site bundle exec ruby -Itest -e
+          "Dir.glob('test/**/*_test.rb').sort.each { |file| require File.expand_path(file) }"
 
       - name: Build site (production)
         run: docker compose run -e JEKYLL_ENV=production --rm site bundle exec jekyll build --trace

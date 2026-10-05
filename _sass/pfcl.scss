@@ -673,6 +673,45 @@ a.pfcl-lab-circle {
   }
 }
 
+.pfcl-news-source {
+  color: #475569;
+  font-weight: 600;
+}
+
+// ---- Publications ----
+.pfcl-publication-year + .pfcl-publication-year {
+  margin-top: 2.25rem;
+}
+
+.pfcl-publication-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pfcl-publication-item {
+  border-left: 3px solid #31bfe4;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1rem 1.25rem;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.pfcl-publication-authors,
+.pfcl-publication-venue {
+  color: #334155;
+}
+
+.pfcl-publication-meta {
+  color: #475569;
+}
+
+.pfcl-publication-sources {
+  font-weight: 600;
+}
+
 // ---- Partner logo row (homepage) ----
 .pfcl-partners {
   align-items: center;
@@ -967,6 +1006,19 @@ select,
     display: flex;
     gap: 0.5rem;
   }
+}
+
+.pfcl-project-source {
+  color: #334155;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pfcl-external-project-handoff {
+  border-left: 3px solid #31bfe4;
+  background: #f8fafc;
+  padding: 1.5rem;
 }
 
 // ---- Directions Google Maps embed container ----
