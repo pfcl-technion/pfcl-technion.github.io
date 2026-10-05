@@ -60,7 +60,9 @@ class AnplAdapterTest < Minitest::Test
   end
 
   def test_maps_project_to_external_metadata_without_invented_fields
-    project = adapter.projects.find { |item| item.fetch("title").start_with?("Autonomous") }
+    project = adapter.projects.find do |item|
+      item.fetch("title") == "Autonomous Viewpoint-Dependent Semantic Perception"
+    end
 
     assert_equal "anpl:project:autonomous-viewpoint-dependent-semantic-perception", project.fetch("id")
     assert_equal "autonomous-viewpoint-dependent-semantic-perception", project.fetch("slug")
@@ -93,6 +95,15 @@ class AnplAdapterTest < Minitest::Test
     assert_equal "Useful project description with documentation.", project.fetch("summary")
     assert_equal ["Safe Advisor"], project.fetch("advisor_names")
     refute_match(/<|>|<script|alert\s*\(/i, project.values_at("title", "summary").join(" "))
+  end
+
+  def test_uses_the_first_non_empty_section_when_a_project_starts_with_a_heading
+    project = adapter.projects.find { |item| item.fetch("title").start_with?("Autonomous Multi Robot") }
+
+    assert_includes project.fetch("summary"), "Scanning process"
+    assert_includes project.fetch("summary"), "Robotic mapping"
+    refute_includes project.fetch("summary"), "Project Definition"
+    refute_includes project.fetch("summary"), "later section"
   end
 
   def test_rejects_invalid_tweet_json_and_empty_tweet_cache
