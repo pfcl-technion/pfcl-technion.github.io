@@ -31,7 +31,7 @@ class ConnectAdapterTest < Minitest::Test
     assert_equal "news", update.fetch("category")
     assert_equal "ConNeCt", update.fetch("source_name")
     assert_equal "Daniel Zelazo will be an invited speaker at the 2026 Rigidity Workshop.", update.fetch("excerpt")
-    assert_equal "https://connect-lab-technion.github.io/news/news_8-09-26_no2/", update.fetch("canonical_url")
+    assert_equal "https://connect-lab-technion.github.io/news/news_8-09-26_no2", update.fetch("canonical_url")
     assert_equal false, update.fetch("featured")
     assert_equal true, update.fetch("show_on_showcase")
     assert_equal 0, update.fetch("display_weight")
