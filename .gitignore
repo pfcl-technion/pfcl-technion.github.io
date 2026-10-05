@@ -7,7 +7,7 @@ vendor/
 !assets/js/vendor/
 .bundle/
 node_modules/
-external/
+/external/
 .DS_Store
 *.log
 .claude/

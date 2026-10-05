@@ -87,8 +87,7 @@ module PFCL
         basename = File.basename(path, ".md")
         relative_path = "#{configured_directory}/#{File.basename(path)}"
         slug = slugify(title)
-        summary_source = document.body.split(/^\s*\#{1,6}\s+/).first.to_s
-        summary = PlainText.from_markdown(summary_source, max_length: EXCERPT_LIMIT)
+        summary = project_summary(document.body)
         raise SourceError, "#{path}: project summary is missing" if summary.empty?
 
         project = {
@@ -119,6 +118,14 @@ module PFCL
         project["prerequisites"] = prerequisites unless prerequisites.empty?
         project["duration"] = PlainText.from_markdown(duration) if duration
         project
+      end
+
+      def project_summary(body)
+        body.split(/^\s*\#{1,6}\s+[^\r\n]*(?:\r?\n|\z)/).each do |section|
+          summary = PlainText.from_markdown(section, max_length: EXCERPT_LIMIT)
+          return summary unless summary.empty?
+        end
+        ""
       end
 
       def section_bullets(body, heading)
