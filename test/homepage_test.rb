@@ -37,6 +37,22 @@ class HomepageTest < Minitest::Test
     assert_includes @content, "pfcl-project-modal", "Homepage must include inquiry modal"
   end
 
+  def test_project_section_uses_only_native_available_projects_and_is_fully_conditional
+    assert_match(/available_projects.*where:.*published.*where:.*recruitment_status.*available/m, @content)
+    assert_match(/available_projects.*where_exp:.*external.*!=\s*true/m, @content)
+    condition = @content.index("{% if available_projects.size > 0 %}")
+    heading = @content.index("## Selected projects looking for students")
+    modal = @content.index("pfcl-project-modal")
+    script = @content.index("assets/js/projects.js")
+    closing = @content.index("{% endif %}", script)
+
+    refute_nil condition
+    assert_operator heading, :>, condition
+    assert_operator modal, :>, condition
+    assert_operator script, :>, condition
+    assert_operator closing, :>, script
+  end
+
   def test_welcome_buttons_removed
     refute_includes @content, "Available student projects", "Welcome CTA button 'Available student projects' should be removed"
   end
