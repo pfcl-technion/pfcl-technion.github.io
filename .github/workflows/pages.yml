@@ -50,6 +50,13 @@ jobs:
             _news
             _bibliography/DZ_Complete.bib
 
+      - name: Capture source revisions
+        id: source_revisions
+        shell: bash
+        run: |
+          echo "anpl=$(git -C external/anpl rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "connect=$(git -C external/connect rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
       - name: Build site image
         run: docker compose build
 
@@ -62,6 +69,8 @@ jobs:
           --anpl-root external/anpl
           --connect-root external/connect
           --output-dir _data/generated
+          --anpl-revision ${{ steps.source_revisions.outputs.anpl }}
+          --connect-revision ${{ steps.source_revisions.outputs.connect }}
 
       - name: Validate content
         run: docker compose run --rm site bundle exec ruby scripts/validate_content.rb
