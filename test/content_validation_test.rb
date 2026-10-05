@@ -430,7 +430,225 @@ class ContentValidationTest < Minitest::Test
     assert(validate.any? { |e| e.include?("duration must be a string") })
   end
 
+  def test_empty_and_valid_generated_catalogs_pass
+    seed_anpl_lab
+    write_json "_data/generated/updates.json", JSON.pretty_generate([valid_generated_update])
+    write_json "_data/generated/publications.json", JSON.pretty_generate([valid_generated_publication])
+    write_json "_data/generated/projects.json", JSON.pretty_generate([valid_generated_project])
+    assert_empty validate
+
+    %w[updates publications projects].each do |name|
+      write_json "_data/generated/#{name}.json", "[]"
+    end
+    assert_empty validate
+  end
+
+  def test_generated_catalogs_reject_duplicate_ids_with_indexed_errors
+    seed_anpl_lab
+    records = {
+      "updates" => valid_generated_update,
+      "publications" => valid_generated_publication,
+      "projects" => valid_generated_project
+    }
+
+    records.each do |name, record|
+      write_json "_data/generated/#{name}.json", JSON.pretty_generate([record, record])
+      errors = validate
+      assert(errors.any? { |e| e.include?("#{name}.json[1]") && e.include?("duplicate id") }, name)
+      write_json "_data/generated/#{name}.json", "[]"
+    end
+  end
+
+  def test_generated_update_rejects_bad_attribution_url_lab_and_provenance
+    seed_anpl_lab
+    update = valid_generated_update.merge(
+      "lab_id" => "ghost",
+      "canonical_url" => "ftp://example.test/item",
+      "source_name" => "",
+      "provenance" => {}
+    )
+    write_json "_data/generated/updates.json", JSON.pretty_generate([update])
+
+    errors = validate
+    assert(errors.any? { |e| e.include?("updates.json[0]") && e.include?("unknown lab_id") })
+    assert(errors.any? { |e| e.include?("updates.json[0]") && e.include?("canonical_url") })
+    assert(errors.any? { |e| e.include?("updates.json[0]") && e.include?("source_name") })
+    assert(errors.any? { |e| e.include?("updates.json[0]") && e.include?("provenance") })
+  end
+
+  def test_generated_updates_enforce_precision_and_sort_date_agreement
+    seed_anpl_lab
+    cases = [
+      valid_generated_update.merge("date" => "2026-09", "published_at" => "2026-09-08"),
+      valid_generated_update.merge("date_precision" => "month", "date" => "2026-09-01", "published_at" => "2026-09-08"),
+      valid_generated_update.merge("date" => "2026-09-08", "published_at" => "2026-09-09T10:00:00Z")
+    ]
+    write_json "_data/generated/updates.json", JSON.pretty_generate(cases)
+
+    errors = validate
+    assert(errors.any? { |e| e.include?("updates.json[0]") && e.include?("YYYY-MM-DD") })
+    assert(errors.any? { |e| e.include?("updates.json[1]") && e.include?("YYYY-MM") })
+    assert(errors.any? { |e| e.include?("updates.json[2]") && e.include?("disagree") })
+  end
+
+  def test_generated_publications_reject_unknown_labs_missing_attribution_and_pdf_leakage
+    seed_anpl_lab
+    invalid = valid_generated_publication.merge(
+      "lab_ids" => ["ghost"],
+      "source_names" => [],
+      "canonical_url" => "https://example.test/paper.pdf",
+      "pdf" => "/Publications/paper.pdf",
+      "provenance" => []
+    )
+    write_json "_data/generated/publications.json", JSON.pretty_generate([invalid])
+
+    errors = validate
+    assert(errors.any? { |e| e.include?("publications.json[0]") && e.include?("unknown lab_id") })
+    assert(errors.any? { |e| e.include?("publications.json[0]") && e.include?("source_names") })
+    assert(errors.any? { |e| e.include?("publications.json[0]") && e.include?("provenance") })
+    assert(errors.any? { |e| e.include?("publications.json[0]") && e.include?("PDF") })
+  end
+
+  def test_generated_publications_reject_source_relative_publication_links
+    seed_anpl_lab
+    publication = valid_generated_publication.merge("source_url" => "/Publications/paper")
+    write_json "_data/generated/publications.json", JSON.pretty_generate([publication])
+
+    assert(validate.any? { |e| e.include?("publications.json[0]") && e.include?("PDF") })
+  end
+
+  def test_generated_projects_require_anpl_external_metadata_without_inferred_fields
+    seed_anpl_lab
+    invalid = valid_generated_project.merge(
+      "external" => false,
+      "lab_ids" => ["pfcl"],
+      "recruitment_status" => "available",
+      "project_type" => "research",
+      "contact_email" => "invented@example.test"
+    )
+    write_json "_data/generated/projects.json", JSON.pretty_generate([invalid])
+
+    errors = validate
+    assert(errors.any? { |e| e.include?("projects.json[0]") && e.include?("external") })
+    assert(errors.any? { |e| e.include?("projects.json[0]") && e.include?("only ANPL") })
+    assert(errors.any? { |e| e.include?("projects.json[0]") && e.include?("inferred field") })
+  end
+
+  def test_external_project_handoffs_accept_only_the_minimal_schema_and_preserved_slugs
+    seed_anpl_lab
+    %w[autonomous-semantic-perception collaborative-aerial-navigation robust-risk-averse-decision-making].each do |slug|
+      write "_projects/#{slug}.md", <<~YAML
+        ---
+        layout: project
+        title: External project
+        slug: #{slug}
+        lab_ids: [anpl]
+        external: true
+        canonical_url: https://anpl-technion.github.io/student-projects/source/
+        source_name: ANPL
+        published: true
+        ---
+      YAML
+    end
+
+    assert_empty validate
+  end
+
+  def test_external_project_handoffs_reject_native_or_unapproved_fields
+    seed_anpl_lab
+    write "_projects/external.md", <<~YAML
+      ---
+      title: External project
+      slug: external-project
+      lab_ids: [anpl]
+      external: true
+      canonical_url: https://anpl-technion.github.io/student-projects/source/
+      source_name: ANPL
+      published: true
+      recruitment_status: available
+      contact_email: invented@example.test
+      ---
+    YAML
+
+    errors = validate
+    assert(errors.any? { |e| e.include?("_projects/external.md") && e.include?("not allowed") })
+  end
+
   private
+
+  def seed_anpl_lab
+    write "_labs/anpl.md", <<~YAML
+      ---
+      title: Autonomous Navigation and Perception Lab
+      slug: anpl
+      kind: research-group
+      leader_names: [Vadim Indelman]
+      summary: Research group
+      active: true
+      order: 10
+      ---
+    YAML
+  end
+
+  def provenance
+    {
+      "repository" => "anpl-technion/anpl-technion.github.io",
+      "lab_id" => "anpl",
+      "source_name" => "ANPL",
+      "revision" => "a" * 40,
+      "source_path" => "source/item"
+    }
+  end
+
+  def valid_generated_update
+    {
+      "id" => "anpl:x:1",
+      "title" => "Update",
+      "date" => "2026-09-08",
+      "published_at" => "2026-09-08T10:00:00Z",
+      "date_precision" => "day",
+      "lab_id" => "anpl",
+      "category" => "news",
+      "excerpt" => "Summary",
+      "canonical_url" => "https://example.test/update",
+      "source_name" => "ANPL",
+      "featured" => false,
+      "show_on_showcase" => true,
+      "display_weight" => 0,
+      "provenance" => provenance
+    }
+  end
+
+  def valid_generated_publication
+    {
+      "id" => "publication:doi:10.1000/test",
+      "title" => "Publication",
+      "authors" => ["Researcher, Ada"],
+      "year" => 2026,
+      "month" => 9,
+      "date_precision" => "month",
+      "publication_type" => "article",
+      "canonical_url" => "https://doi.org/10.1000/test",
+      "lab_ids" => ["anpl"],
+      "source_names" => ["ANPL"],
+      "provenance" => [provenance.merge("source_key" => "Test2026")]
+    }
+  end
+
+  def valid_generated_project
+    {
+      "id" => "anpl:project:test",
+      "slug" => "test",
+      "title" => "Project",
+      "summary" => "Summary",
+      "lab_ids" => ["anpl"],
+      "source_name" => "ANPL",
+      "external" => true,
+      "thumbnail" => "https://anpl-technion.github.io/image.png",
+      "canonical_url" => "https://anpl-technion.github.io/student-projects/test/",
+      "provenance" => provenance
+    }
+  end
 
   def validate
     validator = ContentValidator.new(@dir)
