@@ -56,6 +56,17 @@ class ExternalContentWorkflowTest < Minitest::Test
     assert_includes @workflow, "--output-dir _data/generated"
   end
 
+  def test_captures_source_revisions_on_the_runner_and_passes_them_to_the_container
+    block = step_block("Capture source revisions")
+
+    assert_includes block, "id: source_revisions"
+    assert_includes block, "git -C external/anpl rev-parse HEAD"
+    assert_includes block, "git -C external/connect rev-parse HEAD"
+    assert_includes block, '>> "$GITHUB_OUTPUT"'
+    assert_includes @workflow, '--anpl-revision ${{ steps.source_revisions.outputs.anpl }}'
+    assert_includes @workflow, '--connect-revision ${{ steps.source_revisions.outputs.connect }}'
+  end
+
   def test_deployment_requires_the_successful_build_job
     deploy = @workflow[/^  deploy:\s*$.*\z/m]
 
