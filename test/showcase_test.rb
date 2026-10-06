@@ -40,6 +40,15 @@ class ShowcaseTest < Minitest::Test
     assert_includes content, "showcase-hero-scrim", "showcase.md must include gradient scrims"
   end
 
+  def test_showcase_dual_split_structure
+    skip unless File.exist?(@page_path)
+    content = File.read(@page_path)
+    assert_includes content, "showcase-split-container", "showcase.md must use dual-split container"
+    assert_includes content, "showcase-column-projects", "showcase.md must include projects column"
+    assert_includes content, "showcase-column-news", "showcase.md must include news column"
+    assert_includes content, "showcase-column-divider", "showcase.md must include column divider"
+  end
+
   def test_showcase_layout_structure
     skip unless File.exist?(@layout_path)
     content = File.read(@layout_path)

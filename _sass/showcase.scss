@@ -1,5 +1,5 @@
 // PFCL Hallway TV Showcase Display Styles (16:9 1080p/4K Optimized)
-// Cinematic Full-Bleed Hero Presentation with Floating Translucent HUD
+// Dual-Split Screen Layout: Left (Student Projects) & Right (Research News/Pubs)
 
 html.showcase-html,
 body.showcase-body {
@@ -27,16 +27,16 @@ body.showcase-body {
 // -----------------------------------------------------------------------------
 .showcase-header {
   align-items: center;
-  background: rgba(0, 10, 25, 0.85);
+  background: rgba(0, 10, 25, 0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 2px solid #31bfe4;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
   display: flex;
   flex: 0 0 auto;
   justify-content: space-between;
   left: 0;
-  padding: 0.9rem 3.5rem;
+  padding: 0.85rem 3rem;
   position: fixed;
   right: 0;
   top: 0;
@@ -46,17 +46,17 @@ body.showcase-body {
 .showcase-brand {
   align-items: center;
   display: flex;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .showcase-logo {
-  height: 48px;
+  height: 46px;
   width: auto;
 }
 
 .showcase-main-title {
   color: #ffffff;
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   margin: 0;
@@ -64,7 +64,7 @@ body.showcase-body {
 
 .showcase-sub-title {
   color: #94a3b8;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 500;
   margin: 0.15rem 0 0 0;
 }
@@ -76,18 +76,18 @@ body.showcase-body {
 .showcase-clock {
   color: #31bfe4;
   font-family: "Inconsolata", "Hack", "SF Mono", "Roboto Mono", "Source Code Pro", "Ubuntu Mono", monospace;
-  font-size: 1.85rem;
+  font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 0.05em;
 }
 
 .showcase-date {
   color: #94a3b8;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 // -----------------------------------------------------------------------------
-// Main Slide Canvas (Edge-to-Edge Full Bleed)
+// Main Canvas: Dual-Split Container
 // -----------------------------------------------------------------------------
 .showcase-main {
   height: 100vh;
@@ -99,12 +99,73 @@ body.showcase-body {
   z-index: 10;
 }
 
-.showcase-slider {
+.showcase-split-container {
+  display: flex;
   height: 100%;
   position: relative;
   width: 100%;
 }
 
+.showcase-column {
+  display: flex;
+  flex: 1 1 50%;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 50vw;
+}
+
+// Center Divider
+.showcase-column-divider {
+  background: linear-gradient(180deg, transparent 0%, rgba(49, 191, 228, 0.6) 15%, rgba(49, 191, 228, 0.6) 85%, transparent 100%);
+  box-shadow: 0 0 20px rgba(49, 191, 228, 0.4);
+  flex: 0 0 2px;
+  height: 100%;
+  position: relative;
+  width: 2px;
+  z-index: 45;
+}
+
+// Column Header Banner
+.showcase-column-header {
+  align-items: center;
+  background: rgba(0, 14, 31, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(49, 191, 228, 0.35);
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 0.55rem 2.5rem;
+  position: absolute;
+  right: 0;
+  top: 4.8rem;
+  z-index: 35;
+}
+
+.showcase-column-title {
+  color: #31bfe4;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.showcase-column-tagline {
+  color: #94a3b8;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+// Column Slides Container
+.showcase-column-slides {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.showcase-panel-slide,
 .showcase-slide {
   display: flex;
   height: 100%;
@@ -123,6 +184,7 @@ body.showcase-body {
   }
 }
 
+html:not(.has-showcase-js) .showcase-panel-slide:first-child,
 html:not(.has-showcase-js) .showcase-slide:first-child {
   opacity: 1;
   pointer-events: auto;
@@ -130,7 +192,7 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 }
 
 // -----------------------------------------------------------------------------
-// Background Hero Layer & Directional Scrim (Ken Burns Motion)
+// Background Hero Layer & Directional Scrim
 // -----------------------------------------------------------------------------
 .showcase-hero-layer {
   height: 100%;
@@ -142,7 +204,7 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 }
 
 .showcase-hero-bg {
-  filter: brightness(0.92);
+  filter: brightness(0.85);
   height: 100%;
   object-fit: cover;
   object-position: center;
@@ -150,15 +212,15 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   transition: transform 12s cubic-bezier(0.25, 1, 0.5, 1);
   width: 100%;
 
+  .showcase-panel-slide.is-active &,
   .showcase-slide.is-active & {
-    transform: scale(1.05);
+    transform: scale(1.06);
   }
 }
 
 .showcase-hero-scrim {
   background:
-    linear-gradient(90deg, rgba(0, 8, 20, 0.97) 0%, rgba(0, 12, 28, 0.92) 42%, rgba(0, 14, 31, 0.45) 75%, rgba(0, 14, 31, 0.15) 100%),
-    linear-gradient(180deg, rgba(0, 8, 20, 0.75) 0%, transparent 18%, transparent 82%, rgba(0, 8, 20, 0.85) 100%);
+    linear-gradient(180deg, rgba(0, 8, 20, 0.88) 0%, rgba(0, 10, 25, 0.94) 22%, rgba(0, 12, 28, 0.92) 80%, rgba(0, 8, 20, 0.96) 100%);
   height: 100%;
   inset: 0;
   position: absolute;
@@ -166,28 +228,17 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 }
 
 // -----------------------------------------------------------------------------
-// Foreground Content Layer (Split Layout)
+// Panel Content Body
 // -----------------------------------------------------------------------------
-.showcase-slide-content {
-  align-items: center;
+.showcase-panel-body {
   box-sizing: border-box;
   display: flex;
-  gap: 4rem;
+  flex-direction: column;
   height: 100%;
-  justify-content: space-between;
-  padding: 6.5rem 4.5rem 5.5rem 4.5rem;
+  justify-content: flex-start;
+  padding: 8.5rem 2.75rem 10.5rem 2.75rem;
   position: relative;
   width: 100%;
-  z-index: 20;
-}
-
-// Left Content Pane
-.showcase-pane-info {
-  display: flex;
-  flex: 1 1 68%;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1050px;
   z-index: 25;
 }
 
@@ -195,17 +246,17 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.85rem;
-  margin-bottom: 1.25rem;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
 }
 
-// Sharp Category Badges
+// Category Pills
 .showcase-pill {
   border-radius: 0 !important;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.06em;
-  padding: 0.45rem 1.15rem;
+  padding: 0.35rem 1rem;
   text-transform: uppercase;
 
   &.pill-emerald {
@@ -230,10 +281,10 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 0 !important;
   color: #ffffff;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.05em;
-  padding: 0.4rem 0.9rem;
+  padding: 0.35rem 0.8rem;
   text-transform: uppercase;
 }
 
@@ -241,26 +292,30 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   align-items: center;
   color: #cbd5e1;
   display: inline-flex;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
 }
 
 .showcase-title {
   color: #ffffff;
-  font-size: 2.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 1.95rem;
   font-weight: 800;
-  line-height: 1.22;
-  margin: 0 0 1.25rem 0;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+  line-height: 1.25;
+  margin: 0 0 0.85rem 0;
+  overflow: hidden;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
 
-// Advisor / Supervisor Strip
+// Advisor Strip
 .showcase-advisor-strip {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.25rem;
-  margin-bottom: 1.25rem;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
 }
 
 .showcase-advisor-item {
@@ -270,16 +325,16 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   border: 1px solid rgba(49, 191, 228, 0.4);
   border-radius: 0 !important;
   display: flex;
-  gap: 0.75rem;
-  padding: 0.35rem 0.9rem 0.35rem 0.35rem;
+  gap: 0.65rem;
+  padding: 0.3rem 0.8rem 0.3rem 0.3rem;
 }
 
 .showcase-advisor-avatar {
   border: 2px solid #31bfe4;
   border-radius: 0 !important;
-  height: 44px;
+  height: 40px;
   object-fit: cover;
-  width: 44px;
+  width: 40px;
 }
 
 .showcase-advisor-avatar-placeholder {
@@ -289,16 +344,16 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   border-radius: 0 !important;
   color: #31bfe4;
   display: flex;
-  font-size: 1.1rem;
-  height: 44px;
+  font-size: 1rem;
+  height: 40px;
   justify-content: center;
-  width: 44px;
+  width: 40px;
 }
 
 .showcase-advisor-label {
   color: #94a3b8;
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -307,23 +362,16 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 .showcase-advisor-name {
   color: #ffffff;
   display: block;
-  font-size: 1.15rem;
-  font-weight: 700;
-}
-
-.showcase-contact-email {
-  align-items: center;
-  color: #94a3b8;
-  display: inline-flex;
   font-size: 1.05rem;
+  font-weight: 700;
 }
 
 .showcase-news-meta {
   color: #cbd5e1;
   display: flex;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   gap: 0.5rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.85rem;
 
   strong {
     color: #31bfe4;
@@ -333,7 +381,7 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 .showcase-meta-label {
   color: #94a3b8;
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -341,18 +389,21 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 
 .showcase-summary {
   color: #e2e8f0;
-  font-size: 1.35rem;
-  line-height: 1.6;
-  margin: 0 0 1.25rem 0;
-  max-width: 950px;
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  font-size: 1.15rem;
+  line-height: 1.55;
+  margin: 0 0 0.85rem 0;
+  overflow: hidden;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 .showcase-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.65rem;
-  margin-top: 0.5rem;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .showcase-badge {
@@ -361,37 +412,26 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 0 !important;
   color: #ffffff;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  padding: 0.35rem 0.85rem;
+  padding: 0.25rem 0.7rem;
 }
 
-.showcase-link-note {
-  color: #31bfe4;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-top: 0.5rem;
+// Compact Bottom QR inside Panel
+.showcase-panel-footer {
+  margin-top: auto;
 }
 
-// Right Aside (Floating QR Card)
-.showcase-pane-aside {
-  align-items: center;
-  display: flex;
-  flex: 0 0 250px;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 25;
-}
-
-.showcase-qr-card {
+.showcase-qr-compact {
   align-items: center;
   background: #ffffff;
   border: 2px solid #31bfe4;
   border-radius: 0 !important;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
   display: flex;
-  flex-direction: column;
-  padding: 1.25rem;
+  gap: 1.15rem;
+  padding: 0.55rem 1rem;
+  width: fit-content;
 }
 
 .showcase-qr-frame {
@@ -399,9 +439,9 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   background: #f8fafc;
   border-radius: 0 !important;
   display: flex;
-  height: 190px;
+  height: 85px;
   justify-content: center;
-  width: 190px;
+  width: 85px;
 
   svg {
     display: block;
@@ -411,14 +451,23 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 }
 
 .showcase-qr-caption {
-  color: #001b54;
-  font-size: 0.85rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  line-height: 1.3;
-  margin-top: 0.75rem;
-  text-align: center;
-  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+
+  strong {
+    color: #001b54;
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  span {
+    color: #64748b;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 0.15rem;
+  }
 }
 
 // -----------------------------------------------------------------------------
@@ -426,18 +475,18 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 // -----------------------------------------------------------------------------
 .showcase-footer {
   align-items: center;
-  background: rgba(0, 10, 25, 0.85);
+  background: rgba(0, 10, 25, 0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   bottom: 0;
-  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.5);
   display: flex;
   flex: 0 0 auto;
   gap: 2.5rem;
   justify-content: space-between;
   left: 0;
-  padding: 0.85rem 3.5rem;
+  padding: 0.85rem 3rem;
   position: fixed;
   right: 0;
   z-index: 100;
@@ -455,16 +504,16 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   border: 1px solid #31bfe4;
   border-radius: 0 !important;
   color: #ffffff;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.05em;
-  padding: 0.4rem 1rem;
+  padding: 0.35rem 0.85rem;
   text-transform: uppercase;
 }
 
 .showcase-counter {
   color: #cbd5e1;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
 }
 
@@ -507,13 +556,13 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   border: 1px solid #31bfe4;
   border-radius: 0 !important;
   display: flex;
-  gap: 1rem;
-  padding: 0.4rem 0.85rem;
+  gap: 0.85rem;
+  padding: 0.35rem 0.75rem;
 }
 
 .showcase-qr-label {
   color: #001b54;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.05em;
   text-transform: uppercase;
