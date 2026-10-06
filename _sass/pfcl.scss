@@ -1055,5 +1055,81 @@ select,
   }
 }
 
+// ---- Student Projects Showcase (Frontpage Rotating) ----
+.pfcl-project-showcase-section {
+  position: relative;
+}
+
+.pfcl-showcase-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 1.5rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 0.25rem 0.25rem 0.75rem 0.25rem;
+  outline: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 2px #31bfe4;
+  }
+}
+
+.pfcl-showcase-slide {
+  flex: 0 0 100%;
+  min-width: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.pfcl-showcase-btn {
+  border-radius: 0 !important;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pfcl-showcase-dots {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pfcl-showcase-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 1px solid #001b54;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 0 !important;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: #31bfe4;
+    border-color: #31bfe4;
+  }
+
+  &.is-active {
+    background-color: #001b54;
+    border-color: #001b54;
+    width: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pfcl-showcase-track {
+    scroll-behavior: auto;
+  }
+}
+
 
 
