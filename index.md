@@ -13,7 +13,7 @@ The Philadelphia Flight Control Laboratory, also known as the Control Lab in the
 
 {% assign empty_projects = '' | split: '' %}
 {% assign native_available = site.projects | where: 'published', true | where: 'recruitment_status', 'available' | where_exp: 'project', 'project.external != true' | sort: 'order' %}
-{% assign generated_available = site.data.generated.projects | default: empty_projects | where_exp: 'project', 'project.recruitment_status == nil or project.recruitment_status == "available"' | sort_natural: 'title' %}
+{% assign generated_available = site.data.generated.projects | default: empty_projects | where: 'recruitment_status', 'available' | sort_natural: 'title' %}
 {% assign available_projects = native_available | concat: generated_available %}
 {% if available_projects.size > 0 %}
 <hr class="pfcl-section-divider">

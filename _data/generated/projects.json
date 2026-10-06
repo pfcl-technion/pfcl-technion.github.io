@@ -20,6 +20,7 @@
       "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
       "source_path": "_student-projects/Autonomous_Multi_Robot_Collaborative_Exploration.md"
     },
+    "recruitment_status": "available",
     "slug": "autonomous-multi-robot-collaborative-exploration-mapping",
     "source_name": "ANPL",
     "summary": "Scanning process – 3D scanning is the process of capturing digital information about the shape of an object with equipment that uses a laser or light to measure the distance between the scanner and the object Robotic Mapping - The goal for an autonomous robot is to be able to…",
@@ -45,6 +46,7 @@
       "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
       "source_path": "_student-projects/Autonomous_Navigation_and_Perception_via_Deep_Learning.md"
     },
+    "recruitment_status": "available",
     "slug": "autonomous-navigation-and-perception-via-deep-learning",
     "source_name": "ANPL",
     "summary": "In this project we shall investigate approaches to address autonomous navigation and perception in unknown environments via deep learning. Specific project objectives will be determined together with the student(s).",
@@ -70,6 +72,7 @@
       "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
       "source_path": "_student-projects/AutonomousViewpoint-DependentSemantic Perception.md"
     },
+    "recruitment_status": "available",
     "slug": "autonomous-viewpoint-dependent-semantic-perception",
     "source_name": "ANPL",
     "summary": "In this research project, we investigate approaches for autonomous semantic perception in partially observable settings, where the state of the agent as well as the (geometric and semantic) state of the environment are unknown. Specifically, our approach models the inherent…",
@@ -95,6 +98,7 @@
       "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
       "source_path": "_student-projects/Collaborative_Multi-Robot_Aerial_Autonomous_Navigation_and 3D_Reconstruction.md"
     },
+    "recruitment_status": "available",
     "slug": "collaborative-multi-robot-aerial-autonomous-navigation-and-3d-reconstruction",
     "source_name": "ANPL",
     "summary": "Interested in collaborative multi-robot perception? Contact us! Numerous algorithms to implement and examine on real robots (quadortors), so much to learn - are you up for the challenge? Pose estimation and 3D reconstruction Collaborative RGBD sensing Autonomous navigation in…",
@@ -120,6 +124,7 @@
       "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
       "source_path": "_student-projects/ Decision_making_under_uncertainty_on_GPU.md"
     },
+    "recruitment_status": "available",
     "slug": "decision-making-under-uncertainty-on-gpu",
     "source_name": "ANPL",
     "summary": "Decision making under uncertainty is exceptionally computationally demanding. Since the robot has to decide online the best action, a typical approach is to approximate the decision- making mechanism. In this project, we will harness the capabilities of the bleeding edge…",
@@ -145,6 +150,7 @@
       "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
       "source_path": "_student-projects/Localization_in_a_3D_Aerial_Model.md"
     },
+    "recruitment_status": "available",
     "slug": "localization-in-a-3d-aerial-model",
     "source_name": "ANPL",
     "summary": "Each one of us needs to solve a localization problem many times each day: whether if it about getting to our office, to a shop, or even to our room at home, the first step is to know where we are. Usually, we localize ourselves using our memory of the same place from a previous…",
@@ -170,6 +176,7 @@
       "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
       "source_path": "_student-projects/Polite_Robot – Socially_Aware_Navigation.md"
     },
+    "recruitment_status": "available",
     "slug": "polite-robot-socially-aware-navigation",
     "source_name": "ANPL",
     "summary": "Social aware navigation is a subfield of robotics concerned with avoiding possible collisions of a robot with humans, animals, etc. In this project, we will try to take one step forward towards the coexistence of humans and robots. Specifically, first we will simulate a…",
@@ -197,6 +204,7 @@
       "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
       "source_path": "_student-projects/RobustRiskAverseDecisonMaking.md"
     },
+    "recruitment_status": "available",
     "slug": "robust-and-risk-averse-decision-making-under-uncertainty",
     "source_name": "ANPL",
     "summary": "Robust and risk-averse decision-making under uncertainty in partially observable domains is a fundamental problem in AI and essential for reliable autonomous agents, e.g. in the context of safety, particularly in the presense of adversarial agents and uncertain stochastic…",
@@ -224,6 +232,7 @@
       "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
       "source_path": "_student-projects/SimplificationOfDecisionMaking.md"
     },
+    "recruitment_status": "available",
     "slug": "simplification-of-decision-making-under-uncertainty",
     "source_name": "ANPL",
     "summary": "Decision-making under uncertainty in partially observable domains is at the heart of any single- and multi-agent autonomous system acting with imperfect information in stochastic environments. In this project we develop novel approaches for simplification of these challenging…",

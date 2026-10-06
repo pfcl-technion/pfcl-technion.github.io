@@ -99,7 +99,7 @@ class AnplAdapterTest < Minitest::Test
       "https://anpl-technion.github.io/student-projects/AutonomousViewpoint-DependentSemantic%20Perception/",
       project.fetch("canonical_url")
     )
-    refute project.key?("recruitment_status")
+    assert_equal "available", project.fetch("recruitment_status")
     refute project.key?("project_type")
     refute project.key?("contact_email")
   end

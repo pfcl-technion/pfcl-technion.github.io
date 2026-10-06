@@ -97,6 +97,7 @@ module PFCL
           "lab_ids" => [@source.lab_id],
           "source_name" => @source.source_name,
           "external" => true,
+          "recruitment_status" => "available",
           "thumbnail" => thumbnail_url(document.frontmatter["image"]),
           "canonical_url" => "#{@source.site_url}/student-projects/#{url_segment(basename)}/",
           "provenance" => provenance(relative_path)

@@ -522,7 +522,7 @@ class ContentValidationTest < Minitest::Test
     invalid = valid_generated_project.merge(
       "external" => false,
       "lab_ids" => ["pfcl"],
-      "recruitment_status" => "available",
+      "recruitment_status" => "completed",
       "project_type" => "research",
       "contact_email" => "invented@example.test"
     )
@@ -531,6 +531,7 @@ class ContentValidationTest < Minitest::Test
     errors = validate
     assert(errors.any? { |e| e.include?("projects.json[0]") && e.include?("external") })
     assert(errors.any? { |e| e.include?("projects.json[0]") && e.include?("only ANPL") })
+    assert(errors.any? { |e| e.include?("projects.json[0]") && e.include?("recruitment_status must be 'available'") })
     assert(errors.any? { |e| e.include?("projects.json[0]") && e.include?("inferred field") })
   end
 
@@ -644,6 +645,7 @@ class ContentValidationTest < Minitest::Test
       "lab_ids" => ["anpl"],
       "source_name" => "ANPL",
       "external" => true,
+      "recruitment_status" => "available",
       "thumbnail" => "https://anpl-technion.github.io/image.png",
       "canonical_url" => "https://anpl-technion.github.io/student-projects/test/",
       "provenance" => provenance
