@@ -37,9 +37,10 @@ class HomepageTest < Minitest::Test
     assert_includes @content, "pfcl-project-modal", "Homepage must include inquiry modal"
   end
 
-  def test_project_section_uses_only_native_available_projects_and_is_fully_conditional
-    assert_match(/available_projects.*where:.*published.*where:.*recruitment_status.*available/m, @content)
-    assert_match(/available_projects.*where_exp:.*external.*!=\s*true/m, @content)
+  def test_project_section_includes_available_projects_and_is_fully_conditional
+    assert_match(/native_available.*where:.*published.*where:.*recruitment_status.*available/m, @content)
+    assert_match(/generated_available.*site\.data\.generated\.projects.*where:.*recruitment_status.*available/m, @content)
+    assert_match(/available_projects\s*=\s*native_available\s*\|\s*concat:\s*generated_available/, @content)
     condition = @content.index("{% if available_projects.size > 0 %}")
     heading = @content.index("## Selected projects looking for students")
     modal = @content.index("pfcl-project-modal")
@@ -51,6 +52,16 @@ class HomepageTest < Minitest::Test
     assert_operator modal, :>, condition
     assert_operator script, :>, condition
     assert_operator closing, :>, script
+  end
+
+  def test_homepage_showcase_structure
+    assert_includes @content, "data-project-showcase", "Homepage must contain data-project-showcase container"
+    assert_includes @content, "data-showcase-track", "Homepage must contain data-showcase-track element"
+    assert_includes @content, "data-showcase-slide", "Homepage must contain data-showcase-slide elements"
+    assert_includes @content, "data-showcase-prev", "Homepage must contain previous slide button"
+    assert_includes @content, "data-showcase-next", "Homepage must contain next slide button"
+    assert_includes @content, "data-showcase-dots", "Homepage must contain dot indicators container"
+    assert_includes @content, "project-showcase.js", "Homepage must load project-showcase.js script"
   end
 
   def test_welcome_buttons_removed

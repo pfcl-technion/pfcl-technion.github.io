@@ -11,22 +11,56 @@ hero_image: "/assets/images/drone2.jpg"
 
 The Philadelphia Flight Control Laboratory, also known as the Control Lab in the Stephen B. Klein faculty of Aerospace Engineering, is comprised of research groups and teaching labs in the fields of Guidance, Navigation, and Control (GNC).
 
-{% assign available_projects = site.projects | where: "published", true | where: "recruitment_status", "available" | where_exp: "project", "project.external != true" | sort: 'order' %}
+{% assign empty_projects = '' | split: '' %}
+{% assign native_available = site.projects | where: 'published', true | where: 'recruitment_status', 'available' | where_exp: 'project', 'project.external != true' | sort: 'order' %}
+{% assign generated_available = site.data.generated.projects | default: empty_projects | where: 'recruitment_status', 'available' | sort_natural: 'title' %}
+{% assign available_projects = native_available | concat: generated_available %}
 {% if available_projects.size > 0 %}
 <hr class="pfcl-section-divider">
 
 ## Selected projects looking for students
 
-<div class="columns is-multiline">
-{% for project in available_projects limit: 3 %}
-  <div class="column is-4-desktop is-6-tablet is-12-mobile">
-    {% include project_card.html project=project %}
+<div class="pfcl-project-showcase-section" data-project-showcase>
+  <div class="level is-mobile mb-3">
+    <div class="level-left">
+      <div class="pfcl-showcase-dots" data-showcase-dots aria-label="Showcase slide indicators"></div>
+    </div>
+    <div class="level-right pfcl-showcase-nav-desktop">
+      <div class="buttons has-addons mb-0">
+        <button class="button is-small is-outlined is-primary pfcl-showcase-btn" data-showcase-prev aria-label="Previous projects">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="button is-small is-outlined is-primary pfcl-showcase-btn" data-showcase-next aria-label="Next projects">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
   </div>
-{% endfor %}
-</div>
 
-<div class="buttons mt-4">
-  <a href="{{ '/projects/' | relative_url }}" class="button is-primary is-outlined">All student projects &rarr;</a>
+  <div class="pfcl-showcase-track" data-showcase-track tabindex="0" aria-label="Student projects showcase">
+    {% assign slide_size = 3 %}
+    {% assign total_projects = available_projects.size %}
+    {% assign total_slides = total_projects | plus: slide_size | minus: 1 | divided_by: slide_size %}
+
+    {% for slide_idx in (0..total_slides) %}
+      {% assign offset = slide_idx | times: slide_size %}
+      {% if offset < total_projects %}
+        <div class="pfcl-showcase-slide" data-showcase-slide data-slide-index="{{ slide_idx }}">
+          <div class="columns is-multiline">
+            {% for project in available_projects limit: slide_size offset: offset %}
+              <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                {% include project_card.html project=project %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="buttons mt-4">
+    <a href="{{ '/projects/' | relative_url }}" class="button is-primary is-outlined">All student projects &rarr;</a>
+  </div>
 </div>
 {% endif %}
 
@@ -84,5 +118,6 @@ The Philadelphia Flight Control Laboratory, also known as the Control Lab in the
 </div>
 
 <script src="{{ '/assets/js/projects.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+<script src="{{ '/assets/js/project-showcase.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 {% endif %}
 
