@@ -22,6 +22,7 @@ class AnplAdapterTest < Minitest::Test
     update = adapter.updates.first
 
     assert_equal "anpl:x:2097017262284693848", update.fetch("id")
+    assert_equal "social", update.fetch("content_type")
     assert_equal "anpl", update.fetch("lab_id")
     assert_equal "news", update.fetch("category")
     assert_equal "ANPL", update.fetch("source_name")
@@ -49,7 +50,22 @@ class AnplAdapterTest < Minitest::Test
     assert_equal ["https://arxiv.org/abs/2602.23073"], update.fetch("expanded_urls")
     refute_includes update.fetch("title"), "t.co"
     refute_includes update.fetch("excerpt"), "t.co"
-    assert_operator update.fetch("title").length, :<=, 120
+  end
+
+  def test_preserves_complete_cleaned_tweet_text
+    long_text = ("complete tweet text " * 20).strip
+
+    with_fixture_copy do |root|
+      tweets_path = File.join(root, "_data", "tweets.json")
+      tweets = JSON.parse(File.read(tweets_path, encoding: "UTF-8"))
+      tweets.first["text"] = "#{long_text}\nhttps://t.co/source-link"
+      File.write(tweets_path, JSON.pretty_generate(tweets))
+
+      update = adapter(root).updates.find { |item| item.fetch("id") == "anpl:x:2097017262284693848" }
+
+      assert_equal long_text, update.fetch("title")
+      assert_equal long_text, update.fetch("excerpt")
+    end
   end
 
   def test_orders_updates_newest_first
