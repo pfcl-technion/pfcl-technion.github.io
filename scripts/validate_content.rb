@@ -30,10 +30,10 @@ class ContentValidator
   PUBLICATION_REQUIRED_KEYS = %w[id title authors year date_precision publication_type canonical_url
                                  lab_ids source_names provenance].freeze
   GENERATED_PROJECT_REQUIRED_KEYS = %w[id slug title summary lab_ids source_name external thumbnail
-                                       canonical_url provenance].freeze
+                                       canonical_url provenance recruitment_status].freeze
   EXTERNAL_PROJECT_REQUIRED_FIELDS = %w[title slug lab_ids external canonical_url source_name published].freeze
   EXTERNAL_PROJECT_ALLOWED_FIELDS = (EXTERNAL_PROJECT_REQUIRED_FIELDS + %w[layout]).freeze
-  INFERRED_PROJECT_FIELDS = %w[recruitment_status project_type contact_email application_url].freeze
+  INFERRED_PROJECT_FIELDS = %w[project_type contact_email application_url].freeze
   PUBLICATION_TYPES = %w[article inproceedings incollection book phdthesis mastersthesis].freeze
 
   SLUG_RE = /\A[a-z0-9]+(-[a-z0-9]+)*\z/.freeze
@@ -181,6 +181,7 @@ class ContentValidator
       error(prefix, "external must be true") unless item["external"] == true
       error(prefix, "generated project lab_ids may contain only ANPL") unless item["lab_ids"] == ["anpl"]
       error(prefix, "source_name attribution is required") unless present?(item["source_name"])
+      error(prefix, "recruitment_status must be 'available'") unless item["recruitment_status"] == "available"
       check_generated_url(prefix, item["canonical_url"])
       check_provenance(prefix, item["provenance"], multiple: false)
       check_generated_thumbnail(prefix, item["thumbnail"])

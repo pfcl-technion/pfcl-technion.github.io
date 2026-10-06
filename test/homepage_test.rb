@@ -39,7 +39,7 @@ class HomepageTest < Minitest::Test
 
   def test_project_section_includes_available_projects_and_is_fully_conditional
     assert_match(/native_available.*where:.*published.*where:.*recruitment_status.*available/m, @content)
-    assert_match(/generated_available.*site\.data\.generated\.projects.*where_exp:/m, @content)
+    assert_match(/generated_available.*site\.data\.generated\.projects.*where:.*recruitment_status.*available/m, @content)
     assert_match(/available_projects\s*=\s*native_available\s*\|\s*concat:\s*generated_available/, @content)
     condition = @content.index("{% if available_projects.size > 0 %}")
     heading = @content.index("## Selected projects looking for students")
