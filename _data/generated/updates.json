@@ -1,1 +1,1355 @@
-[]
+[
+  {
+    "canonical_url": "https://twitter.com/ANPL_Technion/status/2105993375279145453",
+    "category": "news",
+    "content_type": "social",
+    "date": "2026-10-02",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "The paper \"Risk-Averse Online POMDP Planning via CVaR of the Immediate Cost with Performance Guarantees\" has been accepted for publication at NeurIPS 2026.",
+    "expanded_urls": [
+      "https://arxiv.org/abs/2609.35874"
+    ],
+    "featured": false,
+    "id": "anpl:x:2105993375279145453",
+    "lab_id": "anpl",
+    "provenance": {
+      "repository": "anpl-technion/anpl-technion.github.io",
+      "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
+      "source_path": "_data/tweets.json"
+    },
+    "published_at": "2026-10-02T12:08:42Z",
+    "show_on_showcase": true,
+    "source_account": "@ANPL_Technion",
+    "source_name": "ANPL",
+    "title": "The paper \"Risk-Averse Online POMDP Planning via CVaR of the Immediate Cost with Performance Guarantees\" has been accepted for publication at NeurIPS 2026."
+  },
+  {
+    "canonical_url": "https://twitter.com/ANPL_Technion/status/2105993127769055445",
+    "category": "news",
+    "content_type": "social",
+    "date": "2026-10-02",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "The paper \"Graph Sparse Sampling: Breaking the Curse of the Horizon in Continuous MDP Planning\" has been accepted for publication at NeurIPS 2026.",
+    "expanded_urls": [
+      "https://arxiv.org/abs/2607.05359"
+    ],
+    "featured": false,
+    "id": "anpl:x:2105993127769055445",
+    "lab_id": "anpl",
+    "provenance": {
+      "repository": "anpl-technion/anpl-technion.github.io",
+      "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
+      "source_path": "_data/tweets.json"
+    },
+    "published_at": "2026-10-02T12:07:43Z",
+    "show_on_showcase": true,
+    "source_account": "@ANPL_Technion",
+    "source_name": "ANPL",
+    "title": "The paper \"Graph Sparse Sampling: Breaking the Curse of the Horizon in Continuous MDP Planning\" has been accepted for publication at NeurIPS 2026."
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_8-09-26_no2",
+    "category": "news",
+    "date": "2026-09-08",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Daniel Zelazo will be an invited speaker at the 2026 Rigidity Workshop at Lancaster University.",
+    "featured": false,
+    "id": "connect:news:news_8-09-26_no2",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_8-09-26_no2.md"
+    },
+    "published_at": "2026-09-08",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Invited Speaker at Rigidity Theory: Structures, Data, and Control"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_8-09-26",
+    "category": "news",
+    "date": "2026-09-08",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Connect Lab students presented their research, and Daniel Zelazo spoke at a pre-congress workshop in Busan, Korea.",
+    "featured": false,
+    "id": "connect:news:news_8-09-26",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_8-09-26.md"
+    },
+    "published_at": "2026-09-08",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Connect Lab at the 23rd IFAC World Congress"
+  },
+  {
+    "canonical_url": "https://twitter.com/ANPL_Technion/status/2097017262284693848",
+    "category": "news",
+    "content_type": "social",
+    "date": "2026-09-07",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "The paper \"Accelerated Risk-Averse Policy Evaluation with CVaR Bounds Under Surrogate Models\" has been accepted for publication in the Journal of Artificial Intelligence Research (JAIR).",
+    "expanded_urls": [
+      "https://arxiv.org/abs/2602.23073"
+    ],
+    "featured": false,
+    "id": "anpl:x:2097017262284693848",
+    "lab_id": "anpl",
+    "provenance": {
+      "repository": "anpl-technion/anpl-technion.github.io",
+      "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
+      "source_path": "_data/tweets.json"
+    },
+    "published_at": "2026-09-07T17:40:50Z",
+    "show_on_showcase": true,
+    "source_account": "@ANPL_Technion",
+    "source_name": "ANPL",
+    "title": "The paper \"Accelerated Risk-Averse Policy Evaluation with CVaR Bounds Under Surrogate Models\" has been accepted for publication in the Journal of Artificial Intelligence Research (JAIR)."
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/publications/",
+    "category": "publication",
+    "date": "2026-09-01",
+    "date_precision": "month",
+    "display_weight": 0,
+    "excerpt": "Oliva, Federico, Zelazo, Daniel, Degani, Amir. International Conference Series on Climbing and Walking Robots (CALWAR)",
+    "featured": false,
+    "id": "publication:update:connect:publication:sha256:28aaaf07ce57552e0d9b",
+    "lab_id": "connect",
+    "provenance": {
+      "lab_id": "connect",
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_key": "Oliva_CALWAR2026",
+      "source_name": "ConNeCt",
+      "source_path": "_bibliography/DZ_Complete.bib"
+    },
+    "publication_id": "publication:sha256:28aaaf07ce57552e0d9b",
+    "published_at": "2026-09",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Balancing Expansion and Contraction: Coordinating Multi-Agent Teams Under Competing Goals"
+  },
+  {
+    "canonical_url": "https://twitter.com/vadim_indelman/status/2089059071529738415",
+    "category": "news",
+    "content_type": "social",
+    "date": "2026-08-16",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "We will present the paper \"Action-Gradient Monte Carlo Tree Search for Non-Parametric Continuous (PO)MDPs” at IJCAI-ECAI 2026 this week.",
+    "expanded_urls": [
+
+    ],
+    "featured": false,
+    "id": "anpl:x:2089059071529738415",
+    "lab_id": "anpl",
+    "provenance": {
+      "repository": "anpl-technion/anpl-technion.github.io",
+      "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
+      "source_path": "_data/tweets.json"
+    },
+    "published_at": "2026-08-16T18:37:50Z",
+    "show_on_showcase": true,
+    "source_account": "@vadim_indelman",
+    "source_name": "ANPL",
+    "title": "We will present the paper \"Action-Gradient Monte Carlo Tree Search for Non-Parametric Continuous (PO)MDPs” at IJCAI-ECAI 2026 this week."
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_05-08-26",
+    "category": "news",
+    "date": "2026-08-05",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "I will give a talk on formation control through group symmetries in Lancaster University's Pure Mathematics Seminar.",
+    "featured": false,
+    "id": "connect:news:news_05-08-26",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_05-08-26.md"
+    },
+    "published_at": "2026-08-05",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Giving a Seminar at Lancaster University"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/publications/",
+    "category": "publication",
+    "date": "2026-08-01",
+    "date_precision": "month",
+    "display_weight": 0,
+    "excerpt": "Barkai, Gal, Mirkin, Leonid, Zelazo, Daniel. 27th International Symposium on Mathematical Theory of Networks and Systems",
+    "featured": false,
+    "id": "publication:update:connect:publication:sha256:867c992a26a528b0da74",
+    "lab_id": "connect",
+    "provenance": {
+      "lab_id": "connect",
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_key": "Barkai2026_ECC",
+      "source_name": "ConNeCt",
+      "source_path": "_bibliography/DZ_Complete.bib"
+    },
+    "publication_id": "publication:sha256:867c992a26a528b0da74",
+    "published_at": "2026-08",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "On two-degrees-of-freedom agreement protocols"
+  },
+  {
+    "canonical_url": "https://arxiv.org/abs/2512.06733",
+    "category": "publication",
+    "date": "2026-08-01",
+    "date_precision": "month",
+    "display_weight": 0,
+    "excerpt": "Martinez, Zamir, Zelazo, Daniel. IFAC World Congress",
+    "featured": false,
+    "id": "publication:update:connect:publication:arxiv:2512.06733",
+    "lab_id": "connect",
+    "provenance": {
+      "lab_id": "connect",
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_key": "Martinzez_IFAC26",
+      "source_name": "ConNeCt",
+      "source_path": "_bibliography/DZ_Complete.bib"
+    },
+    "publication_id": "publication:arxiv:2512.06733",
+    "published_at": "2026-08",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Symmetry-Based Formation Control on Cycle Graphs Using Dihedral Point Groups"
+  },
+  {
+    "canonical_url": "https://arxiv.org/abs/2511.13187",
+    "category": "publication",
+    "date": "2026-08-01",
+    "date_precision": "month",
+    "display_weight": 0,
+    "excerpt": "Goldgraber Casspi, Solomon, Zelazo, Daniel. IFAC World Congress",
+    "featured": false,
+    "id": "publication:update:connect:publication:arxiv:2511.13187",
+    "lab_id": "connect",
+    "provenance": {
+      "lab_id": "connect",
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_key": "GoldgraberCasspi_IFAC26",
+      "source_name": "ConNeCt",
+      "source_path": "_bibliography/DZ_Complete.bib"
+    },
+    "publication_id": "publication:arxiv:2511.13187",
+    "published_at": "2026-08",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "The Geometry of Hidden Modes in Distance-Based Formation Control"
+  },
+  {
+    "canonical_url": "https://doi.org/10.24963/ijcai.2026/498",
+    "category": "publication",
+    "date": "2026-08-01",
+    "date_precision": "month",
+    "display_weight": 0,
+    "excerpt": "Lev-Yehudi, I., Novitsky, M., Barenboim, M., Benchetrit, R., Indelman, V.. International Joint Conference on Artificial Intelligence (IJCAI)",
+    "featured": false,
+    "id": "publication:update:anpl:publication:doi:10.24963/ijcai.2026/498",
+    "lab_id": "anpl",
+    "provenance": {
+      "lab_id": "anpl",
+      "repository": "anpl-technion/anpl-technion.github.io",
+      "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
+      "source_key": "LevYehudi26ijcai",
+      "source_name": "ANPL",
+      "source_path": "_bibliography/VadimIndelman.bib"
+    },
+    "publication_id": "publication:doi:10.24963/ijcai.2026/498",
+    "published_at": "2026-08",
+    "show_on_showcase": true,
+    "source_name": "ANPL",
+    "title": "Action-Gradient Monte Carlo Tree Search for Non-Parametric Continuous (PO)MDPs"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_23-07-26",
+    "category": "news",
+    "date": "2026-07-23",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "I will speak at UW about a geometric theory of passivity for networked control systems.",
+    "featured": false,
+    "id": "connect:news:news_23-07-26",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_23-07-26.md"
+    },
+    "published_at": "2026-07-23",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Giving a Seminar Talk at the University of Washington"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_12-07-26",
+    "category": "news",
+    "date": "2026-07-12",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Gal Barkai and Evyatar Matmon presented their work at the European Control Conference in Reykjavik, Iceland.",
+    "featured": false,
+    "id": "connect:news:news_12-07-26",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_12-07-26.md"
+    },
+    "published_at": "2026-07-12",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Gal Barkai and Evyatar Matmon present at ECC 2026"
+  },
+  {
+    "canonical_url": "https://twitter.com/ANPL_Technion/status/2074492918979526785",
+    "category": "news",
+    "content_type": "social",
+    "date": "2026-07-07",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "A preprint entitled \"Graph Sparse Sampling: Breaking the Curse of the Horizon in Continuous MDP Planning\" has been published on arXiv.",
+    "expanded_urls": [
+      "https://arxiv.org/abs/2607.05359"
+    ],
+    "featured": false,
+    "id": "anpl:x:2074492918979526785",
+    "lab_id": "anpl",
+    "provenance": {
+      "repository": "anpl-technion/anpl-technion.github.io",
+      "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
+      "source_path": "_data/tweets.json"
+    },
+    "published_at": "2026-07-07T13:57:08Z",
+    "show_on_showcase": true,
+    "source_account": "@ANPL_Technion",
+    "source_name": "ANPL",
+    "title": "A preprint entitled \"Graph Sparse Sampling: Breaking the Curse of the Horizon in Continuous MDP Planning\" has been published on arXiv."
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_05-07-26",
+    "category": "news",
+    "date": "2026-07-05",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Lab lunch at Fairuz in Daliyat al-Karmel.",
+    "featured": false,
+    "id": "connect:news:news_05-07-26",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_05-07-26.md"
+    },
+    "published_at": "2026-07-05",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Connect Lab Lunch at Fairuz Restaurant and Cafe"
+  },
+  {
+    "canonical_url": "https://arxiv.org/abs/2511.12632",
+    "category": "publication",
+    "date": "2026-07-01",
+    "date_precision": "month",
+    "display_weight": 0,
+    "excerpt": "Barkai, Gal, Mirkin, Leonid, Zelazo, Daniel. European Control Conference",
+    "featured": false,
+    "id": "publication:update:connect:publication:arxiv:2511.12632",
+    "lab_id": "connect",
+    "provenance": {
+      "lab_id": "connect",
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_key": "Barkai2026_ECD",
+      "source_name": "ConNeCt",
+      "source_path": "_bibliography/DZ_Complete.bib"
+    },
+    "publication_id": "publication:arxiv:2511.12632",
+    "published_at": "2026-07",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "On two-degrees-of-freedom agreement protocols"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_01-07-26",
+    "category": "news",
+    "date": "2026-07-01",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Zamir passed his PhD candidacy exam.",
+    "featured": false,
+    "id": "connect:news:news_01-07-26",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_01-07-26.md"
+    },
+    "published_at": "2026-07-01",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Congratulations to Zamir on PhD Candidacy Exam!"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_19-06-26_no2",
+    "category": "news",
+    "date": "2026-06-19",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Combinatorial Admissibility in Control-Affine Networks",
+    "featured": false,
+    "id": "connect:news:news_19-06-26_no2",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_19-06-26_no2.md"
+    },
+    "published_at": "2026-06-19",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "New article published in IEEE Control Systems Letters"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_19-06-26",
+    "category": "news",
+    "date": "2026-06-19",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "The Geometry of Transmission Zeros in Distance-Based Formations",
+    "featured": false,
+    "id": "connect:news:news_19-06-26",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_19-06-26.md"
+    },
+    "published_at": "2026-06-19",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "New article published in IEEE Control Systems Letters"
+  },
+  {
+    "canonical_url": "https://twitter.com/vadim_indelman/status/2065380099453587958",
+    "category": "news",
+    "content_type": "social",
+    "date": "2026-06-12",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "We will present the paper \"Open-loop POMDP Simplification and Safe Skipping of Replanning with Formal Performance Guarantees” at WAFR 2026 next week.",
+    "expanded_urls": [
+      "https://lnkd.in/dP7PwTtj"
+    ],
+    "featured": false,
+    "id": "anpl:x:2065380099453587958",
+    "lab_id": "anpl",
+    "provenance": {
+      "repository": "anpl-technion/anpl-technion.github.io",
+      "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
+      "source_path": "_data/tweets.json"
+    },
+    "published_at": "2026-06-12T10:26:03Z",
+    "show_on_showcase": true,
+    "source_account": "@vadim_indelman",
+    "source_name": "ANPL",
+    "title": "We will present the paper \"Open-loop POMDP Simplification and Safe Skipping of Replanning with Formal Performance Guarantees” at WAFR 2026 next week."
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_1-06-26",
+    "category": "news",
+    "date": "2026-06-04",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Formation Control via Rotation Symmetry Constraints",
+    "featured": false,
+    "id": "connect:news:news_1-06-26",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_1-06-26.md"
+    },
+    "published_at": "2026-06-04",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Presentation at the American Control Conference 2026"
+  },
+  {
+    "canonical_url": "https://anpl-technion.github.io/publications/",
+    "category": "publication",
+    "date": "2026-06-01",
+    "date_precision": "month",
+    "display_weight": 0,
+    "excerpt": "Kong, D., Indelman, V.. World Symposium on the Algorithmic Foundations of Robotics (WAFR)",
+    "featured": false,
+    "id": "publication:update:anpl:publication:sha256:14765013a91eb1743e88",
+    "lab_id": "anpl",
+    "provenance": {
+      "lab_id": "anpl",
+      "repository": "anpl-technion/anpl-technion.github.io",
+      "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
+      "source_key": "Kong26wafr",
+      "source_name": "ANPL",
+      "source_path": "_bibliography/VadimIndelman.bib"
+    },
+    "publication_id": "publication:sha256:14765013a91eb1743e88",
+    "published_at": "2026-06",
+    "show_on_showcase": true,
+    "source_name": "ANPL",
+    "title": "Open-loop POMDP Simplification and Safe Skipping of Replanning with Formal Performance Guarantees"
+  },
+  {
+    "canonical_url": "https://twitter.com/vadim_indelman/status/2058451075326201899",
+    "category": "news",
+    "content_type": "social",
+    "date": "2026-05-24",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "We will present two recent RA-L and T-RO papers at next week:",
+    "expanded_urls": [
+      "https://lnkd.in/d7ya3NHB",
+      "https://lnkd.in/dQPieTTa"
+    ],
+    "featured": false,
+    "id": "anpl:x:2058451075326201899",
+    "lab_id": "anpl",
+    "provenance": {
+      "repository": "anpl-technion/anpl-technion.github.io",
+      "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
+      "source_path": "_data/tweets.json"
+    },
+    "published_at": "2026-05-24T07:32:35Z",
+    "show_on_showcase": true,
+    "source_account": "@vadim_indelman",
+    "source_name": "ANPL",
+    "title": "We will present two recent RA-L and T-RO papers at next week:"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_20-05-26",
+    "category": "news",
+    "date": "2026-05-20",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Connect Lab graduate students presented recent work in the faculty poster session",
+    "featured": false,
+    "id": "connect:news:news_20-05-26",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_20-05-26.md"
+    },
+    "published_at": "2026-05-20",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Zamir and Solomon Present at AE Research Day"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_27-04-26",
+    "category": "news",
+    "date": "2026-04-27",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Formation Control via Rotation Symmetry Constraints",
+    "featured": false,
+    "id": "connect:news:news_27-04-26",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_27-04-26.md"
+    },
+    "published_at": "2026-04-27",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Zamir Martinez Presents at the IAAC GSC"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_21-04-26",
+    "category": "news",
+    "date": "2026-04-21",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Two-degrees of freedom consensus architecutres",
+    "featured": false,
+    "id": "connect:news:news_21-04-26",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_21-04-26.md"
+    },
+    "published_at": "2026-04-21",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Extended abstract accepted to MTNS 2026"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_14-04-26",
+    "category": "news",
+    "date": "2026-04-14",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "New results on formation control, symmetry, and geometric analysis in multi-agent systems",
+    "featured": false,
+    "id": "connect:news:news_14-04-26",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_14-04-26.md"
+    },
+    "published_at": "2026-04-14",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Two papers accepted to the IFAC World Congress 2026"
+  },
+  {
+    "canonical_url": "https://twitter.com/vadim_indelman/status/2038310187577073944",
+    "category": "news",
+    "content_type": "social",
+    "date": "2026-03-29",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "An MSc seminar by Tamir Shazman on \"Online Robust Planning under Model Uncertainty\".",
+    "expanded_urls": [
+      "https://www.youtube.com/watch?v=Zgyrt8ai5V0&feature=youtu.be"
+    ],
+    "featured": false,
+    "id": "anpl:x:2038310187577073944",
+    "lab_id": "anpl",
+    "provenance": {
+      "repository": "anpl-technion/anpl-technion.github.io",
+      "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
+      "source_path": "_data/tweets.json"
+    },
+    "published_at": "2026-03-29T17:39:53Z",
+    "show_on_showcase": true,
+    "source_account": "@vadim_indelman",
+    "source_name": "ANPL",
+    "title": "An MSc seminar by Tamir Shazman on \"Online Robust Planning under Model Uncertainty\"."
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_19-03-26",
+    "category": "news",
+    "date": "2026-03-19",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "New results on agreement protocols and leader identification in networked systems",
+    "featured": false,
+    "id": "connect:news:news_19-03-26",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_19-03-26.md"
+    },
+    "published_at": "2026-03-19",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Two papers accepted to the European Control Conference (ECC 2026)"
+  },
+  {
+    "canonical_url": "https://doi.org/10.1609/aaai.v40i43.40959",
+    "category": "publication",
+    "date": "2026-01-01",
+    "date_precision": "month",
+    "display_weight": 0,
+    "excerpt": "Shazman, T., Lev-Yehudi, I., Benchetrit, R., Indelman, V.. 40th Annual AAAI Conference on Artificial Intelligence (AAAI)",
+    "featured": false,
+    "id": "publication:update:anpl:publication:doi:10.1609/aaai.v40i43.40959",
+    "lab_id": "anpl",
+    "provenance": {
+      "lab_id": "anpl",
+      "repository": "anpl-technion/anpl-technion.github.io",
+      "revision": "e2bfab96963fecda9fb6e1f9f0470ddbcf516e63",
+      "source_key": "Shazman26aaai",
+      "source_name": "ANPL",
+      "source_path": "_bibliography/VadimIndelman.bib"
+    },
+    "publication_id": "publication:doi:10.1609/aaai.v40i43.40959",
+    "published_at": "2026-01",
+    "show_on_showcase": true,
+    "source_name": "ANPL",
+    "title": "Online Robust Planning under Model Uncertainty: A Sample-Based Approach"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_12-12-25",
+    "category": "news",
+    "date": "2025-12-12",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "A Passivity Analysis for Nonlinear Consensus on Digraphs",
+    "featured": false,
+    "id": "connect:news:news_12-12-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_12-12-25.md"
+    },
+    "published_at": "2025-12-12",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Fengyu Yue presents her work at CDC2025!"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_10-12-25",
+    "category": "news",
+    "date": "2025-12-10",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Evyatar passed his MSc Exam.",
+    "featured": false,
+    "id": "connect:news:news_10-12-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_10-12-25.md"
+    },
+    "published_at": "2025-12-10",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Congratulations to Evyatar Matmon!"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_03-11-25_no2",
+    "category": "news",
+    "date": "2025-11-03",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Social gathering at Carmel beach",
+    "featured": false,
+    "id": "connect:news:news_03-11-25_no2",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_03-11-25_no2.md"
+    },
+    "published_at": "2025-11-03",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Connect Lab BBQ!"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_03-11-25",
+    "category": "news",
+    "date": "2025-11-03",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Solomon passed his PhD candidacy exam.",
+    "featured": false,
+    "id": "connect:news:news_03-11-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_03-11-25.md"
+    },
+    "published_at": "2025-11-03",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Congratulations to Solomon on PhD Candidacy Exam!"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_20-10-25",
+    "category": "news",
+    "date": "2025-10-15",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "To appear in the IEEE Transactions on Control of Network Systems",
+    "featured": false,
+    "id": "connect:news:news_20-10-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_20-10-25.md"
+    },
+    "published_at": "2025-10-15",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "New paper on bearing-only formation control over directed graphs!"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_16-10-25",
+    "category": "news",
+    "date": "2025-10-15",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Gal passed his PhD Exam.",
+    "featured": false,
+    "id": "connect:news:news_16-10-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_16-10-25.md"
+    },
+    "published_at": "2025-10-15",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Congratulations to Dr. Gal Barkai!"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_17-09-25",
+    "category": "news",
+    "date": "2025-09-17",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Advances in Rigidity Theory, Multi-Agent Formations, and Distributed Localization",
+    "featured": false,
+    "id": "connect:news:news_17-09-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_17-09-25.md"
+    },
+    "published_at": "2025-09-17",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Organizing IFAC2026 Open Invited Track"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_25-07-25",
+    "category": "news",
+    "date": "2025-07-30",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "I will speak about symmetry-forced formation control.",
+    "featured": false,
+    "id": "connect:news:news_25-07-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_25-07-25.md"
+    },
+    "published_at": "2025-07-30",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Giving a talk at TU Hamburg 30.7.25"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_20-07-25",
+    "category": "news",
+    "date": "2025-07-20",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "To appear in the European Journal of Control",
+    "featured": false,
+    "id": "connect:news:news_20-07-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_20-07-25.md"
+    },
+    "published_at": "2025-07-20",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "New paper on A Passivity Analysis for Nonlinear Consensus on Digraphs!"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_14-07-25",
+    "category": "news",
+    "date": "2025-07-14",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Symmetry-Constrained Formation Maneuvering",
+    "featured": false,
+    "id": "connect:news:news_14-07-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_14-07-25.md"
+    },
+    "published_at": "2025-07-14",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Zamir Martinez presents his work at GSC2025!"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_09-07-25",
+    "category": "news",
+    "date": "2025-07-09",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Alex presents his poster on formation control",
+    "featured": false,
+    "id": "connect:news:news_09-07-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_09-07-25.md"
+    },
+    "published_at": "2025-07-09",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Alex Vasilyev presents at the ME Research Project Day"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_25-06-25",
+    "category": "news",
+    "date": "2025-06-26",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "A Passivity Analysis for Nonlinear Consensus on Balanced Digraphs",
+    "featured": false,
+    "id": "connect:news:news_25-06-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_25-06-25.md"
+    },
+    "published_at": "2025-06-26",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Fengyu Yue presents her work at ECC!"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_26-05-25",
+    "category": "news",
+    "date": "2025-05-26",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Evyatar presented his thesis work.",
+    "featured": false,
+    "id": "connect:news:news_26-05-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_26-05-25.md"
+    },
+    "published_at": "2025-05-26",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Evyatar gives his MSc Thesis Seminar"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_08-05-25_no2",
+    "category": "news",
+    "date": "2025-05-08",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Fengyu Yue and Zamir Martinez with posters of their research",
+    "featured": false,
+    "id": "connect:news:news_08-05-25_no2",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_08-05-25_no2.md"
+    },
+    "published_at": "2025-05-08",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Connect Lab at the AE Graduate Students Research Day"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_08-05-25",
+    "category": "news",
+    "date": "2025-05-08",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Gal will present his work on Two Degrees-of-Freedom Architectures for Consensus",
+    "featured": false,
+    "id": "connect:news:news_08-05-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_08-05-25.md"
+    },
+    "published_at": "2025-05-08",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Gal Barkai giving a talk at the University of Melbourne"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_28-04-25",
+    "category": "news",
+    "date": "2025-04-28",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Fengyu, Evyatar, and Gal presented their works",
+    "featured": false,
+    "id": "connect:news:news_28-04-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_28-04-25.md"
+    },
+    "published_at": "2025-04-28",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Connect lab at the IAAC Control Conference"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_24-04-25",
+    "category": "news",
+    "date": "2025-04-21",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Event-Triggered Consensus Kalman Filtering Article Gains High Visibility",
+    "featured": false,
+    "id": "connect:news:news_24-04-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_24-04-25.md"
+    },
+    "published_at": "2025-04-21",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Aviv Priel's article recognized as a Top Viewed Article by Wiley"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_07-04-25",
+    "category": "news",
+    "date": "2025-04-07",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "I will speak about symmetry-forced formation control.",
+    "featured": false,
+    "id": "connect:news:news_07-04-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_07-04-25.md"
+    },
+    "published_at": "2025-04-07",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Giving a talk at the University of Sydney 7.4.25"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_01-04-25",
+    "category": "news",
+    "date": "2025-04-01",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Leader Identification in Semi-Autonomous Consensus Networks",
+    "featured": false,
+    "id": "connect:news:news_01-04-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_01-04-25.md"
+    },
+    "published_at": "2025-04-01",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Evyatar presented his work at the TASP research day"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_20-03-25",
+    "category": "news",
+    "date": "2025-03-20",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Symmetry-Constrained Formation Maneuvering",
+    "featured": false,
+    "id": "connect:news:news_20-03-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_20-03-25.md"
+    },
+    "published_at": "2025-03-20",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Zamir Martinez presents his work at IACAS!"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_10-03-25",
+    "category": "news",
+    "date": "2025-03-10",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Fengyu passed her PhD candidacy exam.",
+    "featured": false,
+    "id": "connect:news:news_10-03-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_10-03-25.md"
+    },
+    "published_at": "2025-03-10",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Congratulations to Fengyu on PhD Candidacy Exam!"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_22-01-25",
+    "category": "news",
+    "date": "2025-01-22",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Undergradaute students from Mechanical Engineering",
+    "featured": false,
+    "id": "connect:news:news_22-01-25",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_22-01-25.md"
+    },
+    "published_at": "2025-01-22",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Welcome Alexander and Arie to the group!"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_18-11-24",
+    "category": "news",
+    "date": "2025-01-04",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "To appear in the IEEE Transactions on Control of Network Systems",
+    "featured": false,
+    "id": "connect:news:news_18-11-24",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_18-11-24.md"
+    },
+    "published_at": "2025-01-04",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "New paper on Symmetry Forced Formation Control!"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_22-12-24",
+    "category": "news",
+    "date": "2024-12-22",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "It was great to attend once again CDC.",
+    "featured": false,
+    "id": "connect:news:news_22-12-24",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_22-12-24.md"
+    },
+    "published_at": "2024-12-22",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "A great time at IEEE CDC in Milano!"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_03-12-24",
+    "category": "news",
+    "date": "2024-12-03",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "To appear in the IEEE Control Systems Letters",
+    "featured": false,
+    "id": "connect:news:news_03-12-24",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_03-12-24.md"
+    },
+    "published_at": "2024-12-03",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "New paper on A Characterization of Passivizing Input-Output Transformations of Nonlinear MIMO Systems!"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_22-11-24",
+    "category": "news",
+    "date": "2024-11-22",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "I will speak about our recent results on symmetry forced formation control.",
+    "featured": false,
+    "id": "connect:news:news_22-11-24",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_22-11-24.md"
+    },
+    "published_at": "2024-11-22",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Giving a talk at Yale University 25.11.24"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_01-11-24",
+    "category": "news",
+    "date": "2024-11-01",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "I will speak about our recent results on feedback passivation.",
+    "featured": false,
+    "id": "connect:news:news_01-11-24",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_01-11-24.md"
+    },
+    "published_at": "2024-11-01",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Giving a talk at the New Jersey Institute of Technology 5.11.24"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_19-09-24",
+    "category": "news",
+    "date": "2024-09-19",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Bearing-only Formation Control with Directed Sensing",
+    "featured": false,
+    "id": "connect:news:news_19-09-24",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_19-09-24.md"
+    },
+    "published_at": "2024-09-19",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Congratulations to Jiacheng Shi on his MSc"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_08-09-24",
+    "category": "news",
+    "date": "2024-09-08",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Find us in the Sampled-Data Control and Nonlinear Output Feedback sessions!",
+    "featured": false,
+    "id": "connect:news:news_08-09-24",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_08-09-24.md"
+    },
+    "published_at": "2024-09-08",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "We will present 2 papers at CDC in Milano!"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_7-08-24_1",
+    "category": "news",
+    "date": "2024-08-07",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "A new 4-year grant trying to understand the complex problem of solving formation control with directed sensing.",
+    "featured": false,
+    "id": "connect:news:news_7-08-24_1",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_7-08-24_1.md"
+    },
+    "published_at": "2024-08-07",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "ISF Grant on Formation Control over Directed Graphs"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_27-06-24_1",
+    "category": "news",
+    "date": "2024-06-27",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Part of the Technion Summer Research Program.",
+    "featured": false,
+    "id": "connect:news:news_27-06-24_1",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_27-06-24_1.md"
+    },
+    "published_at": "2024-06-27",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Connect Lab will host 3 international students for the summer"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_26-06-24_2",
+    "category": "news",
+    "date": "2024-06-26",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "Gal Barkai is presenting his latest work at ECC in Stockholm - \"An Emulation Approach to Output-Feedback Sampled-Data Synchronization”",
+    "featured": false,
+    "id": "connect:news:news_26-06-24_2",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_26-06-24_2.md"
+    },
+    "published_at": "2024-06-26",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Our work at ECC2024 in Stockholm"
+  },
+  {
+    "canonical_url": "https://connect-lab-technion.github.io/news/news_26-06-24_1",
+    "category": "news",
+    "date": "2024-06-26",
+    "date_precision": "day",
+    "display_weight": 0,
+    "excerpt": "We are finally online! Stay tuned for updates to our exciting research.",
+    "featured": false,
+    "id": "connect:news:news_26-06-24_1",
+    "lab_id": "connect",
+    "provenance": {
+      "repository": "Connect-Lab-Technion/Connect-Lab-Technion.github.io",
+      "revision": "a7502d2b4b37a20b384890cc21a190663c418359",
+      "source_path": "_news/news_26-06-24_1.md"
+    },
+    "published_at": "2024-06-26",
+    "show_on_showcase": true,
+    "source_name": "ConNeCt",
+    "title": "Welcome to the Connect Lab Website!"
+  }
+]
