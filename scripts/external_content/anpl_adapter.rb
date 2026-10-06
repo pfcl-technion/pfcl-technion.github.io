@@ -11,7 +11,6 @@ require_relative "plain_text"
 module PFCL
   module ExternalContent
     class AnplAdapter
-      TITLE_LIMIT = 120
       EXCERPT_LIMIT = 280
 
       def initialize(source:, root:, revision:)
@@ -57,17 +56,17 @@ module PFCL
         text = required_string(item, "text")
         timestamp = DateTime.iso8601(required_string(item, "created_at"))
         clean_text = PlainText.from_markdown(text)
-        first_sentence = clean_text[/\A.*?[.!?](?=\s|\z)/] || clean_text
 
         {
           "id" => "anpl:x:#{id}",
-          "title" => PlainText.from_markdown(first_sentence, max_length: TITLE_LIMIT),
+          "content_type" => "social",
+          "title" => clean_text,
           "date" => timestamp.strftime("%Y-%m-%d"),
           "published_at" => timestamp.new_offset(0).strftime("%Y-%m-%dT%H:%M:%SZ"),
           "date_precision" => "day",
           "lab_id" => @source.lab_id,
           "category" => "news",
-          "excerpt" => PlainText.from_markdown(clean_text, max_length: EXCERPT_LIMIT),
+          "excerpt" => clean_text,
           "canonical_url" => required_string(item, "link"),
           "source_name" => @source.source_name,
           "source_account" => item["handle"].to_s.empty? ? item["account"].to_s : item["handle"].to_s,

@@ -29,6 +29,9 @@
       {% assign source_lab = site.labs | where: 'slug', item.lab_id | first %}
       {% assign source_label = item.source_name | default: source_lab.short_name | default: 'PFCL' %}
     {% endif %}
+    {% if item.content_type == 'social' %}
+      {% assign source_label = source_label | append: ' on X' %}
+    {% endif %}
     {% assign source_label = source_label | escape %}
     <li class="pfcl-news-item">
       <p class="pfcl-news-meta is-size-7 has-text-grey">
@@ -40,14 +43,24 @@
         {% endif %}
         — {{ source_label }}
       </p>
-      <p class="mb-1">
-        {% if item.canonical_url and item.lab_id != 'pfcl' %}
-          <a href="{{ item.canonical_url | escape }}" target="_blank" rel="noopener noreferrer">{{ item.title | escape }}</a>
-        {% else %}
-          {{ item.title | escape }}
-        {% endif %}
-      </p>
-      <p class="is-size-6">{{ item.excerpt | escape }}</p>
+      {% if item.content_type == 'social' %}
+        <p class="mb-1 is-size-6">
+          {% if item.canonical_url and item.lab_id != 'pfcl' %}
+            <a href="{{ item.canonical_url | escape }}" target="_blank" rel="noopener noreferrer">{{ item.excerpt | escape }}</a>
+          {% else %}
+            {{ item.excerpt | escape }}
+          {% endif %}
+        </p>
+      {% else %}
+        <p class="mb-1">
+          {% if item.canonical_url and item.lab_id != 'pfcl' %}
+            <a href="{{ item.canonical_url | escape }}" target="_blank" rel="noopener noreferrer">{{ item.title | escape }}</a>
+          {% else %}
+            {{ item.title | escape }}
+          {% endif %}
+        </p>
+        <p class="is-size-6">{{ item.excerpt | escape }}</p>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>
