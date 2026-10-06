@@ -62,6 +62,13 @@ class PublicationAdapterTest < Minitest::Test
     assert_equal "https://anpl-technion.github.io/publications/", records.fetch("Year Only Study").fetch("canonical_url")
   end
 
+  def test_normalizes_authors_in_natural_display_order
+    records = adapter.records.to_h { |record| [record.fetch("title"), record] }
+
+    assert_equal ["Alice Smith", "Bob Jones"], records.fetch("Shared Network Paper").fetch("authors")
+    assert_equal ["Carol Lee"], records.fetch("Final Planning Conference Paper").fetch("authors")
+  end
+
   def test_discards_every_pdf_field_and_pdf_url
     serialized = adapter.records.inspect
 
