@@ -32,11 +32,13 @@ body.showcase-body {
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 2px solid #31bfe4;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
   display: flex;
   flex: 0 0 auto;
+  height: 84px;
   justify-content: space-between;
   left: 0;
-  padding: 0.85rem 3rem;
+  padding: 0 3rem;
   position: fixed;
   right: 0;
   top: 0;
@@ -130,17 +132,19 @@ body.showcase-body {
 // Column Header Banner
 .showcase-column-header {
   align-items: center;
-  background: rgba(0, 14, 31, 0.75);
+  background: rgba(0, 14, 31, 0.85);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(49, 191, 228, 0.35);
+  box-sizing: border-box;
   display: flex;
+  height: 48px;
   justify-content: space-between;
   left: 0;
-  padding: 0.55rem 2.5rem;
+  padding: 0 2.5rem;
   position: absolute;
   right: 0;
-  top: 4.8rem;
+  top: 84px;
   z-index: 35;
 }
 
@@ -236,7 +240,7 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   flex-direction: column;
   height: 100%;
   justify-content: flex-start;
-  padding: 8.5rem 2.75rem 10.5rem 2.75rem;
+  padding: 9.5rem 2.75rem 8.5rem 2.75rem;
   position: relative;
   width: 100%;
   z-index: 25;
