@@ -32,8 +32,12 @@ class ShowcaseTest < Minitest::Test
     content = File.read(@page_path)
     refute_includes content, "site.labs", "showcase.md must not render research-group lab slides"
     assert_includes content, "site.projects", "showcase.md must iterate over site.projects"
+    assert_includes content, "site.data.generated.projects", "showcase.md must iterate over generated projects"
     assert_includes content, "site.news", "showcase.md must iterate over site.news"
+    assert_includes content, "site.data.generated.updates", "showcase.md must iterate over generated updates"
     assert_includes content, "show_on_showcase", "showcase.md must filter items by show_on_showcase"
+    assert_includes content, "showcase-hero-layer", "showcase.md must include full-bleed hero layers"
+    assert_includes content, "showcase-hero-scrim", "showcase.md must include gradient scrims"
   end
 
   def test_showcase_layout_structure
