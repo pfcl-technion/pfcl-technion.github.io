@@ -1,9 +1,9 @@
 [
   {
     "authors": [
-      "Oliva, Federico",
-      "Zelazo, Daniel",
-      "Degani, Amir"
+      "Federico Oliva",
+      "Daniel Zelazo",
+      "Amir Degani"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -32,11 +32,11 @@
   },
   {
     "authors": [
-      "Lev-Yehudi, I.",
-      "Novitsky, M.",
-      "Barenboim, M.",
-      "Benchetrit, R.",
-      "Indelman, V."
+      "I. Lev-Yehudi",
+      "M. Novitsky",
+      "M. Barenboim",
+      "R. Benchetrit",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.24963/ijcai.2026/498",
     "date_precision": "month",
@@ -66,9 +66,9 @@
   },
   {
     "authors": [
-      "Barkai, Gal",
-      "Mirkin, Leonid",
-      "Zelazo, Daniel"
+      "Gal Barkai",
+      "Leonid Mirkin",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -98,8 +98,8 @@
   {
     "arxiv": "2512.06733",
     "authors": [
-      "Martinez, Zamir",
-      "Zelazo, Daniel"
+      "Zamir Martinez",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://arxiv.org/abs/2512.06733",
     "date_precision": "month",
@@ -129,8 +129,8 @@
   {
     "arxiv": "2511.13187",
     "authors": [
-      "Goldgraber Casspi, Solomon",
-      "Zelazo, Daniel"
+      "Solomon Goldgraber Casspi",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://arxiv.org/abs/2511.13187",
     "date_precision": "month",
@@ -160,8 +160,8 @@
   {
     "arxiv": "2511.02317",
     "authors": [
-      "Matmon, Evyatar",
-      "Zelazo, Daniel"
+      "Evyatar Matmon",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://arxiv.org/abs/2511.02317",
     "date_precision": "month",
@@ -191,9 +191,9 @@
   {
     "arxiv": "2511.12632",
     "authors": [
-      "Barkai, Gal",
-      "Mirkin, Leonid",
-      "Zelazo, Daniel"
+      "Gal Barkai",
+      "Leonid Mirkin",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://arxiv.org/abs/2511.12632",
     "date_precision": "month",
@@ -222,8 +222,8 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Theran, Louis"
+      "Daniel Zelazo",
+      "Louis Theran"
     ],
     "canonical_url": "https://doi.org/10.1109/lcsys.2026.3702047",
     "date_precision": "month",
@@ -261,8 +261,8 @@
   },
   {
     "authors": [
-      "Kong, D.",
-      "Indelman, V."
+      "D. Kong",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -291,8 +291,8 @@
   },
   {
     "authors": [
-      "Martinez, Zamir",
-      "Zelazo, Daniel"
+      "Zamir Martinez",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -329,8 +329,8 @@
   },
   {
     "authors": [
-      "Shi, Jiacheng",
-      "Zelazo, Daniel"
+      "Jiacheng Shi",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/tcns.2025.3626655",
     "date_precision": "month",
@@ -361,10 +361,10 @@
   {
     "arxiv": "2509.10162",
     "authors": [
-      "Shazman, T.",
-      "Lev-Yehudi, I.",
-      "Benchetrit, R.",
-      "Indelman, V."
+      "T. Shazman",
+      "I. Lev-Yehudi",
+      "R. Benchetrit",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1609/aaai.v40i43.40959",
     "date_precision": "month",
@@ -394,8 +394,8 @@
   },
   {
     "authors": [
-      "Barenboim, M.",
-      "Indelman, V."
+      "M. Barenboim",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1016/j.artint.2025.104442",
     "date_precision": "year",
@@ -424,8 +424,8 @@
   },
   {
     "authors": [
-      "Yue, Fengyu",
-      "Zelazo, Daniel"
+      "Fengyu Yue",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -462,8 +462,8 @@
   },
   {
     "authors": [
-      "Yue, Fengyu",
-      "Zelazo, Daniel"
+      "Fengyu Yue",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1016/j.ejcon.2025.101368",
     "date_precision": "month",
@@ -493,7 +493,7 @@
   },
   {
     "authors": [
-      "Martinez, Zamir"
+      "Zamir Martinez"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -530,9 +530,9 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Tanigawa, Shin-ichi",
-      "Schulze, Bernd"
+      "Daniel Zelazo",
+      "Shin-ichi Tanigawa",
+      "Bernd Schulze"
     ],
     "canonical_url": "https://doi.org/10.1109/tcns.2025.3525814",
     "date_precision": "month",
@@ -562,8 +562,8 @@
   },
   {
     "authors": [
-      "Matmon, Evyatar",
-      "Zelazo, Daniel"
+      "Evyatar Matmon",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -592,9 +592,9 @@
   },
   {
     "authors": [
-      "Barkai, Gal",
-      "Mirkin, Leonid",
-      "Zelazo, Daniel"
+      "Gal Barkai",
+      "Leonid Mirkin",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -623,7 +623,7 @@
   },
   {
     "authors": [
-      "Benchetrit, R."
+      "R. Benchetrit"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -651,8 +651,8 @@
   },
   {
     "authors": [
-      "Zhitnikov, A.",
-      "Indelman, V."
+      "A. Zhitnikov",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1109/tro.2025.3610176",
     "date_precision": "year",
@@ -681,8 +681,8 @@
   },
   {
     "authors": [
-      "Sharf, Miel",
-      "Zelazo, Daniel"
+      "Miel Sharf",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1002/asjc.3149",
     "date_precision": "year",
@@ -711,7 +711,7 @@
   },
   {
     "authors": [
-      "Novitsky, M."
+      "M. Novitsky"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -739,9 +739,9 @@
   },
   {
     "authors": [
-      "Novitsky, M.",
-      "Barenboim, M.",
-      "Indelman, V."
+      "M. Novitsky",
+      "M. Barenboim",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1109/lra.2025.3606381",
     "date_precision": "year",
@@ -770,7 +770,7 @@
   },
   {
     "authors": [
-      "Shazman, T."
+      "T. Shazman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -798,8 +798,8 @@
   },
   {
     "authors": [
-      "Sharf, Miel",
-      "Zelazo, Daniel"
+      "Miel Sharf",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/lcsys.2024.3513238",
     "date_precision": "month",
@@ -829,9 +829,9 @@
   },
   {
     "authors": [
-      "Barkai, Gal",
-      "Mirkin, Leonid",
-      "Zelazo, Daniel"
+      "Gal Barkai",
+      "Leonid Mirkin",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc56724.2024.10886376",
     "date_precision": "month",
@@ -861,8 +861,8 @@
   },
   {
     "authors": [
-      "Kong, D.",
-      "Indelman, V."
+      "D. Kong",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -891,10 +891,10 @@
   },
   {
     "authors": [
-      "Shienman, M.",
-      "Levy-Or, O.",
-      "Kaess, M.",
-      "Indelman, V."
+      "M. Shienman",
+      "O. Levy-Or",
+      "M. Kaess",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -923,9 +923,9 @@
   },
   {
     "authors": [
-      "Kundu, T.",
-      "Rafaeli, M.",
-      "Indelman, V."
+      "T. Kundu",
+      "M. Rafaeli",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1109/iros58592.2024.10801372",
     "date_precision": "month",
@@ -955,9 +955,9 @@
   },
   {
     "authors": [
-      "Xu, Chuang",
-      "Zelazo, Daniel",
-      "Wu, B"
+      "Chuang Xu",
+      "Daniel Zelazo",
+      "B Wu"
     ],
     "canonical_url": "https://doi.org/10.1016/j.asr.2024.05.077",
     "date_precision": "month",
@@ -987,9 +987,9 @@
   },
   {
     "authors": [
-      "Xu, Chuang",
-      "Zelazo, Daniel",
-      "Wu, B"
+      "Chuang Xu",
+      "Daniel Zelazo",
+      "B Wu"
     ],
     "canonical_url": "https://doi.org/10.1002/rnc.6966",
     "date_precision": "month",
@@ -1019,9 +1019,9 @@
   },
   {
     "authors": [
-      "Barkai, Gal",
-      "Mirkin, Leonid",
-      "Zelazo, Daniel"
+      "Gal Barkai",
+      "Leonid Mirkin",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -1050,8 +1050,8 @@
   },
   {
     "authors": [
-      "Sharf, Miel",
-      "Zelazo, Daniel"
+      "Miel Sharf",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/lcsys.2024.3396616",
     "date_precision": "month",
@@ -1081,10 +1081,10 @@
   },
   {
     "authors": [
-      "Attias, Joseph",
-      "Marciano, Yael",
-      "Arhipov, Ruslan",
-      "Zelazo, Daniel"
+      "Joseph Attias",
+      "Yael Marciano",
+      "Ruslan Arhipov",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -1113,9 +1113,9 @@
   },
   {
     "authors": [
-      "Barkai, Gal",
-      "Mirkin, Leonid",
-      "Zelazo, Daniel"
+      "Gal Barkai",
+      "Leonid Mirkin",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -1144,8 +1144,8 @@
   },
   {
     "authors": [
-      "Shi, Jiacheng",
-      "Zelazo, Daniel"
+      "Jiacheng Shi",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -1174,8 +1174,8 @@
   },
   {
     "authors": [
-      "Yue, Fengyu",
-      "Zelazo, Daniel"
+      "Fengyu Yue",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -1204,9 +1204,9 @@
   },
   {
     "authors": [
-      "Lev-Yehudi, I.",
-      "Barenboim, M.",
-      "Indelman, V."
+      "I. Lev-Yehudi",
+      "M. Barenboim",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1609/aaai.v38i18.29997",
     "date_precision": "month",
@@ -1236,8 +1236,8 @@
   },
   {
     "authors": [
-      "Sewlia, Mayank",
-      "Zelazo, Daniel"
+      "Mayank Sewlia",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1002/rnc.7185",
     "date_precision": "month",
@@ -1267,8 +1267,8 @@
   },
   {
     "authors": [
-      "Yotam, T.",
-      "Indelman, V."
+      "T. Yotam",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/doi.org/10.1109/tro.2024.3424018",
     "date_precision": "year",
@@ -1297,9 +1297,9 @@
   },
   {
     "authors": [
-      "Zhitnikov, A.",
-      "Sztyglic, O.",
-      "Indelman, V."
+      "A. Zhitnikov",
+      "O. Sztyglic",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/doi.org/10.1177/02783649241261398",
     "date_precision": "year",
@@ -1328,7 +1328,7 @@
   },
   {
     "authors": [
-      "Levy-Or, O."
+      "O. Levy-Or"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -1356,7 +1356,7 @@
   },
   {
     "authors": [
-      "Zhitnikov, A."
+      "A. Zhitnikov"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -1384,8 +1384,8 @@
   },
   {
     "authors": [
-      "Zhitnikov, A.",
-      "Indelman, V."
+      "A. Zhitnikov",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1109/tro.2023.3341625",
     "date_precision": "year",
@@ -1414,7 +1414,7 @@
   },
   {
     "authors": [
-      "Barenboim, M."
+      "M. Barenboim"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -1442,7 +1442,7 @@
   },
   {
     "authors": [
-      "Shienman, M."
+      "M. Shienman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -1470,8 +1470,8 @@
   },
   {
     "authors": [
-      "Kitanov, A.",
-      "Indelman, V."
+      "A. Kitanov",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1177/02783649231204898",
     "date_precision": "year",
@@ -1500,9 +1500,9 @@
   },
   {
     "authors": [
-      "Barkai, Gal",
-      "Mirkin, Leonid",
-      "Zelazo, Daniel"
+      "Gal Barkai",
+      "Leonid Mirkin",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc49753.2023.10384079",
     "date_precision": "month",
@@ -1532,8 +1532,8 @@
   },
   {
     "authors": [
-      "Barenboim, M.",
-      "Indelman, V."
+      "M. Barenboim",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -1562,9 +1562,9 @@
   },
   {
     "authors": [
-      "Barenboim, M.",
-      "Lev-Yehudi, I.",
-      "Indelman, V."
+      "M. Barenboim",
+      "I. Lev-Yehudi",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1109/lra.2023.3311205",
     "date_precision": "month",
@@ -1594,8 +1594,8 @@
   },
   {
     "authors": [
-      "Sharf, Miel",
-      "Zelazo, Daniel"
+      "Miel Sharf",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/tcns.2023.3237368",
     "date_precision": "month",
@@ -1625,9 +1625,9 @@
   },
   {
     "authors": [
-      "Barkai, Gal",
-      "Mirkin, Leonid",
-      "Zelazo, Daniel"
+      "Gal Barkai",
+      "Leonid Mirkin",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1016/j.automatica.2023.111158",
     "date_precision": "month",
@@ -1657,9 +1657,9 @@
   },
   {
     "authors": [
-      "Barenboim, M.",
-      "Shienman, M.",
-      "Indelman, V."
+      "M. Barenboim",
+      "M. Shienman",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1109/lra.2023.3282773",
     "date_precision": "month",
@@ -1689,9 +1689,9 @@
   },
   {
     "authors": [
-      "Belabbas, M-A",
-      "Chen, Xudong",
-      "Zelazo, Daniel"
+      "M-A Belabbas",
+      "Xudong Chen",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/tac.2022.3212013",
     "date_precision": "month",
@@ -1721,8 +1721,8 @@
   },
   {
     "authors": [
-      "Zhitnikov, A.",
-      "Indelman, V."
+      "A. Zhitnikov",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -1751,9 +1751,9 @@
   },
   {
     "authors": [
-      "Sun, Zhiyong",
-      "Zhao, Shiyu",
-      "Zelazo, Daniel"
+      "Zhiyong Sun",
+      "Shiyu Zhao",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1016/j.ifacol.2023.10.1307",
     "date_precision": "month",
@@ -1783,8 +1783,8 @@
   },
   {
     "authors": [
-      "Priel, Aviv",
-      "Zelazo, Daniel"
+      "Aviv Priel",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1016/j.ifacol.2023.10.903",
     "date_precision": "month",
@@ -1814,9 +1814,9 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Shulze, Bernd",
-      "Tanigawa, Shin-Ichi"
+      "Daniel Zelazo",
+      "Bernd Shulze",
+      "Shin-Ichi Tanigawa"
     ],
     "canonical_url": "https://doi.org/10.1016/j.ifacol.2023.10.301",
     "date_precision": "month",
@@ -1846,13 +1846,13 @@
   },
   {
     "authors": [
-      "Placed, J.",
-      "Strader, J.",
-      "Carrillo, H.",
-      "Atanasov, N.",
-      "Indelman, V.",
-      "Carlone, L.",
-      "Castellanos, J."
+      "J. Placed",
+      "J. Strader",
+      "H. Carrillo",
+      "N. Atanasov",
+      "V. Indelman",
+      "L. Carlone",
+      "J. Castellanos"
     ],
     "canonical_url": "https://doi.org/10.1109/tro.2023.3248510",
     "date_precision": "month",
@@ -1882,11 +1882,11 @@
   },
   {
     "authors": [
-      "Michael, Elad",
-      "Manzie, Chris",
-      "Wood, Tony A.",
-      "Zelazo, Daniel",
-      "Shames, Iman"
+      "Elad Michael",
+      "Chris Manzie",
+      "Tony A. Wood",
+      "Daniel Zelazo",
+      "Iman Shames"
     ],
     "canonical_url": "https://doi.org/10.1016/j.automatica.2023.110948",
     "date_precision": "month",
@@ -1916,8 +1916,8 @@
   },
   {
     "authors": [
-      "Priel, Aviv",
-      "Zelazo, Daniel"
+      "Aviv Priel",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1002/rnc.6762",
     "date_precision": "month",
@@ -1947,9 +1947,9 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Fabris, Marco",
-      "Peled-Eitan, Liat"
+      "Daniel Zelazo",
+      "Marco Fabris",
+      "Liat Peled-Eitan"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -1978,8 +1978,8 @@
   },
   {
     "authors": [
-      "Fabris, Marco",
-      "Zelazo, Daniel"
+      "Marco Fabris",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/lcsys.2023.3284482",
     "date_precision": "year",
@@ -2008,9 +2008,9 @@
   },
   {
     "authors": [
-      "Verginis, Christos K.",
-      "Zelazo, Daniel",
-      "Dimarogonas, Dimos V."
+      "Christos K. Verginis",
+      "Daniel Zelazo",
+      "Dimos V. Dimarogonas"
     ],
     "canonical_url": "https://doi.org/10.1109/tcns.2022.3181724",
     "date_precision": "year",
@@ -2039,8 +2039,8 @@
   },
   {
     "authors": [
-      "Tchuiev, V.",
-      "Indelman, V."
+      "V. Tchuiev",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1016/j.artint.2023.103903",
     "date_precision": "year",
@@ -2069,7 +2069,7 @@
   },
   {
     "authors": [
-      "Yotam, T."
+      "T. Yotam"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -2097,8 +2097,8 @@
   },
   {
     "authors": [
-      "Shienman, M.",
-      "Indelman, V."
+      "M. Shienman",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1007/978-3-031-25555-7_8",
     "date_precision": "year",
@@ -2127,8 +2127,8 @@
   },
   {
     "authors": [
-      "Lemberg, T.",
-      "Indelman, V."
+      "T. Lemberg",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -2157,8 +2157,8 @@
   },
   {
     "authors": [
-      "Zilberman, I.",
-      "Indelman, V."
+      "I. Zilberman",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -2187,8 +2187,8 @@
   },
   {
     "authors": [
-      "Sztyglic, O.",
-      "Indelman, V."
+      "O. Sztyglic",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -2217,8 +2217,8 @@
   },
   {
     "authors": [
-      "Shienman, M.",
-      "Indelman, V."
+      "M. Shienman",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -2247,9 +2247,9 @@
   },
   {
     "authors": [
-      "Barkai, Gal",
-      "Mirkin, Leonid",
-      "Zelazo, Daniel"
+      "Gal Barkai",
+      "Leonid Mirkin",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -2278,8 +2278,8 @@
   },
   {
     "authors": [
-      "Farhi, E.",
-      "Indelman, V."
+      "E. Farhi",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1007/s10514-022-10045-w",
     "date_precision": "month",
@@ -2309,8 +2309,8 @@
   },
   {
     "authors": [
-      "Zhitnikov, A.",
-      "Indelman, V."
+      "A. Zhitnikov",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1016/j.artint.2022.103775",
     "date_precision": "month",
@@ -2341,8 +2341,8 @@
   {
     "arxiv": "2201.05673",
     "authors": [
-      "Barenboim, M.",
-      "Indelman, V."
+      "M. Barenboim",
+      "V. Indelman"
     ],
     "canonical_url": "https://arxiv.org/abs/2201.05673",
     "date_precision": "month",
@@ -2371,8 +2371,8 @@
   },
   {
     "authors": [
-      "Sharf, Miel",
-      "Zelazo, Daniel"
+      "Miel Sharf",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/tac.2021.3095258",
     "date_precision": "month",
@@ -2402,8 +2402,8 @@
   },
   {
     "authors": [
-      "Fabris, Marco",
-      "Zelazo, Daniel"
+      "Marco Fabris",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/tsmc.2022.3177756",
     "date_precision": "month",
@@ -2433,8 +2433,8 @@
   },
   {
     "authors": [
-      "Elimelech, K.",
-      "Indelman, V."
+      "K. Elimelech",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1177/02783649221076381",
     "date_precision": "month",
@@ -2464,8 +2464,8 @@
   },
   {
     "authors": [
-      "Sharf, Miel",
-      "Zelazo, Daniel"
+      "Miel Sharf",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.23919/ascc56756.2022.9828091",
     "date_precision": "month",
@@ -2495,8 +2495,8 @@
   },
   {
     "authors": [
-      "Shienman, M.",
-      "Indelman, V."
+      "M. Shienman",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -2525,8 +2525,8 @@
   },
   {
     "authors": [
-      "Shelly, O.",
-      "Indelman, V."
+      "O. Shelly",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1109/lra.2022.3143298",
     "date_precision": "month",
@@ -2556,9 +2556,9 @@
   },
   {
     "authors": [
-      "Zilberman, I.",
-      "Rivlin, E.",
-      "Indelman, V."
+      "I. Zilberman",
+      "E. Rivlin",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1109/lra.2022.3144525",
     "date_precision": "month",
@@ -2588,8 +2588,8 @@
   },
   {
     "authors": [
-      "Fabris, Marco",
-      "Zelazo, Daniel"
+      "Marco Fabris",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1002/adc2.103",
     "date_precision": "month",
@@ -2619,10 +2619,10 @@
   },
   {
     "authors": [
-      "Sharf, Miel",
-      "Romer, Anne",
-      "Zelazo, Daniel",
-      "Allgower, Frank"
+      "Miel Sharf",
+      "Anne Romer",
+      "Daniel Zelazo",
+      "Frank Allgower"
     ],
     "canonical_url": "https://doi.org/10.1109/tac.2021.3056582",
     "date_precision": "month",
@@ -2652,11 +2652,11 @@
   },
   {
     "authors": [
-      "Sharf, Miel",
-      "Romm, Iliya",
-      "Palman, M.",
-      "Zelazo, Daniel",
-      "Cukurel, Beni"
+      "Miel Sharf",
+      "Iliya Romm",
+      "M. Palman",
+      "Daniel Zelazo",
+      "Beni Cukurel"
     ],
     "canonical_url": "https://doi.org/10.1016/j.apenergy.2021.118391",
     "date_precision": "month",
@@ -2686,7 +2686,7 @@
   },
   {
     "authors": [
-      "Zilberman, I."
+      "I. Zilberman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -2714,7 +2714,7 @@
   },
   {
     "authors": [
-      "Rotman, G."
+      "G. Rotman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -2742,7 +2742,7 @@
   },
   {
     "authors": [
-      "Shelly, O."
+      "O. Shelly"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -2770,8 +2770,8 @@
   },
   {
     "authors": [
-      "Elimelech, K.",
-      "Indelman, V."
+      "K. Elimelech",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1007/978-3-030-95459-8_6",
     "date_precision": "year",
@@ -2800,9 +2800,9 @@
   },
   {
     "authors": [
-      "Barkai, Gal",
-      "Mirkin, Leonid",
-      "Zelazo, Daniel"
+      "Gal Barkai",
+      "Leonid Mirkin",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/lcsys.2021.3074589",
     "date_precision": "year",
@@ -2831,7 +2831,7 @@
   },
   {
     "authors": [
-      "Mor, R."
+      "R. Mor"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -2859,7 +2859,7 @@
   },
   {
     "authors": [
-      "Feldman, Y."
+      "Y. Feldman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -2887,8 +2887,8 @@
   },
   {
     "authors": [
-      "Priel, Aviv",
-      "Zelazo, Daniel"
+      "Aviv Priel",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc45484.2021.9683438",
     "date_precision": "month",
@@ -2918,9 +2918,9 @@
   },
   {
     "authors": [
-      "Sharf, Miel",
-      "Jain, Anoop",
-      "Zelazo, Daniel"
+      "Miel Sharf",
+      "Anoop Jain",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/tac.2020.3043390",
     "date_precision": "month",
@@ -2950,10 +2950,10 @@
   },
   {
     "authors": [
-      "Pozzan, Benjamin",
-      "Michieletto, Giulia",
-      "Cenedese, Angelo",
-      "Zelazo, Daniel"
+      "Benjamin Pozzan",
+      "Giulia Michieletto",
+      "Angelo Cenedese",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc45484.2021.9683374",
     "date_precision": "month",
@@ -2983,8 +2983,8 @@
   },
   {
     "authors": [
-      "Feldman, Y.",
-      "Indelman, V."
+      "Y. Feldman",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -3013,9 +3013,9 @@
   },
   {
     "authors": [
-      "Shienman, M.",
-      "Kitanov, A.",
-      "Indelman, V."
+      "M. Shienman",
+      "A. Kitanov",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1109/lra.2021.3068947",
     "date_precision": "month",
@@ -3045,8 +3045,8 @@
   },
   {
     "authors": [
-      "Feldman, Y.",
-      "Indelman, V."
+      "Y. Feldman",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -3075,8 +3075,8 @@
   },
   {
     "authors": [
-      "Elimelech, K.",
-      "Indelman, V."
+      "K. Elimelech",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1109/lra.2020.3048663",
     "date_precision": "month",
@@ -3106,9 +3106,9 @@
   },
   {
     "authors": [
-      "Michieletto, Giulia",
-      "Cenedese, Angelo",
-      "Zelazo, Daniel"
+      "Giulia Michieletto",
+      "Angelo Cenedese",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/tcns.2021.3077712",
     "date_precision": "year",
@@ -3137,7 +3137,7 @@
   },
   {
     "authors": [
-      "Tchuiev, V."
+      "V. Tchuiev"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -3165,8 +3165,8 @@
   },
   {
     "authors": [
-      "Leiter, Noam",
-      "Zelazo, Daniel"
+      "Noam Leiter",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1016/j.laa.2020.11.003",
     "date_precision": "year",
@@ -3195,7 +3195,7 @@
   },
   {
     "authors": [
-      "Elimelech, K."
+      "K. Elimelech"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -3223,7 +3223,7 @@
   },
   {
     "authors": [
-      "Farhi, E."
+      "E. Farhi"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -3251,7 +3251,7 @@
   },
   {
     "authors": [
-      "Sztyglic, O."
+      "O. Sztyglic"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -3279,11 +3279,11 @@
   },
   {
     "authors": [
-      "Michael, Elad",
-      "Zelazo, Daniel",
-      "Wood, Tony A.",
-      "Manzie, Chris",
-      "Shames, Iman"
+      "Elad Michael",
+      "Daniel Zelazo",
+      "Tony A. Wood",
+      "Chris Manzie",
+      "Iman Shames"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc42340.2020.9304272",
     "date_precision": "month",
@@ -3313,8 +3313,8 @@
   },
   {
     "authors": [
-      "Asraf, O.",
-      "Indelman, V."
+      "O. Asraf",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -3351,8 +3351,8 @@
   },
   {
     "authors": [
-      "Mor, R.",
-      "Indelman, V."
+      "R. Mor",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -3381,8 +3381,8 @@
   },
   {
     "authors": [
-      "Kopitkov, D.",
-      "Indelman, V."
+      "D. Kopitkov",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -3411,8 +3411,8 @@
   },
   {
     "authors": [
-      "Tchuiev, V.",
-      "Indelman, V."
+      "V. Tchuiev",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1109/lra.2020.3003275",
     "date_precision": "month",
@@ -3442,8 +3442,8 @@
   },
   {
     "authors": [
-      "Feldman, Y.",
-      "Indelman, V."
+      "Y. Feldman",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -3472,10 +3472,10 @@
   },
   {
     "authors": [
-      "Chen, Hao",
-      "Zelazo, Daniel",
-      "Wang, Xiangke",
-      "Shen, Lincheng"
+      "Hao Chen",
+      "Daniel Zelazo",
+      "Xiangke Wang",
+      "Lincheng Shen"
     ],
     "canonical_url": "https://doi.org/10.1109/tcns.2019.2913550",
     "date_precision": "month",
@@ -3505,8 +3505,8 @@
   },
   {
     "authors": [
-      "Elimelech, K.",
-      "Indelman, V."
+      "K. Elimelech",
+      "V. Indelman"
     ],
     "canonical_url": "https://link.springer.com/chapter/10.1007/978-3-030-28619-4_58",
     "date_precision": "year",
@@ -3534,7 +3534,7 @@
   },
   {
     "authors": [
-      "Kopitkov, D."
+      "D. Kopitkov"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -3562,9 +3562,9 @@
   },
   {
     "authors": [
-      "Trinh, Minh Hoang",
-      "Zelazo, Daniel",
-      "Ahn, Hyo-Sung"
+      "Minh Hoang Trinh",
+      "Daniel Zelazo",
+      "Hyo-Sung Ahn"
     ],
     "canonical_url": "https://doi.org/10.1109/tac.2019.2927932",
     "date_precision": "year",
@@ -3593,8 +3593,8 @@
   },
   {
     "authors": [
-      "Feldman, Y.",
-      "Indelman, V."
+      "Y. Feldman",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1007/s10514-020-09921-0",
     "date_precision": "year",
@@ -3623,8 +3623,8 @@
   },
   {
     "authors": [
-      "Mukherjee, Dwaipayan",
-      "Zelazo, Daniel"
+      "Dwaipayan Mukherjee",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/tcns.2018.2889003",
     "date_precision": "month",
@@ -3654,9 +3654,9 @@
   },
   {
     "authors": [
-      "Ikeda, Takuya",
-      "Zelazo, Daniel",
-      "Kashima, Kenji"
+      "Takuya Ikeda",
+      "Daniel Zelazo",
+      "Kenji Kashima"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc40024.2019.9029574",
     "date_precision": "month",
@@ -3686,8 +3686,8 @@
   },
   {
     "authors": [
-      "Mukherjee, Dwaipayan",
-      "Zelazo, Daniel"
+      "Dwaipayan Mukherjee",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/tnse.2018.2866780",
     "date_precision": "month",
@@ -3717,8 +3717,8 @@
   },
   {
     "authors": [
-      "Sharf, Miel",
-      "Zelazo, Daniel"
+      "Miel Sharf",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/tac.2019.2908258",
     "date_precision": "month",
@@ -3748,9 +3748,9 @@
   },
   {
     "authors": [
-      "Tchuiev, V.",
-      "Feldman, Y.",
-      "Indelman, V."
+      "V. Tchuiev",
+      "Y. Feldman",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -3779,8 +3779,8 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Zhao, Shiyu"
+      "Daniel Zelazo",
+      "Shiyu Zhao"
     ],
     "canonical_url": "https://doi.org/10.14760/snap-2019-017-en",
     "date_precision": "month",
@@ -3810,8 +3810,8 @@
   },
   {
     "authors": [
-      "Kopitkov, D.",
-      "Indelman, V."
+      "D. Kopitkov",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -3840,8 +3840,8 @@
   },
   {
     "authors": [
-      "Elimelech, K.",
-      "Indelman, V."
+      "K. Elimelech",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -3870,8 +3870,8 @@
   },
   {
     "authors": [
-      "Kopitkov, D.",
-      "Indelman, V."
+      "D. Kopitkov",
+      "V. Indelman"
     ],
     "canonical_url": "https://journals.sagepub.com/doi/10.1177/0278364919875199",
     "date_precision": "month",
@@ -3900,8 +3900,8 @@
   },
   {
     "authors": [
-      "Sewlia, Mayank",
-      "Zelazo, Daniel"
+      "Mayank Sewlia",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/med.2019.8798577",
     "date_precision": "month",
@@ -3931,8 +3931,8 @@
   },
   {
     "authors": [
-      "Sharf, Miel",
-      "Zelazo, Daniel"
+      "Miel Sharf",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/lcsys.2019.2914128",
     "date_precision": "month",
@@ -3962,8 +3962,8 @@
   },
   {
     "authors": [
-      "Sharf, Miel",
-      "Zelazo, Daniel"
+      "Miel Sharf",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/med.2019.8798507",
     "date_precision": "month",
@@ -3993,8 +3993,8 @@
   },
   {
     "authors": [
-      "Jain, Anoop",
-      "Zelazo, Daniel"
+      "Anoop Jain",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/med.2019.8798531",
     "date_precision": "month",
@@ -4024,11 +4024,11 @@
   },
   {
     "authors": [
-      "Van Tran, Quoc",
-      "Trinh, Minh Hoang",
-      "Zelazo, Daniel",
-      "Mukherjee, Dwaipayan",
-      "Ahn, Hyo-Sung"
+      "Quoc Van Tran",
+      "Minh Hoang Trinh",
+      "Daniel Zelazo",
+      "Dwaipayan Mukherjee",
+      "Hyo-Sung Ahn"
     ],
     "canonical_url": "https://doi.org/10.1109/tcns.2018.2873155",
     "date_precision": "month",
@@ -4058,8 +4058,8 @@
   },
   {
     "authors": [
-      "Kitanov, A.",
-      "Indelman, V."
+      "A. Kitanov",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -4088,8 +4088,8 @@
   },
   {
     "authors": [
-      "Farhi, E.",
-      "Indelman, V."
+      "E. Farhi",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -4118,8 +4118,8 @@
   },
   {
     "authors": [
-      "Elimelech, K.",
-      "Indelman, V."
+      "K. Elimelech",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -4148,8 +4148,8 @@
   },
   {
     "authors": [
-      "Farhi, E.",
-      "Indelman, V."
+      "E. Farhi",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -4178,8 +4178,8 @@
   },
   {
     "authors": [
-      "Zhao, S.",
-      "Zelazo, D."
+      "S. Zhao",
+      "D. Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/mcs.2018.2888681",
     "date_precision": "month",
@@ -4209,8 +4209,8 @@
   },
   {
     "authors": [
-      "Palti, Yoav",
-      "Zelazo, Daniel"
+      "Yoav Palti",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -4239,12 +4239,12 @@
   },
   {
     "authors": [
-      "Trinh, Minh H",
-      "Zhao, Shiyu",
-      "Sun, Z",
-      "Zelazo, Daniel",
-      "Anderson, B.D.O.",
-      "Ahn, H"
+      "Minh H Trinh",
+      "Shiyu Zhao",
+      "Z Sun",
+      "Daniel Zelazo",
+      "B.D.O. Anderson",
+      "H Ahn"
     ],
     "canonical_url": "https://doi.org/10.1109/tac.2018.2836022",
     "date_precision": "month",
@@ -4274,8 +4274,8 @@
   },
   {
     "authors": [
-      "Elimelech, K.",
-      "Indelman, V."
+      "K. Elimelech",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -4303,9 +4303,9 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Mesbahi, Mehran",
-      "Belabbas, M.-A."
+      "Daniel Zelazo",
+      "Mehran Mesbahi",
+      "M.-A. Belabbas"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc.2018.8619841",
     "date_precision": "month",
@@ -4335,8 +4335,8 @@
   },
   {
     "authors": [
-      "Sharf, Miel",
-      "Zelazo, Daniel"
+      "Miel Sharf",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc.2018.8619059",
     "date_precision": "month",
@@ -4366,8 +4366,8 @@
   },
   {
     "authors": [
-      "Kopitkov, D.",
-      "Indelman, V."
+      "D. Kopitkov",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -4396,9 +4396,9 @@
   },
   {
     "authors": [
-      "Frank, Daniel",
-      "Zelazo, Daniel",
-      "Allgöwer, Frank"
+      "Daniel Frank",
+      "Daniel Zelazo",
+      "Frank Allgöwer"
     ],
     "canonical_url": "https://doi.org/10.1016/j.ifacol.2018.12.006",
     "date_precision": "month",
@@ -4428,9 +4428,9 @@
   },
   {
     "authors": [
-      "Jain, Anoop",
-      "Sharf, Miel",
-      "Zelazo, Daniel"
+      "Anoop Jain",
+      "Miel Sharf",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/lcsys.2018.2847738",
     "date_precision": "month",
@@ -4460,10 +4460,10 @@
   },
   {
     "authors": [
-      "Trinh, M. H.",
-      "Zelazo, D",
-      "Tran, Q. V.",
-      "Ahn, H-S"
+      "M. H. Trinh",
+      "D Zelazo",
+      "Q. V. Tran",
+      "H-S Ahn"
     ],
     "canonical_url": "https://doi.org/10.23919/acc.2018.8430992",
     "date_precision": "month",
@@ -4493,8 +4493,8 @@
   },
   {
     "authors": [
-      "Feldman, Y.",
-      "Indelman, V."
+      "Y. Feldman",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -4523,8 +4523,8 @@
   },
   {
     "authors": [
-      "Kitanov, A.",
-      "Indelman, V."
+      "A. Kitanov",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -4553,8 +4553,8 @@
   },
   {
     "authors": [
-      "Feldman, Y.",
-      "Indelman, V."
+      "Y. Feldman",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -4583,8 +4583,8 @@
   },
   {
     "authors": [
-      "Mukherjee, Dwaipayan",
-      "Zelazo, Daniel"
+      "Dwaipayan Mukherjee",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -4613,10 +4613,10 @@
   },
   {
     "authors": [
-      "Trinh, Minh H",
-      "Mukherjee, Dwaipayan",
-      "Zelazo, Daniel",
-      "Ahn, H-S"
+      "Minh H Trinh",
+      "Dwaipayan Mukherjee",
+      "Daniel Zelazo",
+      "H-S Ahn"
     ],
     "canonical_url": "https://doi.org/10.1002/rnc.3921",
     "date_precision": "month",
@@ -4646,8 +4646,8 @@
   },
   {
     "authors": [
-      "Leiter, Noam",
-      "Zelazo, Daniel"
+      "Noam Leiter",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -4676,14 +4676,14 @@
   },
   {
     "authors": [
-      "Liu, Yuyi",
-      "Montenbruck, Jan Maximilian",
-      "Zelazo, Daniel",
-      "Odelga, Marcin",
-      "Rajappa, Sujit",
-      "Bülthoff, Heinrich H.",
-      "Allgöwer, Frank",
-      "Zell, Andreas"
+      "Yuyi Liu",
+      "Jan Maximilian Montenbruck",
+      "Daniel Zelazo",
+      "Marcin Odelga",
+      "Sujit Rajappa",
+      "Heinrich H. Bülthoff",
+      "Frank Allgöwer",
+      "Andreas Zell"
     ],
     "canonical_url": "https://doi.org/10.1109/tro.2018.2853606",
     "date_precision": "year",
@@ -4712,9 +4712,9 @@
   },
   {
     "authors": [
-      "Pathak, S.",
-      "Thomas, A.",
-      "Indelman, V."
+      "S. Pathak",
+      "A. Thomas",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1177/0278364918759606",
     "date_precision": "year",
@@ -4743,8 +4743,8 @@
   },
   {
     "authors": [
-      "Ovechkin, V.",
-      "Indelman, V."
+      "V. Ovechkin",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1109/lra.2018.2792141",
     "date_precision": "year",
@@ -4773,7 +4773,7 @@
   },
   {
     "authors": [
-      "Ovechkin, V."
+      "V. Ovechkin"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -4801,8 +4801,8 @@
   },
   {
     "authors": [
-      "Regev, T.",
-      "Indelman, V."
+      "T. Regev",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1007/s10514-017-9659-4",
     "date_precision": "year",
@@ -4831,9 +4831,9 @@
   },
   {
     "authors": [
-      "Yan, X.",
-      "Indelman, V.",
-      "Boots, B."
+      "X. Yan",
+      "V. Indelman",
+      "B. Boots"
     ],
     "canonical_url": "http://www.springer.com/gp/book/9783319515311",
     "date_precision": "year",
@@ -4861,8 +4861,8 @@
   },
   {
     "authors": [
-      "Tchuiev, V.",
-      "Indelman, V."
+      "V. Tchuiev",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1109/lra.2018.2852844",
     "date_precision": "year",
@@ -4891,7 +4891,7 @@
   },
   {
     "authors": [
-      "Indelman, V."
+      "V. Indelman"
     ],
     "canonical_url": "http://www.springer.com/gp/book/9783319515311",
     "date_precision": "year",
@@ -4919,8 +4919,8 @@
   },
   {
     "authors": [
-      "Chojnacki, M.",
-      "Indelman, V."
+      "M. Chojnacki",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -4948,8 +4948,8 @@
   },
   {
     "authors": [
-      "Elimelech, K.",
-      "Indelman, V."
+      "K. Elimelech",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -4978,10 +4978,10 @@
   },
   {
     "authors": [
-      "Trinh, M. H.",
-      "Mukherjee, D",
-      "Zelazo, D",
-      "Ahn, H-S"
+      "M. H. Trinh",
+      "D Mukherjee",
+      "D Zelazo",
+      "H-S Ahn"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc.2017.8263876",
     "date_precision": "month",
@@ -5011,11 +5011,11 @@
   },
   {
     "authors": [
-      "Zhao, Shiyu",
-      "Sun, Zhiyong",
-      "Zelazo, Daniel",
-      "Trinh, M. H.",
-      "Ahn, Hyo-Sung"
+      "Shiyu Zhao",
+      "Zhiyong Sun",
+      "Daniel Zelazo",
+      "M. H. Trinh",
+      "Hyo-Sung Ahn"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc.2017.8264151",
     "date_precision": "month",
@@ -5045,9 +5045,9 @@
   },
   {
     "authors": [
-      "Montenbruck, J. M.",
-      "Zelazo, D.",
-      "Allgöwer, F."
+      "J. M. Montenbruck",
+      "D. Zelazo",
+      "F. Allgöwer"
     ],
     "canonical_url": "https://doi.org/10.1109/tac.2017.2679073",
     "date_precision": "month",
@@ -5077,8 +5077,8 @@
   },
   {
     "authors": [
-      "Ben-Elisha, Y.",
-      "Indelman, V."
+      "Y. Ben-Elisha",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -5107,8 +5107,8 @@
   },
   {
     "authors": [
-      "Elimelech, K.",
-      "Indelman, V."
+      "K. Elimelech",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -5137,8 +5137,8 @@
   },
   {
     "authors": [
-      "Zhao, S.",
-      "Zelazo, D."
+      "S. Zhao",
+      "D. Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/tcns.2015.2507547",
     "date_precision": "month",
@@ -5168,8 +5168,8 @@
   },
   {
     "authors": [
-      "Sharf, Miel",
-      "Zelazo, Daniel"
+      "Miel Sharf",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/lcsys.2017.2706948",
     "date_precision": "month",
@@ -5199,8 +5199,8 @@
   },
   {
     "authors": [
-      "Leiter, Noam",
-      "Zelazo, D"
+      "Noam Leiter",
+      "D Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1016/j.ifacol.2017.08.1467",
     "date_precision": "month",
@@ -5230,10 +5230,10 @@
   },
   {
     "authors": [
-      "Trinh, M. H.",
-      "Mukherjee, D",
-      "Zelazo, D",
-      "Ahn, H-S"
+      "M. H. Trinh",
+      "D Mukherjee",
+      "D Zelazo",
+      "H-S Ahn"
     ],
     "canonical_url": "https://doi.org/10.1016/j.ifacol.2017.08.1759",
     "date_precision": "month",
@@ -5263,8 +5263,8 @@
   },
   {
     "authors": [
-      "Zelazo, D.",
-      "Bürger, M."
+      "D. Zelazo",
+      "M. Bürger"
     ],
     "canonical_url": "https://doi.org/10.1109/tcns.2015.2485458",
     "date_precision": "month",
@@ -5294,8 +5294,8 @@
   },
   {
     "authors": [
-      "Elimelech, K.",
-      "Indelman, V."
+      "K. Elimelech",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -5324,11 +5324,11 @@
   },
   {
     "authors": [
-      "Rist, J. F.",
-      "Dias, M. F.",
-      "Palman, M.",
-      "Zelazo, Daniel",
-      "Cukurel, Beni"
+      "J. F. Rist",
+      "M. F. Dias",
+      "M. Palman",
+      "Daniel Zelazo",
+      "Beni Cukurel"
     ],
     "canonical_url": "https://doi.org/10.1016/j.apenergy.2017.05.064",
     "date_precision": "month",
@@ -5358,9 +5358,9 @@
   },
   {
     "authors": [
-      "Pathak, S.",
-      "Thomas, A.",
-      "Indelman, V."
+      "S. Pathak",
+      "A. Thomas",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -5389,8 +5389,8 @@
   },
   {
     "authors": [
-      "Farhi, E.",
-      "Indelman, V."
+      "E. Farhi",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -5419,10 +5419,10 @@
   },
   {
     "authors": [
-      "Mukherjee, D",
-      "Trinh, M. H.",
-      "Zelazo, D",
-      "Ahn, H-S"
+      "D Mukherjee",
+      "M. H. Trinh",
+      "D Zelazo",
+      "H-S Ahn"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -5451,8 +5451,8 @@
   },
   {
     "authors": [
-      "Ben Shoushan, Y",
-      "Zelazo, D"
+      "Y Ben Shoushan",
+      "D Zelazo"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -5481,11 +5481,11 @@
   },
   {
     "authors": [
-      "Rist, J. F.",
-      "Dias, M. F.",
-      "Zelazo, Daniel",
-      "Cukurel, Beni",
-      "Palman, M."
+      "J. F. Rist",
+      "M. F. Dias",
+      "Daniel Zelazo",
+      "Beni Cukurel",
+      "M. Palman"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -5514,7 +5514,7 @@
   },
   {
     "authors": [
-      "Har-Nes, S."
+      "S. Har-Nes"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -5542,8 +5542,8 @@
   },
   {
     "authors": [
-      "Kopitkov, D.",
-      "Indelman, V."
+      "D. Kopitkov",
+      "V. Indelman"
     ],
     "canonical_url": "http://ieeexplore.ieee.org/document/7801141/",
     "date_precision": "year",
@@ -5571,7 +5571,7 @@
   },
   {
     "authors": [
-      "Indelman, V."
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1007/s10514-017-9620-6",
     "date_precision": "year",
@@ -5600,7 +5600,7 @@
   },
   {
     "authors": [
-      "Ben-Elisha, Y."
+      "Y. Ben-Elisha"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -5628,7 +5628,7 @@
   },
   {
     "authors": [
-      "Kopitkov, D."
+      "D. Kopitkov"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -5656,7 +5656,7 @@
   },
   {
     "authors": [
-      "Thomas, A."
+      "A. Thomas"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -5684,9 +5684,9 @@
   },
   {
     "authors": [
-      "Yan, X.",
-      "Indelman, V.",
-      "Boots, B."
+      "X. Yan",
+      "V. Indelman",
+      "B. Boots"
     ],
     "canonical_url": "http://www.sciencedirect.com/science/article/pii/S0921889016300434",
     "date_precision": "year",
@@ -5714,8 +5714,8 @@
   },
   {
     "authors": [
-      "Kopitkov, D.",
-      "Indelman, V."
+      "D. Kopitkov",
+      "V. Indelman"
     ],
     "canonical_url": "https://doi.org/10.1177/0278364917721629",
     "date_precision": "year",
@@ -5744,7 +5744,7 @@
   },
   {
     "authors": [
-      "Chojnacki, M."
+      "M. Chojnacki"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -5772,8 +5772,8 @@
   },
   {
     "authors": [
-      "Mukherjee, Dwaipayan",
-      "Zelazo, Daniel"
+      "Dwaipayan Mukherjee",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc.2016.7798784",
     "date_precision": "month",
@@ -5803,8 +5803,8 @@
   },
   {
     "authors": [
-      "Kopitkov, D.",
-      "Indelman, V."
+      "D. Kopitkov",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -5833,8 +5833,8 @@
   },
   {
     "authors": [
-      "Regev, T.",
-      "Indelman, V."
+      "T. Regev",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -5863,10 +5863,10 @@
   },
   {
     "authors": [
-      "Schiano, Fabrizio",
-      "Franchi, Antonio",
-      "Zelazo, Daniel",
-      "Giordano, Paolo Robuffo"
+      "Fabrizio Schiano",
+      "Antonio Franchi",
+      "Daniel Zelazo",
+      "Paolo Robuffo Giordano"
     ],
     "canonical_url": "https://doi.org/10.1109/iros.2016.7759748",
     "date_precision": "month",
@@ -5896,10 +5896,10 @@
   },
   {
     "authors": [
-      "Pathak, S.",
-      "Soudjani, S.",
-      "Indelman, V.",
-      "Abate, A."
+      "S. Pathak",
+      "S. Soudjani",
+      "V. Indelman",
+      "A. Abate"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -5928,8 +5928,8 @@
   },
   {
     "authors": [
-      "Zhao, S.",
-      "Zelazo, D."
+      "S. Zhao",
+      "D. Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/tac.2015.2459191",
     "date_precision": "month",
@@ -5959,8 +5959,8 @@
   },
   {
     "authors": [
-      "Zhao, S.",
-      "Zelazo, D."
+      "S. Zhao",
+      "D. Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1016/j.automatica.2016.03.010",
     "date_precision": "month",
@@ -5990,8 +5990,8 @@
   },
   {
     "authors": [
-      "Kopitkov, D.",
-      "Indelman, V."
+      "D. Kopitkov",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -6020,7 +6020,7 @@
   },
   {
     "authors": [
-      "Indelman, V."
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -6057,10 +6057,10 @@
   },
   {
     "authors": [
-      "Pathak, S.",
-      "Thomas, A.",
-      "Feniger, A.",
-      "Indelman, V."
+      "S. Pathak",
+      "A. Thomas",
+      "A. Feniger",
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -6089,10 +6089,10 @@
   },
   {
     "authors": [
-      "Mukherjee, D",
-      "Trinh, M. H.",
-      "Zelazo, D",
-      "Ahn, H-S"
+      "D Mukherjee",
+      "M. H. Trinh",
+      "D Zelazo",
+      "H-S Ahn"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -6121,10 +6121,10 @@
   },
   {
     "authors": [
-      "Nelson, E.",
-      "Indelman, V.",
-      "Michael, N.",
-      "Dellaert, F."
+      "E. Nelson",
+      "V. Indelman",
+      "N. Michael",
+      "F. Dellaert"
     ],
     "canonical_url": "http://link.springer.com/chapter/10.1007%2F978-3-319-23778-7_22",
     "date_precision": "year",
@@ -6152,11 +6152,11 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Nelson, E.",
-      "Dong, J.",
-      "Michael, N.",
-      "Dellaert, F."
+      "V. Indelman",
+      "E. Nelson",
+      "J. Dong",
+      "N. Michael",
+      "F. Dellaert"
     ],
     "canonical_url": "http://ieeexplore.ieee.org/xpl/abstractAuthors.jsp?reload=true&arnumber=7434165",
     "date_precision": "year",
@@ -6184,7 +6184,7 @@
   },
   {
     "authors": [
-      "Regev, T."
+      "T. Regev"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -6212,9 +6212,9 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Carlone, L.",
-      "Dellaert, F."
+      "V. Indelman",
+      "L. Carlone",
+      "F. Dellaert"
     ],
     "canonical_url": "http://link.springer.com/chapter/10.1007%2F978-3-319-28872-7_34",
     "date_precision": "year",
@@ -6242,8 +6242,8 @@
   },
   {
     "authors": [
-      "Zhao, Shiyu",
-      "Zelazo, Daniel"
+      "Shiyu Zhao",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc.2015.7403181",
     "date_precision": "month",
@@ -6273,9 +6273,9 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Giordano, Paolo Robuffo",
-      "Franchi, Antonio"
+      "Daniel Zelazo",
+      "Paolo Robuffo Giordano",
+      "Antonio Franchi"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc.2015.7403182",
     "date_precision": "month",
@@ -6305,9 +6305,9 @@
   },
   {
     "authors": [
-      "Montenbruck, Maximillian M.",
-      "Zelazo, Daniel",
-      "Allgöwer, Frank"
+      "Maximillian M. Montenbruck",
+      "Daniel Zelazo",
+      "Frank Allgöwer"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc.2015.7402784",
     "date_precision": "month",
@@ -6337,8 +6337,8 @@
   },
   {
     "authors": [
-      "Zhao, Shiyu",
-      "Zelazo, Daniel"
+      "Shiyu Zhao",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/isic.2015.7307285",
     "date_precision": "month",
@@ -6368,9 +6368,9 @@
   },
   {
     "authors": [
-      "Yan, X.",
-      "Indelman, V.",
-      "Boots, B."
+      "X. Yan",
+      "V. Indelman",
+      "B. Boots"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -6399,7 +6399,7 @@
   },
   {
     "authors": [
-      "Indelman, V."
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -6428,7 +6428,7 @@
   },
   {
     "authors": [
-      "Indelman, V."
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -6457,9 +6457,9 @@
   },
   {
     "authors": [
-      "Rozenheck, Oshri",
-      "Zhao, Shiyu",
-      "Zelazo, Daniel"
+      "Oshri Rozenheck",
+      "Shiyu Zhao",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/ecc.2015.7330781",
     "date_precision": "month",
@@ -6489,8 +6489,8 @@
   },
   {
     "authors": [
-      "Zhao, Shiyu",
-      "Zelazo, Daniel"
+      "Shiyu Zhao",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/ecc.2015.7330866",
     "date_precision": "month",
@@ -6520,7 +6520,7 @@
   },
   {
     "authors": [
-      "Indelman, V."
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -6549,9 +6549,9 @@
   },
   {
     "authors": [
-      "Yan, X.",
-      "Indelman, V.",
-      "Boots, B."
+      "X. Yan",
+      "V. Indelman",
+      "B. Boots"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -6580,7 +6580,7 @@
   },
   {
     "authors": [
-      "Indelman, V."
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -6609,7 +6609,7 @@
   },
   {
     "authors": [
-      "Indelman, V."
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -6638,7 +6638,7 @@
   },
   {
     "authors": [
-      "Indelman, V."
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -6667,11 +6667,11 @@
   },
   {
     "authors": [
-      "Dong, J.",
-      "Nelson, E.",
-      "Indelman, V.",
-      "Michael, N.",
-      "Dellaert, F."
+      "J. Dong",
+      "E. Nelson",
+      "V. Indelman",
+      "N. Michael",
+      "F. Dellaert"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -6700,10 +6700,10 @@
   },
   {
     "authors": [
-      "Choudhary, S.",
-      "Indelman, V.",
-      "Christensen, H. I.",
-      "Dellaert, F."
+      "S. Choudhary",
+      "V. Indelman",
+      "H. I. Christensen",
+      "F. Dellaert"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -6732,10 +6732,10 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Nelson, E.",
-      "Michael, N.",
-      "Dellaert, F."
+      "V. Indelman",
+      "E. Nelson",
+      "N. Michael",
+      "F. Dellaert"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -6764,8 +6764,8 @@
   },
   {
     "authors": [
-      "Zhao, Shiyu",
-      "Zelazo, Daniel"
+      "Shiyu Zhao",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -6794,9 +6794,9 @@
   },
   {
     "authors": [
-      "Rozenheck, Oshri",
-      "Zhao, Shiyu",
-      "Zelazo, Daniel"
+      "Oshri Rozenheck",
+      "Shiyu Zhao",
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "month",
@@ -6825,10 +6825,10 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Franchi, Antonio",
-      "Bülthoff, Heinrich H",
-      "Robuffo Giordano, Paolo"
+      "Daniel Zelazo",
+      "Antonio Franchi",
+      "Heinrich H Bülthoff",
+      "Paolo Robuffo Giordano"
     ],
     "canonical_url": "https://doi.org/10.1177/0278364914546173",
     "date_precision": "month",
@@ -6858,9 +6858,9 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Roberts, R.",
-      "Dellaert, F."
+      "V. Indelman",
+      "R. Roberts",
+      "F. Dellaert"
     ],
     "canonical_url": "http://www.sciencedirect.com/science/article/pii/S0921889015000810",
     "date_precision": "year",
@@ -6888,8 +6888,8 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Dellaert, F."
+      "V. Indelman",
+      "F. Dellaert"
     ],
     "canonical_url": "https://doi.org/10.1007/978-3-662-43859-6_7",
     "date_precision": "year",
@@ -6918,9 +6918,9 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Carlone, L.",
-      "Dellaert, F."
+      "V. Indelman",
+      "L. Carlone",
+      "F. Dellaert"
     ],
     "canonical_url": "http://ijr.sagepub.com/content/34/7/849.full.pdf+html",
     "date_precision": "year",
@@ -6948,9 +6948,9 @@
   },
   {
     "authors": [
-      "Yan, X.",
-      "Indelman, V.",
-      "Boots, B."
+      "X. Yan",
+      "V. Indelman",
+      "B. Boots"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -6979,8 +6979,8 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Bürger, Mathias"
+      "Daniel Zelazo",
+      "Mathias Bürger"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc.2014.7039834",
     "date_precision": "month",
@@ -7010,12 +7010,12 @@
   },
   {
     "authors": [
-      "Williams, S.",
-      "Indelman, V.",
-      "Kaess, M.",
-      "Roberts, R.",
-      "Leonard, J.",
-      "Dellaert, F."
+      "S. Williams",
+      "V. Indelman",
+      "M. Kaess",
+      "R. Roberts",
+      "J. Leonard",
+      "F. Dellaert"
     ],
     "canonical_url": "http://ijr.sagepub.com/content/33/12/1544",
     "date_precision": "month",
@@ -7044,9 +7044,9 @@
   },
   {
     "authors": [
-      "Bürger, Mathias",
-      "Zelazo, Daniel",
-      "Allgöwer, Frank"
+      "Mathias Bürger",
+      "Daniel Zelazo",
+      "Frank Allgöwer"
     ],
     "canonical_url": "https://doi.org/10.1016/j.automatica.2014.06.002",
     "date_precision": "month",
@@ -7076,9 +7076,9 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Michael, N.",
-      "Dellaert, F."
+      "V. Indelman",
+      "N. Michael",
+      "F. Dellaert"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -7107,10 +7107,10 @@
   },
   {
     "authors": [
-      "Nelson, E.",
-      "Indelman, V.",
-      "Michael, N.",
-      "Dellaert, F."
+      "E. Nelson",
+      "V. Indelman",
+      "N. Michael",
+      "F. Dellaert"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -7139,11 +7139,11 @@
   },
   {
     "authors": [
-      "Carlone, L.",
-      "Kira, Z.",
-      "Beall, C.",
-      "Indelman, V.",
-      "Dellaert, F."
+      "L. Carlone",
+      "Z. Kira",
+      "C. Beall",
+      "V. Indelman",
+      "F. Dellaert"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -7172,10 +7172,10 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Nelson, E.",
-      "Michael, N.",
-      "Dellaert, F."
+      "V. Indelman",
+      "E. Nelson",
+      "N. Michael",
+      "F. Dellaert"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -7204,9 +7204,9 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Carlone, L.",
-      "Dellaert, F."
+      "V. Indelman",
+      "L. Carlone",
+      "F. Dellaert"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -7235,9 +7235,9 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Franchi, Antonio",
-      "Giordano, Paolo Robuffo"
+      "Daniel Zelazo",
+      "Antonio Franchi",
+      "Paolo Robuffo Giordano"
     ],
     "canonical_url": "https://doi.org/10.1109/ecc.2014.6862558",
     "date_precision": "month",
@@ -7267,9 +7267,9 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Carlone, L.",
-      "Dellaert, F."
+      "V. Indelman",
+      "L. Carlone",
+      "F. Dellaert"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -7298,9 +7298,9 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Melim, A.",
-      "Dellaert, F."
+      "V. Indelman",
+      "A. Melim",
+      "F. Dellaert"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -7329,9 +7329,9 @@
   },
   {
     "authors": [
-      "Bürger, Mathias",
-      "Zelazo, Daniel",
-      "Allgöwer, Frank"
+      "Mathias Bürger",
+      "Daniel Zelazo",
+      "Frank Allgöwer"
     ],
     "canonical_url": "https://doi.org/10.3182/20130925-2-de-4044.00004",
     "date_precision": "month",
@@ -7361,10 +7361,10 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Wiliams, S.",
-      "Kaess, M.",
-      "Dellaert, F."
+      "V. Indelman",
+      "S. Wiliams",
+      "M. Kaess",
+      "F. Dellaert"
     ],
     "canonical_url": "https://doi.org/10.1016/j.robot.2013.05.001",
     "date_precision": "month",
@@ -7394,9 +7394,9 @@
   },
   {
     "authors": [
-      "Schuler, Simone",
-      "Zelazo, Daniel",
-      "Allgöwer, F"
+      "Simone Schuler",
+      "Daniel Zelazo",
+      "F Allgöwer"
     ],
     "canonical_url": "https://doi.org/10.23919/ecc.2013.6669618",
     "date_precision": "month",
@@ -7426,9 +7426,9 @@
   },
   {
     "authors": [
-      "Cunningham, A.",
-      "Indelman, V.",
-      "Dellaert, F."
+      "A. Cunningham",
+      "V. Indelman",
+      "F. Dellaert"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -7457,11 +7457,11 @@
   },
   {
     "authors": [
-      "Cunningham, A.",
-      "Ok, K.",
-      "Antico, J.",
-      "Indelman, V.",
-      "Dellaert, F."
+      "A. Cunningham",
+      "K. Ok",
+      "J. Antico",
+      "V. Indelman",
+      "F. Dellaert"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -7490,9 +7490,9 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Bürger, Mathias",
-      "Allgöwer, Frank"
+      "Daniel Zelazo",
+      "Mathias Bürger",
+      "Frank Allgöwer"
     ],
     "canonical_url": "https://doi.org/10.1137/100819175",
     "date_precision": "month",
@@ -7522,9 +7522,9 @@
   },
   {
     "authors": [
-      "Bürger, Mathias",
-      "Zelazo, Daniel",
-      "Allgöwer, Frank"
+      "Mathias Bürger",
+      "Daniel Zelazo",
+      "Frank Allgöwer"
     ],
     "canonical_url": "https://doi.org/10.1109/tac.2012.2206695",
     "date_precision": "month",
@@ -7554,9 +7554,9 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Schuler, Simone",
-      "Allgöwer, Frank"
+      "Daniel Zelazo",
+      "Simone Schuler",
+      "Frank Allgöwer"
     ],
     "canonical_url": "https://doi.org/10.1016/j.sysconle.2012.10.014",
     "date_precision": "month",
@@ -7586,9 +7586,9 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Roberts, R.",
-      "Dellaert, F."
+      "V. Indelman",
+      "R. Roberts",
+      "F. Dellaert"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -7617,9 +7617,9 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Bürger, Mathias",
-      "Allgöwer, Frank"
+      "Daniel Zelazo",
+      "Mathias Bürger",
+      "Frank Allgöwer"
     ],
     "canonical_url": "https://connect-lab-technion.github.io/publications/",
     "date_precision": "year",
@@ -7647,9 +7647,9 @@
   },
   {
     "authors": [
-      "Schuler, Simone",
-      "Zelazo, Daniel",
-      "Allgöwer, Frank"
+      "Simone Schuler",
+      "Daniel Zelazo",
+      "Frank Allgöwer"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc.2012.6426358",
     "date_precision": "month",
@@ -7679,8 +7679,8 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Allgöwer, Frank"
+      "Daniel Zelazo",
+      "Frank Allgöwer"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc.2012.6425921",
     "date_precision": "month",
@@ -7710,9 +7710,9 @@
   },
   {
     "authors": [
-      "Cunningham, A.",
-      "Indelman, V.",
-      "Dellaert, F."
+      "A. Cunningham",
+      "V. Indelman",
+      "F. Dellaert"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -7741,10 +7741,10 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Roberts, R.",
-      "Beall, C.",
-      "Dellaert, F."
+      "V. Indelman",
+      "R. Roberts",
+      "C. Beall",
+      "F. Dellaert"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -7773,10 +7773,10 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Gurfil, P.",
-      "Rivlin, E.",
-      "Rotstein, H."
+      "V. Indelman",
+      "P. Gurfil",
+      "E. Rivlin",
+      "H. Rotstein"
     ],
     "canonical_url": "http://ijr.sagepub.com/content/31/9/1057",
     "date_precision": "month",
@@ -7805,9 +7805,9 @@
   },
   {
     "authors": [
-      "Bürger, Matthias",
-      "Zelazo, Daniel",
-      "Allgöwer, Frank"
+      "Matthias Bürger",
+      "Daniel Zelazo",
+      "Frank Allgöwer"
     ],
     "canonical_url": "https://doi.org/10.1109/acc.2012.6314935",
     "date_precision": "month",
@@ -7837,12 +7837,12 @@
   },
   {
     "authors": [
-      "Kaess, M.",
-      "Williams, S.",
-      "Indelman, V.",
-      "Roberts, R.",
-      "Leonard, J. J.",
-      "Dellaert, F."
+      "M. Kaess",
+      "S. Williams",
+      "V. Indelman",
+      "R. Roberts",
+      "J. J. Leonard",
+      "F. Dellaert"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -7871,10 +7871,10 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Wiliams, S.",
-      "Kaess, M.",
-      "Dellaert, F."
+      "V. Indelman",
+      "S. Wiliams",
+      "M. Kaess",
+      "F. Dellaert"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -7903,10 +7903,10 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Gurfil, P.",
-      "Rivlin, E.",
-      "Rotstein, H."
+      "V. Indelman",
+      "P. Gurfil",
+      "E. Rivlin",
+      "H. Rotstein"
     ],
     "canonical_url": "http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6237590",
     "date_precision": "month",
@@ -7935,11 +7935,11 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Franchi, Antonio",
-      "Allgöwer, Frank",
-      "Bülthoff, Heinrich H",
-      "Robuffo Giordano, Paolo"
+      "Daniel Zelazo",
+      "Antonio Franchi",
+      "Frank Allgöwer",
+      "Heinrich H Bülthoff",
+      "Paolo Robuffo Giordano"
     ],
     "canonical_url": "https://doi.org/10.15607/rss.2012.viii.060",
     "date_precision": "month",
@@ -7969,10 +7969,10 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Gurfil, P.",
-      "Rivlin, E.",
-      "Rotstein, H."
+      "V. Indelman",
+      "P. Gurfil",
+      "E. Rivlin",
+      "H. Rotstein"
     ],
     "canonical_url": "http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5747546&tag=1",
     "date_precision": "month",
@@ -8001,7 +8001,7 @@
   },
   {
     "authors": [
-      "Indelman, V."
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -8030,10 +8030,10 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Gurfil, P.",
-      "Rivlin, E.",
-      "Rotstein, H."
+      "V. Indelman",
+      "P. Gurfil",
+      "E. Rivlin",
+      "H. Rotstein"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -8062,9 +8062,9 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Dai, Ran",
-      "Mesbahi, Mehran"
+      "Daniel Zelazo",
+      "Ran Dai",
+      "Mehran Mesbahi"
     ],
     "canonical_url": "https://doi.org/10.1007/s12667-012-0050-4",
     "date_precision": "month",
@@ -8094,9 +8094,9 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Schuler, Simone",
-      "Allgöwer, Frank"
+      "Daniel Zelazo",
+      "Simone Schuler",
+      "Frank Allgöwer"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc.2012.6426450",
     "date_precision": "year",
@@ -8125,8 +8125,8 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Allgöwer, Frank"
+      "Daniel Zelazo",
+      "Frank Allgöwer"
     ],
     "canonical_url": "https://doi.org/10.1109/acc.2012.6315460",
     "date_precision": "year",
@@ -8155,9 +8155,9 @@
   },
   {
     "authors": [
-      "Bürger, Mathias",
-      "Zelazo, Daniel",
-      "Allgöwer, Frank"
+      "Mathias Bürger",
+      "Daniel Zelazo",
+      "Frank Allgöwer"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc.2011.6161045",
     "date_precision": "month",
@@ -8187,10 +8187,10 @@
   },
   {
     "authors": [
-      "Briegel, Benjamin",
-      "Zelazo, Daniel",
-      "Bürger, Mathias",
-      "Allgöwer, Frank"
+      "Benjamin Briegel",
+      "Daniel Zelazo",
+      "Mathias Bürger",
+      "Frank Allgöwer"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc.2011.6161047",
     "date_precision": "month",
@@ -8220,9 +8220,9 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Bürger, Mathias",
-      "Allgöwer, Frank"
+      "Daniel Zelazo",
+      "Mathias Bürger",
+      "Frank Allgöwer"
     ],
     "canonical_url": "https://doi.org/10.3182/20110828-6-it-1002.03155",
     "date_precision": "month",
@@ -8252,10 +8252,10 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Gurfil, P.",
-      "Rivlin, E.",
-      "Rotstein, H."
+      "V. Indelman",
+      "P. Gurfil",
+      "E. Rivlin",
+      "H. Rotstein"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -8284,8 +8284,8 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Mesbahi, Mehran"
+      "Daniel Zelazo",
+      "Mehran Mesbahi"
     ],
     "canonical_url": "https://doi.org/10.1109/tac.2010.2085312",
     "date_precision": "month",
@@ -8315,10 +8315,10 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Gurfil, P.",
-      "Rivlin, E.",
-      "Rotstein, H."
+      "V. Indelman",
+      "P. Gurfil",
+      "E. Rivlin",
+      "H. Rotstein"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -8347,8 +8347,8 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Mesbahi, Mehran"
+      "Daniel Zelazo",
+      "Mehran Mesbahi"
     ],
     "canonical_url": "https://doi.org/10.1109/tac.2010.2056730",
     "date_precision": "month",
@@ -8378,7 +8378,7 @@
   },
   {
     "authors": [
-      "Indelman, V."
+      "V. Indelman"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -8406,8 +8406,8 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Mesbahi, Mehran"
+      "Daniel Zelazo",
+      "Mehran Mesbahi"
     ],
     "canonical_url": "https://doi.org/10.1109/acc.2010.5530963",
     "date_precision": "month",
@@ -8437,10 +8437,10 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Gurfil, P.",
-      "Rivlin, E.",
-      "Rotstein, H."
+      "V. Indelman",
+      "P. Gurfil",
+      "E. Rivlin",
+      "H. Rotstein"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -8469,8 +8469,8 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Mesbahi, Mehran"
+      "Daniel Zelazo",
+      "Mehran Mesbahi"
     ],
     "canonical_url": "https://doi.org/10.1007/978-1-4419-5757-3",
     "date_precision": "year",
@@ -8499,10 +8499,10 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Gurfil, P.",
-      "Rivlin, E.",
-      "Rotstein, H."
+      "V. Indelman",
+      "P. Gurfil",
+      "E. Rivlin",
+      "H. Rotstein"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "year",
@@ -8530,8 +8530,8 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Mesbahi, Mehran"
+      "Daniel Zelazo",
+      "Mehran Mesbahi"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc.2009.5400513",
     "date_precision": "month",
@@ -8561,10 +8561,10 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Gurfil, P.",
-      "Rivlin, E.",
-      "Rotstein, H."
+      "V. Indelman",
+      "P. Gurfil",
+      "E. Rivlin",
+      "H. Rotstein"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -8593,10 +8593,10 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Gurfil, P.",
-      "Rivlin, E.",
-      "Rotstein, H."
+      "V. Indelman",
+      "P. Gurfil",
+      "E. Rivlin",
+      "H. Rotstein"
     ],
     "canonical_url": "https://anpl-technion.github.io/publications/",
     "date_precision": "month",
@@ -8625,8 +8625,8 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Mesbahi, Mehran"
+      "Daniel Zelazo",
+      "Mehran Mesbahi"
     ],
     "canonical_url": "https://doi.org/10.1109/acc.2009.5160153",
     "date_precision": "month",
@@ -8656,8 +8656,8 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Mesbahi, Mehran"
+      "Daniel Zelazo",
+      "Mehran Mesbahi"
     ],
     "canonical_url": "https://doi.org/10.2514/6.2009-1840",
     "date_precision": "month",
@@ -8687,8 +8687,8 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Mesbahi, Mehran"
+      "Daniel Zelazo",
+      "Mehran Mesbahi"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc.2008.4738920",
     "date_precision": "month",
@@ -8718,10 +8718,10 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Rahmani, Amirreza",
-      "Sandhu, Jasmine",
-      "Mesbahi, Mehran"
+      "Daniel Zelazo",
+      "Amirreza Rahmani",
+      "Jasmine Sandhu",
+      "Mehran Mesbahi"
     ],
     "canonical_url": "https://doi.org/10.1109/acc.2008.4586588",
     "date_precision": "month",
@@ -8751,10 +8751,10 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Gurfil, P.",
-      "Rivlin, E.",
-      "Rotstein, H."
+      "V. Indelman",
+      "P. Gurfil",
+      "E. Rivlin",
+      "H. Rotstein"
     ],
     "canonical_url": "https://ieeexplore.ieee.org/document/4570070",
     "date_precision": "month",
@@ -8783,9 +8783,9 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel",
-      "Rahmani, Amirreza",
-      "Mesbahi, Mehran"
+      "Daniel Zelazo",
+      "Amirreza Rahmani",
+      "Mehran Mesbahi"
     ],
     "canonical_url": "https://doi.org/10.1109/cdc.2007.4434553",
     "date_precision": "month",
@@ -8815,10 +8815,10 @@
   },
   {
     "authors": [
-      "Indelman, V.",
-      "Gurfil, P.",
-      "Rivlin, E.",
-      "Rotstein, H."
+      "V. Indelman",
+      "P. Gurfil",
+      "E. Rivlin",
+      "H. Rotstein"
     ],
     "canonical_url": "https://doi.org/doi.org/10.2514/6.2007-6748",
     "date_precision": "month",
@@ -8848,7 +8848,7 @@
   },
   {
     "authors": [
-      "Zelazo, Daniel"
+      "Daniel Zelazo"
     ],
     "canonical_url": "https://doi.org/10.1109/icosp.2002.1180979",
     "date_precision": "month",

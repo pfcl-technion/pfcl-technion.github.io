@@ -148,9 +148,9 @@ module PFCL
       def normalized_authors(entry)
         names = entry[:author]
         authors = if names.respond_to?(:to_a)
-                    names.to_a.map { |name| text(name) }.compact
+                    names.to_a.map { |name| format_author(name) }.compact
                   else
-                    text(names).to_s.split(/\s+and\s+/i)
+                    text(names).to_s.split(/\s+and\s+/i).map { |str| format_author(str) }.compact
                   end
         authors.reject!(&:empty?)
         if authors.empty?
@@ -158,6 +158,24 @@ module PFCL
         end
 
         authors
+      end
+
+      def format_author(name)
+        if name.respond_to?(:display_order)
+          formatted = text(name.display_order)
+          return formatted unless formatted.to_s.empty?
+        end
+
+        raw = text(name)
+        return nil if raw.nil? || raw.empty?
+
+        if raw.include?(",")
+          parsed = BibTeX::Name.parse(raw)
+          formatted = text(parsed.display_order) if parsed.respond_to?(:display_order)
+          return formatted unless formatted.to_s.empty?
+        end
+
+        raw
       end
 
       def venue_for(entry)
