@@ -60,6 +60,35 @@
 </footer>
 <section class="pfcl-copyright">
     <div class="container has-text-centered">
-        <p>{{ site.data.footer.copyright }}</p>
+        <p>
+            {{ site.data.footer.copyright }}<br>
+            <a href="{{ '/accessibility/' | relative_url }}">Accessibility Statement</a> | 
+            <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
+        </p>
     </div>
 </section>
+
+<!-- Cookie Consent Banner -->
+<div id="cookie-banner" class="notification is-light is-size-7" style="display: none; position: fixed; bottom: 0; left: 0; width: 100%; z-index: 1000; margin-bottom: 0; border-radius: 0; box-shadow: 0 -2px 10px rgba(0,0,0,0.1);">
+  <div class="container is-flex is-justify-content-space-between is-align-items-center" style="flex-wrap: wrap; gap: 1rem;">
+    <div>
+      This website uses cookies for basic functionality. We do not use tracking or advertising cookies. By continuing to use this site, you accept our <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>.
+    </div>
+    <div>
+      <button id="accept-cookies" class="button is-small is-primary">Got it</button>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (typeof Cookies !== 'undefined') {
+      if (!Cookies.get('pfcl_cookie_consent')) {
+        document.getElementById('cookie-banner').style.display = 'block';
+      }
+      document.getElementById('accept-cookies').addEventListener('click', function() {
+        Cookies.set('pfcl_cookie_consent', 'true', { expires: 365, path: '/' });
+        document.getElementById('cookie-banner').style.display = 'none';
+      });
+    }
+  });
+</script>
