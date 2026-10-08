@@ -3,6 +3,7 @@ layout: page
 title: Control Lab
 subtitle: Stephen B. Klein Faculty of Aerospace Engineering
 hide_hero: false
+hero_image: "/assets/images/drone2.jpg"
 ---
 
 ## Welcome
