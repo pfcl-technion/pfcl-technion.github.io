@@ -9,9 +9,6 @@
 
   const slides = Array.from(document.querySelectorAll('.showcase-slider > .showcase-slide'));
 
-  const counterEl = document.getElementById('showcase-counter');
-  const categoryBadge = document.getElementById('showcase-category');
-  const pauseBadge = document.getElementById('showcase-pause-status');
   const clockEl = document.getElementById('showcase-clock');
   const dateEl = document.getElementById('showcase-date');
 
@@ -48,16 +45,6 @@
       slide.classList.toggle('is-active', i === currentIndex);
     });
 
-    const activeSlide = slides[currentIndex];
-    if (!activeSlide) return;
-
-    if (categoryBadge) {
-      categoryBadge.textContent = activeSlide.dataset.category || 'SHOWCASE';
-    }
-    if (counterEl) {
-      counterEl.textContent = `Slide ${currentIndex + 1} of ${slides.length}`;
-    }
-
     startTime = Date.now();
   }
 
@@ -75,7 +62,6 @@
 
   function togglePause() {
     isPaused = !isPaused;
-    if (pauseBadge) pauseBadge.style.display = isPaused ? 'inline-block' : 'none';
     if (isPaused) {
       if (animationFrameId) cancelAnimationFrame(animationFrameId);
     } else {
