@@ -1,5 +1,5 @@
 // PFCL Hallway TV Showcase Display Styles (16:9 1080p/4K Optimized)
-// Dual-Split Screen Layout: Left (Student Projects) & Right (Research News/Pubs)
+// Single-Screen Presentation with Left Text and Right Visual Panes
 
 html.showcase-html,
 body.showcase-body {
@@ -23,11 +23,11 @@ body.showcase-body {
 }
 
 // -----------------------------------------------------------------------------
-// Floating Top HUD Header (Translucent Obsidian Navy with Cyan Accent)
+// Floating Top HUD Header (Three Columns: Titles, Center Emblem, Clock)
 // -----------------------------------------------------------------------------
 .showcase-header {
   align-items: center;
-  background: rgba(0, 10, 25, 0.88);
+  background: rgba(0, 10, 25, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 2px solid #31bfe4;
@@ -35,50 +35,63 @@ body.showcase-body {
   box-sizing: border-box;
   display: flex;
   flex: 0 0 auto;
-  height: 84px;
+  height: 88px;
   justify-content: space-between;
   left: 0;
-  padding: 0 3rem;
+  padding: 0 3.5rem;
   position: fixed;
   right: 0;
   top: 0;
   z-index: 100;
 }
 
-.showcase-brand {
-  align-items: center;
+.showcase-header-left {
   display: flex;
-  gap: 1.25rem;
-}
-
-.showcase-logo {
-  height: 46px;
-  width: auto;
+  flex: 1 1 0%;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .showcase-main-title {
   color: #ffffff;
-  font-size: 1.65rem;
-  font-weight: 700;
+  font-size: 1.4rem;
+  font-weight: 800;
   letter-spacing: -0.02em;
   margin: 0;
 }
 
 .showcase-sub-title {
   color: #94a3b8;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
-  margin: 0.15rem 0 0 0;
+  margin: 0.2rem 0 0 0;
 }
 
-.showcase-clock-container {
+.showcase-header-center {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+}
+
+.showcase-logo-center {
+  display: block;
+  height: 64px;
+  width: auto;
+}
+
+.showcase-header-right {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  justify-content: center;
   text-align: right;
 }
 
 .showcase-clock {
   color: #31bfe4;
   font-family: "Inconsolata", "Hack", "SF Mono", "Roboto Mono", "Source Code Pro", "Ubuntu Mono", monospace;
-  font-size: 1.8rem;
+  font-size: 1.75rem;
   font-weight: 700;
   letter-spacing: 0.05em;
 }
@@ -86,90 +99,29 @@ body.showcase-body {
 .showcase-date {
   color: #94a3b8;
   font-size: 0.85rem;
+  margin-top: 0.15rem;
 }
 
 // -----------------------------------------------------------------------------
-// Main Canvas: Dual-Split Container
+// Main Canvas: Single-Slide Viewport
 // -----------------------------------------------------------------------------
 .showcase-main {
-  height: 100vh;
-  inset: 0;
+  bottom: 96px;
+  height: auto;
+  left: 0;
   overflow: hidden;
-  padding: 0;
   position: absolute;
-  width: 100vw;
+  right: 0;
+  top: 88px;
   z-index: 10;
 }
 
-.showcase-split-container {
-  display: flex;
+.showcase-slider {
   height: 100%;
   position: relative;
   width: 100%;
 }
 
-.showcase-column {
-  display: flex;
-  flex: 1 1 50%;
-  flex-direction: column;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  width: 50vw;
-}
-
-// Center Divider
-.showcase-column-divider {
-  background: linear-gradient(180deg, transparent 0%, rgba(49, 191, 228, 0.6) 15%, rgba(49, 191, 228, 0.6) 85%, transparent 100%);
-  box-shadow: 0 0 20px rgba(49, 191, 228, 0.4);
-  flex: 0 0 2px;
-  height: 100%;
-  position: relative;
-  width: 2px;
-  z-index: 45;
-}
-
-// Column Header Banner
-.showcase-column-header {
-  align-items: center;
-  background: rgba(0, 14, 31, 0.85);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(49, 191, 228, 0.35);
-  box-sizing: border-box;
-  display: flex;
-  height: 48px;
-  justify-content: space-between;
-  left: 0;
-  padding: 0 2.5rem;
-  position: absolute;
-  right: 0;
-  top: 84px;
-  z-index: 35;
-}
-
-.showcase-column-title {
-  color: #31bfe4;
-  font-size: 0.95rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.showcase-column-tagline {
-  color: #94a3b8;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-
-// Column Slides Container
-.showcase-column-slides {
-  height: 100%;
-  position: relative;
-  width: 100%;
-}
-
-.showcase-panel-slide,
 .showcase-slide {
   display: flex;
   height: 100%;
@@ -188,7 +140,6 @@ body.showcase-body {
   }
 }
 
-html:not(.has-showcase-js) .showcase-panel-slide:first-child,
 html:not(.has-showcase-js) .showcase-slide:first-child {
   opacity: 1;
   pointer-events: auto;
@@ -196,7 +147,7 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 }
 
 // -----------------------------------------------------------------------------
-// Background Hero Layer & Directional Scrim
+// Ambient Background Layer
 // -----------------------------------------------------------------------------
 .showcase-hero-layer {
   height: 100%;
@@ -208,23 +159,18 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 }
 
 .showcase-hero-bg {
-  filter: brightness(0.85);
+  filter: brightness(0.2) blur(30px);
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transform: scale(1.0);
-  transition: transform 12s cubic-bezier(0.25, 1, 0.5, 1);
+  transform: scale(1.1);
   width: 100%;
-
-  .showcase-panel-slide.is-active &,
-  .showcase-slide.is-active & {
-    transform: scale(1.06);
-  }
 }
 
 .showcase-hero-scrim {
   background:
-    linear-gradient(180deg, rgba(0, 8, 20, 0.88) 0%, rgba(0, 10, 25, 0.94) 22%, rgba(0, 12, 28, 0.92) 80%, rgba(0, 8, 20, 0.96) 100%);
+    radial-gradient(ellipse at 80% 50%, rgba(0, 27, 84, 0.5) 0%, transparent 60%),
+    linear-gradient(135deg, rgba(0, 8, 20, 0.95) 0%, rgba(0, 12, 28, 0.92) 100%);
   height: 100%;
   inset: 0;
   position: absolute;
@@ -232,18 +178,27 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 }
 
 // -----------------------------------------------------------------------------
-// Panel Content Body
+// Slide Content Split: Left Text (~54%) & Right Visual (~46%)
 // -----------------------------------------------------------------------------
-.showcase-panel-body {
+.showcase-slide-content {
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 100%;
-  justify-content: flex-start;
-  padding: 9.5rem 2.75rem 8.5rem 2.75rem;
   position: relative;
   width: 100%;
-  z-index: 25;
+  z-index: 10;
+}
+
+// Left Pane: Typographic Focus
+.showcase-slide-text {
+  box-sizing: border-box;
+  display: flex;
+  flex: 1 1 54%;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  padding: 3rem 2.5rem 3rem 4rem;
 }
 
 .showcase-pill-row {
@@ -251,16 +206,16 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-bottom: 0.85rem;
+  margin-bottom: 1.25rem;
 }
 
 // Category Pills
 .showcase-pill {
   border-radius: 0 !important;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 800;
   letter-spacing: 0.06em;
-  padding: 0.35rem 1rem;
+  padding: 0.4rem 1.15rem;
   text-transform: uppercase;
 
   &.pill-emerald {
@@ -285,10 +240,10 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 0 !important;
   color: #ffffff;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.05em;
-  padding: 0.35rem 0.8rem;
+  padding: 0.4rem 0.9rem;
   text-transform: uppercase;
 }
 
@@ -303,14 +258,14 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 .showcase-title {
   color: #ffffff;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  font-size: 1.95rem;
+  font-size: 2.3rem;
   font-weight: 800;
   line-height: 1.25;
-  margin: 0 0 0.85rem 0;
+  margin: 0 0 1.25rem 0;
   overflow: hidden;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
 }
 
 // Advisor Strip
@@ -318,8 +273,8 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 0.85rem;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .showcase-advisor-item {
@@ -329,16 +284,16 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   border: 1px solid rgba(49, 191, 228, 0.4);
   border-radius: 0 !important;
   display: flex;
-  gap: 0.65rem;
-  padding: 0.3rem 0.8rem 0.3rem 0.3rem;
+  gap: 0.75rem;
+  padding: 0.35rem 0.9rem 0.35rem 0.35rem;
 }
 
 .showcase-advisor-avatar {
   border: 2px solid #31bfe4;
   border-radius: 0 !important;
-  height: 40px;
+  height: 44px;
   object-fit: cover;
-  width: 40px;
+  width: 44px;
 }
 
 .showcase-advisor-avatar-placeholder {
@@ -348,10 +303,10 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   border-radius: 0 !important;
   color: #31bfe4;
   display: flex;
-  font-size: 1rem;
-  height: 40px;
+  font-size: 1.1rem;
+  height: 44px;
   justify-content: center;
-  width: 40px;
+  width: 44px;
 }
 
 .showcase-advisor-label {
@@ -366,7 +321,7 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 .showcase-advisor-name {
   color: #ffffff;
   display: block;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 
@@ -375,7 +330,7 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   display: flex;
   font-size: 1.15rem;
   gap: 0.5rem;
-  margin-bottom: 0.85rem;
+  margin-bottom: 1.25rem;
 
   strong {
     color: #31bfe4;
@@ -394,11 +349,11 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 .showcase-summary {
   color: #e2e8f0;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
-  font-size: 1.15rem;
-  line-height: 1.55;
-  margin: 0 0 0.85rem 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0 0 1.25rem 0;
   overflow: hidden;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
 }
@@ -406,8 +361,8 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 .showcase-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
 }
 
 .showcase-badge {
@@ -418,88 +373,72 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   color: #ffffff;
   font-size: 0.85rem;
   font-weight: 600;
-  padding: 0.25rem 0.7rem;
+  padding: 0.3rem 0.85rem;
 }
 
-// Compact Bottom QR inside Panel
-.showcase-panel-footer {
-  margin-top: auto;
-}
-
-.showcase-qr-compact {
+// Right Pane: Framed Visual
+.showcase-slide-visual {
   align-items: center;
-  background: #ffffff;
-  border: 2px solid #31bfe4;
-  border-radius: 0 !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
   display: flex;
-  gap: 1.15rem;
-  padding: 0.55rem 1rem;
-  width: fit-content;
-}
-
-.showcase-qr-frame {
-  align-items: center;
-  background: #f8fafc;
-  border-radius: 0 !important;
-  display: flex;
-  height: 85px;
+  flex: 1 1 46%;
   justify-content: center;
-  width: 85px;
-
-  svg {
-    display: block;
-    height: 100%;
-    width: 100%;
-  }
+  padding: 3rem 4rem 3rem 1.5rem;
 }
 
-.showcase-qr-caption {
-  display: flex;
-  flex-direction: column;
+.showcase-visual-frame {
+  background: #001b54;
+  border: 2px solid rgba(49, 191, 228, 0.45);
+  border-radius: 0 !important;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.7), 0 0 24px rgba(49, 191, 228, 0.15);
+  height: 100%;
+  max-height: calc(100vh - 250px);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
 
-  strong {
-    color: #001b54;
-    font-size: 0.95rem;
-    font-weight: 800;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
+.showcase-visual-img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.0);
+  transition: transform 12s cubic-bezier(0.25, 1, 0.5, 1);
+  width: 100%;
 
-  span {
-    color: #64748b;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-top: 0.15rem;
+  .showcase-slide.is-active & {
+    transform: scale(1.05);
   }
 }
 
 // -----------------------------------------------------------------------------
-// Floating Bottom HUD Footer
+// Floating Bottom HUD Footer (Left Status, Center QR, Right Hint)
 // -----------------------------------------------------------------------------
 .showcase-footer {
   align-items: center;
-  background: rgba(0, 10, 25, 0.88);
+  background: rgba(0, 10, 25, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   bottom: 0;
   box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
   display: flex;
   flex: 0 0 auto;
-  gap: 2.5rem;
+  height: 96px;
   justify-content: space-between;
   left: 0;
-  padding: 0.85rem 3rem;
+  padding: 0 3.5rem;
   position: fixed;
   right: 0;
   z-index: 100;
 }
 
-.showcase-status-left {
+.showcase-footer-left {
   align-items: center;
   display: flex;
-  flex: 0 0 auto;
+  flex: 1 1 0%;
   gap: 1.25rem;
 }
 
@@ -511,7 +450,7 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.05em;
-  padding: 0.35rem 0.85rem;
+  padding: 0.4rem 0.95rem;
   text-transform: uppercase;
 }
 
@@ -529,52 +468,63 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.05em;
-  padding: 0.3rem 0.75rem;
+  padding: 0.35rem 0.8rem;
 }
 
-.showcase-progress-wrapper {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 0 !important;
-  flex: 1 1 auto;
-  height: 5px;
-  overflow: hidden;
-  position: relative;
-}
-
-.showcase-progress-bar {
-  background: #31bfe4;
-  border-radius: 0 !important;
-  box-shadow: 0 0 10px #31bfe4;
-  height: 100%;
-  transition: width 0.1s linear;
-  width: 0%;
-}
-
-.showcase-status-right {
+.showcase-footer-center {
+  align-items: center;
+  display: flex;
   flex: 0 0 auto;
+  justify-content: center;
 }
 
 .showcase-qr-box {
   align-items: center;
   background: #ffffff;
-  border: 1px solid #31bfe4;
+  border: 2px solid #31bfe4;
   border-radius: 0 !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
   display: flex;
   gap: 0.85rem;
-  padding: 0.35rem 0.75rem;
-}
-
-.showcase-qr-label {
-  color: #001b54;
-  font-size: 0.8rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  padding: 0.35rem 0.9rem;
 }
 
 .showcase-qr-img {
   border-radius: 0 !important;
   display: block;
-  height: 120px;
-  width: 120px;
+  height: 68px;
+  width: 68px;
+}
+
+.showcase-qr-caption {
+  display: flex;
+  flex-direction: column;
+}
+
+.showcase-qr-title {
+  color: #001b54;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.showcase-qr-url {
+  color: #64748b;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-top: 0.15rem;
+}
+
+.showcase-footer-right {
+  display: flex;
+  flex: 1 1 0%;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.showcase-key-hint {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  font-weight: 500;
 }
