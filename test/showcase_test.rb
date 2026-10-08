@@ -40,22 +40,25 @@ class ShowcaseTest < Minitest::Test
     assert_includes content, "showcase-hero-scrim", "showcase.md must include gradient scrims"
   end
 
-  def test_showcase_dual_split_structure
+  def test_showcase_single_screen_structure
     skip unless File.exist?(@page_path)
     content = File.read(@page_path)
-    assert_includes content, "showcase-split-container", "showcase.md must use dual-split container"
-    assert_includes content, "showcase-column-projects", "showcase.md must include projects column"
-    assert_includes content, "showcase-column-news", "showcase.md must include news column"
-    assert_includes content, "showcase-column-divider", "showcase.md must include column divider"
+    assert_includes content, "showcase-slider", "showcase.md must use single showcase-slider container"
+    assert_includes content, "showcase-slide", "showcase.md must include showcase-slide elements"
+    assert_includes content, "showcase-slide-text", "showcase.md must include left text pane"
+    assert_includes content, "showcase-slide-visual", "showcase.md must include right visual pane"
+    refute_includes content, "showcase-split-container", "showcase.md must NOT use dual-split container"
+    refute_includes content, "showcase-column-divider", "showcase.md must NOT include column divider"
   end
 
   def test_showcase_layout_structure
     skip unless File.exist?(@layout_path)
     content = File.read(@layout_path)
     assert_includes content, "showcase-clock", "showcase layout must include a live clock element"
-    assert_includes content, "showcase-progress", "showcase layout must include a progress bar"
+    assert_includes content, "PFCL-1_edited.png", "showcase layout must include the top center emblem logo"
+    assert_includes content, "showcase_qr.png", "showcase layout must include the bottom center website QR code"
     assert_includes content, "showcase.js", "showcase layout must include showcase.js script"
-    assert_includes content, "qrcode-generator", "showcase layout must load the vendored QR library"
+    refute_includes content, "showcase-progress", "showcase layout must NOT include progress bar"
     refute_includes content, "{% include header.html %}", "showcase layout must NOT include standard site header"
     refute_includes content, "{% include footer.html %}", "showcase layout must NOT include standard site footer"
   end
@@ -67,20 +70,12 @@ class ShowcaseTest < Minitest::Test
     refute_includes content, "— Technion", "Subtitle must not repeat '— Technion' (it is in the logo/title context)"
   end
 
-  def test_showcase_slides_carry_qr_urls
-    skip unless File.exist?(@page_path)
-    content = File.read(@page_path)
-    assert_includes content, "data-qr-url", "Slides must expose per-slide QR target URLs"
-    assert_includes content, "data-qr-target", "Slides must contain QR render targets"
-    assert_includes content, "absolute_url", "QR URLs must be absolute (project pages, relative canonical URLs)"
-  end
-
-  def test_showcase_js_shuffles_and_renders_qr
+  def test_showcase_js_shuffles_and_cycles
     skip unless File.exist?(@script_path)
     content = File.read(@script_path)
     assert_match(/function shuffleSlides/, content, "showcase.js must shuffle slide order at startup")
-    assert_includes content, "data-qr-url", "showcase.js must read per-slide QR URLs"
-    assert_includes content, "createSvgTag", "showcase.js must render QR codes as SVG"
+    assert_match(/function showSlide/, content, "showcase.js must cycle slides")
+    refute_includes content, "showcase-progress", "showcase.js must NOT control progress bar"
   end
 
   def test_showcase_styles_match_site_typography
@@ -88,14 +83,13 @@ class ShowcaseTest < Minitest::Test
     content = File.read(@style_path)
     assert_includes content, '"Montserrat"', "Showcase body font must match the website's Montserrat"
     assert_includes content, "Inconsolata", "Showcase clock must use the site's monospace stack"
-    assert_match(/\.showcase-qr-img\{?[^}]*height:\s*120px/m, content, "Footer QR must render at 120px (scannable from a distance)")
-    refute_includes content, "showcase-lab-logo", "Lab-slide styles must be removed with the category"
+    assert_includes content, "showcase-qr-img", "Showcase styles must style website QR code"
+    refute_includes content, "showcase-progress", "Showcase styles must not contain progress bar rules"
   end
 
   def test_showcase_light_theme_and_sharp_corners
     skip unless File.exist?(@style_path)
     content = File.read(@style_path)
-    assert_includes content, "#f8fafc", "Showcase styles must use #f8fafc light canvas surface"
     assert_includes content, "#001b54", "Showcase styles must use #001b54 brand navy"
     assert_includes content, "border-radius: 0", "Showcase styles must enforce sharp corners"
     refute_match(/border-radius:\s*(16px|12px|8px|9999px)/, content, "Showcase styles must not use rounded corners")
