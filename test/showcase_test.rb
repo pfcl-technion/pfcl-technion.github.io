@@ -57,17 +57,24 @@ class ShowcaseTest < Minitest::Test
     assert_includes content, "showcase-clock", "showcase layout must include a live clock element"
     assert_includes content, "PFCL-1_edited.png", "showcase layout must include the top center emblem logo"
     assert_includes content, "showcase_qr.png", "showcase layout must include the bottom center website QR code"
+    assert_includes content, "logo_aerospace.png", "showcase layout must include the aerospace logo on the left"
+    assert_includes content, "Point your camera HERE", "showcase layout must include callout text for the QR code"
     assert_includes content, "showcase.js", "showcase layout must include showcase.js script"
     refute_includes content, "showcase-progress", "showcase layout must NOT include progress bar"
+    refute_includes content, "showcase-counter", "showcase layout must NOT include bottom slide counter"
+    refute_includes content, "showcase-key-hint", "showcase layout must NOT include keyboard hints"
+    refute_includes content, "showcase-pause-status", "showcase layout must NOT include pause control"
     refute_includes content, "{% include header.html %}", "showcase layout must NOT include standard site header"
     refute_includes content, "{% include footer.html %}", "showcase layout must NOT include standard site footer"
   end
 
-  def test_showcase_subtitle_has_no_technion_suffix
+  def test_showcase_aerospace_logo_present
     skip unless File.exist?(@layout_path)
     content = File.read(@layout_path)
-    assert_includes content, "Stephen B. Klein Faculty of Aerospace Engineering</p>", "Subtitle must name the faculty"
-    refute_includes content, "— Technion", "Subtitle must not repeat '— Technion' (it is in the logo/title context)"
+    assert_includes content, "logo_aerospace.png", "Header left must show logo_aerospace.png"
+    assert_includes content, "Faculty of Aerospace Engineering", "Aerospace logo must have descriptive alt text"
+    refute_includes content, "showcase-main-title", "Header left must not have text title"
+    refute_includes content, "showcase-sub-title", "Header left must not have text subtitle"
   end
 
   def test_showcase_js_shuffles_and_cycles
