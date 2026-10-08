@@ -35,7 +35,7 @@ body.showcase-body {
   box-sizing: border-box;
   display: flex;
   flex: 0 0 auto;
-  height: 108px;
+  height: 124px;
   justify-content: space-between;
   left: 0;
   overflow: visible;
@@ -56,8 +56,8 @@ body.showcase-body {
 .showcase-logo-aerospace {
   display: block;
   filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.6));
-  height: 70px;
-  max-width: 320px;
+  height: 92px;
+  max-width: 440px;
   object-fit: contain;
   width: auto;
 }
@@ -71,35 +71,35 @@ body.showcase-body {
   overflow: visible;
   pointer-events: auto;
   position: absolute;
-  top: 8px;
+  top: 12px;
   transform: translateX(-50%);
-  z-index: 150;
+  z-index: 200;
 }
 
 .showcase-emblem-badge {
   align-items: center;
-  background: radial-gradient(circle at 45% 35%, #002266 0%, #001440 55%, #000814 100%);
-  border: 3.5px solid #31bfe4;
+  background: radial-gradient(circle at 45% 35%, #003399 0%, #001a54 60%, #001038 100%);
+  border: 4px solid #31bfe4;
   border-radius: 50% !important;
   box-shadow:
-    0 14px 44px rgba(0, 0, 0, 0.9),
-    0 0 32px rgba(49, 191, 228, 0.5),
-    inset 0 0 20px rgba(49, 191, 228, 0.25);
+    0 16px 48px rgba(0, 0, 0, 0.95),
+    0 0 36px rgba(49, 191, 228, 0.65),
+    inset 0 0 24px rgba(49, 191, 228, 0.35);
   box-sizing: border-box;
   display: flex;
-  height: 200px;
+  height: 250px;
   justify-content: center;
   overflow: hidden;
   position: relative;
-  width: 200px;
+  width: 250px;
 }
 
 .showcase-logo-center {
   display: block;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.7));
-  height: 165px;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.8));
+  height: 205px;
   object-fit: contain;
-  width: 165px;
+  width: 205px;
 }
 
 .showcase-header-right {
@@ -113,7 +113,7 @@ body.showcase-body {
 .showcase-clock {
   color: #31bfe4;
   font-family: "Inconsolata", "Hack", "SF Mono", "Roboto Mono", "Source Code Pro", "Ubuntu Mono", monospace;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   line-height: 1.1;
@@ -121,7 +121,7 @@ body.showcase-body {
 
 .showcase-date {
   color: #cbd5e1;
-  font-size: 1.1rem;
+  font-size: 1.45rem;
   font-weight: 500;
   margin-top: 0.25rem;
 }
@@ -130,13 +130,13 @@ body.showcase-body {
 // Main Canvas: Single-Slide Viewport
 // -----------------------------------------------------------------------------
 .showcase-main {
-  bottom: 44px;
+  bottom: 48px;
   height: auto;
   left: 0;
   overflow: hidden;
   position: absolute;
   right: 0;
-  top: 108px;
+  top: 124px;
   z-index: 10;
 }
 
@@ -218,57 +218,57 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 .showcase-slide-text {
   box-sizing: border-box;
   display: flex;
-  flex: 1 1 53%;
+  flex: 1 1 50%;
   flex-direction: column;
   justify-content: center;
-  max-width: 53%;
+  max-width: 50%;
   overflow: hidden;
-  padding: 3rem 4rem 3rem 5rem;
+  padding: 2rem 3.5rem 2rem 4.5rem;
 }
 
 .showcase-pill-row {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 1.4rem;
+  gap: 1.25rem;
+  margin-bottom: 1.6rem;
 }
 
 // Category Pills
 .showcase-pill {
   border-radius: 0 !important;
-  font-size: 1.15rem;
+  font-size: 1.45rem;
   font-weight: 800;
   letter-spacing: 0.06em;
-  padding: 0.55rem 1.4rem;
+  padding: 0.7rem 1.6rem;
   text-transform: uppercase;
 
   &.pill-emerald {
     background: #001b54;
-    border-left: 5px solid #10b981;
+    border-left: 6px solid #10b981;
     color: #ffffff;
   }
   &.pill-cyan {
     background: #001b54;
-    border-left: 5px solid #31bfe4;
+    border-left: 6px solid #31bfe4;
     color: #ffffff;
   }
   &.pill-amber {
     background: #001b54;
-    border-left: 5px solid #f59e0b;
+    border-left: 6px solid #f59e0b;
     color: #ffffff;
   }
 }
 
 .showcase-lab-badge {
   background: rgba(255, 255, 255, 0.14);
-  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  border: 2px solid rgba(255, 255, 255, 0.4);
   border-radius: 0 !important;
   color: #ffffff;
-  font-size: 1.15rem;
+  font-size: 1.45rem;
   font-weight: 800;
   letter-spacing: 0.05em;
-  padding: 0.55rem 1.25rem;
+  padding: 0.7rem 1.5rem;
   text-transform: uppercase;
 }
 
@@ -276,7 +276,7 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   align-items: center;
   color: #cbd5e1;
   display: inline-flex;
-  font-size: 1.2rem;
+  font-size: 1.45rem;
   font-weight: 600;
 }
 
@@ -285,10 +285,10 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  font-size: 3.2rem;
+  font-size: 4.0rem;
   font-weight: 800;
-  line-height: 1.2;
-  margin: 0 0 1.4rem 0;
+  line-height: 1.16;
+  margin: 0 0 1.6rem 0;
   overflow: hidden;
   text-shadow: 0 3px 16px rgba(0, 0, 0, 0.85);
 }
@@ -299,7 +299,7 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.6rem;
 }
 
 .showcase-advisor-item {
@@ -309,16 +309,16 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   border: 1.5px solid rgba(49, 191, 228, 0.5);
   border-radius: 0 !important;
   display: flex;
-  gap: 1rem;
-  padding: 0.45rem 1.1rem 0.45rem 0.45rem;
+  gap: 1.2rem;
+  padding: 0.6rem 1.4rem 0.6rem 0.6rem;
 }
 
 .showcase-advisor-avatar {
   border: 2px solid #31bfe4;
   border-radius: 0 !important;
-  height: 58px;
+  height: 76px;
   object-fit: cover;
-  width: 58px;
+  width: 76px;
 }
 
 .showcase-advisor-avatar-placeholder {
@@ -328,17 +328,17 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   border-radius: 0 !important;
   color: #31bfe4;
   display: flex;
-  font-size: 1.35rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  height: 58px;
+  height: 76px;
   justify-content: center;
-  width: 58px;
+  width: 76px;
 }
 
 .showcase-advisor-label {
   color: #94a3b8;
   display: block;
-  font-size: 0.85rem;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -347,16 +347,16 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 .showcase-advisor-name {
   color: #ffffff;
   display: block;
-  font-size: 1.35rem;
+  font-size: 1.75rem;
   font-weight: 700;
 }
 
 .showcase-news-meta {
   color: #cbd5e1;
   display: flex;
-  font-size: 1.45rem;
+  font-size: 1.85rem;
   gap: 0.75rem;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.6rem;
 
   strong {
     color: #31bfe4;
@@ -366,7 +366,7 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 .showcase-meta-label {
   color: #94a3b8;
   display: block;
-  font-size: 0.9rem;
+  font-size: 1.15rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -377,9 +377,9 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  font-size: 1.6rem;
-  line-height: 1.55;
-  margin: 0 0 1.4rem 0;
+  font-size: 2.1rem;
+  line-height: 1.5;
+  margin: 0 0 1.6rem 0;
   overflow: hidden;
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
 }
@@ -387,8 +387,8 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 .showcase-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-top: 0.5rem;
+  gap: 1rem;
+  margin-top: 0.75rem;
 }
 
 .showcase-badge {
@@ -397,9 +397,9 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   border: 1.5px solid rgba(255, 255, 255, 0.25);
   border-radius: 0 !important;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1.35rem;
   font-weight: 600;
-  padding: 0.45rem 1.15rem;
+  padding: 0.55rem 1.35rem;
 }
 
 // Right Pane: Framed Visual
@@ -407,18 +407,18 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   align-items: center;
   box-sizing: border-box;
   display: flex;
-  flex: 1 1 47%;
+  flex: 1 1 50%;
   justify-content: center;
-  padding: 3rem 4.5rem 3rem 2rem;
+  padding: 1.5rem 3.5rem 1.5rem 1.5rem;
 }
 
 .showcase-visual-frame {
   background: #001b54;
-  border: 3px solid rgba(49, 191, 228, 0.55);
+  border: 3.5px solid rgba(49, 191, 228, 0.6);
   border-radius: 0 !important;
-  box-shadow: 0 20px 54px rgba(0, 0, 0, 0.75), 0 0 32px rgba(49, 191, 228, 0.2);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.85), 0 0 40px rgba(49, 191, 228, 0.25);
   height: 100%;
-  max-height: calc(100vh - 200px);
+  max-height: calc(100vh - 195px);
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -452,7 +452,7 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   box-sizing: border-box;
   display: flex;
   flex: 0 0 auto;
-  height: 44px;
+  height: 48px;
   justify-content: center;
   left: 0;
   overflow: visible;
@@ -467,7 +467,7 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   background: rgba(0, 10, 25, 0.96);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 2.5px solid #31bfe4;
+  border: 3px solid #31bfe4;
   border-bottom: none;
   border-radius: 0 !important;
   bottom: 0;
@@ -476,7 +476,7 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   display: flex;
   flex-direction: column;
   left: 50%;
-  padding: 0.85rem 1.6rem 0.65rem 1.6rem;
+  padding: 1rem 2rem 0.8rem 2rem;
   pointer-events: auto;
   position: absolute;
   transform: translateX(-50%);
@@ -491,34 +491,34 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
-  margin-bottom: 0.55rem;
-  padding: 0.45rem;
+  margin-bottom: 0.65rem;
+  padding: 0.5rem;
 }
 
 .showcase-qr-img {
   border-radius: 0 !important;
   display: block;
-  height: 148px;
-  width: 148px;
+  height: 190px;
+  width: 190px;
 }
 
 .showcase-qr-callout {
   align-items: center;
   display: flex;
-  gap: 0.45rem;
-  margin-bottom: 0.35rem;
+  gap: 0.6rem;
+  margin-bottom: 0.45rem;
 }
 
 .showcase-qr-callout-arrow {
   animation: showcase-bounce-up 1.5s ease-in-out infinite;
   color: #31bfe4;
   display: inline-block;
-  font-size: 0.85rem;
+  font-size: 1.15rem;
 }
 
 .showcase-qr-callout-text {
   color: #31bfe4;
-  font-size: 1.05rem;
+  font-size: 1.35rem;
   font-weight: 800;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -528,7 +528,7 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
 .showcase-qr-url {
   color: #cbd5e1;
   font-family: "Inconsolata", monospace;
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: lowercase;
