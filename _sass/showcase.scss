@@ -483,6 +483,22 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   z-index: 120;
 }
 
+.showcase-qr-lead {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.6rem;
+}
+
+.showcase-qr-lead-text {
+  color: #31bfe4;
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-shadow: 0 0 16px rgba(49, 191, 228, 0.45);
+  text-transform: uppercase;
+}
+
 .showcase-qr-box {
   align-items: center;
   background: #ffffff;
