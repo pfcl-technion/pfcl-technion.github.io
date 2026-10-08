@@ -4,32 +4,44 @@ title: Accessibility Statement
 permalink: /accessibility/
 ---
 
-The Philadelphia Flight Control Laboratory (PFCL) at the Technion is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.
+**Last updated:** October 8, 2026
+
+The Technion, and by extension the Philadelphia Flight Control Laboratory (PFCL), views the accessibility of its websites as a matter of utmost importance. Approximately 20% of the population in Israel are people with varying degrees of disability who require accessibility accommodations to browse websites effectively.
 
 ## Conformance Status
 
-The Web Content Accessibility Guidelines (WCAG) defines requirements for designers and developers to improve accessibility for people with disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA. 
-The PFCL Website is striving to be conformant with WCAG 2.2 level AA, in accordance with the Equal Rights for People with Disabilities Law and the Service Accessibility Regulations.
+We are committed to making this website accessible in accordance with Israeli Standard (IS) 5568, which corresponds to the Web Content Accessibility Guidelines (WCAG) Level AA. The site is built on a modern, accessible platform that supports:
+
+* Enlarging text via standard browser controls.
+* Semantic structure, skip links, lists, and tables designed for screen readers.
+* Navigation using a keyboard (Tab, Enter, and Arrow keys) without a mouse.
+* Compatibility with standard browsers (Chrome, Firefox, Safari, Edge).
+* Responsive design adapted for mobile devices.
+
+The Technion performs ongoing accessibility testing using the latest versions of the NVDA screen reader.
 
 ## Exemptions and Content Accessibility Requests
 
-As a research laboratory website that is not designated for teaching or coursework, this site operates under the partial exemption granted to Technion faculty and lab websites. While the underlying platform is accessible, specific uploaded contents (such as documents, PDFs, or media) may not be fully accessible initially. 
+As a research laboratory website not designated for teaching, coursework, or public services, this site operates under the partial exemption granted by law to Technion faculty and lab websites. While the underlying platform is accessible, specific uploaded contents (such as documents, PDFs, or media) are exempted from proactive accessibility requirements and are obligated only to provide accessibility upon request.
 
-If you require an accessible format of any content on this website, please contact us. We are committed to providing the requested accessible content within 60 days of receiving your request, in accordance with Technion's accessibility policies.
+If you require an accessible format of any content on this website, please contact us. We are committed to providing the requested accessible content within 60 days of receiving your request.
 
 ## Physical Accessibility Arrangements
 
-The Philadelphia Flight Control Laboratory is located in the Lady Davis Building at the Technion. 
+The Philadelphia Flight Control Laboratory is located in the Lady Davis Building at the Faculty of Aerospace Engineering.
 
-[Placeholder: Details about physical accessibility arrangements for the Lady Davis Building, such as accessible parking locations, accessible entrances, elevators, and accessible restrooms. Include instructions on how to request physical assistance if needed.]
+For comprehensive information regarding accessible buildings, routes, parking, and entrances across the campus, please refer to the main [Technion Campus Accessibility Guide](https://www.technion.ac.il/en/campus-accessibility/).
 
-## Feedback
+## Feedback and Contact Information
 
-We welcome your feedback on the accessibility of the PFCL Website. Please let us know if you encounter accessibility barriers:
+Despite our efforts to make all pages accessible, certain items may not be fully accessible due to human error or technological limitations. If you encounter an accessibility barrier, please reach out to the site managers or the central support centers:
 
-* **Accessibility Coordinator:** [Placeholder: Accessibility Coordinator Name]
-* **Phone:** [Placeholder: Accessibility Coordinator Phone]
-* **E-mail:** [Placeholder: Accessibility Coordinator Email]
-* **Postal Address:** Philadelphia Flight Control Laboratory, Faculty of Aerospace Engineering, Lady Davis Building, Technion – Israel Institute of Technology, Haifa 32000, Israel
+**PFCL Direct Contact:**
+* **Email:** [pfcl@technion.ac.il](mailto:pfcl@technion.ac.il)
+* **Phone:** [+972-4-829-3820](tel:+972-4-829-3820)
 
-We try to respond to feedback within [Placeholder: response timeframe, e.g., 5 business days].
+**Technion Central Accessibility Contacts:**
+* **Technion Accessibility Coordinator:** Dikla Nachman
+* **Phone:** 073-3781956
+* **Email:** [adminlogistic@technion.ac.il](mailto:adminlogistic@technion.ac.il)
+* **IT Support Hotline:** 04-829-5600
