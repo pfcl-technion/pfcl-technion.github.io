@@ -30,7 +30,7 @@ If you require an accessible format of any content on this website, please conta
 
 The Philadelphia Flight Control Laboratory is located in the Lady Davis Building at the Faculty of Aerospace Engineering.
 
-For comprehensive information regarding accessible buildings, routes, parking, and entrances across the campus, please refer to the main [Technion Campus Accessibility Guide](https://www.technion.ac.il/en/campus-accessibility/).
+For comprehensive information regarding accessible buildings, routes, parking, and entrances across the campus, please refer to the main [Technion Campus Accessibility Guide](https://accessibility.net.technion.ac.il/).
 
 ## Feedback and Contact Information
 
