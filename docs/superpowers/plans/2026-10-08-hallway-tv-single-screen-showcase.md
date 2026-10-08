@@ -27,19 +27,19 @@
 - Consumes: Test paths in `test/showcase_test.rb`.
 - Produces: Updated assertions checking for `.showcase-slider > .showcase-slide`, top-center logo `PFCL-1_edited.png`, bottom-center QR `showcase_qr.png`, and absence of progress bar.
 
-- [ ] **Step 1: Write updated test assertions in `test/showcase_test.rb`**
+- [x] **Step 1: Write updated test assertions in `test/showcase_test.rb`**
 
 Update `test/showcase_test.rb` to:
 1. Replace `test_showcase_dual_split_structure` with `test_showcase_single_screen_structure` verifying `.showcase-slider`, `.showcase-slide`, `.showcase-slide-text`, and `.showcase-slide-visual`.
 2. Update `test_showcase_layout_structure` to assert `PFCL-1_edited.png` and `showcase_qr.png`, and refute `showcase-progress` or `showcase-progress-bar`.
 3. Update `test_showcase_styles_match_site_typography` to verify `#showcase-clock` and sharp borders.
 
-- [ ] **Step 2: Run test suite to verify tests fail (TDD red)**
+- [x] **Step 2: Run test suite to verify tests fail (TDD red)**
 
 Run: `docker compose run --rm site bundle exec ruby -e "Dir.glob('test/**/*_test.rb').each { |f| require_relative f }"`
 Expected: FAIL on `test_showcase_single_screen_structure` and `test_showcase_layout_structure` because the layout and markup still have the dual-split structure.
 
-- [ ] **Step 3: Commit test updates**
+- [x] **Step 3: Commit test updates**
 
 ```bash
 git add test/showcase_test.rb
@@ -57,7 +57,7 @@ git commit -m "test(showcase): update assertions for single-screen showcase layo
 - Consumes: Site assets `/assets/images/PFCL-1_edited.png` and `/assets/images/showcase_qr.png`.
 - Produces: 3-column top header (left titles, center emblem logo, right clock) and 3-column bottom footer (left counter/category, center website QR code, right pause status & hints).
 
-- [ ] **Step 1: Update `_layouts/showcase.html`**
+- [x] **Step 1: Update `_layouts/showcase.html`**
 
 Replace the header and footer in `_layouts/showcase.html`:
 1. In `<header class="showcase-header">`:
@@ -72,7 +72,7 @@ Replace the header and footer in `_layouts/showcase.html`:
    - Right: `.showcase-footer-right` with keyboard hints: `<span class="showcase-key-hint">Press [Space] to Pause</span>`.
    - Completely remove `#showcase-progress` and `.showcase-progress-wrapper`.
 
-- [ ] **Step 2: Commit layout changes**
+- [x] **Step 2: Commit layout changes**
 
 ```bash
 git add _layouts/showcase.html
@@ -90,7 +90,7 @@ git commit -m "feat(showcase): center logo in top HUD and website QR in bottom H
 - Consumes: `site.projects` (available status) and `site.news` (show_on_showcase) + generated data.
 - Produces: Single unified sequence of `.showcase-slide` elements, each partitioned into `.showcase-slide-text` (left) and `.showcase-slide-visual` (right).
 
-- [ ] **Step 1: Update `showcase.md`**
+- [x] **Step 1: Update `showcase.md`**
 
 In `showcase.md`:
 1. Use single container `<div id="showcase-slider" class="showcase-slider">`.
@@ -109,7 +109,7 @@ In `showcase.md`:
      - `<div class="showcase-visual-frame">`:
        - `<img src="{{ hero_img | escape }}" alt="{{ item.title | escape }}" class="showcase-visual-img" loading="lazy">`
 
-- [ ] **Step 2: Commit slide template changes**
+- [x] **Step 2: Commit slide template changes**
 
 ```bash
 git add showcase.md
@@ -127,7 +127,7 @@ git commit -m "feat(showcase): restructure slides into left-content and right-vi
 - Consumes: `.showcase-slider > .showcase-slide`, `#showcase-counter`, `#showcase-category`, `#showcase-pause-status`, `#showcase-clock`.
 - Produces: Single-slider controller cycling slides every 12 seconds without progress bar dependencies.
 
-- [ ] **Step 1: Update `assets/js/showcase.js`**
+- [x] **Step 1: Update `assets/js/showcase.js`**
 
 1. Query single slide array: `const slides = Array.from(document.querySelectorAll('.showcase-slider > .showcase-slide'));`.
 2. Single index pointer `let currentIndex = 0;`.
@@ -137,7 +137,7 @@ git commit -m "feat(showcase): restructure slides into left-content and right-vi
 6. `tick()` measures `Date.now() - startTime >= DURATION_MS`, calling `nextSlide()` without updating `#showcase-progress`.
 7. Remove obsolete per-slide SVG QR code rendering function since QR is now the static website QR in the bottom HUD.
 
-- [ ] **Step 2: Commit controller update**
+- [x] **Step 2: Commit controller update**
 
 ```bash
 git add assets/js/showcase.js
@@ -155,7 +155,7 @@ git commit -m "refactor(showcase): streamline controller for single-slide rotati
 - Consumes: Design system tokens (#000814, #001b54, #31bfe4, Montserrat, Inconsolata).
 - Produces: CSS rules for top header (left/center/right), bottom footer (left/center/right), and slide 52/48 split.
 
-- [ ] **Step 1: Update `_sass/showcase.scss`**
+- [x] **Step 1: Update `_sass/showcase.scss`**
 
 1. Header styles:
    - `.showcase-header`: `height: 88px; display: flex; justify-content: space-between; align-items: center; padding: 0 3rem;`.
@@ -179,7 +179,7 @@ git commit -m "refactor(showcase): streamline controller for single-slide rotati
    - `.showcase-footer-right`: `flex: 1; text-align: right; color: #94a3b8; font-size: 0.85rem;`.
    - Remove obsolete split column divider and progress bar styles.
 
-- [ ] **Step 2: Commit style changes**
+- [x] **Step 2: Commit style changes**
 
 ```bash
 git add _sass/showcase.scss
@@ -198,19 +198,19 @@ git commit -m "feat(showcase): style single-screen layout with top-center logo a
 - Consumes: All modified files.
 - Produces: Passing test suite, passing validator, passing production build, verified browser screenshots.
 
-- [ ] **Step 1: Run Content Schema Validator**
+- [x] **Step 1: Run Content Schema Validator**
 Run: `docker compose run --rm site bundle exec ruby scripts/validate_content.rb`
 Expected: "Content validation passed."
 
-- [ ] **Step 2: Run Full Automated Test Suite**
+- [x] **Step 2: Run Full Automated Test Suite**
 Run: `docker compose run --rm site bundle exec ruby -e "Dir.glob('test/**/*_test.rb').each { |f| require_relative f }"`
 Expected: 115+ runs, 0 failures, 0 errors.
 
-- [ ] **Step 3: Run Production Jekyll Build**
+- [x] **Step 3: Run Production Jekyll Build**
 Run: `docker compose run -e JEKYLL_ENV=production --rm site bundle exec jekyll build --trace`
 Expected: Build completed with 0 errors.
 
-- [ ] **Step 4: Inspect Live Display in Browser**
+- [x] **Step 4: Inspect Live Display in Browser**
 Use `browser_subagent` to load `http://localhost:4000/showcase/`, capture screenshots of at least 2 distinct slides, and verify:
 - Top center logo is prominent and crisp.
 - Bottom center QR code is clean and visible.
