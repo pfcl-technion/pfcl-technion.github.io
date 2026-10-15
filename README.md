@@ -33,7 +33,6 @@ docker compose run -e JEKYLL_ENV=production --rm site bundle exec jekyll build -
 | `_data/` | Navigation, footer, taxonomies, generated feeds |
 | `_includes/`, `_sass/` | Theme overrides and custom styles |
 | `scripts/`, `test/` | Content validator and its test suite |
-| `docs/superpowers/` | Design specs and implementation plans |
 
 Content rules, attribution requirements, and safety boundaries are in
 `AGENTS.md`. Read it before editing content.
