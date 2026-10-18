@@ -379,6 +379,7 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   font-size: 2.1rem;
   line-height: 1.5;
   margin: 0 0 1.6rem 0;
+  max-width: calc(100% - 260px);
   overflow: hidden;
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
 }
@@ -388,6 +389,7 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 0.75rem;
+  max-width: calc(100% - 260px);
 }
 
 .showcase-badge {
