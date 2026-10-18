@@ -26,48 +26,28 @@ permalink: /showcase/
 
       <div class="showcase-slide-content">
         <div class="showcase-slide-text">
-          <div class="showcase-pill-row">
-            <span class="showcase-pill pill-emerald">AVAILABLE STUDENT PROJECT</span>
-            <span class="showcase-lab-badge">{{ project.source_name | default: 'PFCL' }}</span>
-            {% if project.duration %}
-              <span class="showcase-tag"><i class="far fa-clock mr-1"></i>{{ project.duration }}</span>
-            {% elsif project.student_levels %}
-              <span class="showcase-tag">{{ project.student_levels | join: ', ' | upcase }}</span>
-            {% endif %}
-          </div>
+          <h1 class="showcase-type-header type-project">Project for students</h1>
 
           <h2 class="showcase-title">{{ project.title }}</h2>
 
-          {% if project.advisor_names and project.advisor_names.size > 0 %}
-            <div class="showcase-advisor-strip">
-              {% for advisor_name in project.advisor_names %}
-                {% assign advisor_alias_key = advisor_name | downcase | strip %}
-                {% assign advisor_slug = site.data.external_advisor_aliases[advisor_alias_key] %}
-                {% assign advisor_member = site.team | where: "slug", advisor_slug | first %}
-                <div class="showcase-advisor-item">
-                  {% if advisor_member and advisor_member.photo %}
-                    <img src="{{ advisor_member.photo | relative_url }}" alt="{{ advisor_name | escape }}" class="showcase-advisor-avatar">
-                  {% else %}
-                    <span class="showcase-advisor-avatar-placeholder"><i class="fas fa-user"></i></span>
-                  {% endif %}
-                  <div class="showcase-advisor-text">
-                    <span class="showcase-advisor-label">Advisor</span>
-                    <span class="showcase-advisor-name">{{ advisor_name }}</span>
-                  </div>
-                </div>
-              {% endfor %}
-            </div>
-          {% endif %}
-
           <p class="showcase-summary">{{ project.summary }}</p>
 
-          {% if project.prerequisites and project.prerequisites.size > 0 %}
-            <div class="showcase-badges">
+          <div class="showcase-tags-strip">
+            <span class="showcase-tag-item tag-lab"><i class="fas fa-flask mr-1"></i>{{ project.source_name | default: 'PFCL' }}</span>
+            {% if project.advisor_names and project.advisor_names.size > 0 %}
+              <span class="showcase-tag-item tag-advisor"><i class="fas fa-user mr-1"></i>Advisor: {{ project.advisor_names | join: ', ' }}</span>
+            {% endif %}
+            {% if project.duration %}
+              <span class="showcase-tag-item tag-duration"><i class="far fa-clock mr-1"></i>{{ project.duration }}</span>
+            {% elsif project.student_levels %}
+              <span class="showcase-tag-item tag-level"><i class="fas fa-graduation-cap mr-1"></i>{{ project.student_levels | join: ', ' | upcase }}</span>
+            {% endif %}
+            {% if project.prerequisites and project.prerequisites.size > 0 %}
               {% for prereq in project.prerequisites %}
-                <span class="showcase-badge"><i class="fas fa-check-circle mr-1"></i>{{ prereq }}</span>
+                <span class="showcase-tag-item tag-prereq"><i class="fas fa-check-circle mr-1"></i>{{ prereq }}</span>
               {% endfor %}
-            </div>
-          {% endif %}
+            {% endif %}
+          </div>
         </div>
 
         <div class="showcase-slide-visual">
@@ -108,22 +88,18 @@ permalink: /showcase/
 
       <div class="showcase-slide-content">
         <div class="showcase-slide-text">
-          <div class="showcase-pill-row">
-            <span class="showcase-pill {% if is_pub %}pill-cyan{% else %}pill-amber{% endif %}">
-              {% if is_pub %}RESEARCH PUBLICATION{% else %}LAB NEWS{% endif %}
-            </span>
-            <span class="showcase-lab-badge">{{ item.source_name | default: 'PFCL' }}</span>
-            <span class="showcase-tag">{{ item.date | date: "%B %-d, %Y" }}</span>
-          </div>
+          <h1 class="showcase-type-header {% if is_pub %}type-publication{% else %}type-news{% endif %}">
+            {% if is_pub %}Publication{% else %}News{% endif %}
+          </h1>
 
           <h2 class="showcase-title">{{ item.title }}</h2>
 
-          <div class="showcase-news-meta">
-            <span class="showcase-meta-label">Research Group</span>
-            <strong>{{ item.source_name | default: 'PFCL' }}</strong>
-          </div>
-
           <p class="showcase-summary">{{ item.excerpt }}</p>
+
+          <div class="showcase-tags-strip">
+            <span class="showcase-tag-item tag-lab"><i class="fas fa-flask mr-1"></i>{{ item.source_name | default: 'PFCL' }}</span>
+            <span class="showcase-tag-item tag-date"><i class="far fa-calendar-alt mr-1"></i>{{ item.date | date: "%B %-d, %Y" }}</span>
+          </div>
         </div>
 
         <div class="showcase-slide-visual">

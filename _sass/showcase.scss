@@ -225,182 +225,104 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   padding: 2rem 3.5rem 2rem 4.5rem;
 }
 
-.showcase-pill-row {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.25rem;
-  margin-bottom: 1.6rem;
-}
-
-// Category Pills
-.showcase-pill {
-  border-radius: 0 !important;
-  font-size: 1.45rem;
+// 1. First & Biggest Header: Type of Content
+.showcase-type-header {
+  font-size: 4.4rem;
   font-weight: 800;
-  letter-spacing: 0.06em;
-  padding: 0.7rem 1.6rem;
-  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  margin: 0 0 1.25rem 0;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.9);
 
-  &.pill-emerald {
-    background: #001b54;
-    border-left: 6px solid #10b981;
-    color: #ffffff;
+  &.type-project {
+    color: #10b981;
   }
-  &.pill-cyan {
-    background: #001b54;
-    border-left: 6px solid #31bfe4;
-    color: #ffffff;
+  &.type-news {
+    color: #f59e0b;
   }
-  &.pill-amber {
-    background: #001b54;
-    border-left: 6px solid #f59e0b;
-    color: #ffffff;
+  &.type-publication {
+    color: #31bfe4;
   }
 }
 
-.showcase-lab-badge {
-  background: rgba(255, 255, 255, 0.14);
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  border-radius: 0 !important;
-  color: #ffffff;
-  font-size: 1.45rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  padding: 0.7rem 1.5rem;
-  text-transform: uppercase;
-}
-
-.showcase-tag {
-  align-items: center;
-  color: #cbd5e1;
-  display: inline-flex;
-  font-size: 1.45rem;
-  font-weight: 600;
-}
-
+// 2. Smaller Header: The Title
 .showcase-title {
   color: #ffffff;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  font-size: 4.0rem;
-  font-weight: 800;
-  line-height: 1.16;
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.25;
   margin: 0 0 1.6rem 0;
   overflow: hidden;
-  text-shadow: 0 3px 16px rgba(0, 0, 0, 0.85);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85);
 }
 
-// Advisor Strip
-.showcase-advisor-strip {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-bottom: 1.6rem;
-}
-
-.showcase-advisor-item {
-  align-items: center;
-  background: rgba(0, 27, 84, 0.75);
-  backdrop-filter: blur(8px);
-  border: 1.5px solid rgba(49, 191, 228, 0.5);
-  border-radius: 0 !important;
-  display: flex;
-  gap: 1.2rem;
-  padding: 0.6rem 1.4rem 0.6rem 0.6rem;
-}
-
-.showcase-advisor-avatar {
-  border: 2px solid #31bfe4;
-  border-radius: 0 !important;
-  height: 76px;
-  object-fit: cover;
-  width: 76px;
-}
-
-.showcase-advisor-avatar-placeholder {
-  align-items: center;
-  background: #001b54;
-  border: 2px solid #31bfe4;
-  border-radius: 0 !important;
-  color: #31bfe4;
-  display: flex;
-  font-size: 1.8rem;
-  font-weight: 700;
-  height: 76px;
-  justify-content: center;
-  width: 76px;
-}
-
-.showcase-advisor-label {
-  color: #94a3b8;
-  display: block;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.showcase-advisor-name {
-  color: #ffffff;
-  display: block;
-  font-size: 1.75rem;
-  font-weight: 700;
-}
-
-.showcase-news-meta {
-  color: #cbd5e1;
-  display: flex;
-  font-size: 1.85rem;
-  gap: 0.75rem;
-  margin-bottom: 1.6rem;
-
-  strong {
-    color: #31bfe4;
-  }
-}
-
-.showcase-meta-label {
-  color: #94a3b8;
-  display: block;
-  font-size: 1.15rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
+// 3. Context: Summary Description
 .showcase-summary {
-  color: #f1f5f9;
+  color: #cbd5e1;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  font-size: 2.1rem;
-  line-height: 1.5;
+  font-size: 1.95rem;
+  font-weight: 400;
+  line-height: 1.55;
   margin: 0 0 1.6rem 0;
   max-width: calc(100% - 260px);
   overflow: hidden;
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
 }
 
-.showcase-badges {
+// 4. Tags: Research Group, Advisor, Duration, Prerequisites, Date
+.showcase-tags-strip {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 0.75rem;
+  gap: 0.85rem;
+  margin-top: 0.25rem;
   max-width: calc(100% - 260px);
 }
 
-.showcase-badge {
-  backdrop-filter: blur(6px);
-  background: rgba(0, 27, 84, 0.75);
-  border: 1.5px solid rgba(255, 255, 255, 0.25);
+.showcase-tag-item {
+  align-items: center;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 27, 84, 0.85);
+  border: 1.5px solid rgba(49, 191, 228, 0.45);
   border-radius: 0 !important;
-  color: #ffffff;
+  color: #f8fafc;
+  display: inline-flex;
   font-size: 1.35rem;
   font-weight: 600;
-  padding: 0.55rem 1.35rem;
+  letter-spacing: 0.02em;
+  padding: 0.5rem 1.15rem;
+
+  i, svg {
+    margin-right: 0.5rem;
+  }
+
+  &.tag-lab {
+    border-color: #31bfe4;
+    color: #31bfe4;
+    font-weight: 700;
+  }
+
+  &.tag-advisor {
+    border-color: rgba(49, 191, 228, 0.6);
+    color: #ffffff;
+  }
+
+  &.tag-duration,
+  &.tag-level,
+  &.tag-date {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #cbd5e1;
+  }
+
+  &.tag-prereq {
+    border-color: rgba(16, 185, 129, 0.5);
+    color: #a7f3d0;
+  }
 }
 
 // Right Pane: Framed Visual
