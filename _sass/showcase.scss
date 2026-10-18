@@ -219,10 +219,10 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   display: flex;
   flex: 1 1 50%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   max-width: 50%;
   overflow: hidden;
-  padding: 2rem 3.5rem 2rem 4.5rem;
+  padding: 1.8rem 3.5rem 2rem 4.5rem;
 }
 
 // 1. First & Biggest Header: Type of Content
