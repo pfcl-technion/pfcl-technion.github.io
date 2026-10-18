@@ -219,29 +219,105 @@ html:not(.has-showcase-js) .showcase-slide:first-child {
   display: flex;
   flex: 1 1 50%;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   max-width: 50%;
   overflow: hidden;
-  padding: 1.8rem 3.5rem 2rem 4.5rem;
+  padding: 7rem 3.5rem 2rem 4.5rem;
 }
 
-// 1. First & Biggest Header: Type of Content
-.showcase-type-header {
-  font-size: 4.4rem;
+// -----------------------------------------------------------------------------
+// Category Ribbon: Pinned to Top Left, Enters Screen from Left
+// -----------------------------------------------------------------------------
+.showcase-category-ribbon {
+  align-items: center;
+  border-radius: 0 !important;
+  box-sizing: border-box;
+  clip-path: polygon(0 0, calc(100% - 32px) 0, 100% 50%, calc(100% - 32px) 100%, 0 100%);
+  display: inline-flex;
+  left: 0;
+  max-width: calc(50% - 24px);
+  opacity: 0;
+  padding: 0.8rem 3.8rem 0.8rem 4.5rem;
+  pointer-events: none;
+  position: absolute;
+  top: 1.5rem;
+  transform: translateX(-105%);
+  z-index: 25;
+
+  &.ribbon-project {
+    background: linear-gradient(90deg, #047857 0%, #059669 45%, #10b981 100%);
+    border-bottom: 2px solid #047857;
+    border-top: 2px solid #34d399;
+    filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.75)) drop-shadow(0 0 16px rgba(16, 185, 129, 0.45));
+
+    .showcase-ribbon-title {
+      color: #ffffff;
+      text-shadow: 0 2px 8px rgba(0, 20, 10, 0.9);
+    }
+  }
+
+  &.ribbon-news {
+    background: linear-gradient(90deg, #b45309 0%, #d97706 45%, #f59e0b 100%);
+    border-bottom: 2px solid #92400e;
+    border-top: 2px solid #fde68a;
+    filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.75)) drop-shadow(0 0 16px rgba(245, 158, 11, 0.45));
+
+    .showcase-ribbon-title {
+      color: #ffffff;
+      text-shadow: 0 2px 8px rgba(30, 15, 0, 0.9);
+    }
+  }
+
+  &.ribbon-publication {
+    background: linear-gradient(90deg, #0e7490 0%, #0891b2 45%, #31bfe4 100%);
+    border-bottom: 2px solid #155e75;
+    border-top: 2px solid #a5f3fc;
+    filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.75)) drop-shadow(0 0 16px rgba(49, 191, 228, 0.45));
+
+    .showcase-ribbon-title {
+      color: #ffffff;
+      text-shadow: 0 2px 8px rgba(0, 20, 30, 0.9);
+    }
+  }
+}
+
+.showcase-ribbon-title {
+  align-items: center;
+  display: inline-flex;
+  font-size: 3.1rem;
   font-weight: 800;
   letter-spacing: -0.01em;
-  line-height: 1.1;
-  margin: 0 0 1.25rem 0;
-  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.9);
+  line-height: 1.15;
+  margin: 0;
+}
 
-  &.type-project {
-    color: #10b981;
+// Entrance Animation on Slide Activation
+.showcase-slide.is-active .showcase-category-ribbon {
+  animation: ribbonSlideIn 0.65s cubic-bezier(0.16, 1, 0.3, 1) 0.12s forwards;
+}
+
+html:not(.has-showcase-js) .showcase-slide:first-child .showcase-category-ribbon {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes ribbonSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-105%);
   }
-  &.type-news {
-    color: #f59e0b;
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
-  &.type-publication {
-    color: #31bfe4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .showcase-category-ribbon,
+  .showcase-slide.is-active .showcase-category-ribbon {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: translateX(0) !important;
   }
 }
 

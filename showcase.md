@@ -25,9 +25,11 @@ permalink: /showcase/
       </div>
 
       <div class="showcase-slide-content">
-        <div class="showcase-slide-text">
-          <h1 class="showcase-type-header type-project">Project for students</h1>
+        <div class="showcase-category-ribbon ribbon-project">
+          <h1 class="showcase-ribbon-title">Project for students</h1>
+        </div>
 
+        <div class="showcase-slide-text">
           <h2 class="showcase-title">{{ project.title }}</h2>
 
           <p class="showcase-summary">{{ project.summary }}</p>
@@ -87,11 +89,13 @@ permalink: /showcase/
       </div>
 
       <div class="showcase-slide-content">
-        <div class="showcase-slide-text">
-          <h1 class="showcase-type-header {% if is_pub %}type-publication{% else %}type-news{% endif %}">
+        <div class="showcase-category-ribbon {% if is_pub %}ribbon-publication{% else %}ribbon-news{% endif %}">
+          <h1 class="showcase-ribbon-title">
             {% if is_pub %}Publication{% else %}News{% endif %}
           </h1>
+        </div>
 
+        <div class="showcase-slide-text">
           <h2 class="showcase-title">{{ item.title }}</h2>
 
           <p class="showcase-summary">{{ item.excerpt }}</p>
