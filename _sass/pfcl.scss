@@ -1,4 +1,4 @@
-﻿// PFCL custom styles (v2 rebuild). Imported after the theme's main.scss,
+// PFCL custom styles (v2 rebuild). Imported after the theme's main.scss,
 // so Bulma variables ($light, $border, $grey-light, $primary) are in scope.
 
 // ---- Faculty of Aerospace Engineering, Technion Brand Palette ----
@@ -17,6 +17,8 @@ html,
 body {
   color-scheme: light;
   background-color: #ffffff;
+  max-width: 100%;
+  overflow-x: clip;
   --bulma-primary: #001b54;
   --bulma-primary-h: 221deg;
   --bulma-primary-s: 100%;
@@ -70,15 +72,23 @@ a {
   border-bottom: 3px solid #31bfe4 !important;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
 
-  .navbar-brand .navbar-item {
-    color: #ffffff;
-    background-color: transparent !important;
+  .navbar-brand {
+    align-items: stretch;
+    display: flex;
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
 
-    &:hover,
-    &:focus,
-    &:active {
+    .navbar-item {
+      color: #ffffff;
       background-color: transparent !important;
-      color: #ffffff !important;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: transparent !important;
+        color: #ffffff !important;
+      }
     }
   }
 
@@ -156,6 +166,8 @@ a {
 
   .navbar-burger {
     color: #ffffff;
+    flex-shrink: 0 !important;
+    margin-left: auto !important;
 
     &:hover {
       background-color: rgba(49, 191, 228, 0.15);
@@ -275,21 +287,42 @@ a {
 }
 
 .pfcl-navbar-brand {
-  display: flex;
   align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  padding-right: 0.5rem;
 
   img {
+    flex-shrink: 0;
     height: 32px;
     max-height: 32px;
-    width: auto;
     object-fit: contain;
+    width: auto;
   }
 }
 
 .pfcl-navbar-title {
+  color: #ffffff;
   font-weight: 600;
   margin-left: 0.65rem;
   white-space: nowrap;
+
+  @media screen and (max-width: 768px) {
+    display: -webkit-box;
+    font-size: 0.82rem;
+    line-height: 1.15;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: 0.75rem;
+  }
 }
 
 .pfcl-placeholder {
