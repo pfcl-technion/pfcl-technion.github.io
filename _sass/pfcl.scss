@@ -75,9 +75,12 @@ a {
   .navbar-brand {
     align-items: stretch;
     display: flex;
-    max-width: 100%;
-    min-width: 0;
-    width: 100%;
+
+    @media screen and (max-width: 1023px) {
+      max-width: 100%;
+      min-width: 0;
+      width: 100%;
+    }
 
     .navbar-item {
       color: #ffffff;
@@ -289,10 +292,13 @@ a {
 .pfcl-navbar-brand {
   align-items: center;
   display: flex;
-  flex: 1 1 auto;
-  min-width: 0;
-  overflow: hidden;
-  padding-right: 0.5rem;
+
+  @media screen and (max-width: 1023px) {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    padding-right: 0.5rem;
+  }
 
   img {
     flex-shrink: 0;
