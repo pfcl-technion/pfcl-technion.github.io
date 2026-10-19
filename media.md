@@ -7,8 +7,8 @@ permalink: /media/
 
 ## Photos
 
-<p class="pfcl-placeholder">[To be updated: curated photo gallery.]</p>
+<p class="pfcl-placeholder">Coming soon.</p>
 
 ## Videos
 
-<p class="pfcl-placeholder">[To be updated: video gallery — link the PFCL YouTube channel.]</p>
+<p class="pfcl-placeholder">Coming soon.</p>
