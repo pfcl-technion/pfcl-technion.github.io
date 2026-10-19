@@ -508,6 +508,11 @@ a {
   align-items: center;
   gap: 0.85rem;
   margin-bottom: 1.15rem;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    gap: 0.75rem 0.85rem;
+  }
 }
 
 .pfcl-lab-circle {
@@ -561,6 +566,12 @@ a.pfcl-lab-circle {
   line-height: 1.35;
   margin-left: 0.25rem;
 
+  @media screen and (max-width: 768px) {
+    flex: 0 0 100%;
+    margin-left: 0;
+    width: 100%;
+  }
+
   .pfcl-lab-leader-label {
     color: #64748b;
     font-size: 0.95rem;
@@ -589,6 +600,8 @@ a.pfcl-lab-circle {
   .pfcl-lab-leader-email {
     font-size: 0.85rem;
     margin-top: 0.15rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
 
     a {
       color: #475569;
